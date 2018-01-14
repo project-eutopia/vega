@@ -2,17 +2,23 @@
 
 C++ library for reading/writing/editing DICOM files.  To get started, clone the repository:
 
-```
+```bash
 git clone https://github.com/project-eutopia/vega.git
 ```
 
 To compile and install the shared library to your system, take the following steps:
 
-```
+```bash
 mkdir build
 cd build
 cmake ..
 sudo make -j8 install
+```
+
+To compile code that uses this library, you should link the library, the zlib library, and have to use at least C++11 standard:
+
+```bash
+clang++ --std=c++11 -lvega -lz my_code.cpp -o my_code
 ```
 
 ## Reading/writing files
