@@ -19,10 +19,10 @@ namespace vega {
       : FileMeta(sop_class, UID::generate())
     {}
 
-    FileMeta::FileMeta(const SOPClass& sop_class, const UID& instance_uid)
+    FileMeta::FileMeta(const SOPClass& sop_class, const UID& media_storage_instance_uid)
       : m_data_set(std::make_shared<DataSet>())
     {
-      this->fill_defaults(sop_class, instance_uid);
+      this->fill_defaults(sop_class, media_storage_instance_uid);
     }
 
     FileMeta::FileMeta(Reader& reader)
@@ -52,7 +52,7 @@ namespace vega {
     std::shared_ptr<const DataSet> FileMeta::data_set() const { return std::const_pointer_cast<const DataSet>(m_data_set); }
 
     const SOPClass& FileMeta::sop_class() const { return m_sop_class; }
-    const UID& FileMeta::instance_uid() const { return m_instance_uid; }
+    const UID& FileMeta::media_storage_instance_uid() const { return m_media_storage_instance_uid; }
 
     bool FileMeta::present() const { return bool(m_data_set); }
 
@@ -174,12 +174,12 @@ namespace vega {
       }
 
       auto sop_instance_manipulator = sop_instance->get_manipulator<manipulators::UniqueIdentifierManipulator>();
-      m_instance_uid = sop_instance_manipulator->uid();
+      m_media_storage_instance_uid = sop_instance_manipulator->uid();
 
       this->set_transfer_syntax(TransferSyntax{UID{transfer_syntax_uid->str()}});
     }
 
-    void FileMeta::fill_defaults(const SOPClass& sop_class, const UID& instance_uid) {
+    void FileMeta::fill_defaults(const SOPClass& sop_class, const UID& media_storage_instance_uid) {
       // File meta group length
       {
         auto data_element = std::make_shared<dicom::DataElement>("FileMetaInformationGroupLength");
@@ -211,8 +211,8 @@ namespace vega {
       {
         auto data_element = std::make_shared<dicom::DataElement>("MediaStorageSOPInstanceUID");
         auto manipulator = data_element->get_manipulator<manipulators::UniqueIdentifierManipulator>();
-        m_instance_uid = instance_uid;
-        manipulator->uid() = m_instance_uid;
+        m_media_storage_instance_uid = media_storage_instance_uid;
+        manipulator->uid() = m_media_storage_instance_uid;
         m_data_set->add_data_element(data_element);
       }
 

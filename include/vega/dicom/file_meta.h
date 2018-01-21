@@ -15,6 +15,15 @@ namespace vega {
   namespace dicom {
     class Writer;
 
+    /*!
+     * \brief A class which encapsulates the [file meta](http://dicom.nema.org/dicom/2013/output/chtml/part10/chapter_7.html) portion of a DICOM file.
+     *
+     * Details
+     *
+     * This is the main I/O class for reading and writing of DICOM files.  It has constructors
+     * that are used for reading in existing DICOM files into an internal DataSet, and also
+     * constructors for building a blank DICOM file.
+     */
     class FileMeta {
       private:
         static const Tag FileMetaInformationGroupLength;
@@ -24,7 +33,7 @@ namespace vega {
 
         TransferSyntax m_transfer_syntax;
         SOPClass m_sop_class;
-        UID m_instance_uid;
+        UID m_media_storage_instance_uid;
 
       public:
         class InvalidFileMeta : public vega::Exception { using vega::Exception::Exception; };
@@ -34,7 +43,7 @@ namespace vega {
         FileMeta();
         // Use random SOP instance UID
         FileMeta(const SOPClass& sop_class);
-        FileMeta(const SOPClass& sop_class, const UID& instance_uid);
+        FileMeta(const SOPClass& sop_class, const UID& media_storage_instance_uid);
         // Reading existing FileMeta
         FileMeta(Reader& reader);
 
@@ -46,7 +55,7 @@ namespace vega {
         std::shared_ptr<const DataSet> data_set() const;
 
         const SOPClass& sop_class() const;
-        const UID& instance_uid() const;
+        const UID& media_storage_instance_uid() const;
 
         bool present() const;
 
@@ -54,7 +63,7 @@ namespace vega {
 
       private:
         void read(Reader& reader);
-        void fill_defaults(const SOPClass& sop_class, const UID& instance_uid);
+        void fill_defaults(const SOPClass& sop_class, const UID& media_storage_instance_uid);
     };
   }
 }

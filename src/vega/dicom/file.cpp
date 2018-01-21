@@ -108,10 +108,10 @@ namespace vega {
       : File(sop_class, UID::generate())
     {}
 
-    File::File(const SOPClass& sop_class, const UID& instance_uid)
+    File::File(const SOPClass& sop_class, const UID& media_storage_instance_uid)
       :
         m_preamble(std::make_shared<Preamble>()),
-        m_file_meta(std::make_shared<FileMeta>(sop_class, instance_uid)),
+        m_file_meta(std::make_shared<FileMeta>(sop_class, media_storage_instance_uid)),
         m_data_set(std::make_shared<DataSet>())
     {}
 
