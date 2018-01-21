@@ -97,9 +97,6 @@ namespace vega {
           return const_iterator(m_elements.end());
         }
 
-        const DataElement& data_element(size_t i) const;
-        DataElement& data_element(size_t i);
-
         size_t size() const;
         std::shared_ptr<DataElement> data_element(const std::string& name);
         std::shared_ptr<DataElement> data_element(const Tag& tag);
