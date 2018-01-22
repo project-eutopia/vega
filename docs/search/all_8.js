@@ -23,6 +23,7 @@ var searchData=
   ['is_5fdata',['IS_DATA',['../namespacevega_1_1vr.html#a93dbcbf46fa2327a1498f07a800770b3',1,'vega::vr']]],
   ['is_5fdeflate',['is_deflate',['../classvega_1_1dicom_1_1TransferSyntax.html#a944cd73b7687070e1d0d1422fa243729',1,'vega::dicom::TransferSyntax']]],
   ['is_5fexplicit_5fvr',['is_explicit_vr',['../classvega_1_1dicom_1_1TransferSyntax.html#a45f28649cf7cc29ab07718fe5946a5fb',1,'vega::dicom::TransferSyntax']]],
+  ['is_5ffile_5fmeta',['is_file_meta',['../classvega_1_1Tag.html#a7851986b9d488ab412b610eda81b6dfb',1,'vega::Tag']]],
   ['is_5fitem_5fdelimitation_5ftag',['is_item_delimitation_tag',['../classvega_1_1Tag.html#acd3694fda614903abb2c0d6388bd5fe3',1,'vega::Tag']]],
   ['is_5fitem_5ftag',['is_item_tag',['../classvega_1_1Tag.html#a5f4d84ec33db32d2f9e0e13e252d9505',1,'vega::Tag']]],
   ['is_5fmanipulator',['IS_Manipulator',['../namespacevega.html#aa12f7a649829df8caa0fe313fd967eeb',1,'vega']]],

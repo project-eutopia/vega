@@ -73,6 +73,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for working with DICOM data element tags.  
+ <a href="classvega_1_1Tag.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="tag_8h_source.html">vega/tag.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for vega::Tag:</div>
@@ -109,8 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa27deab3ad4f53bac0fb2db068619219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653802f1c35b0238d39edcc0b0391fed"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#a653802f1c35b0238d39edcc0b0391fed">str</a> () const</td></tr>
 <tr class="separator:a653802f1c35b0238d39edcc0b0391fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933dc5da20645dc05a021faef1e4268e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#a933dc5da20645dc05a021faef1e4268e">file_meta</a> () const</td></tr>
-<tr class="separator:a933dc5da20645dc05a021faef1e4268e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7851986b9d488ab412b610eda81b6dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#a7851986b9d488ab412b610eda81b6dfb">is_file_meta</a> () const</td></tr>
+<tr class="separator:a7851986b9d488ab412b610eda81b6dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b59aa8f97b135eee2e05d242c62cbb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#a4b59aa8f97b135eee2e05d242c62cbb3">operator==</a> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;other) const</td></tr>
 <tr class="separator:a4b59aa8f97b135eee2e05d242c62cbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8799d5b5618204da450977bf453782"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#a9f8799d5b5618204da450977bf453782">operator!=</a> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;other) const</td></tr>
@@ -152,7 +155,10 @@ Friends</h2></td></tr>
 <tr class="memitem:ac843bb57205986d532f44f8e48ae7140"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1Tag.html#ac843bb57205986d532f44f8e48ae7140">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;<a class="el" href="classvega_1_1Tag.html#aa27deab3ad4f53bac0fb2db068619219">tag</a>)</td></tr>
 <tr class="separator:ac843bb57205986d532f44f8e48ae7140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for working with DICOM data element tags. </p>
+<p>A DICOM tag is made of two 16 bit unsigned integers called <a class="el" href="classvega_1_1Tag.html#abedc42731c98560e01f3041457359989">group()</a> and <a class="el" href="classvega_1_1Tag.html#a2385abd37bd818563ece5e023e67524f">element()</a>. These are usually written as 4 character hexadecimal numbers, with the group number coming before the element number, e.g. <code>(0x1234,0xff00)</code>. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a98e42e5e6bbb47902a0995848d545e1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98e42e5e6bbb47902a0995848d545e1f">&#9670;&nbsp;</a></span>element_type</h2>
 
@@ -298,6 +304,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the element part of this <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>. </dd></dl>
 
 </div>
 </div>
@@ -315,23 +322,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a933dc5da20645dc05a021faef1e4268e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a933dc5da20645dc05a021faef1e4268e">&#9670;&nbsp;</a></span>file_meta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vega::Tag::file_meta </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the element part of this <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>. </dd></dl>
 
 </div>
 </div>
@@ -349,6 +340,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the group part of this <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>. </dd></dl>
 
 </div>
 </div>
@@ -363,6 +355,24 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the group part of this <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a7851986b9d488ab412b610eda81b6dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7851986b9d488ab412b610eda81b6dfb">&#9670;&nbsp;</a></span>is_file_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::Tag::is_file_meta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -5,6 +5,13 @@
 #include <string>
 
 namespace vega {
+  /**
+   * \brief Class for working with DICOM data element tags.
+   *
+   * A DICOM tag is made of two 16 bit unsigned integers called group() and element().
+   * These are usually written as 4 character hexadecimal numbers, with the group
+   * number coming before the element number, e.g. `(0x1234,0xff00)`.
+   */
   class Tag {
     public:
       typedef uint16_t group_type;
@@ -41,9 +48,13 @@ namespace vega {
           m_element(element)
       {}
 
+      /// \return a reference to the group part of this Tag.
       const group_type& group() const;
+      /// \return a reference to the group part of this Tag.
       group_type& group();
+      /// \return a reference to the element part of this Tag.
       const element_type& element() const;
+      /// \return a reference to the element part of this Tag.
       element_type& element();
 
       tag_type tag() const;

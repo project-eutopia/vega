@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 class vega::dicom::Element&lt; T &gt;</h3>
 
 <p>A useful wrapper class over the more standard <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </p>
-<p>This is a template class, where the possible types are defined in vega/include/dictionary_data.h. This means that instead of needing to supply specific tags or <a class="el" href="classvega_1_1VR.html">VR</a>, you can create a new element simply like </p><div class="fragment"><div class="line"><span class="keyword">auto</span> element = std::make_shared&lt;vega::dicom::Element&lt;vega::dictionary::PatientName&gt;&gt;();</div></div><!-- fragment --><p> and this element will already have the correct <a class="el" href="classvega_1_1Tag.html">Tag</a>, <a class="el" href="classvega_1_1VR.html">VR</a>, and will have the correct <a class="el" href="manipulator_8h.html">manipulator</a> of <a class="el" href="namespacevega.html#a652e184588192258605ca3b571b05174">vega::PN_Manipulator</a> built in. </p>
+<p>This is a template class, where the possible types are defined in vega/include/dictionary_data.h. This means that instead of needing to supply specific tags or <a class="el" href="classvega_1_1VR.html">VR</a>, you can create a new element simply like </p><div class="fragment"><div class="line"><span class="keyword">auto</span> element = std::make_shared&lt;vega::dicom::Element&lt;vega::dictionary::PatientName&gt;&gt;();</div></div><!-- fragment --><p> and this element will already have the correct <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>, <a class="el" href="classvega_1_1VR.html">VR</a>, and will have the correct <a class="el" href="manipulator_8h.html">manipulator</a> of <a class="el" href="namespacevega.html#a652e184588192258605ca3b571b05174">vega::PN_Manipulator</a> built in. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8b0ae2b4187ad63217aefcfe5bf0b8c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b0ae2b4187ad63217aefcfe5bf0b8c6">&#9670;&nbsp;</a></span>Element() <span class="overload">[1/3]</span></h2>
@@ -117,7 +117,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Builds a new data element with the <a class="el" href="classvega_1_1Tag.html">Tag</a> and <a class="el" href="classvega_1_1VR.html">VR</a> corresponding to the given type T. Note that it will fail if the type T does not define a unique <a class="el" href="classvega_1_1Tag.html">Tag</a>, such as vega::dictionary::CurveDimensions which has a range of tags <code>(50xx,0005)</code>. </p>
+<p>Builds a new data element with the <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a> and <a class="el" href="classvega_1_1VR.html">VR</a> corresponding to the given type T. Note that it will fail if the type T does not define a unique <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a>, such as vega::dictionary::CurveDimensions which has a range of tags <code>(50xx,0005)</code>. </p>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Builds a new <a class="el" href="classvega_1_1dicom_1_1Element.html" title="A useful wrapper class over the more standard DataElement. ">Element</a> that wraps the given <code>data_element</code>. Will raise an error if the given type T's <a class="el" href="classvega_1_1Tag.html">Tag</a> or <a class="el" href="classvega_1_1VR.html">VR</a> does not agree with the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </p>
+<p>Builds a new <a class="el" href="classvega_1_1dicom_1_1Element.html" title="A useful wrapper class over the more standard DataElement. ">Element</a> that wraps the given <code>data_element</code>. Will raise an error if the given type T's <a class="el" href="classvega_1_1Tag.html" title="Class for working with DICOM data element tags. ">Tag</a> or <a class="el" href="classvega_1_1VR.html">VR</a> does not agree with the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </p>
 
 </div>
 </div>

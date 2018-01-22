@@ -63,7 +63,7 @@ vega::dicom::File file(vega::dicom::SOPClass("RT Plan Storage"), vega::UID("1.2.
 ## Editing a DICOM file
 
 The rough [structure of a DICOM file](http://dicom.nema.org/dicom/2013/output/chtml/part05/chapter_7.html) is that at the root of a DICOM file is a single [**data set**](https://project-eutopia.github.io/vega/classvega_1_1dicom_1_1DataSet.html), where each data set contains a set of [**data elements**](https://project-eutopia.github.io/vega/classvega_1_1dicom_1_1DataElement.html).
-A data element is identified by a unique **tag**, which is a pair of 2 byte unsigned integers, often represented in hexadecimal, for instance (300A,00C2) is the tag corresponding to "Beam Name".
+A data element is identified by a unique [**tag**](https://project-eutopia.github.io/vega/classvega_1_1Tag.html), which is a pair of 2 byte unsigned integers, often represented in hexadecimal, for instance (300A,00C2) is the tag corresponding to "Beam Name".
 A data set contains at most one data element for each tag, so it is effectively a map from tags to data elements.
 Each data element contains some data whose interpretation is determined by the tag, for instance (0010,0010) which corresponds to the patient's name.
 The storage format of the data is determined by the [**value representation**](https://project-eutopia.github.io/vega/classvega_1_1VR.html) (or VR).
