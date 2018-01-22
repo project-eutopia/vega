@@ -18,7 +18,7 @@ namespace vega {
     }
 
     bool EncapsulatedPixelDataManipulator::read_from(dicom::RawReader* reader, size_t num_bytes) {
-      if (num_bytes != dicom::DataSet::UndefinedLength) throw vega::Exception("Encapsulated pixel data must have undefined length");
+      if (num_bytes != dicom::DataSet::UNDEFINED_LENGTH) throw vega::Exception("Encapsulated pixel data must have undefined length");
 
       Tag tag;
       dicom::DataSet::length_type length;
