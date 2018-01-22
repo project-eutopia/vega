@@ -68,7 +68,7 @@ TEST(DateTest, to_string_test) {
 }
 
 TEST(DateTest, manipulator_test) {
-  vega::manipulators::PaddedStringManipulator<Date, ' ', '\\'> date_manipulator{};
+  vega::manipulators::PaddedStringManipulator<Date> date_manipulator{};
   date_manipulator.emplace_back(std::string("19001011"));
   date_manipulator.emplace_back(std::string("21000405"));
 

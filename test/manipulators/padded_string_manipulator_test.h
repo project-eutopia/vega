@@ -8,7 +8,7 @@ using namespace vega;
 using namespace vega::manipulators;
 
 TEST(PaddedStringManipulatorTest, string_test) {
-  PaddedStringManipulator<std::string, ' ', '\\'> manipulator{};
+  PaddedStringManipulator<std::string> manipulator{};
 
   manipulator.push_back(std::string("hello"));
   manipulator.push_back(std::string("world"));
@@ -17,10 +17,10 @@ TEST(PaddedStringManipulatorTest, string_test) {
 }
 
 TEST(PaddedStringManipulatorTest, int_test) {
-  PaddedStringManipulator<int32_t, '_', '/'> manipulator{};
+  PaddedStringManipulator<int32_t> manipulator{};
 
   manipulator.push_back(-45);
   manipulator.push_back(100);
 
-  EXPECT_EQ(manipulator.str(), std::string("-45/100_"));
+  EXPECT_EQ(manipulator.str(), std::string("-45\\100 "));
 }

@@ -25,8 +25,8 @@ namespace vega {
   };
 
   namespace manipulators {
-    class DecimalStringManipulator : public PaddedStringManipulator<DecimalString, ' ', '\\'> {
-      using PaddedStringManipulator<DecimalString, ' ', '\\'>::PaddedStringManipulator;
+    class DecimalStringManipulator : public PaddedStringManipulator<DecimalString> {
+      using PaddedStringManipulator<DecimalString>::PaddedStringManipulator;
 
       public:
         virtual bool is_valid_for(const VR& vr) const override {

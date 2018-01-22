@@ -76,7 +76,7 @@
 
 namespace vega {
   namespace manipulators {
-    template <typename T, char PADDING, char DELIMITER>
+    template <typename T>
     class PaddedStringManipulator : public ValueManipulator, private std::vector<T> {
       private:
         typedef std::vector<T> base_vector;

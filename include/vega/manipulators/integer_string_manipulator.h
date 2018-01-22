@@ -22,8 +22,8 @@ namespace vega {
   };
 
   namespace manipulators {
-    class IntegerStringManipulator : public PaddedStringManipulator<int32_t, ' ', '\\'> {
-      using PaddedStringManipulator<int32_t, ' ', '\\'>::PaddedStringManipulator;
+    class IntegerStringManipulator : public PaddedStringManipulator<int32_t> {
+      using PaddedStringManipulator<int32_t>::PaddedStringManipulator;
 
       public:
         virtual bool is_valid_for(const VR& vr) const override {

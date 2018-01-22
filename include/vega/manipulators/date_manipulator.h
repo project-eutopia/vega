@@ -5,8 +5,8 @@
 
 namespace vega {
   namespace manipulators {
-    class DateManipulator : public PaddedStringManipulator<Date, ' ', '\\'> {
-      using PaddedStringManipulator<Date, ' ', '\\'>::PaddedStringManipulator;
+    class DateManipulator : public PaddedStringManipulator<Date> {
+      using PaddedStringManipulator<Date>::PaddedStringManipulator;
 
       public:
         virtual bool is_valid_for(const VR& vr) const override {

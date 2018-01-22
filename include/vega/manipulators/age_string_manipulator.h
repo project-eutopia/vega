@@ -5,8 +5,8 @@
 
 namespace vega {
   namespace manipulators {
-    class AgeStringManipulator : public PaddedStringManipulator<Age, ' ', '\\'> {
-      using PaddedStringManipulator<Age, ' ', '\\'>::PaddedStringManipulator;
+    class AgeStringManipulator : public PaddedStringManipulator<Age> {
+      using PaddedStringManipulator<Age>::PaddedStringManipulator;
 
       public:
         virtual bool is_valid_for(const VR& vr) const override {

@@ -44,7 +44,7 @@ TEST(AgeTest, element_from_string_test) {
 }
 
 TEST(AgeTest, manipulator_test) {
-  vega::manipulators::PaddedStringManipulator<Age, ' ', '\\'> age_manipulator{};
+  vega::manipulators::PaddedStringManipulator<Age> age_manipulator{};
   age_manipulator.emplace_back(111, Age::Unit::DAY);
   age_manipulator.emplace_back(5, Age::Unit::YEAR);
 

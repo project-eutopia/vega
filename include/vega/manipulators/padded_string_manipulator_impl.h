@@ -5,30 +5,30 @@
 
 namespace vega {
   namespace manipulators {
-    template <typename T, char PADDING, char DELIMITER>
-    PaddedStringManipulator<T, PADDING, DELIMITER>::PaddedStringManipulator()
+    template <typename T>
+    PaddedStringManipulator<T>::PaddedStringManipulator()
       : PaddedStringManipulator::base_vector()
     {}
 
-    template <typename T, char PADDING, char DELIMITER>
-    PaddedStringManipulator<T, PADDING, DELIMITER>::PaddedStringManipulator(std::shared_ptr<dicom::RawValue> raw_value)
+    template <typename T>
+    PaddedStringManipulator<T>::PaddedStringManipulator(std::shared_ptr<dicom::RawValue> raw_value)
       : PaddedStringManipulator(raw_value->str())
     {}
 
-    template <typename T, char PADDING, char DELIMITER>
-    PaddedStringManipulator<T, PADDING, DELIMITER>::PaddedStringManipulator(const std::string& s)
+    template <typename T>
+    PaddedStringManipulator<T>::PaddedStringManipulator(const std::string& s)
       : PaddedStringManipulator::base_vector()
     {
       this->parse_from_string(s);
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    std::shared_ptr<dicom::RawValue> PaddedStringManipulator<T, PADDING, DELIMITER>::raw_value() {
+    template <typename T>
+    std::shared_ptr<dicom::RawValue> PaddedStringManipulator<T>::raw_value() {
       return std::make_shared<dicom::RawValue>(this->str());
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    std::string PaddedStringManipulator<T, PADDING, DELIMITER>::str() const {
+    template <typename T>
+    std::string PaddedStringManipulator<T>::str() const {
       std::stringstream ss;
       size_t bytes = 0;
 
@@ -38,21 +38,21 @@ namespace vega {
 
         bytes += s.size();
         if (i < this->size()-1) {
-          ss << DELIMITER;
+          ss << '\\';
           bytes += 1;
         }
       }
 
       if (bytes & 1) {
-        ss << PADDING;
+        ss << ' ';
         bytes += 1;
       }
 
       return ss.str();
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    bool PaddedStringManipulator<T, PADDING, DELIMITER>::read_from(dicom::RawReader* reader, size_t num_bytes) {
+    template <typename T>
+    bool PaddedStringManipulator<T>::read_from(dicom::RawReader* reader, size_t num_bytes) {
       if (num_bytes == 0) {
         this->clear();
         return true;
@@ -65,7 +65,7 @@ namespace vega {
 
       for (size_t i = 0; i < num_bytes; ++i) {
         if (!reader->read_into(&c)) return false;
-        if (c == DELIMITER) ++delimiters;
+        if (c == '\\') ++delimiters;
         ss << c;
       }
 
@@ -76,34 +76,34 @@ namespace vega {
       return true;
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    size_t PaddedStringManipulator<T, PADDING, DELIMITER>::write_to(dicom::RawWriter* writer) const {
+    template <typename T>
+    size_t PaddedStringManipulator<T>::write_to(dicom::RawWriter* writer) const {
       std::string s = this->str();
       return writer->write_from(s.begin(), s.end());
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    bool PaddedStringManipulator<T, PADDING, DELIMITER>::operator==(const ValueManipulator& other) const {
-      const PaddedStringManipulator<T, PADDING, DELIMITER>* other_ptr = dynamic_cast<const PaddedStringManipulator<T, PADDING, DELIMITER>*>(&other);
+    template <typename T>
+    bool PaddedStringManipulator<T>::operator==(const ValueManipulator& other) const {
+      const PaddedStringManipulator<T>* other_ptr = dynamic_cast<const PaddedStringManipulator<T>*>(&other);
       if (!other_ptr) return false;
 
       return this->str() == other_ptr->str();
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    bool PaddedStringManipulator<T, PADDING, DELIMITER>::operator!=(const ValueManipulator& other) const {
+    template <typename T>
+    bool PaddedStringManipulator<T>::operator!=(const ValueManipulator& other) const {
       return !(*this == other);
     }
 
-    template <typename T, char PADDING, char DELIMITER>
-    void PaddedStringManipulator<T, PADDING, DELIMITER>::parse_from_string(const std::string& s) {
+    template <typename T>
+    void PaddedStringManipulator<T>::parse_from_string(const std::string& s) {
       std::istringstream ss(s);
       std::string element_string;
 
       this->clear();
-      while(std::getline(ss, element_string, DELIMITER)) {
+      while(std::getline(ss, element_string, '\\')) {
         // Trim padding if present
-        if (element_string.back() == PADDING) {
+        if (element_string.back() == ' ') {
           element_string = element_string.substr(0, element_string.size()-1);
         }
         this->push_back(vega::from_string<T>(element_string));
