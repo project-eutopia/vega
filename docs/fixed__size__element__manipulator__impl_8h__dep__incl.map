@@ -1,0 +1,18 @@
+<map id="include/vega/manipulators/fixed_size_element_manipulator_impl.h" name="include/vega/manipulators/fixed_size_element_manipulator_impl.h">
+<area shape="rect" id="node2" href="$fixed__size__element__manipulator_8h.html" title="include/vega/manipulators\l/fixed_size_element_manipulator.h" alt="" coords="1303,95,1525,136"/>
+<area shape="rect" id="node3" href="$attribute__tag__manipulator_8h.html" title="include/vega/manipulators\l/attribute_tag_manipulator.h" alt="" coords="5,191,188,233"/>
+<area shape="rect" id="node5" href="$floating__point__double__manipulator_8h.html" title="include/vega/manipulators\l/floating_point_double\l_manipulator.h" alt="" coords="213,184,386,240"/>
+<area shape="rect" id="node6" href="$floating__point__manipulator_8h.html" title="include/vega/manipulators\l/floating_point_manipulator.h" alt="" coords="411,191,599,233"/>
+<area shape="rect" id="node7" href="$other__byte__manipulator_8h.html" title="include/vega/manipulators\l/other_byte_manipulator.h" alt="" coords="623,191,797,233"/>
+<area shape="rect" id="node8" href="$other__double__manipulator_8h.html" title="include/vega/manipulators\l/other_double_manipulator.h" alt="" coords="821,191,1007,233"/>
+<area shape="rect" id="node9" href="$other__float__manipulator_8h.html" title="include/vega/manipulators\l/other_float_manipulator.h" alt="" coords="1031,191,1205,233"/>
+<area shape="rect" id="node10" href="$other__long__manipulator_8h.html" title="include/vega/manipulators\l/other_long_manipulator.h" alt="" coords="1229,191,1402,233"/>
+<area shape="rect" id="node11" href="$other__word__manipulator_8h.html" title="include/vega/manipulators\l/other_word_manipulator.h" alt="" coords="1427,191,1601,233"/>
+<area shape="rect" id="node12" href="$pixel__data__manipulator_8h.html" title="include/vega/manipulators\l/pixel_data_manipulator.h" alt="" coords="1626,191,1799,233"/>
+<area shape="rect" id="node13" href="$signed__long__manipulator_8h.html" title="include/vega/manipulators\l/signed_long_manipulator.h" alt="" coords="1824,191,2004,233"/>
+<area shape="rect" id="node14" href="$signed__short__manipulator_8h.html" title="include/vega/manipulators\l/signed_short_manipulator.h" alt="" coords="2028,191,2213,233"/>
+<area shape="rect" id="node15" href="$unknown__manipulator_8h.html" title="include/vega/manipulators\l/unknown_manipulator.h" alt="" coords="2238,191,2411,233"/>
+<area shape="rect" id="node16" href="$unsigned__long__manipulator_8h.html" title="include/vega/manipulators\l/unsigned_long_manipulator.h" alt="" coords="2435,191,2630,233"/>
+<area shape="rect" id="node17" href="$unsigned__short__manipulator_8h.html" title="include/vega/manipulators\l/unsigned_short_manipulator.h" alt="" coords="2655,191,2853,233"/>
+<area shape="rect" id="node4" href="$manipulator_8h.html" title="For details, see documentation of namespace vega::manipulators. " alt="" coords="1325,288,1503,315"/>
+</map>

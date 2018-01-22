@@ -9,6 +9,14 @@
 
 namespace vega {
   namespace dicom {
+    /**
+     * \brief A class which wraps the media storage SOP class.
+     *
+     * The media storage SOP class UID has Tag `(0x0002,0x0002)`.  This class is essentially
+     * a wrapper for this UID, with the additional ability to define a SOPClass by name as
+     * well ([see here](http://dicom.nema.org/dicom/2013/output/chtml/part04/sect_B.5.html),
+     * for example e.g. `"RT Dose Storage"` will wrap the correct UID listed there).
+     */
     class SOPClass {
       private:
         // See source file for definition
@@ -19,8 +27,12 @@ namespace vega {
       public:
         static const Tag TAG;
 
+        /// Creates a blank SOPClass.
         SOPClass();
+        /// Creates a SOPClass with the given \p sop_class_name.
+        /// For instance `"RT Dose Storage"` will wrap the UID `"1.2.840.10008.5.1.4.1.1.481.2"`.
         explicit SOPClass(const std::string& sop_class_name);
+        /// Creates a SOPClass with the given \p sop_class_uid.
         explicit SOPClass(const UID& sop_class_uid);
 
         const std::string& name() const;

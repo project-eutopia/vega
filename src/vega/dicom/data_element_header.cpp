@@ -2,10 +2,10 @@
 
 namespace vega {
   namespace dicom {
-    const DataElementHeader::length_type DataElementHeader::UndefinedLength = 0xFFFFFFFF;
+    const DataElementHeader::length_type DataElementHeader::UNDEFINED_LENGTH = 0xFFFFFFFF;
 
     bool DataElementHeader::is_undefined_length() const {
-      return length == DataElementHeader::UndefinedLength;
+      return length == DataElementHeader::UNDEFINED_LENGTH;
     }
   }
 }

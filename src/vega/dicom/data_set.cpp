@@ -11,7 +11,7 @@ namespace vega {
         m_private_owner_blocks(std::make_shared<dictionary::PrivateOwnerBlocks>())
     {}
 
-    const DataSet::length_type DataSet::UndefinedLength = 0xFFFFFFFF;
+    const DataSet::length_type DataSet::UNDEFINED_LENGTH = 0xFFFFFFFF;
 
     DataSet::iterator::iterator(DataSet::iterator::iterator_type it)
       : m_it(it)
@@ -126,7 +126,7 @@ namespace vega {
       return std::const_pointer_cast<const DataElement>(it->second);
     }
 
-    bool DataSet::is_undefined_length() const { return this->length == UndefinedLength; }
+    bool DataSet::is_undefined_length() const { return this->length == UNDEFINED_LENGTH; }
 
     bool DataSet::operator==(const DataSet& other) const {
       if (this->size() != other.size()) return false;

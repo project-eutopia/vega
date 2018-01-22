@@ -1,0 +1,17 @@
+<map id="include/vega/manipulators/padded_string_manipulator.h" name="include/vega/manipulators/padded_string_manipulator.h">
+<area shape="rect" id="node2" href="$uid_8h.html" title="vega/uid.h" alt="" coords="287,102,369,129"/>
+<area shape="rect" id="node4" href="$value__manipulator_8h.html" title="vega/manipulators/value\l_manipulator.h" alt="" coords="500,95,663,136"/>
+<area shape="rect" id="node14" href="$string_8h.html" title="vega/string.h" alt="" coords="174,184,271,211"/>
+<area shape="rect" id="node18" href="$padded__string__manipulator__impl_8h.html" title="vega/manipulators/padded\l_string_manipulator_impl.h" alt="" coords="930,95,1107,136"/>
+<area shape="rect" id="node7" href="$vega_8h.html" title="vega/vega.h" alt="" coords="997,348,1091,375"/>
+<area shape="rect" id="node9" href="$raw__value_8h.html" title="vega/dicom/raw_value.h" alt="" coords="628,184,791,211"/>
+<area shape="rect" id="node10" href="$vr_8h.html" title="vega/vr.h" alt="" coords="747,266,823,293"/>
+<area shape="rect" id="node13" href="$vr__constants_8h.html" title="vega/vr_constants.h" alt="" coords="542,348,682,375"/>
+<area shape="rect" id="node15" href="$types_8h.html" title="vega/types.h" alt="" coords="347,266,445,293"/>
+<area shape="rect" id="node17" href="$string__impl_8h.html" title="vega/string_impl.h" alt="" coords="144,266,272,293"/>
+<area shape="rect" id="node19" href="$raw__reader_8h.html" title="vega/dicom/raw_reader.h" alt="" coords="1023,184,1191,211"/>
+<area shape="rect" id="node25" href="$raw__writer_8h.html" title="vega/dicom/raw_writer.h" alt="" coords="815,184,979,211"/>
+<area shape="rect" id="node21" href="$tag_8h.html" title="vega/tag.h" alt="" coords="848,266,931,293"/>
+<area shape="rect" id="node23" href="$io__state_8h.html" title="vega/dicom/io_state.h" alt="" coords="1057,266,1207,293"/>
+<area shape="rect" id="node24" href="$raw__reader__impl_8h.html" title="vega/dicom/raw_reader\l_impl.h" alt="" coords="1373,259,1531,300"/>
+</map>

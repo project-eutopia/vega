@@ -16,13 +16,13 @@ namespace vega {
     class Writer;
 
     /*!
+     * \class FileMeta
      * \brief A class which encapsulates the [file meta](http://dicom.nema.org/dicom/2013/output/chtml/part10/chapter_7.html) portion of a DICOM file.
      *
-     * Details
-     *
-     * This is the main I/O class for reading and writing of DICOM files.  It has constructors
-     * that are used for reading in existing DICOM files into an internal DataSet, and also
-     * constructors for building a blank DICOM file.
+     * This class represents the [file meta](http://dicom.nema.org/dicom/2013/output/chtml/part10/chapter_7.html) part
+     * of a DICOM file (the set of tags with group `0x0002`).
+     * It has a `data_set()` method which contains the \link DataElement DataElements \endlink
+     * that make up the file meta.
      */
     class FileMeta {
       private:
@@ -38,27 +38,57 @@ namespace vega {
       public:
         class InvalidFileMeta : public vega::Exception { using vega::Exception::Exception; };
 
-        // Building new FileMeta
-        // Blank file meta
+        /**
+         * Creates a blank FileMeta object.
+         */
         FileMeta();
-        // Use random SOP instance UID
+        /**
+         * Creates a blank FileMeta object with the given \p sop_class and a random media storage SOP instance UID.
+         *
+         * \param sop_class represents the type of DICOM file and has tag `(0x0002,0x0002)`.
+         */
         FileMeta(const SOPClass& sop_class);
+        /**
+         * Creates a blank FileMeta object with the given \p sop_class and \p media_storage_instance_uid.
+         *
+         * \param sop_class represents the type of DICOM file and has tag `(0x0002,0x0002)`.
+         * \param media_storage_instance_uid is the media storage SOP instance UID with tag `(0x0002,0x0003)`.
+         */
         FileMeta(const SOPClass& sop_class, const UID& media_storage_instance_uid);
-        // Reading existing FileMeta
+        /**
+         * Read existing FileMeta data from a Reader object currently positioned
+         * at the start of the file meta (after the `"DICM"` characters).
+         */
         FileMeta(Reader& reader);
 
+        /// \return The TransferSyntax of this FileMeta.
         const TransferSyntax& transfer_syntax() const;
+        /// \param The TransferSyntax to set for this FileMeta.
         void set_transfer_syntax(const TransferSyntax& other);
 
+        /// \return The \link Endian Endianness \endlink of the DICOM file defined by
+        /// the transfer syntax.
         Endian transfer_syntax_endian() const;
+        /// \return a boolean which is true if the transfer syntax is VR explicit,
+        ///         or false if VR implicit.
         bool transfer_syntax_vr_explicit() const;
+
+        /// \return a DataSet which contains all the \link DataElement DataElements \endlink
+        ///         that make up the file meta.
         std::shared_ptr<const DataSet> data_set() const;
 
+        /// \return The media storage SOP class with tag `(0x0002,0x0002)` for this FileMeta.
         const SOPClass& sop_class() const;
+        /// \return The media storage SOP instance UID with tag `(0x0002,0x0003)` for this FileMeta.
         const UID& media_storage_instance_uid() const;
 
+        /// \return true if there exists some \link DataElement DataElements \endlink in this FileMeta.
         bool present() const;
 
+        /**
+         * Writes this FileMeta data (the DataSet) to the provided Writer class starting
+         * from its current position.
+         */
         size_t write(std::shared_ptr<Writer> writer);
 
       private:

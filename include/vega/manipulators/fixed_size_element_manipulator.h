@@ -9,6 +9,13 @@
 
 namespace vega {
   namespace manipulators {
+    /**
+     * \brief A manipulator class for VR that represent fixed size elements like
+     * integers and floating point numbers.
+     *
+     * This manipulator inherits from `std::vector<T>` and therefore includes many
+     * helpful methods for handling vectors of the input type T.
+     */
     template <typename T>
     class FixedSizeElementManipulator : public ValueManipulator, private std::vector<T> {
       private:

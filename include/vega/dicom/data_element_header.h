@@ -6,6 +6,12 @@
 
 namespace vega {
   namespace dicom {
+    /**
+     * \struct DataElementHeader
+     * \brief An object that stores the header information for \link DataElement DataElements\endlink.
+     *
+     * The header of a DICOM file DataElement includes a Tag, VR, and \link length_type length\endlink.
+     */
     struct DataElementHeader {
       typedef uint32_t length_type;
 
@@ -15,8 +21,7 @@ namespace vega {
 
       bool is_undefined_length() const;
 
-      static const length_type UndefinedLength;
+      static const length_type UNDEFINED_LENGTH;
     };
   }
 }
-

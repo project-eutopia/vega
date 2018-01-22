@@ -13,6 +13,7 @@
 namespace vega {
   namespace dicom {
     /*!
+     * \class File
      * \brief A class which is used to read/build a DICOM file.
      *
      * This is the main I/O class for reading and writing of DICOM files.  It has constructors
@@ -62,7 +63,7 @@ namespace vega {
          * This constructor will automatically populate the FileMeta with the appropriate tags, and will set the media storage SOP instance UID to the user supplied value \p media_storage_instance_uid.
          *
          * \param sop_class is the SOPClass that defines the type of DICOM file to build.
-         * \param media_storage_instance_uid is the media storage SOP instance UID to be included in the FileMeta (with tag (0002,0003)).
+         * \param media_storage_instance_uid is the media storage SOP instance UID to be included in the FileMeta (with tag `(0x0002,0x0003)`).
          */
         File(const SOPClass& sop_class, const UID& media_storage_instance_uid);
 

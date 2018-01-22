@@ -1,0 +1,9 @@
+<map id="include/vega/dicom/data_element.h" name="include/vega/dicom/data_element.h">
+<area shape="rect" id="node2" href="$element_8h.html" title="include/vega/dicom\l/element.h" alt="" coords="56,95,190,136"/>
+<area shape="rect" id="node6" href="$reader_8h.html" title="include/vega/dicom\l/reader.h" alt="" coords="134,273,269,315"/>
+<area shape="rect" id="node8" href="$writer_8h.html" title="include/vega/dicom\l/writer.h" alt="" coords="293,273,428,315"/>
+<area shape="rect" id="node3" href="$data__set_8h.html" title="include/vega/dicom\l/data_set.h" alt="" coords="56,184,190,225"/>
+<area shape="rect" id="node4" href="$file_8h.html" title="include/vega/dicom\l/file.h" alt="" coords="81,452,216,493"/>
+<area shape="rect" id="node5" href="$file__meta_8h.html" title="include/vega/dicom\l/file_meta.h" alt="" coords="29,363,164,404"/>
+<area shape="rect" id="node7" href="$preamble_8h.html" title="include/vega/dicom\l/preamble.h" alt="" coords="240,363,374,404"/>
+</map>

@@ -4,15 +4,18 @@ namespace vega {
   namespace dicom {
     template <typename T>
     Element<T>::Element()
-      : m_data_element(std::make_shared<DataElement>(T::tag, T::vr))
     {
       static_assert(vega::dictionary::HasTag<T>::value, "type must have Tag");
+      m_data_element = std::make_shared<DataElement>(T::tag, T::vr);
     }
 
     template <typename T>
     Element<T>::Element(const Tag& tag)
       : m_data_element(std::make_shared<DataElement>(tag, T::vr))
     {
+      if (!T::tag_mask.contains(tag)) {
+        throw vega::Exception("Element<T>(const Tag&): Tag must agreen with type T.");
+      }
     }
 
     template <typename T>

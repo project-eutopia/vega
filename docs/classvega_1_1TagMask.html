@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>vega</b></li><li class="navelem"><a class="el" href="classvega_1_1TagMask.html">TagMask</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevega.html">vega</a></li><li class="navelem"><a class="el" href="classvega_1_1TagMask.html">TagMask</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,43 +69,349 @@ $(function() {
 <div class="title">vega::TagMask Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tag__mask_8h_source.html">vega/tag_mask.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ec83b7d6a7d32ac519e63f8db066c7a"><td class="memItemLeft" align="right" valign="top"><a id="a2ec83b7d6a7d32ac519e63f8db066c7a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TagMask</b> (const std::string &amp;group_, const std::string &amp;element_)</td></tr>
+<tr class="memitem:a2ec83b7d6a7d32ac519e63f8db066c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a2ec83b7d6a7d32ac519e63f8db066c7a">TagMask</a> (const std::string &amp;group_, const std::string &amp;element_)</td></tr>
 <tr class="separator:a2ec83b7d6a7d32ac519e63f8db066c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a5ea2d25c3b6f8f45254c1a4c58fe6a"><td class="memItemLeft" align="right" valign="top"><a id="a1a5ea2d25c3b6f8f45254c1a4c58fe6a"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>TagMask</b> (const Tag::group_type &amp;group_value, const Tag::group_type &amp;group_mask, const Tag::element_type &amp;element_value, const Tag::element_type &amp;element_mask)</td></tr>
+<tr class="memitem:a1a5ea2d25c3b6f8f45254c1a4c58fe6a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a1a5ea2d25c3b6f8f45254c1a4c58fe6a">TagMask</a> (const <a class="el" href="classvega_1_1Tag.html#a515f689ae7ba3c5961c97934a31eb06b">Tag::group_type</a> &amp;group_value, const <a class="el" href="classvega_1_1Tag.html#a515f689ae7ba3c5961c97934a31eb06b">Tag::group_type</a> &amp;group_mask, const <a class="el" href="classvega_1_1Tag.html#a98e42e5e6bbb47902a0995848d545e1f">Tag::element_type</a> &amp;element_value, const <a class="el" href="classvega_1_1Tag.html#a98e42e5e6bbb47902a0995848d545e1f">Tag::element_type</a> &amp;element_mask)</td></tr>
 <tr class="separator:a1a5ea2d25c3b6f8f45254c1a4c58fe6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac0dd1d68b3cae9a278c0b42f8c0a02"><td class="memItemLeft" align="right" valign="top"><a id="acac0dd1d68b3cae9a278c0b42f8c0a02"></a>
-const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>value_tag</b> () const</td></tr>
+<tr class="memitem:acac0dd1d68b3cae9a278c0b42f8c0a02"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#acac0dd1d68b3cae9a278c0b42f8c0a02">value_tag</a> () const</td></tr>
 <tr class="separator:acac0dd1d68b3cae9a278c0b42f8c0a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c3b82adec94acd122f61afeddd53fb"><td class="memItemLeft" align="right" valign="top"><a id="a87c3b82adec94acd122f61afeddd53fb"></a>
-const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mask_tag</b> () const</td></tr>
+<tr class="memitem:a87c3b82adec94acd122f61afeddd53fb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a87c3b82adec94acd122f61afeddd53fb">mask_tag</a> () const</td></tr>
 <tr class="separator:a87c3b82adec94acd122f61afeddd53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa46eb42c0fa385b632f459ab03a9f82"><td class="memItemLeft" align="right" valign="top"><a id="afa46eb42c0fa385b632f459ab03a9f82"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_single</b> () const</td></tr>
+<tr class="memitem:afa46eb42c0fa385b632f459ab03a9f82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#afa46eb42c0fa385b632f459ab03a9f82">is_single</a> () const</td></tr>
 <tr class="separator:afa46eb42c0fa385b632f459ab03a9f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f69756f57cd88103bae424e0745c72"><td class="memItemLeft" align="right" valign="top"><a id="a53f69756f57cd88103bae424e0745c72"></a>
-const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>singular_tag</b> () const</td></tr>
+<tr class="memitem:a53f69756f57cd88103bae424e0745c72"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a53f69756f57cd88103bae424e0745c72">singular_tag</a> () const</td></tr>
 <tr class="separator:a53f69756f57cd88103bae424e0745c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448262764b67367067cee4d72505843e"><td class="memItemLeft" align="right" valign="top"><a id="a448262764b67367067cee4d72505843e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>mask_popcount</b> () const</td></tr>
+<tr class="memitem:a448262764b67367067cee4d72505843e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a448262764b67367067cee4d72505843e">mask_popcount</a> () const</td></tr>
 <tr class="separator:a448262764b67367067cee4d72505843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32ec001ea91196fe4a136a949278bf6"><td class="memItemLeft" align="right" valign="top"><a id="ab32ec001ea91196fe4a136a949278bf6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
+<tr class="memitem:ab32ec001ea91196fe4a136a949278bf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#ab32ec001ea91196fe4a136a949278bf6">operator==</a> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
 <tr class="separator:ab32ec001ea91196fe4a136a949278bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4026c9f939eda8d2e84bb5753fbdf05"><td class="memItemLeft" align="right" valign="top"><a id="ad4026c9f939eda8d2e84bb5753fbdf05"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
+<tr class="memitem:ad4026c9f939eda8d2e84bb5753fbdf05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#ad4026c9f939eda8d2e84bb5753fbdf05">operator!=</a> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
 <tr class="separator:ad4026c9f939eda8d2e84bb5753fbdf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218fb645fc6bbf03e7d95426cd3aa559"><td class="memItemLeft" align="right" valign="top"><a id="a218fb645fc6bbf03e7d95426cd3aa559"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
+<tr class="memitem:a218fb645fc6bbf03e7d95426cd3aa559"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#a218fb645fc6bbf03e7d95426cd3aa559">operator&lt;</a> (const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;other) const</td></tr>
 <tr class="separator:a218fb645fc6bbf03e7d95426cd3aa559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2f0420bb4f4c7f8d506b028b94549f"><td class="memItemLeft" align="right" valign="top"><a id="aba2f0420bb4f4c7f8d506b028b94549f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;tag) const</td></tr>
+<tr class="memitem:aba2f0420bb4f4c7f8d506b028b94549f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1TagMask.html#aba2f0420bb4f4c7f8d506b028b94549f">contains</a> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;tag) const</td></tr>
 <tr class="separator:aba2f0420bb4f4c7f8d506b028b94549f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2ec83b7d6a7d32ac519e63f8db066c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec83b7d6a7d32ac519e63f8db066c7a">&#9670;&nbsp;</a></span>TagMask() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::TagMask::TagMask </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>group_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>element_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a5ea2d25c3b6f8f45254c1a4c58fe6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5ea2d25c3b6f8f45254c1a4c58fe6a">&#9670;&nbsp;</a></span>TagMask() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr vega::TagMask::TagMask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html#a515f689ae7ba3c5961c97934a31eb06b">Tag::group_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>group_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html#a515f689ae7ba3c5961c97934a31eb06b">Tag::group_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>group_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html#a98e42e5e6bbb47902a0995848d545e1f">Tag::element_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>element_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html#a98e42e5e6bbb47902a0995848d545e1f">Tag::element_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>element_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aba2f0420bb4f4c7f8d506b028b94549f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2f0420bb4f4c7f8d506b028b94549f">&#9670;&nbsp;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::TagMask::contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa46eb42c0fa385b632f459ab03a9f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa46eb42c0fa385b632f459ab03a9f82">&#9670;&nbsp;</a></span>is_single()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::TagMask::is_single </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a448262764b67367067cee4d72505843e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448262764b67367067cee4d72505843e">&#9670;&nbsp;</a></span>mask_popcount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vega::TagMask::mask_popcount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87c3b82adec94acd122f61afeddd53fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c3b82adec94acd122f61afeddd53fb">&#9670;&nbsp;</a></span>mask_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvega_1_1Tag.html">Tag</a>&amp; vega::TagMask::mask_tag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4026c9f939eda8d2e84bb5753fbdf05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4026c9f939eda8d2e84bb5753fbdf05">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::TagMask::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a218fb645fc6bbf03e7d95426cd3aa559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218fb645fc6bbf03e7d95426cd3aa559">&#9670;&nbsp;</a></span>operator<()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::TagMask::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab32ec001ea91196fe4a136a949278bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32ec001ea91196fe4a136a949278bf6">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::TagMask::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1TagMask.html">TagMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53f69756f57cd88103bae424e0745c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f69756f57cd88103bae424e0745c72">&#9670;&nbsp;</a></span>singular_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvega_1_1Tag.html">Tag</a>&amp; vega::TagMask::singular_tag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acac0dd1d68b3cae9a278c0b42f8c0a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac0dd1d68b3cae9a278c0b42f8c0a02">&#9670;&nbsp;</a></span>value_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvega_1_1Tag.html">Tag</a>&amp; vega::TagMask::value_tag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/vega/<a class="el" href="tag__mask_8h_source.html">tag_mask.h</a></li>
 </ul>

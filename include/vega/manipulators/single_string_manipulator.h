@@ -5,6 +5,11 @@
 
 namespace vega {
   namespace manipulators {
+    /**
+     * \brief A manipulator class for VR that represent a single string.
+     *
+     * The string stored by this manipulator can be accessed through the value() method.
+     */
     class SingleStringManipulator : public ValueManipulator {
       private:
         std::string m_str;
@@ -14,7 +19,9 @@ namespace vega {
         explicit SingleStringManipulator(const std::string& str);
         explicit SingleStringManipulator(std::shared_ptr<dicom::RawValue> raw_value);
 
+        /// \return a reference to the internal string wrapped by this manipulator.
         const std::string& value() const { return m_str; }
+        /// \return a reference to the internal string wrapped by this manipulator.
         std::string& value() { return m_str; }
 
         std::shared_ptr<dicom::RawValue> raw_value() override;

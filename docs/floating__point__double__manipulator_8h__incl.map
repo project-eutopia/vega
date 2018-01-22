@@ -1,0 +1,18 @@
+<map id="include/vega/manipulators/floating_point_double_manipulator.h" name="include/vega/manipulators/floating_point_double_manipulator.h">
+<area shape="rect" id="node2" href="$fixed__size__element__manipulator_8h.html" title="vega/manipulators/fixed\l_size_element_manipulator.h" alt="" coords="146,109,337,151"/>
+<area shape="rect" id="node3" href="$uid_8h.html" title="vega/uid.h" alt="" coords="65,213,148,240"/>
+<area shape="rect" id="node5" href="$value__manipulator_8h.html" title="vega/manipulators/value\l_manipulator.h" alt="" coords="485,206,648,247"/>
+<area shape="rect" id="node15" href="$string_8h.html" title="vega/string.h" alt="" coords="141,303,238,329"/>
+<area shape="rect" id="node19" href="$fixed__size__element__manipulator__impl_8h.html" title="vega/manipulators/fixed\l_size_element_manipulator\l_impl.h" alt="" coords="1313,199,1493,255"/>
+<area shape="rect" id="node8" href="$vega_8h.html" title="vega/vega.h" alt="" coords="1041,467,1135,493"/>
+<area shape="rect" id="node10" href="$raw__value_8h.html" title="vega/dicom/raw_value.h" alt="" coords="629,303,792,329"/>
+<area shape="rect" id="node11" href="$vr_8h.html" title="vega/vr.h" alt="" coords="747,385,823,411"/>
+<area shape="rect" id="node14" href="$vr__constants_8h.html" title="vega/vr_constants.h" alt="" coords="637,467,777,493"/>
+<area shape="rect" id="node16" href="$types_8h.html" title="vega/types.h" alt="" coords="347,385,445,411"/>
+<area shape="rect" id="node18" href="$string__impl_8h.html" title="vega/string_impl.h" alt="" coords="144,385,272,411"/>
+<area shape="rect" id="node20" href="$raw__reader_8h.html" title="vega/dicom/raw_reader.h" alt="" coords="1104,303,1272,329"/>
+<area shape="rect" id="node26" href="$raw__writer_8h.html" title="vega/dicom/raw_writer.h" alt="" coords="817,303,981,329"/>
+<area shape="rect" id="node22" href="$tag_8h.html" title="vega/tag.h" alt="" coords="848,385,931,411"/>
+<area shape="rect" id="node24" href="$io__state_8h.html" title="vega/dicom/io_state.h" alt="" coords="1057,385,1207,411"/>
+<area shape="rect" id="node25" href="$raw__reader__impl_8h.html" title="vega/dicom/raw_reader\l_impl.h" alt="" coords="1373,377,1531,419"/>
+</map>

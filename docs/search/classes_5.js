@@ -1,7 +1,6 @@
 var searchData=
 [
   ['file',['File',['../classvega_1_1dicom_1_1File.html',1,'vega::dicom']]],
-  ['filedoesnotexisterror',['FileDoesNotExistError',['../classvega_1_1dicom_1_1Reader_1_1FileDoesNotExistError.html',1,'vega::dicom::Reader']]],
   ['filemeta',['FileMeta',['../classvega_1_1dicom_1_1FileMeta.html',1,'vega::dicom']]],
   ['fixedsizeelementmanipulator',['FixedSizeElementManipulator',['../classvega_1_1manipulators_1_1FixedSizeElementManipulator.html',1,'vega::manipulators']]],
   ['fixedsizeelementmanipulator_3c_20byte_20_3e',['FixedSizeElementManipulator&lt; Byte &gt;',['../classvega_1_1manipulators_1_1FixedSizeElementManipulator.html',1,'vega::manipulators']]],

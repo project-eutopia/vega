@@ -76,6 +76,15 @@
 
 namespace vega {
   namespace manipulators {
+    /**
+     * \brief A manipulator class for VR that represent elements which are encoded
+     * in DICOM using strings.
+     *
+     * This manipulator inherits from `std::vector<T>` and therefore includes many
+     * helpful methods for handling vectors of the input type T.  By only having to
+     * deal with a vector of generic elements T, there is no need to concern oneself
+     * with the conversion to the DICOM string.
+     */
     template <typename T>
     class PaddedStringManipulator : public ValueManipulator, private std::vector<T> {
       private:

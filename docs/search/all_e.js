@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['uid',['UID',['../classvega_1_1UID.html',1,'vega']]],
-  ['uniqueidentifiermanipulator',['UniqueIdentifierManipulator',['../classvega_1_1manipulators_1_1UniqueIdentifierManipulator.html',1,'vega::manipulators']]],
-  ['unknownmanipulator',['UnknownManipulator',['../classvega_1_1manipulators_1_1UnknownManipulator.html',1,'vega::manipulators']]],
-  ['unlimitedcharactersmanipulator',['UnlimitedCharactersManipulator',['../classvega_1_1manipulators_1_1UnlimitedCharactersManipulator.html',1,'vega::manipulators']]],
-  ['unlimitedtextmanipulator',['UnlimitedTextManipulator',['../classvega_1_1manipulators_1_1UnlimitedTextManipulator.html',1,'vega::manipulators']]],
-  ['unsignedlongmanipulator',['UnsignedLongManipulator',['../classvega_1_1manipulators_1_1UnsignedLongManipulator.html',1,'vega::manipulators']]],
-  ['unsignedshortmanipulator',['UnsignedShortManipulator',['../classvega_1_1manipulators_1_1UnsignedShortManipulator.html',1,'vega::manipulators']]],
-  ['urimanipulator',['URIManipulator',['../classvega_1_1manipulators_1_1URIManipulator.html',1,'vega::manipulators']]]
+  ['raw_5freader_2eh',['raw_reader.h',['../raw__reader_8h.html',1,'']]],
+  ['raw_5freader_5fimpl_2eh',['raw_reader_impl.h',['../raw__reader__impl_8h.html',1,'']]],
+  ['raw_5fvalue',['raw_value',['../classvega_1_1manipulators_1_1EncapsulatedPixelDataManipulator.html#aa12010369c52baeea3aac7ea5835d2d0',1,'vega::manipulators::EncapsulatedPixelDataManipulator::raw_value()'],['../classvega_1_1manipulators_1_1FixedSizeElementManipulator.html#ab543b5c2f762be08498850f62bfd405f',1,'vega::manipulators::FixedSizeElementManipulator::raw_value()'],['../classvega_1_1manipulators_1_1PaddedStringManipulator.html#a3b71aba7f8cd35bc8129410d61f41e2f',1,'vega::manipulators::PaddedStringManipulator::raw_value()'],['../classvega_1_1manipulators_1_1SingleStringManipulator.html#a786549860c88d2d03657619a6206b58b',1,'vega::manipulators::SingleStringManipulator::raw_value()'],['../classvega_1_1manipulators_1_1UniqueIdentifierManipulator.html#a454704cd30ea27aa189903e8a9e962ae',1,'vega::manipulators::UniqueIdentifierManipulator::raw_value()'],['../classvega_1_1manipulators_1_1ValueManipulator.html#abce7962e75262b57cd616967b82e34b1',1,'vega::manipulators::ValueManipulator::raw_value()']]],
+  ['raw_5fvalue_2eh',['raw_value.h',['../raw__value_8h.html',1,'']]],
+  ['raw_5fwriter_2eh',['raw_writer.h',['../raw__writer_8h.html',1,'']]],
+  ['read_5ffrom',['read_from',['../classvega_1_1manipulators_1_1EncapsulatedPixelDataManipulator.html#a8fb6f8a835309ab386567f8ef19d9b7f',1,'vega::manipulators::EncapsulatedPixelDataManipulator::read_from()'],['../classvega_1_1manipulators_1_1FixedSizeElementManipulator.html#a7e32efa7f736c19af45b28a16f72eb14',1,'vega::manipulators::FixedSizeElementManipulator::read_from()'],['../classvega_1_1manipulators_1_1PaddedStringManipulator.html#ac0b5bb2de89944fbb661723e39704404',1,'vega::manipulators::PaddedStringManipulator::read_from()'],['../classvega_1_1manipulators_1_1SingleStringManipulator.html#a8b8c11bca470ad9d34b2f9f73cea2ebd',1,'vega::manipulators::SingleStringManipulator::read_from()'],['../classvega_1_1manipulators_1_1UniqueIdentifierManipulator.html#a3a04aef1e1bd92650f2b8311355bbe5f',1,'vega::manipulators::UniqueIdentifierManipulator::read_from()'],['../classvega_1_1manipulators_1_1ValueManipulator.html#af3c7607050a3613f277f82d4dd4a074e',1,'vega::manipulators::ValueManipulator::read_from()']]],
+  ['reader_2eh',['reader.h',['../reader_8h.html',1,'']]],
+  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
+  ['reference',['reference',['../classvega_1_1manipulators_1_1FixedSizeElementManipulator.html#aee290c4517e1fd3890634e94c2049a47',1,'vega::manipulators::FixedSizeElementManipulator::reference()'],['../classvega_1_1manipulators_1_1PaddedStringManipulator.html#ac89201598cb0457ea06a90c5e2421f7d',1,'vega::manipulators::PaddedStringManipulator::reference()']]],
+  ['regex_5fstring_2eh',['regex_string.h',['../regex__string_8h.html',1,'']]],
+  ['regexstring',['RegexString',['../classvega_1_1RegexString.html',1,'vega::RegexString'],['../classvega_1_1RegexString.html#a6a9716accc6b2e6f89eb55e25e5f4ede',1,'vega::RegexString::RegexString(const std::shared_ptr&lt; const std::regex &gt; &amp;regex)'],['../classvega_1_1RegexString.html#ae0bd9e3906220e41800198df13ab4b7c',1,'vega::RegexString::RegexString(const std::string &amp;str, const std::shared_ptr&lt; const std::regex &gt; &amp;regex)']]],
+  ['rfc1951',['RFC1951',['../classvega_1_1RFC1951.html',1,'vega']]]
 ];

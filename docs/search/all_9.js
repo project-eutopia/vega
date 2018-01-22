@@ -1,9 +1,26 @@
 var searchData=
 [
-  ['optional',['Optional',['../classvega_1_1Optional.html',1,'vega']]],
-  ['otherbytemanipulator',['OtherByteManipulator',['../classvega_1_1manipulators_1_1OtherByteManipulator.html',1,'vega::manipulators']]],
-  ['otherdoublemanipulator',['OtherDoubleManipulator',['../classvega_1_1manipulators_1_1OtherDoubleManipulator.html',1,'vega::manipulators']]],
-  ['otherfloatmanipulator',['OtherFloatManipulator',['../classvega_1_1manipulators_1_1OtherFloatManipulator.html',1,'vega::manipulators']]],
-  ['otherlongmanipulator',['OtherLongManipulator',['../classvega_1_1manipulators_1_1OtherLongManipulator.html',1,'vega::manipulators']]],
-  ['otherwordmanipulator',['OtherWordManipulator',['../classvega_1_1manipulators_1_1OtherWordManipulator.html',1,'vega::manipulators']]]
+  ['length',['length',['../structvega_1_1dicom_1_1DataElementHeader.html#a98ba77d9a50098d7af9b57d43e5964a0',1,'vega::dicom::DataElementHeader::length()'],['../classvega_1_1dicom_1_1DataSet.html#a2c1dc364db7423b022929fe898bb998d',1,'vega::dicom::DataSet::length()'],['../classvega_1_1dicom_1_1DataElement.html#a3e1a5931383f3dcafde7a676079992a3',1,'vega::dicom::DataElement::length() const'],['../classvega_1_1dicom_1_1DataElement.html#a77ecf6d9976dd0fa87887a3875fb58fc',1,'vega::dicom::DataElement::length()']]],
+  ['length_5ftype',['length_type',['../structvega_1_1dicom_1_1DataElementHeader.html#a57d98bd5d1387c517f5669a5e346601c',1,'vega::dicom::DataElementHeader::length_type()'],['../classvega_1_1dicom_1_1DataSet.html#ac8a1f6104b24476278f789fb08b0aa61',1,'vega::dicom::DataSet::length_type()']]],
+  ['limit_5ftype',['limit_type',['../classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05',1,'vega::VM']]],
+  ['limits',['limits',['../classvega_1_1VM.html#adcd41f2381091a574a29b5eb6d8bcc6c',1,'vega::VM']]],
+  ['little',['LITTLE',['../namespacevega.html#aaf3e886a5ac505bb2cb44be062024c26a1314341b466dcb5e2c880b76414c49fe',1,'vega']]],
+  ['lo',['LO',['../namespacevega_1_1vr.html#a663ef497ef6ebd3cdfe56fe8acdaff84',1,'vega::vr']]],
+  ['lo_5fdata',['LO_DATA',['../namespacevega_1_1vr.html#ad1a3f15fb6abc4bbab2535992746d857',1,'vega::vr']]],
+  ['lo_5fmanipulator',['LO_Manipulator',['../namespacevega.html#ae04ff2bde40473072c3e30681e1f19ff',1,'vega']]],
+  ['lo_5fvalue',['LO_VALUE',['../namespacevega_1_1vr.html#ac317a48548573024f350efdd73e4f283',1,'vega::vr']]],
+  ['log',['log',['../classvega_1_1dicom_1_1DataElement.html#ac77af159067e53ec6593ecbe84db92df',1,'vega::dicom::DataElement::log()'],['../classvega_1_1dicom_1_1DataSet.html#a17635f390d9f70f66d680f5082eb2919',1,'vega::dicom::DataSet::log()']]],
+  ['logger',['Logger',['../classvega_1_1Logger.html',1,'vega::Logger'],['../classvega_1_1Logger.html#a19eea71438b1f946e1eb0c5ae85c18de',1,'vega::Logger::Logger()']]],
+  ['logger_2eh',['logger.h',['../logger_8h.html',1,'']]],
+  ['long',['Long',['../unionvega_1_1Long.html',1,'vega']]],
+  ['long_5fstr',['long_str',['../classvega_1_1VR.html#a03d4d67ca83dac460cabaa3c6f44f148',1,'vega::VR']]],
+  ['long_5fstring_5fmanipulator_2eh',['long_string_manipulator.h',['../long__string__manipulator_8h.html',1,'']]],
+  ['long_5ftext_5fmanipulator_2eh',['long_text_manipulator.h',['../long__text__manipulator_8h.html',1,'']]],
+  ['longstringmanipulator',['LongStringManipulator',['../classvega_1_1manipulators_1_1LongStringManipulator.html',1,'vega::manipulators']]],
+  ['longtextmanipulator',['LongTextManipulator',['../classvega_1_1manipulators_1_1LongTextManipulator.html',1,'vega::manipulators']]],
+  ['lower',['lower',['../classvega_1_1Date.html#ac5c9dd9c255e4b41c68b18cb08a334a4',1,'vega::Date::lower()'],['../classvega_1_1DateTime.html#a04249c9a583fa84aa5afd7792863b2e7',1,'vega::DateTime::lower()'],['../classvega_1_1Time.html#a4b0bb6e63c198ac0b872678bcd13da44',1,'vega::Time::lower()']]],
+  ['lt',['LT',['../namespacevega_1_1vr.html#a7abb3541ba2d5d27440f1e19d1720d58',1,'vega::vr']]],
+  ['lt_5fdata',['LT_DATA',['../namespacevega_1_1vr.html#a70dbea343de73b3ae09977933da33c31',1,'vega::vr']]],
+  ['lt_5fmanipulator',['LT_Manipulator',['../namespacevega.html#ab7ba5f0e7b02bb18398673da60972f33',1,'vega']]],
+  ['lt_5fvalue',['LT_VALUE',['../namespacevega_1_1vr.html#aa0f6a9213a7d9c38ef10b9e00b46bb19',1,'vega::vr']]]
 ];

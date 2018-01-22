@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['seq_5fdelimitation',['SEQ_DELIMITATION',['../classvega_1_1Tag.html#a5804c1271ca731df9116b39abb970820',1,'vega::Tag']]],
+  ['seq_5fdelimitation_5ftag',['SEQ_DELIMITATION_TAG',['../classvega_1_1Tag.html#a5d6e5fdfe85d8a837d11dbf77d9c9068',1,'vega::Tag']]],
+  ['sh',['SH',['../namespacevega_1_1vr.html#a362ca8676aafcbf12fabb57f63157e54',1,'vega::vr']]],
+  ['sh_5fdata',['SH_DATA',['../namespacevega_1_1vr.html#afbef772f84d414613c49ae479afc5ec5',1,'vega::vr']]],
+  ['sh_5fvalue',['SH_VALUE',['../namespacevega_1_1vr.html#aa84ddc29e145d5a59bd532312936b716',1,'vega::vr']]],
+  ['single_5fdate_5ftime_5fregex',['SINGLE_DATE_TIME_REGEX',['../classvega_1_1DateTime.html#a4e37a94755dc81f31d9f13dcf8afe5aa',1,'vega::DateTime']]],
+  ['single_5ftime_5fregex',['SINGLE_TIME_REGEX',['../classvega_1_1Time.html#acf21e646c2c01f6174336871617b63d8',1,'vega::Time']]],
+  ['sl',['SL',['../namespacevega_1_1vr.html#a40c98246bea60bfdd8230e7e90ee2fbf',1,'vega::vr']]],
+  ['sl_5fdata',['SL_DATA',['../namespacevega_1_1vr.html#ad2a7f4de3f72d7589bb0f80dd368560f',1,'vega::vr']]],
+  ['sl_5fvalue',['SL_VALUE',['../namespacevega_1_1vr.html#adf82fec6bea07ccaf9d2b5a2fd5edfae',1,'vega::vr']]],
+  ['sq',['SQ',['../namespacevega_1_1vr.html#a3b973175a1e313b38da950ec7a88aef4',1,'vega::vr']]],
+  ['sq_5fdata',['SQ_DATA',['../namespacevega_1_1vr.html#a79a7c09dd474df5a30bc1e1080647dfa',1,'vega::vr']]],
+  ['sq_5fvalue',['SQ_VALUE',['../namespacevega_1_1vr.html#a584b557a432ef83434da633e42007578',1,'vega::vr']]],
+  ['ss',['SS',['../namespacevega_1_1vr.html#a6a5037d12a862344cd3ae096f5b85be9',1,'vega::vr']]],
+  ['ss_5fdata',['SS_DATA',['../namespacevega_1_1vr.html#a8a1b0a9bbd7eb46f0ba39d1824a8efab',1,'vega::vr']]],
+  ['ss_5fvalue',['SS_VALUE',['../namespacevega_1_1vr.html#ae96ab2c483280a5f7b9c4094c121cc2b',1,'vega::vr']]],
+  ['st',['ST',['../namespacevega_1_1vr.html#aac1c0281488af4c55460437afa33ed00',1,'vega::vr']]],
+  ['st_5fdata',['ST_DATA',['../namespacevega_1_1vr.html#af7d67a10351d26ea3e0ea56f0807c099',1,'vega::vr']]],
+  ['st_5fvalue',['ST_VALUE',['../namespacevega_1_1vr.html#a0fb96b475da46e00477ddd4b92bdcb6c',1,'vega::vr']]]
+];

@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>vega</b></li><li class="navelem"><a class="el" href="classvega_1_1VM.html">VM</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevega.html">vega</a></li><li class="navelem"><a class="el" href="classvega_1_1VM.html">VM</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,49 +72,308 @@ $(function() {
 <div class="title">vega::VM Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="vm_8h_source.html">vega/vm.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad7285626540eda78ed32a4d0af0cfb05"><td class="memItemLeft" align="right" valign="top"><a id="ad7285626540eda78ed32a4d0af0cfb05"></a>
-typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>limit_type</b></td></tr>
+<tr class="memitem:ad7285626540eda78ed32a4d0af0cfb05"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a></td></tr>
 <tr class="separator:ad7285626540eda78ed32a4d0af0cfb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8814ef5517554e88521572616d54a6e5"><td class="memItemLeft" align="right" valign="top"><a id="a8814ef5517554e88521572616d54a6e5"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>VM</b> (limit_type n)</td></tr>
+<tr class="memitem:a44e11c4d02ab942d5033d4b9493290bb"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a44e11c4d02ab942d5033d4b9493290bb">VM</a> ()</td></tr>
+<tr class="separator:a44e11c4d02ab942d5033d4b9493290bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8814ef5517554e88521572616d54a6e5"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a8814ef5517554e88521572616d54a6e5">VM</a> (<a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a> n)</td></tr>
 <tr class="separator:a8814ef5517554e88521572616d54a6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7113f8b2686dde010e06968756c93470"><td class="memItemLeft" align="right" valign="top"><a id="a7113f8b2686dde010e06968756c93470"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VM</b> (const std::string &amp;vm)</td></tr>
+<tr class="memitem:a7113f8b2686dde010e06968756c93470"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a7113f8b2686dde010e06968756c93470">VM</a> (const std::string &amp;vm)</td></tr>
 <tr class="separator:a7113f8b2686dde010e06968756c93470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d21fd52ae617ef5eaeb06e74e9fabb"><td class="memItemLeft" align="right" valign="top"><a id="ad0d21fd52ae617ef5eaeb06e74e9fabb"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>VM</b> (limit_type min, limit_type max, bool multiple=false)</td></tr>
+<tr class="memitem:ad0d21fd52ae617ef5eaeb06e74e9fabb"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#ad0d21fd52ae617ef5eaeb06e74e9fabb">VM</a> (<a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a> min, <a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a> max, bool <a class="el" href="classvega_1_1VM.html#afcd9313484d448ed7850afc9e5eb56c8">multiple</a>=false)</td></tr>
 <tr class="separator:ad0d21fd52ae617ef5eaeb06e74e9fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd41f2381091a574a29b5eb6d8bcc6c"><td class="memItemLeft" align="right" valign="top"><a id="adcd41f2381091a574a29b5eb6d8bcc6c"></a>
-const std::pair&lt; limit_type, limit_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>limits</b> () const</td></tr>
+<tr class="memitem:adcd41f2381091a574a29b5eb6d8bcc6c"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; <a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>, <a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#adcd41f2381091a574a29b5eb6d8bcc6c">limits</a> () const</td></tr>
 <tr class="separator:adcd41f2381091a574a29b5eb6d8bcc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd9313484d448ed7850afc9e5eb56c8"><td class="memItemLeft" align="right" valign="top"><a id="afcd9313484d448ed7850afc9e5eb56c8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>multiple</b> () const</td></tr>
+<tr class="memitem:afcd9313484d448ed7850afc9e5eb56c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#afcd9313484d448ed7850afc9e5eb56c8">multiple</a> () const</td></tr>
 <tr class="separator:afcd9313484d448ed7850afc9e5eb56c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15043c04451156c890d2cd62d3344426"><td class="memItemLeft" align="right" valign="top"><a id="a15043c04451156c890d2cd62d3344426"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_single</b> () const</td></tr>
+<tr class="memitem:a15043c04451156c890d2cd62d3344426"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a15043c04451156c890d2cd62d3344426">is_single</a> () const</td></tr>
 <tr class="separator:a15043c04451156c890d2cd62d3344426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710f1cf7d66938fa70d8ea75c750f458"><td class="memItemLeft" align="right" valign="top"><a id="a710f1cf7d66938fa70d8ea75c750f458"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>allows_multiplicity</b> (limit_type multiplicity) const</td></tr>
+<tr class="memitem:a710f1cf7d66938fa70d8ea75c750f458"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a710f1cf7d66938fa70d8ea75c750f458">allows_multiplicity</a> (<a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a> multiplicity) const</td></tr>
 <tr class="separator:a710f1cf7d66938fa70d8ea75c750f458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ac78695c53ed4448966b8902314e7ba65"><td class="memItemLeft" align="right" valign="top"><a id="ac78695c53ed4448966b8902314e7ba65"></a>
-static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LIMIT</b></td></tr>
+<tr class="memitem:ac78695c53ed4448966b8902314e7ba65"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#ac78695c53ed4448966b8902314e7ba65">MAX_LIMIT</a></td></tr>
 <tr class="separator:ac78695c53ed4448966b8902314e7ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a5e29e747d3353405b4abb95696609d61"><td class="memItemLeft" align="right" valign="top"><a id="a5e29e747d3353405b4abb95696609d61"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="classvega_1_1VM.html">VM</a> &amp;vm)</td></tr>
+<tr class="memitem:a5e29e747d3353405b4abb95696609d61"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1VM.html#a5e29e747d3353405b4abb95696609d61">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classvega_1_1VM.html">VM</a> &amp;vm)</td></tr>
 <tr class="separator:a5e29e747d3353405b4abb95696609d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad7285626540eda78ed32a4d0af0cfb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7285626540eda78ed32a4d0af0cfb05">&#9670;&nbsp;</a></span>limit_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t <a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">vega::VM::limit_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a44e11c4d02ab942d5033d4b9493290bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e11c4d02ab942d5033d4b9493290bb">&#9670;&nbsp;</a></span>VM() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr vega::VM::VM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8814ef5517554e88521572616d54a6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8814ef5517554e88521572616d54a6e5">&#9670;&nbsp;</a></span>VM() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr vega::VM::VM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7113f8b2686dde010e06968756c93470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7113f8b2686dde010e06968756c93470">&#9670;&nbsp;</a></span>VM() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::VM::VM </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0d21fd52ae617ef5eaeb06e74e9fabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d21fd52ae617ef5eaeb06e74e9fabb">&#9670;&nbsp;</a></span>VM() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr vega::VM::VM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>multiple</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a710f1cf7d66938fa70d8ea75c750f458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710f1cf7d66938fa70d8ea75c750f458">&#9670;&nbsp;</a></span>allows_multiplicity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::VM::allows_multiplicity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>&#160;</td>
+          <td class="paramname"><em>multiplicity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15043c04451156c890d2cd62d3344426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15043c04451156c890d2cd62d3344426">&#9670;&nbsp;</a></span>is_single()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::VM::is_single </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcd41f2381091a574a29b5eb6d8bcc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd41f2381091a574a29b5eb6d8bcc6c">&#9670;&nbsp;</a></span>limits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::pair&lt;<a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>, <a class="el" href="classvega_1_1VM.html#ad7285626540eda78ed32a4d0af0cfb05">limit_type</a>&gt;&amp; vega::VM::limits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd9313484d448ed7850afc9e5eb56c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd9313484d448ed7850afc9e5eb56c8">&#9670;&nbsp;</a></span>multiple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::VM::multiple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a5e29e747d3353405b4abb95696609d61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e29e747d3353405b4abb95696609d61">&#9670;&nbsp;</a></span>operator<<</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1VM.html">VM</a> &amp;&#160;</td>
+          <td class="paramname"><em>vm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac78695c53ed4448966b8902314e7ba65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78695c53ed4448966b8902314e7ba65">&#9670;&nbsp;</a></span>MAX_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned vega::VM::MAX_LIMIT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/vega/<a class="el" href="vm_8h_source.html">vm.h</a></li>
 </ul>

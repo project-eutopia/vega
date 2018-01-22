@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['xaxrfframecharacteristicssequence',['XAXRFFrameCharacteristicsSequence',['../structvega_1_1dictionary_1_1XAXRFFrameCharacteristicsSequence.html',1,'vega::dictionary']]],
+  ['xcoordinatescenterpixelviewangle',['XCoordinatesCenterPixelViewAngle',['../structvega_1_1dictionary_1_1XCoordinatesCenterPixelViewAngle.html',1,'vega::dictionary']]],
+  ['xdsretrievalsequence',['XDSRetrievalSequence',['../structvega_1_1dictionary_1_1XDSRetrievalSequence.html',1,'vega::dictionary']]],
+  ['xdsstoragesequence',['XDSStorageSequence',['../structvega_1_1dictionary_1_1XDSStorageSequence.html',1,'vega::dictionary']]],
+  ['xfocuscenter',['XFocusCenter',['../structvega_1_1dictionary_1_1XFocusCenter.html',1,'vega::dictionary']]],
+  ['xoffsetinslidecoordinatesystem',['XOffsetInSlideCoordinateSystem',['../structvega_1_1dictionary_1_1XOffsetInSlideCoordinateSystem.html',1,'vega::dictionary']]],
+  ['xray3dacquisitionsequence',['XRay3DAcquisitionSequence',['../structvega_1_1dictionary_1_1XRay3DAcquisitionSequence.html',1,'vega::dictionary']]],
+  ['xray3dframetypesequence',['XRay3DFrameTypeSequence',['../structvega_1_1dictionary_1_1XRay3DFrameTypeSequence.html',1,'vega::dictionary']]],
+  ['xray3dreconstructionsequence',['XRay3DReconstructionSequence',['../structvega_1_1dictionary_1_1XRay3DReconstructionSequence.html',1,'vega::dictionary']]],
+  ['xrayacquisitiondosesequence',['XRayAcquisitionDoseSequence',['../structvega_1_1dictionary_1_1XRayAcquisitionDoseSequence.html',1,'vega::dictionary']]],
+  ['xrayfiltersequence',['XRayFilterSequence',['../structvega_1_1dictionary_1_1XRayFilterSequence.html',1,'vega::dictionary']]],
+  ['xraygeometrysequence',['XRayGeometrySequence',['../structvega_1_1dictionary_1_1XRayGeometrySequence.html',1,'vega::dictionary']]],
+  ['xraygridsequence',['XRayGridSequence',['../structvega_1_1dictionary_1_1XRayGridSequence.html',1,'vega::dictionary']]],
+  ['xrayimagereceptorangle',['XRayImageReceptorAngle',['../structvega_1_1dictionary_1_1XRayImageReceptorAngle.html',1,'vega::dictionary']]],
+  ['xrayimagereceptortranslation',['XRayImageReceptorTranslation',['../structvega_1_1dictionary_1_1XRayImageReceptorTranslation.html',1,'vega::dictionary']]],
+  ['xrayoutput',['XRayOutput',['../structvega_1_1dictionary_1_1XRayOutput.html',1,'vega::dictionary']]],
+  ['xrayreceptortype',['XRayReceptorType',['../structvega_1_1dictionary_1_1XRayReceptorType.html',1,'vega::dictionary']]],
+  ['xraysourceisocenterprimaryangle',['XRaySourceIsocenterPrimaryAngle',['../structvega_1_1dictionary_1_1XRaySourceIsocenterPrimaryAngle.html',1,'vega::dictionary']]],
+  ['xraysourceisocentersecondaryangle',['XRaySourceIsocenterSecondaryAngle',['../structvega_1_1dictionary_1_1XRaySourceIsocenterSecondaryAngle.html',1,'vega::dictionary']]],
+  ['xraytubecurrent',['XRayTubeCurrent',['../structvega_1_1dictionary_1_1XRayTubeCurrent.html',1,'vega::dictionary']]],
+  ['xraytubecurrentinma',['XRayTubeCurrentInmA',['../structvega_1_1dictionary_1_1XRayTubeCurrentInmA.html',1,'vega::dictionary']]],
+  ['xraytubecurrentinua',['XRayTubeCurrentInuA',['../structvega_1_1dictionary_1_1XRayTubeCurrentInuA.html',1,'vega::dictionary']]]
+];

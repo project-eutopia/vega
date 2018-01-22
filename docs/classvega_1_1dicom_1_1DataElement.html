@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>vega</b></li><li class="navelem"><b>dicom</b></li><li class="navelem"><a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevega.html">vega</a></li><li class="navelem"><a class="el" href="namespacevega_1_1dicom.html">dicom</a></li><li class="navelem"><a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,108 +69,722 @@ $(function() {
 <div class="title">vega::dicom::DataElement Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used to contain the information in a single <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>.  
+ <a href="classvega_1_1dicom_1_1DataElement.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="data__element_8h_source.html">vega/dicom/data_element.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05f1d14e9971790191685f307ed78f87"><td class="memItemLeft" align="right" valign="top"><a id="a05f1d14e9971790191685f307ed78f87"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataElement</b> (std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; parent=nullptr)</td></tr>
+<tr class="memitem:a05f1d14e9971790191685f307ed78f87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a05f1d14e9971790191685f307ed78f87">DataElement</a> (std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7b08ca3e6c8a98ce3af085cdfb1558c1">parent</a>=nullptr)</td></tr>
 <tr class="separator:a05f1d14e9971790191685f307ed78f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d4bf942e81d99f43db40384527a26b"><td class="memItemLeft" align="right" valign="top"><a id="a82d4bf942e81d99f43db40384527a26b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataElement</b> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; parent=nullptr)</td></tr>
+<tr class="memitem:a82d4bf942e81d99f43db40384527a26b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a82d4bf942e81d99f43db40384527a26b">DataElement</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7b08ca3e6c8a98ce3af085cdfb1558c1">parent</a>=nullptr)</td></tr>
 <tr class="separator:a82d4bf942e81d99f43db40384527a26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ad3efc51d6bc2c78705e14e49dc1ef6"><td class="memItemLeft" align="right" valign="top"><a id="a0ad3efc51d6bc2c78705e14e49dc1ef6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataElement</b> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;tag, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; parent=nullptr)</td></tr>
+<tr class="memitem:a0ad3efc51d6bc2c78705e14e49dc1ef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a0ad3efc51d6bc2c78705e14e49dc1ef6">DataElement</a> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;<a class="el" href="classvega_1_1dicom_1_1DataElement.html#acffe36420549d8e9880c2ef0745ac3bf">tag</a>, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7b08ca3e6c8a98ce3af085cdfb1558c1">parent</a>=nullptr)</td></tr>
 <tr class="separator:a0ad3efc51d6bc2c78705e14e49dc1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabeddf149281b3c776f0d870ac010c42"><td class="memItemLeft" align="right" valign="top"><a id="aabeddf149281b3c776f0d870ac010c42"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataElement</b> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;tag, const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;vr, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; parent=nullptr)</td></tr>
+<tr class="memitem:aabeddf149281b3c776f0d870ac010c42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#aabeddf149281b3c776f0d870ac010c42">DataElement</a> (const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;<a class="el" href="classvega_1_1dicom_1_1DataElement.html#acffe36420549d8e9880c2ef0745ac3bf">tag</a>, const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;<a class="el" href="classvega_1_1dicom_1_1DataElement.html#a0d923977cdcc400d8ce853558a27e521">vr</a>, std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7b08ca3e6c8a98ce3af085cdfb1558c1">parent</a>=nullptr)</td></tr>
 <tr class="separator:aabeddf149281b3c776f0d870ac010c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed9c9227e3485e6f098645ece717e4a"><td class="memItemLeft" align="right" valign="top"><a id="a1ed9c9227e3485e6f098645ece717e4a"></a>
-const std::shared_ptr&lt; const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>page</b> () const</td></tr>
+<tr class="memitem:a1ed9c9227e3485e6f098645ece717e4a"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a1ed9c9227e3485e6f098645ece717e4a">page</a> () const</td></tr>
 <tr class="separator:a1ed9c9227e3485e6f098645ece717e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d13a5a0e25707ac3f7c2706dc0a2f82"><td class="memItemLeft" align="right" valign="top"><a id="a4d13a5a0e25707ac3f7c2706dc0a2f82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_page</b> (std::shared_ptr&lt; const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> &gt; page)</td></tr>
+<tr class="memitem:a4d13a5a0e25707ac3f7c2706dc0a2f82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a4d13a5a0e25707ac3f7c2706dc0a2f82">set_page</a> (std::shared_ptr&lt; const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> &gt; <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a1ed9c9227e3485e6f098645ece717e4a">page</a>)</td></tr>
+<tr class="memdesc:a4d13a5a0e25707ac3f7c2706dc0a2f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> for blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElements</a>.  <a href="#a4d13a5a0e25707ac3f7c2706dc0a2f82">More...</a><br /></td></tr>
 <tr class="separator:a4d13a5a0e25707ac3f7c2706dc0a2f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f152540ebd3dad5b181d94c84d9d11"><td class="memItemLeft" align="right" valign="top"><a id="a95f152540ebd3dad5b181d94c84d9d11"></a>
-const <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>header</b> () const</td></tr>
+<tr class="memitem:a95f152540ebd3dad5b181d94c84d9d11"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a95f152540ebd3dad5b181d94c84d9d11">header</a> () const</td></tr>
 <tr class="separator:a95f152540ebd3dad5b181d94c84d9d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1cfde19b8646480fe4a655437cd518"><td class="memItemLeft" align="right" valign="top"><a id="a3f1cfde19b8646480fe4a655437cd518"></a>
-<a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>header</b> ()</td></tr>
+<tr class="memitem:a3f1cfde19b8646480fe4a655437cd518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a3f1cfde19b8646480fe4a655437cd518">header</a> ()</td></tr>
 <tr class="separator:a3f1cfde19b8646480fe4a655437cd518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acffe36420549d8e9880c2ef0745ac3bf"><td class="memItemLeft" align="right" valign="top"><a id="acffe36420549d8e9880c2ef0745ac3bf"></a>
-const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> () const</td></tr>
+<tr class="memitem:acffe36420549d8e9880c2ef0745ac3bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#acffe36420549d8e9880c2ef0745ac3bf">tag</a> () const</td></tr>
 <tr class="separator:acffe36420549d8e9880c2ef0745ac3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee7bd9d5dc14694f92337216bb6ec85"><td class="memItemLeft" align="right" valign="top"><a id="a2ee7bd9d5dc14694f92337216bb6ec85"></a>
-<a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> ()</td></tr>
+<tr class="memitem:a2ee7bd9d5dc14694f92337216bb6ec85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a2ee7bd9d5dc14694f92337216bb6ec85">tag</a> ()</td></tr>
 <tr class="separator:a2ee7bd9d5dc14694f92337216bb6ec85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d923977cdcc400d8ce853558a27e521"><td class="memItemLeft" align="right" valign="top"><a id="a0d923977cdcc400d8ce853558a27e521"></a>
-const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vr</b> () const</td></tr>
+<tr class="memitem:a0d923977cdcc400d8ce853558a27e521"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a0d923977cdcc400d8ce853558a27e521">vr</a> () const</td></tr>
 <tr class="separator:a0d923977cdcc400d8ce853558a27e521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a2524189432b0c3b10b45aeea9a83e"><td class="memItemLeft" align="right" valign="top"><a id="ab7a2524189432b0c3b10b45aeea9a83e"></a>
-<a class="el" href="classvega_1_1VR.html">VR</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vr</b> ()</td></tr>
+<tr class="memitem:ab7a2524189432b0c3b10b45aeea9a83e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvega_1_1VR.html">VR</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#ab7a2524189432b0c3b10b45aeea9a83e">vr</a> ()</td></tr>
 <tr class="separator:ab7a2524189432b0c3b10b45aeea9a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1a5931383f3dcafde7a676079992a3"><td class="memItemLeft" align="right" valign="top"><a id="a3e1a5931383f3dcafde7a676079992a3"></a>
-const DataElementHeader::length_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> () const</td></tr>
+<tr class="memitem:a3e1a5931383f3dcafde7a676079992a3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html#a57d98bd5d1387c517f5669a5e346601c">DataElementHeader::length_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a3e1a5931383f3dcafde7a676079992a3">length</a> () const</td></tr>
 <tr class="separator:a3e1a5931383f3dcafde7a676079992a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77ecf6d9976dd0fa87887a3875fb58fc"><td class="memItemLeft" align="right" valign="top"><a id="a77ecf6d9976dd0fa87887a3875fb58fc"></a>
-DataElementHeader::length_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> ()</td></tr>
+<tr class="memitem:a77ecf6d9976dd0fa87887a3875fb58fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html#a57d98bd5d1387c517f5669a5e346601c">DataElementHeader::length_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a77ecf6d9976dd0fa87887a3875fb58fc">length</a> ()</td></tr>
 <tr class="separator:a77ecf6d9976dd0fa87887a3875fb58fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b08ca3e6c8a98ce3af085cdfb1558c1"><td class="memItemLeft" align="right" valign="top"><a id="a7b08ca3e6c8a98ce3af085cdfb1558c1"></a>
-const std::weak_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const</td></tr>
+<tr class="memitem:a7b08ca3e6c8a98ce3af085cdfb1558c1"><td class="memItemLeft" align="right" valign="top">const std::weak_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7b08ca3e6c8a98ce3af085cdfb1558c1">parent</a> () const</td></tr>
 <tr class="separator:a7b08ca3e6c8a98ce3af085cdfb1558c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4338f488ed9606bd7d2589bc4d26ad38"><td class="memItemLeft" align="right" valign="top"><a id="a4338f488ed9606bd7d2589bc4d26ad38"></a>
-std::weak_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> ()</td></tr>
+<tr class="memitem:a4338f488ed9606bd7d2589bc4d26ad38"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a4338f488ed9606bd7d2589bc4d26ad38">parent</a> ()</td></tr>
 <tr class="separator:a4338f488ed9606bd7d2589bc4d26ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaefb22dc3c4b5424306fa4ce02dad46"><td class="memItemLeft" align="right" valign="top"><a id="adaefb22dc3c4b5424306fa4ce02dad46"></a>
-const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>data_sets</b> () const</td></tr>
+<tr class="memitem:adaefb22dc3c4b5424306fa4ce02dad46"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#adaefb22dc3c4b5424306fa4ce02dad46">data_sets</a> () const</td></tr>
 <tr class="separator:adaefb22dc3c4b5424306fa4ce02dad46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f639ec075f73d470e57648aff43f9c7"><td class="memItemLeft" align="right" valign="top"><a id="a7f639ec075f73d470e57648aff43f9c7"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>data_sets</b> ()</td></tr>
+<tr class="memitem:a7f639ec075f73d470e57648aff43f9c7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7f639ec075f73d470e57648aff43f9c7">data_sets</a> ()</td></tr>
 <tr class="separator:a7f639ec075f73d470e57648aff43f9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa88ab8d565de0de7ac7cf347fe3db65b"><td class="memItemLeft" align="right" valign="top"><a id="aa88ab8d565de0de7ac7cf347fe3db65b"></a>
-std::shared_ptr&lt; <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">manipulators::ValueManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>manipulator</b> ()</td></tr>
-<tr class="separator:aa88ab8d565de0de7ac7cf347fe3db65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8694a3afd7a9ec64fc4c8b2bc3ac2130"><td class="memItemLeft" align="right" valign="top"><a id="a8694a3afd7a9ec64fc4c8b2bc3ac2130"></a>
-std::shared_ptr&lt; const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">manipulators::ValueManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>manipulator</b> () const</td></tr>
-<tr class="separator:a8694a3afd7a9ec64fc4c8b2bc3ac2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0256009400ab12f9eedd8b09de51ea5d"><td class="memTemplParams" colspan="2"><a id="a0256009400ab12f9eedd8b09de51ea5d"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0256009400ab12f9eedd8b09de51ea5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_manipulator</b> (std::shared_ptr&lt; T &gt; manipulator)</td></tr>
+<tr class="memitem:a0256009400ab12f9eedd8b09de51ea5d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0256009400ab12f9eedd8b09de51ea5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a0256009400ab12f9eedd8b09de51ea5d">set_manipulator</a> (std::shared_ptr&lt; T &gt; manipulator)</td></tr>
 <tr class="separator:a0256009400ab12f9eedd8b09de51ea5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9d3870c13e38f5fd619bb067f6f734"><td class="memTemplParams" colspan="2"><a id="aaf9d3870c13e38f5fd619bb067f6f734"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaf9d3870c13e38f5fd619bb067f6f734"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_manipulator</b> ()</td></tr>
+<tr class="memitem:aaf9d3870c13e38f5fd619bb067f6f734"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaf9d3870c13e38f5fd619bb067f6f734"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#aaf9d3870c13e38f5fd619bb067f6f734">get_manipulator</a> ()</td></tr>
 <tr class="separator:aaf9d3870c13e38f5fd619bb067f6f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3429d9025153e0ef10b5ddd52e70bd"><td class="memItemLeft" align="right" valign="top"><a id="a5e3429d9025153e0ef10b5ddd52e70bd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>str</b> () const</td></tr>
+<tr class="memitem:a5e3429d9025153e0ef10b5ddd52e70bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a5e3429d9025153e0ef10b5ddd52e70bd">str</a> () const</td></tr>
+<tr class="memdesc:a5e3429d9025153e0ef10b5ddd52e70bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a string representation of the content of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>.  <a href="#a5e3429d9025153e0ef10b5ddd52e70bd">More...</a><br /></td></tr>
 <tr class="separator:a5e3429d9025153e0ef10b5ddd52e70bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf2a4164b20ddb8d65937031b60485c"><td class="memItemLeft" align="right" valign="top"><a id="a3cf2a4164b20ddb8d65937031b60485c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_sequence</b> () const</td></tr>
+<tr class="memitem:a3cf2a4164b20ddb8d65937031b60485c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a3cf2a4164b20ddb8d65937031b60485c">is_sequence</a> () const</td></tr>
 <tr class="separator:a3cf2a4164b20ddb8d65937031b60485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b93f5a4a1d0d24ac6427ffd596c2b32"><td class="memItemLeft" align="right" valign="top"><a id="a3b93f5a4a1d0d24ac6427ffd596c2b32"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_undefined_length</b> () const</td></tr>
-<tr class="separator:a3b93f5a4a1d0d24ac6427ffd596c2b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2bf44ca7b4716f149615da519ba591d"><td class="memItemLeft" align="right" valign="top"><a id="af2bf44ca7b4716f149615da519ba591d"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:af2bf44ca7b4716f149615da519ba591d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#af2bf44ca7b4716f149615da519ba591d">begin</a> ()</td></tr>
 <tr class="separator:af2bf44ca7b4716f149615da519ba591d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0fff825aad617db13e248e75ec33ce"><td class="memItemLeft" align="right" valign="top"><a id="acf0fff825aad617db13e248e75ec33ce"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="memitem:acf0fff825aad617db13e248e75ec33ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#acf0fff825aad617db13e248e75ec33ce">begin</a> () const</td></tr>
 <tr class="separator:acf0fff825aad617db13e248e75ec33ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d5faff84e179219c9b9bb3d94a8b48"><td class="memItemLeft" align="right" valign="top"><a id="a41d5faff84e179219c9b9bb3d94a8b48"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="memitem:a41d5faff84e179219c9b9bb3d94a8b48"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a41d5faff84e179219c9b9bb3d94a8b48">end</a> ()</td></tr>
 <tr class="separator:a41d5faff84e179219c9b9bb3d94a8b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f6ebb652bd0ade400176033d8a9d8a"><td class="memItemLeft" align="right" valign="top"><a id="a53f6ebb652bd0ade400176033d8a9d8a"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="memitem:a53f6ebb652bd0ade400176033d8a9d8a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a53f6ebb652bd0ade400176033d8a9d8a">end</a> () const</td></tr>
 <tr class="separator:a53f6ebb652bd0ade400176033d8a9d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd82ba61d50ddeebd20667177405258"><td class="memItemLeft" align="right" valign="top"><a id="accd82ba61d50ddeebd20667177405258"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;other) const</td></tr>
+<tr class="memitem:accd82ba61d50ddeebd20667177405258"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#accd82ba61d50ddeebd20667177405258">operator==</a> (const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;other) const</td></tr>
 <tr class="separator:accd82ba61d50ddeebd20667177405258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d86bfb643e8880dfe93b93e611df4d"><td class="memItemLeft" align="right" valign="top"><a id="a17d86bfb643e8880dfe93b93e611df4d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;other) const</td></tr>
+<tr class="memitem:a17d86bfb643e8880dfe93b93e611df4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#a17d86bfb643e8880dfe93b93e611df4d">operator!=</a> (const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;other) const</td></tr>
 <tr class="separator:a17d86bfb643e8880dfe93b93e611df4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77af159067e53ec6593ecbe84db92df"><td class="memItemLeft" align="right" valign="top"><a id="ac77af159067e53ec6593ecbe84db92df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>log</b> (<a class="el" href="classvega_1_1Logger.html">Logger</a> &amp;logger) const</td></tr>
+<tr class="memitem:ac77af159067e53ec6593ecbe84db92df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1dicom_1_1DataElement.html#ac77af159067e53ec6593ecbe84db92df">log</a> (<a class="el" href="classvega_1_1Logger.html">Logger</a> &amp;logger) const</td></tr>
 <tr class="separator:ac77af159067e53ec6593ecbe84db92df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to contain the information in a single <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </p>
+<p>This class corresponds to the part of a DICOM file called a "data element" (<a href="http://dicom.nema.org/dicom/2013/output/chtml/part05/chapter_7.html">see DICOM documentation</a>).</p>
+<p>A <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> has two main parts: a <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html" title="An object that stores the header information for DataElements. ">DataElementHeader</a> and the data itself. The <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html" title="An object that stores the header information for DataElements. ">DataElementHeader</a> is used to store the <a class="el" href="classvega_1_1Tag.html">Tag</a> which defines what type of data is stored, <a class="el" href="classvega_1_1VR.html">VR</a> which defines the representation that the data is in, and a <a class="el" href="">length</a> which determines how much data is stored in the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. The length never needs to be touched by the user of this library, because it is always dynamically determined when writing to file anyway. Furthermore, the user should also never need to concern themselves with modifying the tag or vr directly. This is because they are automatically filled when reading from a DICOM file, and they are automatically set for you when you instantiate a new <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> yourself.</p>
+<p>The data stored in the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> can take one of two forms: raw data, or sequence data. The details are explained in <a href="http://dicom.nema.org/dicom/2013/output/chtml/part05/chapter_7.html">the DICOM documentation</a>, but it is not necessary to understand these details to use this library. The main thing to know is that when the <a class="el" href="classvega_1_1VR.html">VR</a> of a <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> is <a class="el" href="namespacevega_1_1vr.html#a3b973175a1e313b38da950ec7a88aef4">vr::SQ</a> (<a class="el" href="classvega_1_1dicom_1_1DataElement.html#a3cf2a4164b20ddb8d65937031b60485c">is_sequence()</a> returns <code>true</code>), the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> stores a vector of <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSets</a>, and otherwise (<a class="el" href="classvega_1_1dicom_1_1DataElement.html#a3cf2a4164b20ddb8d65937031b60485c">is_sequence()</a> returns <code>false</code>) it stores raw data that is accessible through a <a class="el" href="manipulator_8h.html">manipulator</a>.</p>
+<h3>Sequence</h3>
+<p>When the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> is a sequence, you can access the <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> vector through the <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a7f639ec075f73d470e57648aff43f9c7">data_sets()</a> method. This class also provides iterators through the <a class="el" href="classvega_1_1dicom_1_1DataElement.html#af2bf44ca7b4716f149615da519ba591d">begin()</a> and <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a41d5faff84e179219c9b9bb3d94a8b48">end()</a> methods so the <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSets</a> can be looped over easily. </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; data_set : data_element) {</div><div class="line">  <span class="comment">// Do something</span></div><div class="line">}</div></div><!-- fragment --><h3>Non-sequence</h3>
+<p>In this case, the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> stores raw data accessible through a <a class="el" href="manipulator_8h.html">manipulator</a> object. The difficulty with using manipulators comes from the fact that what data is stored and how it is stored varies depending on the <a class="el" href="classvega_1_1VR.html">VR</a>. This means that this information cannot be known at compile-time, and so must be provided through the templates of <a class="el" href="classvega_1_1dicom_1_1DataElement.html#aaf9d3870c13e38f5fd619bb067f6f734">get_manipulator()</a> and <a class="el" href="classvega_1_1dicom_1_1DataElement.html#a0256009400ab12f9eedd8b09de51ea5d">set_manipulator()</a>. The advantage of using these manipulators is that they are each designed to make dealing with the data for each type of <a class="el" href="classvega_1_1VR.html">VR</a>. See <a class="el" href="manipulator_8h.html" title="For details, see documentation of namespace vega::manipulators. ">vega/manipulator.h</a> for a list of allowed manipulators and how to use them.</p>
+<p>Note that it is usually easier to use the wrapper class <a class="el" href="classvega_1_1dicom_1_1Element.html">Element&lt;T&gt;</a> instead of <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> when dealing with raw data. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a05f1d14e9971790191685f307ed78f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f1d14e9971790191685f307ed78f87">&#9670;&nbsp;</a></span>DataElement() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::dicom::DataElement::DataElement </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> with the given <code>parent</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>is the parent <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> of the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82d4bf942e81d99f43db40384527a26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d4bf942e81d99f43db40384527a26b">&#9670;&nbsp;</a></span>DataElement() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::dicom::DataElement::DataElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> with tag given by the <code>name</code>.</p>
+<p>The <a class="el" href="classvega_1_1Tag.html">Tag</a> and <a class="el" href="classvega_1_1VR.html">VR</a> is read from the Dictionary using the <code>name</code> parameter. Can only use this constructor if the corresponding <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> has a single unique <a class="el" href="classvega_1_1Tag.html">Tag</a>. For example the dictionary entry <code>"CurveDimensions"</code> is defined to have tag <code>(50xx,0005)</code> where <code>xx</code> can be any hexadecimal digits, and so this would not be permitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>is the name of a Dictionary entry to read <a class="el" href="classvega_1_1VR.html">VR</a> and <a class="el" href="classvega_1_1Tag.html">Tag</a> data from (e.g. <code>"PatientName"</code>). </td></tr>
+    <tr><td class="paramname">parent</td><td>is the parent <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> of the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ad3efc51d6bc2c78705e14e49dc1ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad3efc51d6bc2c78705e14e49dc1ef6">&#9670;&nbsp;</a></span>DataElement() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::dicom::DataElement::DataElement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> with tag given by the <code>tag</code>.</p>
+<p>Will raise an error if the given <a class="el" href="classvega_1_1Tag.html">Tag</a> is not present in the Dictionary, or if the <a class="el" href="classvega_1_1Tag.html">Tag</a> has a variable <a class="el" href="classvega_1_1VR.html">VR</a>. For instance pixel data with tag <code>(0x7FE0,0x0010)</code> can have <a class="el" href="classvega_1_1VR.html">VR</a> of <a class="el" href="namespacevega_1_1vr.html#a8e203b6b719099d12605a99be31d27a5">vr::OB</a> or <a class="el" href="namespacevega_1_1vr.html#ab20a0c8f5c315b3481df911da03d7a10">vr::OW</a>, and so you should use the constructor which takes a <a class="el" href="classvega_1_1VR.html">VR</a> also.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>is the <a class="el" href="classvega_1_1Tag.html">Tag</a> of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </td></tr>
+    <tr><td class="paramname">parent</td><td>is the parent <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> of the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabeddf149281b3c776f0d870ac010c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabeddf149281b3c776f0d870ac010c42">&#9670;&nbsp;</a></span>DataElement() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vega::dicom::DataElement::DataElement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1Tag.html">Tag</a> &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;&#160;</td>
+          <td class="paramname"><em>vr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> with tag given by the <code>tag</code> and <code><a class="el" href="classvega_1_1VR.html">VR</a></code>.</p>
+<p>Will raise an error if the given <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> corresponding to the <a class="el" href="classvega_1_1Tag.html">Tag</a> is not found or if the <a class="el" href="classvega_1_1VR.html">VR</a> is incompatible with it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>is the <a class="el" href="classvega_1_1Tag.html">Tag</a> of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </td></tr>
+    <tr><td class="paramname">vr</td><td>is the <a class="el" href="classvega_1_1VR.html">VR</a> of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </td></tr>
+    <tr><td class="paramname">parent</td><td>is the parent <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> of the <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> (<code>nullptr</code> when at the root of the DICOM file) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af2bf44ca7b4716f149615da519ba591d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2bf44ca7b4716f149615da519ba591d">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;::iterator vega::dicom::DataElement::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf0fff825aad617db13e248e75ec33ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0fff825aad617db13e248e75ec33ce">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;::const_iterator vega::dicom::DataElement::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaefb22dc3c4b5424306fa4ce02dad46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaefb22dc3c4b5424306fa4ce02dad46">&#9670;&nbsp;</a></span>data_sets() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;&amp; vega::dicom::DataElement::data_sets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a vector of the this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>'s sequence of <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> objects. </dd></dl>
+
+</div>
+</div>
+<a id="a7f639ec075f73d470e57648aff43f9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f639ec075f73d470e57648aff43f9c7">&#9670;&nbsp;</a></span>data_sets() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;&amp; vega::dicom::DataElement::data_sets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is used when building a new <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> sequence by giving the user a reference. </p><dl class="section return"><dt>Returns</dt><dd>a reference to the vector of the this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>'s sequence of <a class="el" href="classvega_1_1dicom_1_1DataSet.html" title="Stores a set of DataElements. ">DataSet</a> objects. </dd></dl>
+
+</div>
+</div>
+<a id="a41d5faff84e179219c9b9bb3d94a8b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d5faff84e179219c9b9bb3d94a8b48">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;::iterator vega::dicom::DataElement::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53f6ebb652bd0ade400176033d8a9d8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f6ebb652bd0ade400176033d8a9d8a">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt; &gt;::const_iterator vega::dicom::DataElement::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf9d3870c13e38f5fd619bb067f6f734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9d3870c13e38f5fd619bb067f6f734">&#9670;&nbsp;</a></span>get_manipulator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;T&gt; vega::dicom::DataElement::get_manipulator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a <a class="el" href="manipulator_8h.html">vega/manipulator.h</a> manipulator object for the user to manipulate the content of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. If there is not yet a manipulator object, a new one is created and returned. If the received type T is compatible with the current existing manipulator, then a pointer to that is cast and returned. Otherwise if a new type is specified then a new manipulator is created from the existing raw data, so if it currently stores a list of 16 bit integers and you request a manipulator of 32 bit integers, then each 32 bit integer will be a pair of 16 bit integers.</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> manipulator = data_element-&gt;get_manipulator&lt;<a class="code" href="classvega_1_1manipulators_1_1FloatingPointManipulator.html">vega::FL_Manipulator</a>&gt;();</div><div class="line">manipulator-&gt;push_back(3.14f);</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="a95f152540ebd3dad5b181d94c84d9d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f152540ebd3dad5b181d94c84d9d11">&#9670;&nbsp;</a></span>header() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a>&amp; vega::dicom::DataElement::header </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f1cfde19b8646480fe4a655437cd518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1cfde19b8646480fe4a655437cd518">&#9670;&nbsp;</a></span>header() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html">DataElementHeader</a>&amp; vega::dicom::DataElement::header </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf2a4164b20ddb8d65937031b60485c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf2a4164b20ddb8d65937031b60485c">&#9670;&nbsp;</a></span>is_sequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::dicom::DataElement::is_sequence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> when this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a> is a sequence (has <a class="el" href="classvega_1_1VR.html">VR</a> of <a class="el" href="namespacevega_1_1vr.html#a3b973175a1e313b38da950ec7a88aef4">vr::SQ</a>). </dd></dl>
+
+</div>
+</div>
+<a id="a3e1a5931383f3dcafde7a676079992a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1a5931383f3dcafde7a676079992a3">&#9670;&nbsp;</a></span>length() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html#a57d98bd5d1387c517f5669a5e346601c">DataElementHeader::length_type</a>&amp; vega::dicom::DataElement::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77ecf6d9976dd0fa87887a3875fb58fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ecf6d9976dd0fa87887a3875fb58fc">&#9670;&nbsp;</a></span>length() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvega_1_1dicom_1_1DataElementHeader.html#a57d98bd5d1387c517f5669a5e346601c">DataElementHeader::length_type</a>&amp; vega::dicom::DataElement::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac77af159067e53ec6593ecbe84db92df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77af159067e53ec6593ecbe84db92df">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vega::dicom::DataElement::log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvega_1_1Logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17d86bfb643e8880dfe93b93e611df4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d86bfb643e8880dfe93b93e611df4d">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::dicom::DataElement::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accd82ba61d50ddeebd20667177405258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd82ba61d50ddeebd20667177405258">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vega::dicom::DataElement::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ed9c9227e3485e6f098645ece717e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed9c9227e3485e6f098645ece717e4a">&#9670;&nbsp;</a></span>page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::shared_ptr&lt;const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a>&gt;&amp; vega::dicom::DataElement::page </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> corresponding to this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>'s <a class="el" href="classvega_1_1Tag.html">Tag</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a7b08ca3e6c8a98ce3af085cdfb1558c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b08ca3e6c8a98ce3af085cdfb1558c1">&#9670;&nbsp;</a></span>parent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::weak_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt;&amp; vega::dicom::DataElement::parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4338f488ed9606bd7d2589bc4d26ad38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4338f488ed9606bd7d2589bc4d26ad38">&#9670;&nbsp;</a></span>parent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt;<a class="el" href="classvega_1_1dicom_1_1DataSet.html">DataSet</a>&gt;&amp; vega::dicom::DataElement::parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0256009400ab12f9eedd8b09de51ea5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0256009400ab12f9eedd8b09de51ea5d">&#9670;&nbsp;</a></span>set_manipulator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vega::dicom::DataElement::set_manipulator </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>manipulator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given a user filled <a class="el" href="namespacevega_1_1manipulators.html">manipulator</a>, this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>'s internal manipulator will be set to this, and so any stored data is overwritten. </p>
+
+</div>
+</div>
+<a id="a4d13a5a0e25707ac3f7c2706dc0a2f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d13a5a0e25707ac3f7c2706dc0a2f82">&#9670;&nbsp;</a></span>set_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vega::dicom::DataElement::set_page </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> &gt;&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classvega_1_1dictionary_1_1Page.html">dictionary::Page</a> for blank <a class="el" href="classvega_1_1dicom_1_1DataElement.html">DataElements</a>. </p>
+
+</div>
+</div>
+<a id="a5e3429d9025153e0ef10b5ddd52e70bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3429d9025153e0ef10b5ddd52e70bd">&#9670;&nbsp;</a></span>str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vega::dicom::DataElement::str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builds a string representation of the content of this <a class="el" href="classvega_1_1dicom_1_1DataElement.html" title="This class is used to contain the information in a single DataElement. ">DataElement</a>. </p>
+
+</div>
+</div>
+<a id="acffe36420549d8e9880c2ef0745ac3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffe36420549d8e9880c2ef0745ac3bf">&#9670;&nbsp;</a></span>tag() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvega_1_1Tag.html">Tag</a>&amp; vega::dicom::DataElement::tag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ee7bd9d5dc14694f92337216bb6ec85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee7bd9d5dc14694f92337216bb6ec85">&#9670;&nbsp;</a></span>tag() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvega_1_1Tag.html">Tag</a>&amp; vega::dicom::DataElement::tag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d923977cdcc400d8ce853558a27e521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d923977cdcc400d8ce853558a27e521">&#9670;&nbsp;</a></span>vr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvega_1_1VR.html">VR</a>&amp; vega::dicom::DataElement::vr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7a2524189432b0c3b10b45aeea9a83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a2524189432b0c3b10b45aeea9a83e">&#9670;&nbsp;</a></span>vr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvega_1_1VR.html">VR</a>&amp; vega::dicom::DataElement::vr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/vega/dicom/<a class="el" href="data__element_8h_source.html">data_element.h</a></li>
 </ul>

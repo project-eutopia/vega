@@ -1,0 +1,11 @@
+<map id="include/vega/manipulator.h" name="include/vega/manipulator.h">
+<area shape="rect" id="node2" href="$dictionary__data_8h.html" title="include/vega/dictionary\l_data.h" alt="" coords="71,80,225,121"/>
+<area shape="rect" id="node3" href="$element__impl_8h.html" title="include/vega/dicom\l/element_impl.h" alt="" coords="81,169,215,211"/>
+<area shape="rect" id="node4" href="$element_8h.html" title="include/vega/dicom\l/element.h" alt="" coords="81,259,215,300"/>
+<area shape="rect" id="node5" href="$data__set_8h.html" title="include/vega/dicom\l/data_set.h" alt="" coords="81,348,215,389"/>
+<area shape="rect" id="node6" href="$file_8h.html" title="include/vega/dicom\l/file.h" alt="" coords="81,616,215,657"/>
+<area shape="rect" id="node7" href="$file__meta_8h.html" title="include/vega/dicom\l/file_meta.h" alt="" coords="29,527,163,568"/>
+<area shape="rect" id="node8" href="$reader_8h.html" title="include/vega/dicom\l/reader.h" alt="" coords="134,437,269,479"/>
+<area shape="rect" id="node10" href="$writer_8h.html" title="include/vega/dicom\l/writer.h" alt="" coords="293,437,427,479"/>
+<area shape="rect" id="node9" href="$preamble_8h.html" title="include/vega/dicom\l/preamble.h" alt="" coords="239,527,374,568"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="vega::manipulators::SingleStringManipulator" name="vega::manipulators::SingleStringManipulator">
+<area shape="rect" id="node3" href="$classvega_1_1manipulators_1_1LongTextManipulator.html" title="vega::manipulators\l::LongTextManipulator" alt="" coords="414,5,565,47"/>
+<area shape="rect" id="node4" href="$classvega_1_1manipulators_1_1ShortTextManipulator.html" title="vega::manipulators\l::ShortTextManipulator" alt="" coords="412,71,567,112"/>
+<area shape="rect" id="node5" href="$classvega_1_1manipulators_1_1UnlimitedTextManipulator.html" title="vega::manipulators\l::UnlimitedTextManipulator" alt="" coords="400,136,579,177"/>
+<area shape="rect" id="node6" href="$classvega_1_1manipulators_1_1URIManipulator.html" title="vega::manipulators\l::URIManipulator" alt="" coords="423,201,555,243"/>
+<area shape="rect" id="node2" href="$classvega_1_1manipulators_1_1ValueManipulator.html" title="vega::manipulators\l::ValueManipulator" alt="" coords="5,104,137,145"/>
+</map>

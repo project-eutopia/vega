@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>vega: vega::manipulators::PaddedStringManipulator&lt; T, PADDING, DELIMITER &gt; Class Template Reference</title>
+<title>vega: vega::manipulators::PaddedStringManipulator&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>vega</b></li><li class="navelem"><b>manipulators</b></li><li class="navelem"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">PaddedStringManipulator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevega.html">vega</a></li><li class="navelem"><a class="el" href="namespacevega_1_1manipulators.html">manipulators</a></li><li class="navelem"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">PaddedStringManipulator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,76 +67,440 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classvega_1_1manipulators_1_1PaddedStringManipulator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vega::manipulators::PaddedStringManipulator&lt; T, PADDING, DELIMITER &gt; Class Template Reference</div>  </div>
+<div class="title">vega::manipulators::PaddedStringManipulator&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A manipulator class for <a class="el" href="classvega_1_1VR.html">VR</a> that represent elements which are encoded in DICOM using strings.  
+ <a href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="padded__string__manipulator_8h_source.html">vega/manipulators/padded_string_manipulator.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for vega::manipulators::PaddedStringManipulator&lt; T, PADDING, DELIMITER &gt;:</div>
+Inheritance diagram for vega::manipulators::PaddedStringManipulator&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classvega_1_1manipulators_1_1PaddedStringManipulator__inherit__graph.png" border="0" usemap="#vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_inherit__map" id="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_inherit__map">
+<div class="center"><img src="classvega_1_1manipulators_1_1PaddedStringManipulator__inherit__graph.png" border="0" usemap="#vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_inherit__map" id="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_inherit__map">
+<area shape="rect" id="node2" href="classvega_1_1manipulators_1_1ValueManipulator.html" title="vega::manipulators\l::ValueManipulator" alt="" coords="5,5,137,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for vega::manipulators::PaddedStringManipulator&lt; T, PADDING, DELIMITER &gt;:</div>
+Collaboration diagram for vega::manipulators::PaddedStringManipulator&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classvega_1_1manipulators_1_1PaddedStringManipulator__coll__graph.png" border="0" usemap="#vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_coll__map" id="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_00_01PADDING_00_01DELIMITER_01_4_coll__map">
+<div class="center"><img src="classvega_1_1manipulators_1_1PaddedStringManipulator__coll__graph.png" border="0" usemap="#vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_coll__map" id="vega_1_1manipulators_1_1PaddedStringManipulator_3_01T_01_4_coll__map">
+<area shape="rect" id="node2" href="classvega_1_1manipulators_1_1ValueManipulator.html" title="vega::manipulators\l::ValueManipulator" alt="" coords="5,5,137,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0c1f90e62011bcf9c86c9b28fcec0096"><td class="memItemLeft" align="right" valign="top"><a id="a0c1f90e62011bcf9c86c9b28fcec0096"></a>
-typedef base_vector::value_type&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
-<tr class="separator:a0c1f90e62011bcf9c86c9b28fcec0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41faa4fc878e130b6856510e3cd5e81f"><td class="memItemLeft" align="right" valign="top"><a id="a41faa4fc878e130b6856510e3cd5e81f"></a>
-typedef base_vector::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
-<tr class="separator:a41faa4fc878e130b6856510e3cd5e81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124e17526cc54e559d2af69b65bd5c5c"><td class="memItemLeft" align="right" valign="top"><a id="a124e17526cc54e559d2af69b65bd5c5c"></a>
-typedef base_vector::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:a124e17526cc54e559d2af69b65bd5c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3fdedbb08a44bd0b148e1b3dbd58982"><td class="memItemLeft" align="right" valign="top"><a id="ae3fdedbb08a44bd0b148e1b3dbd58982"></a>
-typedef base_vector::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
-<tr class="separator:ae3fdedbb08a44bd0b148e1b3dbd58982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d750af63690d5c4bb693b2ace7d0ce"><td class="memItemLeft" align="right" valign="top"><a id="a86d750af63690d5c4bb693b2ace7d0ce"></a>
-typedef base_vector::reference&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
-<tr class="separator:a86d750af63690d5c4bb693b2ace7d0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb2439c209fdd31e29090427be23746"><td class="memItemLeft" align="right" valign="top"><a id="a6cb2439c209fdd31e29090427be23746"></a>
-typedef base_vector::const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
-<tr class="separator:a6cb2439c209fdd31e29090427be23746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a69fb42ae810c3c1c3213688e6e4de8"><td class="memItemLeft" align="right" valign="top">typedef base_vector::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a7a69fb42ae810c3c1c3213688e6e4de8">value_type</a></td></tr>
+<tr class="separator:a7a69fb42ae810c3c1c3213688e6e4de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad873fa67b80de37ab1febcbc08349faf"><td class="memItemLeft" align="right" valign="top">typedef base_vector::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#ad873fa67b80de37ab1febcbc08349faf">size_type</a></td></tr>
+<tr class="separator:ad873fa67b80de37ab1febcbc08349faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a34b7b0d4920abb2a5b29098c0a18"><td class="memItemLeft" align="right" valign="top">typedef base_vector::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a410a34b7b0d4920abb2a5b29098c0a18">iterator</a></td></tr>
+<tr class="separator:a410a34b7b0d4920abb2a5b29098c0a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2a314913036f9a2fd7641668142bcc"><td class="memItemLeft" align="right" valign="top">typedef base_vector::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a5b2a314913036f9a2fd7641668142bcc">const_iterator</a></td></tr>
+<tr class="separator:a5b2a314913036f9a2fd7641668142bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89201598cb0457ea06a90c5e2421f7d"><td class="memItemLeft" align="right" valign="top">typedef base_vector::reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#ac89201598cb0457ea06a90c5e2421f7d">reference</a></td></tr>
+<tr class="separator:ac89201598cb0457ea06a90c5e2421f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466d3b1227d1428ed329ba22d527c62f"><td class="memItemLeft" align="right" valign="top">typedef base_vector::const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a466d3b1227d1428ed329ba22d527c62f">const_reference</a></td></tr>
+<tr class="separator:a466d3b1227d1428ed329ba22d527c62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af245031217f0b5a2b55153c5bb8d532e"><td class="memItemLeft" align="right" valign="top"><a id="af245031217f0b5a2b55153c5bb8d532e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PaddedStringManipulator</b> (std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1RawValue.html">dicom::RawValue</a> &gt; raw_value)</td></tr>
-<tr class="separator:af245031217f0b5a2b55153c5bb8d532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b59f6fe89eb90a26dc98edcf9ae45be"><td class="memItemLeft" align="right" valign="top"><a id="a4b59f6fe89eb90a26dc98edcf9ae45be"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PaddedStringManipulator</b> (const std::string &amp;s)</td></tr>
-<tr class="separator:a4b59f6fe89eb90a26dc98edcf9ae45be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e073d4224f4afc367ace2ebbc87013"><td class="memItemLeft" align="right" valign="top"><a id="aa7e073d4224f4afc367ace2ebbc87013"></a>
-std::shared_ptr&lt; <a class="el" href="classvega_1_1dicom_1_1RawValue.html">dicom::RawValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>raw_value</b> () override</td></tr>
-<tr class="separator:aa7e073d4224f4afc367ace2ebbc87013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37096661eb970be3848d7f459fadc41a"><td class="memItemLeft" align="right" valign="top"><a id="a37096661eb970be3848d7f459fadc41a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>str</b> () const override</td></tr>
-<tr class="separator:a37096661eb970be3848d7f459fadc41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d265e74066f35ba51537de030bbb01"><td class="memItemLeft" align="right" valign="top"><a id="ad0d265e74066f35ba51537de030bbb01"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>read_from</b> (<a class="el" href="classvega_1_1dicom_1_1RawReader.html">dicom::RawReader</a> *reader, size_t num_bytes) override</td></tr>
-<tr class="separator:ad0d265e74066f35ba51537de030bbb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab287cb248d1afe3517a96023a2af290f"><td class="memItemLeft" align="right" valign="top"><a id="ab287cb248d1afe3517a96023a2af290f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>write_to</b> (<a class="el" href="classvega_1_1dicom_1_1RawWriter.html">dicom::RawWriter</a> *writer) const override</td></tr>
-<tr class="separator:ab287cb248d1afe3517a96023a2af290f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4314fe8e71b41cd81806427c3393d86b"><td class="memItemLeft" align="right" valign="top"><a id="a4314fe8e71b41cd81806427c3393d86b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;other) const override</td></tr>
-<tr class="separator:a4314fe8e71b41cd81806427c3393d86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a88ace762cc724518944d9fddb22831"><td class="memItemLeft" align="right" valign="top"><a id="a8a88ace762cc724518944d9fddb22831"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;other) const override</td></tr>
-<tr class="separator:a8a88ace762cc724518944d9fddb22831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b922ae583df7a09c5cc9840c18544ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a7b922ae583df7a09c5cc9840c18544ee">PaddedStringManipulator</a> ()</td></tr>
+<tr class="separator:a7b922ae583df7a09c5cc9840c18544ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c97a9bfbaaad27f0013074b618e248"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a04c97a9bfbaaad27f0013074b618e248">PaddedStringManipulator</a> (std::shared_ptr&lt; dicom::RawValue &gt; <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a3b71aba7f8cd35bc8129410d61f41e2f">raw_value</a>)</td></tr>
+<tr class="separator:a04c97a9bfbaaad27f0013074b618e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5ee98d4881da1befd7268c950c85a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a8a5ee98d4881da1befd7268c950c85a2">PaddedStringManipulator</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:a8a5ee98d4881da1befd7268c950c85a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b71aba7f8cd35bc8129410d61f41e2f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; dicom::RawValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a3b71aba7f8cd35bc8129410d61f41e2f">raw_value</a> () override</td></tr>
+<tr class="separator:a3b71aba7f8cd35bc8129410d61f41e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c6db500bc48e91390e9bfda35966bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a85c6db500bc48e91390e9bfda35966bd">str</a> () const override</td></tr>
+<tr class="separator:a85c6db500bc48e91390e9bfda35966bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b5bb2de89944fbb661723e39704404"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#ac0b5bb2de89944fbb661723e39704404">read_from</a> (dicom::RawReader *reader, size_t num_bytes) override</td></tr>
+<tr class="separator:ac0b5bb2de89944fbb661723e39704404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed78558ca6580c013cfd3d2247406387"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#aed78558ca6580c013cfd3d2247406387">write_to</a> (dicom::RawWriter *writer) const override</td></tr>
+<tr class="separator:aed78558ca6580c013cfd3d2247406387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad26b6c046b24ed15667cf9153283ea3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#aad26b6c046b24ed15667cf9153283ea3">operator==</a> (const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;other) const override</td></tr>
+<tr class="separator:aad26b6c046b24ed15667cf9153283ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279d44bbb33b6d9aff674e732574b167"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a279d44bbb33b6d9aff674e732574b167">operator!=</a> (const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;other) const override</td></tr>
+<tr class="separator:a279d44bbb33b6d9aff674e732574b167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvega_1_1manipulators_1_1ValueManipulator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">vega::manipulators::ValueManipulator</a></td></tr>
-<tr class="memitem:ac1a8bf00b84cf27f3dc2669c01f7f3fb inherit pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td class="memItemLeft" align="right" valign="top"><a id="ac1a8bf00b84cf27f3dc2669c01f7f3fb"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid_for</b> (const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;vr) const</td></tr>
+<tr class="memitem:a3a62466edf9abe3d75ba3db43292e2a4 inherit pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#a3a62466edf9abe3d75ba3db43292e2a4">~ValueManipulator</a> ()=0</td></tr>
+<tr class="separator:a3a62466edf9abe3d75ba3db43292e2a4 inherit pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a8bf00b84cf27f3dc2669c01f7f3fb inherit pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#ac1a8bf00b84cf27f3dc2669c01f7f3fb">is_valid_for</a> (const <a class="el" href="classvega_1_1VR.html">VR</a> &amp;vr) const</td></tr>
 <tr class="separator:ac1a8bf00b84cf27f3dc2669c01f7f3fb inherit pub_methods_classvega_1_1manipulators_1_1ValueManipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class vega::manipulators::PaddedStringManipulator&lt; T &gt;</h3>
+
+<p>A manipulator class for <a class="el" href="classvega_1_1VR.html">VR</a> that represent elements which are encoded in DICOM using strings. </p>
+<p>This manipulator inherits from <code>std::vector&lt;T&gt;</code> and therefore includes many helpful methods for handling vectors of the input type T. By only having to deal with a vector of generic elements T, there is no need to concern oneself with the conversion to the DICOM string. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5b2a314913036f9a2fd7641668142bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2a314913036f9a2fd7641668142bcc">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::const_iterator <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a5b2a314913036f9a2fd7641668142bcc">const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a466d3b1227d1428ed329ba22d527c62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466d3b1227d1428ed329ba22d527c62f">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::const_reference <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a466d3b1227d1428ed329ba22d527c62f">const_reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a410a34b7b0d4920abb2a5b29098c0a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410a34b7b0d4920abb2a5b29098c0a18">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::iterator <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a410a34b7b0d4920abb2a5b29098c0a18">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac89201598cb0457ea06a90c5e2421f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89201598cb0457ea06a90c5e2421f7d">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::reference <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#ac89201598cb0457ea06a90c5e2421f7d">reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad873fa67b80de37ab1febcbc08349faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad873fa67b80de37ab1febcbc08349faf">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::size_type <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#ad873fa67b80de37ab1febcbc08349faf">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a69fb42ae810c3c1c3213688e6e4de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a69fb42ae810c3c1c3213688e6e4de8">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef base_vector::value_type <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html#a7a69fb42ae810c3c1c3213688e6e4de8">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7b922ae583df7a09c5cc9840c18544ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b922ae583df7a09c5cc9840c18544ee">&#9670;&nbsp;</a></span>PaddedStringManipulator() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">PaddedStringManipulator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04c97a9bfbaaad27f0013074b618e248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c97a9bfbaaad27f0013074b618e248">&#9670;&nbsp;</a></span>PaddedStringManipulator() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">PaddedStringManipulator</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; dicom::RawValue &gt;&#160;</td>
+          <td class="paramname"><em>raw_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a5ee98d4881da1befd7268c950c85a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5ee98d4881da1befd7268c950c85a2">&#9670;&nbsp;</a></span>PaddedStringManipulator() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::<a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">PaddedStringManipulator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a279d44bbb33b6d9aff674e732574b167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279d44bbb33b6d9aff674e732574b167">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#aafd9096e7d02c59596609ee09c1f88f5">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
+<a id="aad26b6c046b24ed15667cf9153283ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad26b6c046b24ed15667cf9153283ea3">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html">ValueManipulator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#ac6819cfeb9f57b7ddfc49d4d85a1ad02">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
+<a id="a3b71aba7f8cd35bc8129410d61f41e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b71aba7f8cd35bc8129410d61f41e2f">&#9670;&nbsp;</a></span>raw_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; dicom::RawValue &gt; <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::raw_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#abce7962e75262b57cd616967b82e34b1">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
+<a id="ac0b5bb2de89944fbb661723e39704404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b5bb2de89944fbb661723e39704404">&#9670;&nbsp;</a></span>read_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::read_from </td>
+          <td>(</td>
+          <td class="paramtype">dicom::RawReader *&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#af3c7607050a3613f277f82d4dd4a074e">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
+<a id="a85c6db500bc48e91390e9bfda35966bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c6db500bc48e91390e9bfda35966bd">&#9670;&nbsp;</a></span>str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#a65fc94901bdac6b7b53e59d9a35c8597">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
+<a id="aed78558ca6580c013cfd3d2247406387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed78558ca6580c013cfd3d2247406387">&#9670;&nbsp;</a></span>write_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classvega_1_1manipulators_1_1PaddedStringManipulator.html">vega::manipulators::PaddedStringManipulator</a>&lt; T &gt;::write_to </td>
+          <td>(</td>
+          <td class="paramtype">dicom::RawWriter *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classvega_1_1manipulators_1_1ValueManipulator.html#a4b70b9b4c8c6054ce1cc8a02f2a7f8e2">vega::manipulators::ValueManipulator</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/vega/manipulators/<a class="el" href="padded__string__manipulator_8h_source.html">padded_string_manipulator.h</a></li>
 <li>include/vega/manipulators/<a class="el" href="padded__string__manipulator__impl_8h_source.html">padded_string_manipulator_impl.h</a></li>

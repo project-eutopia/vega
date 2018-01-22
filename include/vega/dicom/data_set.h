@@ -18,6 +18,14 @@ namespace vega {
   namespace dicom {
     class DataElement;
 
+    /**
+     * \brief Stores a set of \link DataElement DataElements\endlink.
+     *
+     * This class corresponds to the part of a DICOM file called a "data set"
+     * ([see DICOM documentation](http://dicom.nema.org/dicom/2013/output/chtml/part05/chapter_7.html)).
+     * Simply put a DataSet is a map from \link Tag Tags\endlink to \link DataElement DataElements\endlink,
+     * and so there can be at most one DataElement per Tag.
+     */
     class DataSet {
       public:
         typedef uint32_t length_type;
@@ -30,7 +38,7 @@ namespace vega {
         std::shared_ptr<dictionary::PrivateOwnerBlocks> m_private_owner_blocks;
 
       public:
-        static const length_type UndefinedLength;
+        static const length_type UNDEFINED_LENGTH;
 
         class iterator
         {
@@ -66,15 +74,29 @@ namespace vega {
             iterator_type m_it;
         };
 
+        /**
+         * Creates a blank DataSet.
+         * \param parent is the parent DataElement of this DataSet (`nullptr` when this DataSet is at the root of the DICOM file)
+         */
         DataSet(std::shared_ptr<DataElement> parent = nullptr);
 
         const std::weak_ptr<DataElement>& parent() const;
         std::weak_ptr<DataElement>& parent();
 
+        /// Adds a new DataElement to this DataSet.
         void add_data_element(std::shared_ptr<DataElement> data_element);
 
+        /// \cond false
+        /**
+         * Returns the dictionary::Page corresponding to the given Tag.
+         * The need for a method here is due to the complicated nature of private tags
+         * in the DICOM standard.  The details of a given Tag can depend on other tags
+         * in the DataSet.  Users will not need to use this method.
+         */
         std::shared_ptr<const dictionary::Page> page_for(const Tag& tag) const;
+        /// \endcond
 
+        /// Adds a new \link Element Element<T>\endlink to this DataSet.
         template <typename T>
         void add_element(std::shared_ptr<Element<T>> element) {
           if (this->data_element(element->tag())) throw vega::Exception("DataSet::add_element() -- Cannot add new element as it already exists");

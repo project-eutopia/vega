@@ -1,0 +1,50 @@
+<map id="vega::manipulators::ValueManipulator" name="vega::manipulators::ValueManipulator">
+<area shape="rect" id="node2" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; Byte \&gt;" alt="" coords="201,95,404,151"/>
+<area shape="rect" id="node6" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; double \&gt;" alt="" coords="201,259,404,315"/>
+<area shape="rect" id="node9" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; float \&gt;" alt="" coords="201,353,404,409"/>
+<area shape="rect" id="node12" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; int16_t \&gt;" alt="" coords="201,433,404,489"/>
+<area shape="rect" id="node14" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; int32_t \&gt;" alt="" coords="201,513,404,569"/>
+<area shape="rect" id="node16" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; Long \&gt;" alt="" coords="201,593,404,649"/>
+<area shape="rect" id="node18" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; Tag \&gt;" alt="" coords="201,673,404,729"/>
+<area shape="rect" id="node20" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; uint16_t \&gt;" alt="" coords="201,753,404,809"/>
+<area shape="rect" id="node22" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; uint32_t \&gt;" alt="" coords="201,833,404,889"/>
+<area shape="rect" id="node24" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="vega::manipulators\l::FixedSizeElementManipulator\l\&lt; Word \&gt;" alt="" coords="201,913,404,969"/>
+<area shape="rect" id="node26" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; Age \&gt;" alt="" coords="215,993,390,1049"/>
+<area shape="rect" id="node28" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; Date \&gt;" alt="" coords="215,1073,390,1129"/>
+<area shape="rect" id="node30" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; DateTime \&gt;" alt="" coords="215,1153,390,1209"/>
+<area shape="rect" id="node32" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; DecimalString \&gt;" alt="" coords="215,1233,390,1289"/>
+<area shape="rect" id="node34" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; int32_t \&gt;" alt="" coords="215,1313,390,1369"/>
+<area shape="rect" id="node36" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; std::string \&gt;" alt="" coords="215,1393,390,1449"/>
+<area shape="rect" id="node43" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="vega::manipulators\l::PaddedStringManipulator\l\&lt; Time \&gt;" alt="" coords="215,1473,390,1529"/>
+<area shape="rect" id="node45" href="$classvega_1_1manipulators_1_1EncapsulatedPixelDataManipulator.html" title="vega::manipulators\l::EncapsulatedPixelDataManipulator" alt="" coords="186,1553,419,1595"/>
+<area shape="rect" id="node46" href="$classvega_1_1manipulators_1_1FixedSizeElementManipulator.html" title="A manipulator class for VR that represent fixed size elements like integers and floating point number..." alt="" coords="185,1619,420,1660"/>
+<area shape="rect" id="node47" href="$classvega_1_1manipulators_1_1PaddedStringManipulator.html" title="A manipulator class for VR that represent elements which are encoded in DICOM using strings..." alt="" coords="199,1684,406,1725"/>
+<area shape="rect" id="node48" href="$classvega_1_1manipulators_1_1SingleStringManipulator.html" title="A manipulator class for VR that represent a single string. " alt="" coords="219,1749,386,1791"/>
+<area shape="rect" id="node49" href="$classvega_1_1manipulators_1_1UniqueIdentifierManipulator.html" title="vega::manipulators\l::UniqueIdentifierManipulator" alt="" coords="209,1815,397,1856"/>
+<area shape="rect" id="node3" href="$classvega_1_1manipulators_1_1OtherByteManipulator.html" title="vega::manipulators\l::OtherByteManipulator" alt="" coords="498,5,654,47"/>
+<area shape="rect" id="node4" href="$classvega_1_1manipulators_1_1PixelDataManipulator.html" title="vega::manipulators\l::PixelDataManipulator" alt="" coords="499,71,653,112"/>
+<area shape="rect" id="node5" href="$classvega_1_1manipulators_1_1UnknownManipulator.html" title="vega::manipulators\l::UnknownManipulator" alt="" coords="500,136,652,177"/>
+<area shape="rect" id="node7" href="$classvega_1_1manipulators_1_1FloatingPointDoubleManipulator.html" title="vega::manipulators\l::FloatingPointDoubleManipulator" alt="" coords="469,201,683,243"/>
+<area shape="rect" id="node8" href="$classvega_1_1manipulators_1_1OtherDoubleManipulator.html" title="vega::manipulators\l::OtherDoubleManipulator" alt="" coords="491,267,661,308"/>
+<area shape="rect" id="node10" href="$classvega_1_1manipulators_1_1FloatingPointManipulator.html" title="vega::manipulators\l::FloatingPointManipulator" alt="" coords="489,332,663,373"/>
+<area shape="rect" id="node11" href="$classvega_1_1manipulators_1_1OtherFloatManipulator.html" title="vega::manipulators\l::OtherFloatManipulator" alt="" coords="497,397,655,439"/>
+<area shape="rect" id="node13" href="$classvega_1_1manipulators_1_1SignedShortManipulator.html" title="vega::manipulators\l::SignedShortManipulator" alt="" coords="492,463,660,504"/>
+<area shape="rect" id="node15" href="$classvega_1_1manipulators_1_1SignedLongManipulator.html" title="vega::manipulators\l::SignedLongManipulator" alt="" coords="493,528,659,569"/>
+<area shape="rect" id="node17" href="$classvega_1_1manipulators_1_1OtherLongManipulator.html" title="vega::manipulators\l::OtherLongManipulator" alt="" coords="497,600,655,641"/>
+<area shape="rect" id="node19" href="$classvega_1_1manipulators_1_1AttributeTagManipulator.html" title="vega::manipulators\l::AttributeTagManipulator" alt="" coords="492,680,660,721"/>
+<area shape="rect" id="node21" href="$classvega_1_1manipulators_1_1UnsignedShortManipulator.html" title="vega::manipulators\l::UnsignedShortManipulator" alt="" coords="485,760,667,801"/>
+<area shape="rect" id="node23" href="$classvega_1_1manipulators_1_1UnsignedLongManipulator.html" title="vega::manipulators\l::UnsignedLongManipulator" alt="" coords="486,840,666,881"/>
+<area shape="rect" id="node25" href="$classvega_1_1manipulators_1_1OtherWordManipulator.html" title="vega::manipulators\l::OtherWordManipulator" alt="" coords="496,920,656,961"/>
+<area shape="rect" id="node27" href="$classvega_1_1manipulators_1_1AgeStringManipulator.html" title="vega::manipulators\l::AgeStringManipulator" alt="" coords="499,1000,653,1041"/>
+<area shape="rect" id="node29" href="$classvega_1_1manipulators_1_1DateManipulator.html" title="vega::manipulators\l::DateManipulator" alt="" coords="510,1073,642,1115"/>
+<area shape="rect" id="node31" href="$classvega_1_1manipulators_1_1DateTimeManipulator.html" title="vega::manipulators\l::DateTimeManipulator" alt="" coords="499,1139,653,1180"/>
+<area shape="rect" id="node33" href="$classvega_1_1manipulators_1_1DecimalStringManipulator.html" title="vega::manipulators\l::DecimalStringManipulator" alt="" coords="487,1204,665,1245"/>
+<area shape="rect" id="node35" href="$classvega_1_1manipulators_1_1IntegerStringManipulator.html" title="vega::manipulators\l::IntegerStringManipulator" alt="" coords="491,1269,661,1311"/>
+<area shape="rect" id="node37" href="$classvega_1_1manipulators_1_1ApplicationEntityManipulator.html" title="vega::manipulators\l::ApplicationEntityManipulator" alt="" coords="479,1335,673,1376"/>
+<area shape="rect" id="node38" href="$classvega_1_1manipulators_1_1CodeStringManipulator.html" title="vega::manipulators\l::CodeStringManipulator" alt="" coords="495,1400,657,1441"/>
+<area shape="rect" id="node39" href="$classvega_1_1manipulators_1_1LongStringManipulator.html" title="vega::manipulators\l::LongStringManipulator" alt="" coords="497,1465,655,1507"/>
+<area shape="rect" id="node40" href="$classvega_1_1manipulators_1_1PersonNameManipulator.html" title="vega::manipulators\l::PersonNameManipulator" alt="" coords="489,1531,663,1572"/>
+<area shape="rect" id="node41" href="$classvega_1_1manipulators_1_1ShortStringManipulator.html" title="vega::manipulators\l::ShortStringManipulator" alt="" coords="495,1596,657,1637"/>
+<area shape="rect" id="node42" href="$classvega_1_1manipulators_1_1UnlimitedCharactersManipulator.html" title="vega::manipulators\l::UnlimitedCharactersManipulator" alt="" coords="468,1661,684,1703"/>
+<area shape="rect" id="node44" href="$classvega_1_1manipulators_1_1TimeManipulator.html" title="vega::manipulators\l::TimeManipulator" alt="" coords="510,1727,642,1768"/>
+</map>

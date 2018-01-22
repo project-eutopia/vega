@@ -1,0 +1,4 @@
+<map id="vega::dicom::DataElementHeader" name="vega::dicom::DataElementHeader">
+<area shape="rect" id="node2" href="$classvega_1_1VR.html" title="vega::VR" alt="" coords="18,21,95,48"/>
+<area shape="rect" id="node3" href="$classvega_1_1Tag.html" title="vega::Tag" alt="" coords="119,21,199,48"/>
+</map>
