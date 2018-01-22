@@ -1,9 +1,12 @@
 #include "vega/dicom/sop_class.h"
 
 #include "vega/vega.h"
+#include "vega/dictionary_data.h"
 
 namespace vega {
   namespace dicom {
+    const Tag SOPClass::TAG = vega::dictionary::MediaStorageSOPClassUID::tag;
+
     const std::vector<std::pair<std::string,UID>> SOPClass::NAME_UID_PAIRS = {
       {"Computed Radiography Image Storage",                                          UID("1.2.840.10008.5.1.4.1.1.1")},
       {"Digital X-Ray Image Storage - For Presentation",                              UID("1.2.840.10008.5.1.4.1.1.1.1")},

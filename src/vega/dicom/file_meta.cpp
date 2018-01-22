@@ -160,7 +160,7 @@ namespace vega {
         throw InvalidFileMeta("Need TransferSyntaxUID element");
       }
 
-      auto sop_class = m_data_set->data_element("MediaStorageSOPClassUID");
+      auto sop_class = m_data_set->data_element(SOPClass::TAG);
       if (!sop_class) {
         throw InvalidFileMeta("Need MediaStorageSOPClassUID element");
       }

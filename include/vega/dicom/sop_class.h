@@ -1,9 +1,11 @@
 #pragma once
 
-#include "vega/uid.h"
 #include <string>
 #include <map>
 #include <vector>
+
+#include "vega/uid.h"
+#include "vega/tag.h"
 
 namespace vega {
   namespace dicom {
@@ -15,6 +17,8 @@ namespace vega {
         static const std::map<std::string,std::string> UID_TO_NAME_MAP;
 
       public:
+        static const Tag TAG;
+
         SOPClass();
         explicit SOPClass(const std::string& sop_class_name);
         explicit SOPClass(const UID& sop_class_uid);
