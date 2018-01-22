@@ -28,7 +28,7 @@ namespace vega {
     return ss.str();
   }
 
-  bool Tag::file_meta() const {
+  bool Tag::is_file_meta() const {
     return m_group == 0x2;
   }
 

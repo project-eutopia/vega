@@ -117,7 +117,7 @@ namespace vega {
           auto data_element = reader.read_data_element(m_data_set);
           if (!data_element) throw InvalidFileMeta("Unexpected error reading file meta");
 
-          if (!data_element->tag().file_meta()) {
+          if (!data_element->tag().is_file_meta()) {
             throw InvalidFileMeta("Encountered non file-meta DataElement in file meta header");
           }
 
@@ -144,7 +144,7 @@ namespace vega {
           reader.raw_reader().read_into(&temp_tag);
           reader.seek_pos(cur_pos);
 
-          if (!temp_tag.file_meta()) {
+          if (!temp_tag.is_file_meta()) {
             // Finished reading file meta
             break;
           }

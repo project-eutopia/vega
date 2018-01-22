@@ -50,7 +50,7 @@ namespace vega {
 
       std::string str() const;
 
-      bool file_meta() const;
+      bool is_file_meta() const;
 
       bool operator==(const Tag& other) const;
       bool operator!=(const Tag& other) const;
