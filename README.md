@@ -2,6 +2,7 @@
 
 C++ library for reading/writing/editing DICOM files.
 Detailed documentation can be found [here](https://project-eutopia.github.io/vega/).
+Note that while this library is fully functional, it is still in an early alpha stage of development so changes to the library can be expected.
 
 ## Getting started
 
