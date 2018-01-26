@@ -31,6 +31,8 @@ namespace vega {
 
         virtual bool operator==(const ValueManipulator& other) const override;
         virtual bool operator!=(const ValueManipulator& other) const override;
+
+        virtual void json(Formatter& formatter) const override;
     };
   }
 }

@@ -109,5 +109,24 @@ namespace vega {
         this->push_back(vega::from_string<T>(element_string));
       }
     }
+
+    template <typename T>
+    void PaddedStringManipulator<T>::json(Formatter& formatter) const {
+      switch (this->size()) {
+        case 0:
+          formatter << "\"\"";
+          break;
+        case 1:
+          formatter << vega::to_json(this->at(0));
+          break;
+        default:
+          formatter << '[';
+          for (unsigned i = 0; i < this->size(); ++i) {
+            formatter << vega::to_json(this->at(i));
+            if (i < this->size()-1) formatter << ',';
+          }
+          formatter << ']';
+      }
+    }
   }
 }

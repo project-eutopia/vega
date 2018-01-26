@@ -125,6 +125,8 @@ namespace vega {
         virtual bool operator==(const ValueManipulator& other) const override;
         virtual bool operator!=(const ValueManipulator& other) const override;
 
+        virtual void json(Formatter& formatter) const override;
+
       private:
         // For parsing all elements from the raw DICOM string (including delimiters)
         void parse_from_string(const std::string& s);

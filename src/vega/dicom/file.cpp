@@ -161,5 +161,19 @@ namespace vega {
         }
       }
     }
+
+    void File::write_json(const std::string& filename) const {
+      std::shared_ptr<std::ofstream> ofs(std::make_shared<std::ofstream>(filename, std::ofstream::binary));
+      if (!ofs || !*ofs) {
+        throw vega::Exception(std::string("Could not open file: ") + filename);
+      }
+
+      this->write_json(ofs);
+    }
+
+    void File::write_json(std::shared_ptr<std::ostream> os) const {
+      Formatter formatter(*os);
+      m_data_set->json(formatter);
+    }
   }
 }

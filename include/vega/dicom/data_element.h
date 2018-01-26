@@ -222,6 +222,7 @@ namespace vega {
         bool operator!=(const DataElement& other) const;
 
         void log(Formatter& formatter) const;
+        void json(Formatter& formatter) const;
     };
   }
 }

@@ -160,6 +160,7 @@ namespace vega {
         bool operator!=(const DataSet& other) const;
 
         void log(Formatter& formatter) const;
+        void json(Formatter& formatter) const;
 
       private:
         void add_private_owner_block_if_relevant(std::shared_ptr<DataElement> data_element);

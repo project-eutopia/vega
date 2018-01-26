@@ -45,8 +45,8 @@ int main() {
   vega::dicom::File file(file_name);
   
   // Print a human-friendly representation of the file to std::cout
-  vega::Logger logger(std::cout);
-  file.data_set()->log(logger);
+  vega::Formatter formatter(std::cout);
+  file.data_set()->log(formatter);
 }
 ```
 

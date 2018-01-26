@@ -27,6 +27,8 @@ namespace vega {
         virtual bool is_valid_for(const VR& vr) const override {
           return EncapsulatedPixelDataManipulator::allows_vr(vr);
         }
+
+        virtual void json(Formatter& formatter) const override;
     };
   }
 

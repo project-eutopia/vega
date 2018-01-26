@@ -20,8 +20,8 @@ int main(int argc, char *argv[]) {
   std::ofstream output;
   output.open(argv[2], std::ofstream::out);
 
-  vega::Logger logger(output);
-  file.data_set()->log(logger);
+  vega::Formatter formatter(output);
+  file.data_set()->log(formatter);
 
   output.close();
 }

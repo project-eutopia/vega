@@ -27,6 +27,8 @@ namespace vega {
           return vr == vr::UI;
         }
 
+        virtual void json(Formatter& formatter) const override;
+
       private:
         static UID uid_from_raw_value(const std::shared_ptr<dicom::RawValue>& raw_value);
     };

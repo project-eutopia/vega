@@ -100,6 +100,10 @@ namespace vega {
 
       return UID(ss.str());
     }
+
+    void UniqueIdentifierManipulator::json(Formatter& formatter) const {
+      formatter << '"' << this->str() << '"';
+    }
   }
 
   namespace vr {

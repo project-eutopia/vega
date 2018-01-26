@@ -129,6 +129,11 @@ namespace vega {
     bool EncapsulatedPixelDataManipulator::operator!=(const ValueManipulator& other) const {
       return !(*this == other);
     }
+
+    void EncapsulatedPixelDataManipulator::json(Formatter& formatter) const {
+      // FIXME
+      formatter << "\"encapsulated pixel data\"";
+    }
   }
 
   namespace vr {

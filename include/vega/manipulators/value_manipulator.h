@@ -5,6 +5,7 @@
 #include <memory>
 
 #include "vega/vega.h"
+#include "vega/formatter.h"
 #include "vega/dicom/raw_value.h"
 
 // Base abstract manipulator class
@@ -41,6 +42,8 @@ namespace vega {
 
         virtual bool operator==(const ValueManipulator& other) const;
         virtual bool operator!=(const ValueManipulator& other) const;
+
+        virtual void json(Formatter& formatter) const = 0;
     };
   }
 }

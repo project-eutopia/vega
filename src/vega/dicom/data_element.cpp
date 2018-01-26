@@ -161,5 +161,22 @@ namespace vega {
         formatter.decrease_indent();
       }
     }
+
+    void DataElement::json(Formatter& formatter) const {
+      if (this->is_sequence()) {
+        formatter << '[';
+        for (unsigned i = 0; i < this->data_sets().size(); ++i) {
+          const auto& data_set = this->data_sets()[i];
+          data_set->json(formatter);
+          if (i < this->data_sets().size() - 1) {
+            formatter << ',';
+          }
+        }
+        formatter << ']';
+      }
+      else {
+        this->manipulator()->json(formatter);
+      }
+    }
   }
 }

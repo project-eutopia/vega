@@ -152,6 +152,25 @@ namespace vega {
       }
     }
 
+    void DataSet::json(Formatter& formatter) const {
+      formatter << '{';
+
+      unsigned i = 0;
+      for (const auto& data_element : *this) {
+        formatter << '"' << data_element->tag().str() << '"' << ':';
+
+        data_element->json(formatter);
+
+        if (i < this->size()-1) {
+          std::cout << ',';
+        }
+
+        ++i;
+      }
+
+      formatter << '}';
+    }
+
     void DataSet::add_private_owner_block_if_relevant(std::shared_ptr<DataElement> data_element) {
       if (data_element->is_sequence()) return;
       if (!data_element->tag().is_private_owner()) return;

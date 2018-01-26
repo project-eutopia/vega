@@ -83,6 +83,18 @@ namespace vega {
          *        file, or std::sstream to write to a string).
          */
         void write(std::shared_ptr<std::ostream> os) const;
+
+        /**
+         * Writes this DICOM file in JSON format to the given \p filename.
+         */
+        void write_json(const std::string& filename) const;
+        /**
+         * Writes this DICOM file in JSON format to the given output stream \p os.
+         *
+         * \param os is the output stream to write the JSON file to (can be std::ofstream to write to
+         *        file, or std::sstream to write to a string).
+         */
+        void write_json(std::shared_ptr<std::ostream> os) const;
     };
   }
 }

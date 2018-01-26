@@ -9,7 +9,7 @@ namespace vega {
   namespace dicom {
     Reader::Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr)
       :
-        m_logger(std::cout, false),
+        m_formatter(std::cout, false),
         m_raw_reader(is),
         m_allow_any_explicit_vr(allow_any_explicit_vr)
     {
@@ -52,8 +52,8 @@ namespace vega {
         throw ReadingError("read_data_element() must receive parent DataSet");
       }
 
-      m_logger.indent() << "read_data_element"; m_logger.newline();
-      m_logger.increase_indent();
+      m_formatter.indent() << "read_data_element"; m_formatter.newline();
+      m_formatter.increase_indent();
 
       std::shared_ptr<DataElement> element = std::make_shared<DataElement>(parent);
 
@@ -106,14 +106,14 @@ namespace vega {
         );
       }
 
-      m_logger.indent() << "read_data_element: " << element->tag() << " " << element->vr() << " " << element->length(); m_logger.newline();
+      m_formatter.indent() << "read_data_element: " << element->tag() << " " << element->vr() << " " << element->length(); m_formatter.newline();
 
       if (element->is_sequence() || (element->tag().is_private() && element->is_undefined_length())) {
         // Ensure we have SQ VR
         element->vr() = vr::SQ;
 
         if (element->is_undefined_length()) {
-          m_logger.indent() << "element is sequence with undefined length"; m_logger.newline();
+          m_formatter.indent() << "element is sequence with undefined length"; m_formatter.newline();
           while (!this->eof()) {
             // Check if reached end of sequence
             Tag tag;
@@ -122,7 +122,7 @@ namespace vega {
             if (!m_raw_reader.read_into(&tag)) throw ReadingError("Reader failed to read sequence tag in undefined length element");
 
             if (tag.is_sequence_delimitation_tag()) {
-              m_logger.indent() << "--END-- of element (sequence delimit)"; m_logger.newline();
+              m_formatter.indent() << "--END-- of element (sequence delimit)"; m_formatter.newline();
               DataElementHeader::length_type length;
               if (!m_raw_reader.read_into(&length) || length != 0) throw ReadingError("Reader failed to read sequence length in undefined length element");
               break;
@@ -130,41 +130,41 @@ namespace vega {
 
             // Not end yet, so jump back to non-end of sequence tag
             this->seek_pos(cur_pos);
-            m_logger.increase_indent();
+            m_formatter.increase_indent();
             auto data_set = this->read_data_set(element);
-            m_logger.decrease_indent();
+            m_formatter.decrease_indent();
             if (data_set) element->data_sets().push_back(data_set);
           }
         }
         else {
-          m_logger.indent() << "element is sequence has regular length"; m_logger.newline();
+          m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
           auto end_of_element = this->tell() + (std::streampos)element->length();
 
           while (this->tell() < end_of_element) {
-            m_logger.increase_indent();
+            m_formatter.increase_indent();
             auto data_set = this->read_data_set(element);
-            m_logger.decrease_indent();
+            m_formatter.decrease_indent();
             if (data_set) element->data_sets().push_back(data_set);
           }
         }
       }
       else {
-        m_logger.indent() << "element is not sequence"; m_logger.newline();
+        m_formatter.indent() << "element is not sequence"; m_formatter.newline();
         // Not sequence, read raw data in
         auto manipulator = vega::manipulator_for(*element);
         element->set_manipulator(manipulator);
         if (!manipulator->read_from(&m_raw_reader, element->length())) throw ReadingError("Reader encountered error reading from manipulator: '" + element->tag().str() + " " + element->vr().str() + "' (" + vega::to_string(Word{.u = element->vr().data().value}) + ") length=" + vega::to_string(element->length()));
       }
 
-      m_logger.indent() << "read_data_element, returning: " << element->tag() << " " << element->vr() << " " << element->length(); m_logger.newline();
+      m_formatter.indent() << "read_data_element, returning: " << element->tag() << " " << element->vr() << " " << element->length(); m_formatter.newline();
 
-      m_logger.decrease_indent();
+      m_formatter.decrease_indent();
       return element;
     }
 
     std::shared_ptr<DataSet> Reader::read_data_set(std::shared_ptr<DataElement> parent) {
-      m_logger.indent() << "read_data_set"; m_logger.newline();
-      m_logger.increase_indent();
+      m_formatter.indent() << "read_data_set"; m_formatter.newline();
+      m_formatter.increase_indent();
 
       Tag item_tag;
       if (!m_raw_reader.read_into(&item_tag)) throw ReadingError("Reader failed to read in data set tag");
@@ -175,10 +175,10 @@ namespace vega {
         std::shared_ptr<DataSet> data_set = std::make_shared<DataSet>(parent);
         if (!m_raw_reader.read_into(&data_set->length)) throw ReadingError("Reader failed to read in data set length");
 
-        m_logger.indent() << "DataSet item tag: " << item_tag << " " << data_set->length; m_logger.newline();
+        m_formatter.indent() << "DataSet item tag: " << item_tag << " " << data_set->length; m_formatter.newline();
 
         if (data_set->is_undefined_length()) {
-          m_logger.indent() << "Undefined length data set"; m_logger.newline();
+          m_formatter.indent() << "Undefined length data set"; m_formatter.newline();
           while (!this->eof()) {
             // Check if reached end of item
             Tag tag;
@@ -187,7 +187,7 @@ namespace vega {
             if (!m_raw_reader.read_into(&tag)) throw ReadingError();
 
             if (tag.is_item_delimitation_tag()) {
-              m_logger.indent() << "--END-- of data sets (item delimit)"; m_logger.newline();
+              m_formatter.indent() << "--END-- of data sets (item delimit)"; m_formatter.newline();
               DataElementHeader::length_type length;
               if (!m_raw_reader.read_into(&length) || length != 0) throw ReadingError("Reader failed to read element tag in undefined length data set");
               break;
@@ -196,38 +196,38 @@ namespace vega {
             // Not end yet, so jump back to non-end of sequence tag
             this->seek_pos(cur_pos);
 
-            m_logger.increase_indent();
+            m_formatter.increase_indent();
             auto element = this->read_data_element(data_set);
             if (!element) throw ReadingError("Reader failed to read element in undefined length data set");
-            m_logger.decrease_indent();
+            m_formatter.decrease_indent();
 
             data_set->add_data_element(element);
           }
         }
         else {
-          m_logger.indent() << "Regular length data set"; m_logger.newline();
+          m_formatter.indent() << "Regular length data set"; m_formatter.newline();
           auto data_set_end = this->tell() + (std::streampos)data_set->length;
 
           while (this->tell() < data_set_end) {
-            m_logger.increase_indent();
+            m_formatter.increase_indent();
             auto element = this->read_data_element(data_set);
             if (!element) throw ReadingError("Reader failed to read element in well-defined length data set");
-            m_logger.decrease_indent();
+            m_formatter.decrease_indent();
 
             data_set->add_data_element(element);
           }
         }
 
-        m_logger.indent() << "Returning dataset: " << item_tag << " " << data_set->length; m_logger.newline();
-        m_logger.decrease_indent();
+        m_formatter.indent() << "Returning dataset: " << item_tag << " " << data_set->length; m_formatter.newline();
+        m_formatter.decrease_indent();
         return data_set;
       }
       // End of sequence of DataSets
       else if (item_tag.is_item_delimitation_tag()) {
         DataSet::length_type length;
         if (!m_raw_reader.read_into(&length) || length != 0) throw ReadingError("Reader failed to read in length of item delimitation tag");
-        m_logger.indent() << "DataSet (delim): " << item_tag << " " << length; m_logger.newline();
-        m_logger.decrease_indent();
+        m_formatter.indent() << "DataSet (delim): " << item_tag << " " << length; m_formatter.newline();
+        m_formatter.decrease_indent();
         return nullptr;
       }
 

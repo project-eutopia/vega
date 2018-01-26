@@ -70,5 +70,9 @@ namespace vega {
     bool SingleStringManipulator::operator!=(const ValueManipulator& other) const {
       return !(*this == other);
     }
+
+    void SingleStringManipulator::json(Formatter& formatter) const {
+      formatter << '"' << this->str() << '"';
+    }
   }
 }
