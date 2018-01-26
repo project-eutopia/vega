@@ -6,7 +6,7 @@
 
 #include "vega/vega.h"
 #include "vega/tag.h"
-#include "vega/logger.h"
+#include "vega/formatter.h"
 #include "vega/dicom/element.h"
 
 namespace vega {
@@ -159,7 +159,7 @@ namespace vega {
         bool operator==(const DataSet& other) const;
         bool operator!=(const DataSet& other) const;
 
-        void log(Logger& logger) const;
+        void log(Formatter& formatter) const;
 
       private:
         void add_private_owner_block_if_relevant(std::shared_ptr<DataElement> data_element);

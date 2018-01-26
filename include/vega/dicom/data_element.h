@@ -8,7 +8,7 @@
 #include "vega/vega.h"
 #include "vega/dicom/data_element_header.h"
 #include "vega/dictionary/dictionary.h"
-#include "vega/logger.h"
+#include "vega/formatter.h"
 
 #include "vega/manipulators/value_manipulator.h"
 
@@ -221,7 +221,7 @@ namespace vega {
         bool operator==(const DataElement& other) const;
         bool operator!=(const DataElement& other) const;
 
-        void log(Logger& logger) const;
+        void log(Formatter& formatter) const;
     };
   }
 }

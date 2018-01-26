@@ -132,33 +132,33 @@ namespace vega {
       return !(*this == other);
     }
 
-    void DataElement::log(Logger& logger) const {
-      logger.indent() << this->tag() << " " << this->vr();
+    void DataElement::log(Formatter& formatter) const {
+      formatter.indent() << this->tag() << " " << this->vr();
       if (this->page()) {
-        logger << " \"" << this->page()->name() << "\" VM=" << this->page()->vm();
+        formatter << " \"" << this->page()->name() << "\" VM=" << this->page()->vm();
       }
-      logger << " (len=" << this->length() << "): ";
+      formatter << " (len=" << this->length() << "): ";
       if (this->data_sets().empty()) {
         if (this->tag() == Tag::PIXEL_DATA) {
-          logger << "Pixel Data (size " << this->length() << ")";
+          formatter << "Pixel Data (size " << this->length() << ")";
         }
         else {
-          logger << this->str();
+          formatter << this->str();
         }
-        logger.newline();
+        formatter.newline();
       }
       else {
-        logger.newline();
-        logger.increase_indent();
+        formatter.newline();
+        formatter.increase_indent();
 
         size_t i = 1;
         for (auto data_set : this->data_sets()) {
-          logger.indent() << "--- Data set " << i++ << "/" << this->data_sets().size() << " with " << data_set->size() << " elements ---";
-          logger.newline();
-          data_set->log(logger);
+          formatter.indent() << "--- Data set " << i++ << "/" << this->data_sets().size() << " with " << data_set->size() << " elements ---";
+          formatter.newline();
+          data_set->log(formatter);
         }
 
-        logger.decrease_indent();
+        formatter.decrease_indent();
       }
     }
   }

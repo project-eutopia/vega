@@ -8,7 +8,7 @@
 #include "vega/vega.h"
 #include "vega/tag.h"
 #include "vega/vr.h"
-#include "vega/logger.h"
+#include "vega/formatter.h"
 #include "vega/dicom/io_state.h"
 #include "vega/dicom/data_element.h"
 #include "vega/dicom/data_set.h"
@@ -30,7 +30,7 @@ namespace vega {
         class ReadingError : public vega::Exception { using vega::Exception::Exception; };
 
       private:
-        Logger m_logger;
+        Formatter m_formatter;
         RawReader m_raw_reader;
         bool m_allow_any_explicit_vr;
 

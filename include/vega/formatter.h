@@ -1,17 +1,18 @@
 // Credit to:  https://stackoverflow.com/a/25217417/2435405
+#include <ostream>
 
 #pragma once
 
 namespace vega {
   // TODO: inherit from ostream? accept std::endl in <<?
-  class Logger {
+  class Formatter {
     public:
 
-      explicit Logger(std::ostream& os, bool active = true) : m_os(os), m_indent(0), m_active(active) {}
+      explicit Formatter(std::ostream& os, bool active = true) : m_os(os), m_indent(0), m_active(active) {}
       void increase_indent() { ++m_indent; }
       void decrease_indent() { --m_indent; }
 
-      Logger& indent() {
+      Formatter& indent() {
         if (m_active) {
           for (size_t i = 0; i < m_indent; ++i) {
             m_os << "  ";
@@ -20,12 +21,12 @@ namespace vega {
         return *this;
       }
 
-      Logger& newline() {
+      Formatter& newline() {
         if (m_active) m_os << std::endl;
         return *this;
       }
 
-      template<typename T> friend Logger& operator<<(Logger&, const T&);
+      template<typename T> friend Formatter& operator<<(Formatter&, const T&);
 
     private:
       std::ostream& m_os;
@@ -35,7 +36,7 @@ namespace vega {
 };
 
 template<typename T>
-vega::Logger& vega::operator<<(vega::Logger& log, const T& op) {
+vega::Formatter& vega::operator<<(vega::Formatter& log, const T& op) {
   if (log.m_active) log.m_os << op;
   return log;
 }

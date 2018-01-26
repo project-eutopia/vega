@@ -146,9 +146,9 @@ namespace vega {
       return !(*this == other);
     }
 
-    void DataSet::log(Logger& logger) const {
+    void DataSet::log(Formatter& formatter) const {
       for (auto data_element : m_elements) {
-        data_element.second->log(logger);
+        data_element.second->log(formatter);
       }
     }
 
@@ -170,4 +170,3 @@ namespace vega {
     }
   }
 }
-
