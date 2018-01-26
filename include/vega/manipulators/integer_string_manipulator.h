@@ -4,23 +4,6 @@
 #include "vega/manipulators/padded_string_manipulator.h"
 
 namespace vega {
-  class IntegerString {
-    private:
-      int m_number;
-
-    public:
-      IntegerString();
-      IntegerString(int i);
-      IntegerString(const std::string& s);
-
-      operator int() const;
-
-      bool operator ==(const IntegerString& is) const;
-      bool operator !=(const IntegerString& is) const;
-
-      std::string str() const;
-  };
-
   namespace manipulators {
     class IntegerStringManipulator : public PaddedStringManipulator<int32_t> {
       using PaddedStringManipulator<int32_t>::PaddedStringManipulator;
