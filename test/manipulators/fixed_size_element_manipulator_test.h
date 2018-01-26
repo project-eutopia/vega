@@ -40,7 +40,7 @@ TEST(FixedSizeElementManipulatorTest, tag_test) {
   manipulator.emplace_back(16, 32);
   manipulator.emplace_back(0x3000, 0xA080);
 
-  EXPECT_EQ(manipulator.str(), "(0010,0020)\\(3000,a080)");
+  EXPECT_EQ(manipulator.str(), "(0010,0020)\\(3000,A080)");
 
   FixedSizeElementManipulator<Tag> manipulator2(manipulator.raw_value());
 

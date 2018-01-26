@@ -31,7 +31,7 @@ TEST(DataElementTest, constructor_test) {
     dicom::DataElement element{Tag{0x1234, 0xfafa}};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag), could not find dictionary page with tag = (1234,fafa)"));
+    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag), could not find dictionary page with tag = (1234,FAFA)"));
   }
 
   try {
@@ -39,7 +39,7 @@ TEST(DataElementTest, constructor_test) {
     dicom::DataElement element{Tag{0x7fe0, 0x0010}};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("Must supply explicit VR to DataElement constructor for ambiguous VR tag (7fe0,0010)"));
+    EXPECT_EQ(std::string(ex.what()), std::string("Must supply explicit VR to DataElement constructor for ambiguous VR tag (7FE0,0010)"));
   }
 
   {
@@ -59,7 +59,7 @@ TEST(DataElementTest, constructor_test) {
     dicom::DataElement element{Tag{0x1234, 0xfafa}, vr::UN};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag, VR), could not find dictionary page with tag = (1234,fafa)"));
+    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag, VR), could not find dictionary page with tag = (1234,FAFA)"));
   }
 
   try {

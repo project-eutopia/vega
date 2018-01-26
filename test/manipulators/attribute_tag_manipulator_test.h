@@ -15,7 +15,7 @@ TEST(AttributeTagManipulatorTest, constructor_test) {
   manipulator.emplace_back(0x1234, 0xffff);
   manipulator.emplace_back(0x8000, 0x0001);
 
-  EXPECT_EQ(manipulator.str(), "(1234,ffff)\\(8000,0001)");
+  EXPECT_EQ(manipulator.str(), "(1234,FFFF)\\(8000,0001)");
 
   AttributeTagManipulator manipulator2(manipulator.raw_value());
 
@@ -30,5 +30,5 @@ TEST(AttributeTagManipulatorTest, data_element_test) {
   manipulator->emplace_back(0x0000, 0x0000);
   manipulator->emplace_back(0x9900, 0xabcd);
 
-  EXPECT_EQ(data_element.str(), "(0000,0000)\\(9900,abcd)");
+  EXPECT_EQ(data_element.str(), "(0000,0000)\\(9900,ABCD)");
 }

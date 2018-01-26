@@ -61,7 +61,7 @@ namespace vega {
   std::ostream& operator<<(std::ostream& os, const Tag& tag) {
     std::ios::fmtflags f( os.flags() );
     os << "(";
-    os << std::hex;
+    os << std::hex << std::uppercase;
     os << std::setfill('0') << std::setw(4) << tag.group();
     os << ",";
     os << std::setfill('0') << std::setw(4) << tag.element();
