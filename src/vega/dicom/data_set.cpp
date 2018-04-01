@@ -162,7 +162,7 @@ namespace vega {
         data_element->json(formatter);
 
         if (i < this->size()-1) {
-          std::cout << ',';
+          formatter << ',';
         }
 
         ++i;

@@ -22,11 +22,15 @@ namespace vega {
   template<>
   std::string to_string<int32_t>(const int32_t& i);
   template<>
+  std::string to_string<int64_t>(const int64_t& i);
+  template<>
   std::string to_string<uint8_t>(const uint8_t& u);
   template<>
   std::string to_string<uint16_t>(const uint16_t& u);
   template<>
   std::string to_string<uint32_t>(const uint32_t& u);
+  template<>
+  std::string to_string<uint64_t>(const uint64_t& u);
   template<>
   std::string to_string<Byte>(const Byte& byte);
   template<>
@@ -50,11 +54,15 @@ namespace vega {
   template<>
   int32_t from_string(const std::string& s);
   template<>
+  int64_t from_string(const std::string& s);
+  template<>
   uint8_t from_string(const std::string& s);
   template<>
   uint16_t from_string(const std::string& s);
   template<>
   uint32_t from_string(const std::string& s);
+  template<>
+  uint64_t from_string(const std::string& s);
   template<>
   Byte from_string(const std::string& s);
   template<>
@@ -79,11 +87,15 @@ namespace vega {
   template<>
   std::string to_json<int32_t>(const int32_t& i);
   template<>
+  std::string to_json<int64_t>(const int64_t& i);
+  template<>
   std::string to_json<uint8_t>(const uint8_t& u);
   template<>
   std::string to_json<uint16_t>(const uint16_t& u);
   template<>
   std::string to_json<uint32_t>(const uint32_t& u);
+  template<>
+  std::string to_json<uint64_t>(const uint64_t& u);
   template<>
   std::string to_json<Byte>(const Byte& byte);
   template<>

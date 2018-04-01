@@ -15,6 +15,7 @@
 #include "date_test.h"
 #include "time_test.h"
 #include "date_time_test.h"
+#include "json_test.h"
 #include "dicom/data_element_test.h"
 #include "dicom/data_set_test.h"
 #include "dicom/sop_class_test.h"
