@@ -3,6 +3,7 @@
 #include "vega/types.h"
 #include <stdint.h>
 #include <string>
+#include <sstream>
 
 namespace vega {
   // Should overload with different arguments for different types
@@ -70,40 +71,97 @@ namespace vega {
   template<>
   Long from_string(const std::string& s);
 
+  template <typename IS, typename T>
+  IS& to_json(IS& is, const T& t) {
+    is << t;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const int8_t& i) {
+    is << (int)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const int16_t& i) {
+    is << (int)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const int32_t& i) {
+    is << (int)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const int64_t& i) {
+    is << (long)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const uint8_t& i) {
+    is << (unsigned)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const uint16_t& i) {
+    is << (unsigned)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const uint32_t& i) {
+    is << (unsigned)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const uint64_t& i) {
+    is << (unsigned long)i;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const Byte& byte) {
+    is << (unsigned)byte.u;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const Word& word) {
+    is << (unsigned)word.u;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const Long& l) {
+    is << (unsigned)l.u;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const DecimalString& ds) {
+    is << double(ds);
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const std::string& s) {
+    is << '"' << s << '"';
+    return is;
+  }
+
   // Should overload with different arguments for different types
   template <typename T>
-  std::string to_json(const T& t);
-
-  template<>
-  std::string to_json<std::string>(const std::string& s);
-  template<>
-  std::string to_json<float>(const float& f);
-  template<>
-  std::string to_json<double>(const double& d);
-  template<>
-  std::string to_json<int8_t>(const int8_t& i);
-  template<>
-  std::string to_json<int16_t>(const int16_t& i);
-  template<>
-  std::string to_json<int32_t>(const int32_t& i);
-  template<>
-  std::string to_json<int64_t>(const int64_t& i);
-  template<>
-  std::string to_json<uint8_t>(const uint8_t& u);
-  template<>
-  std::string to_json<uint16_t>(const uint16_t& u);
-  template<>
-  std::string to_json<uint32_t>(const uint32_t& u);
-  template<>
-  std::string to_json<uint64_t>(const uint64_t& u);
-  template<>
-  std::string to_json<Byte>(const Byte& byte);
-  template<>
-  std::string to_json<Word>(const Word& word);
-  template<>
-  std::string to_json<Long>(const Long& l);
-  template<>
-  std::string to_json<DecimalString>(const DecimalString& ds);
+  std::string to_json(const T& t) {
+    std::stringstream ss;
+    to_json(ss, t);
+    return ss.str();
+  }
 }
 
 #include "vega/string_impl.h"
