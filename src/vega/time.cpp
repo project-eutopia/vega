@@ -58,15 +58,21 @@ namespace vega {
   }
 
   std::string Time::str() const {
-    if (this->is_range()) {
-      std::stringstream ss;
-      if (m_lower) ss << m_lower->str();
-      ss << '-';
-      if (m_upper) ss << m_upper->str();
-      return ss.str();
+    std::stringstream ss;
+    ss << *this;
+    return ss.str();
+  }
+
+  std::ostream& operator<<(std::ostream& os, const Time& time) {
+    if (time.is_range()) {
+      if (time.m_lower) os << time.m_lower->str();
+      os << '-';
+      if (time.m_upper) os << time.m_upper->str();
     }
     else {
-      return m_time->str();
+      os << time.m_time->str();
     }
+
+    return os;
   }
 }

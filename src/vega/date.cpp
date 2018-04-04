@@ -58,15 +58,21 @@ namespace vega {
   }
 
   std::string Date::str() const {
-    if (this->is_range()) {
-      std::stringstream ss;
-      if (m_lower) ss << m_lower->str();
-      ss << '-';
-      if (m_upper) ss << m_upper->str();
-      return ss.str();
+    std::stringstream ss;
+    ss << *this;
+    return ss.str();
+  }
+
+  std::ostream& operator<<(std::ostream& os, const Date& date) {
+    if (date.is_range()) {
+      if (date.m_lower) os << date.m_lower->str();
+      os << '-';
+      if (date.m_upper) os << date.m_upper->str();
     }
     else {
-      return m_date->str();
+      os << date.m_date->str();
     }
+
+    return os;
   }
 }

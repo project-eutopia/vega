@@ -2,6 +2,7 @@
 
 #include <stdint.h>
 #include <string>
+#include <ostream>
 
 namespace vega {
   class Age {
@@ -24,6 +25,7 @@ namespace vega {
       uint16_t count() const;
       Unit unit() const;
       std::string str() const;
+      friend std::ostream& operator<<(std::ostream& os, const Age& age);
 
       bool operator==(const Age& other) const;
       bool operator!=(const Age& other) const;

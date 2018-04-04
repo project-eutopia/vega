@@ -1,6 +1,7 @@
 #include "vega/age.h"
 #include "vega/vega.h"
 #include <stdexcept>
+#include <sstream>
 
 namespace vega {
   Age::Age(uint16_t count, Age::Unit unit)
@@ -38,15 +39,16 @@ namespace vega {
   Age::Unit Age::unit() const { return m_unit; }
 
   std::string Age::str() const {
-    if (this->count() < 10) {
-      return std::string("00") + std::to_string(this->count()) + static_cast<char>(this->unit());
-    }
-    else if (this->count() < 100) {
-      return std::string("0") + std::to_string(this->count()) + static_cast<char>(this->unit());
-    }
-    else {
-      return std::to_string(this->count()) + static_cast<char>(this->unit());
-    }
+    std::stringstream ss;
+    ss << *this;
+    return ss.str();
+  }
+
+  std::ostream& operator<<(std::ostream& os, const Age& age) {
+    if (age.count() < 100) os << '0';
+    if (age.count() < 10)  os << '0';
+    os << age.count() << static_cast<char>(age.unit());
+    return os;
   }
 
   bool Age::operator==(const Age& other) const {

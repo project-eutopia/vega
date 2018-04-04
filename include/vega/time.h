@@ -3,6 +3,7 @@
 #include <string>
 #include <memory>
 #include <regex>
+#include <ostream>
 
 namespace vega {
   class RegexString;
@@ -43,6 +44,7 @@ namespace vega {
       bool operator!=(const Time& other) const;
 
       std::string str() const;
+      friend std::ostream& operator<<(std::ostream& os, const Time& time);
       void set_string(const std::string& s);
   };
 }
