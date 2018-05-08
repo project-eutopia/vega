@@ -6,7 +6,7 @@
 
 using namespace vega;
 
-TEST(TAGTest, tag_constants_test) {
+TEST(TagTest, tag_constants_test) {
   Tag item_tag(Tag::ITEM_TAG);
   EXPECT_EQ(item_tag.group(), 0xFFFE);
   EXPECT_EQ(item_tag.element(), 0xE000);
@@ -27,4 +27,17 @@ TEST(TAGTest, tag_constants_test) {
   EXPECT_FALSE(seq_delim_tag.is_item_tag());
   EXPECT_FALSE(seq_delim_tag.is_item_delimitation_tag());
   EXPECT_TRUE(seq_delim_tag.is_sequence_delimitation_tag());
+}
+
+TEST(TagTest, tag_stream_operators_test) {
+  Tag tag{0x1234,0xff00};
+
+  std::stringstream ss;
+  ss << tag;
+  EXPECT_EQ(ss.str(), "(1234,FF00)");
+
+  ss = std::stringstream("(ABCD,0010)");
+  ss >> tag;
+  EXPECT_EQ(tag.group(), 0xabcd);
+  EXPECT_EQ(tag.element(), 0x0010);
 }

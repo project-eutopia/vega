@@ -3,7 +3,7 @@
 #include <string>
 #include <memory>
 #include <regex>
-#include <ostream>
+#include <iostream>
 
 namespace vega {
   class RegexString;
@@ -20,6 +20,7 @@ namespace vega {
       std::shared_ptr<const Date> m_upper;
 
     public:
+      Date();
       explicit Date(const std::string& s);
       Date(const std::shared_ptr<Date>& lower, const std::shared_ptr<Date>& upper);
 
@@ -32,6 +33,8 @@ namespace vega {
 
       std::string str() const;
       friend std::ostream& operator<<(std::ostream& os, const Date& date);
+      friend std::istream& operator>>(std::istream& is, Date& date);
+
       void set_string(const std::string& s);
   };
 }

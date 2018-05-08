@@ -2,6 +2,7 @@
 
 #include "vega/dicom/raw_reader.h"
 #include "vega/dicom/raw_writer.h"
+#include "vega/json.h"
 
 #include <sstream>
 
@@ -102,7 +103,11 @@ namespace vega {
     }
 
     void UniqueIdentifierManipulator::json(Formatter& formatter) const {
-      formatter << '"' << this->str() << '"';
+      formatter << vega::to_json(this->str());
+    }
+
+    void UniqueIdentifierManipulator::from_json(std::stringstream& json_string) {
+      json_string >> m_uid;
     }
   }
 

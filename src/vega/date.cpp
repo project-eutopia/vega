@@ -13,6 +13,8 @@ namespace vega {
     "\\s*([\\.\\d]*)\\s*-\\s*([\\.\\d]*)\\s*"
   );
 
+  Date::Date() {}
+
   Date::Date(const std::string& s) {
     this->set_string(s);
   }
@@ -74,5 +76,10 @@ namespace vega {
     }
 
     return os;
+  }
+
+  std::istream& operator>>(std::istream& is, Date& date) {
+    // FIXME
+    return is;
   }
 }

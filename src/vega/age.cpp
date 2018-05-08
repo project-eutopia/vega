@@ -4,6 +4,12 @@
 #include <sstream>
 
 namespace vega {
+  Age::Age()
+    :
+      m_count(0),
+      m_unit(Unit::DAY)
+  {}
+
   Age::Age(uint16_t count, Age::Unit unit)
     :
       m_count(count),
@@ -16,22 +22,21 @@ namespace vega {
     if (s.size() > 4) throw vega::Exception("Age string must be at most 4 characters long");
     m_count = std::stoul(s.substr(0, s.size()-1));
     char unit = s[s.size()-1];
+    m_unit = Age::unit_from_char(unit);
+  }
 
-    switch (unit) {
+  Age::Unit Age::unit_from_char(char c) {
+    switch (c) {
       case 'D':
-        m_unit = Unit::DAY;
-        break;
+        return Unit::DAY;
       case 'W':
-        m_unit = Unit::WEEK;
-        break;
+        return Unit::WEEK;
       case 'M':
-        m_unit = Unit::MONTH;
-        break;
+        return Unit::MONTH;
       case 'Y':
-        m_unit = Unit::YEAR;
-        break;
+        return Unit::YEAR;
       default:
-        throw vega::Exception(std::string("Unknown age unit: ") + unit);
+        throw vega::Exception(std::string("Unknown age unit: ") + c);
     }
   }
 
@@ -49,6 +54,14 @@ namespace vega {
     if (age.count() < 10)  os << '0';
     os << age.count() << static_cast<char>(age.unit());
     return os;
+  }
+
+  std::istream& operator>>(std::istream& is, Age& age) {
+    is >> age.m_count;
+    char c;
+    is >> c;
+    age.m_unit = Age::unit_from_char(c);
+    return is;
   }
 
   bool Age::operator==(const Age& other) const {

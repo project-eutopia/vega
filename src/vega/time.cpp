@@ -13,6 +13,8 @@ namespace vega {
     "\\s*([\\.\\d]*)\\s*-\\s*([\\.\\d]*)\\s*"
   );
 
+  Time::Time() {}
+
   Time::Time(const std::string& s) {
     this->set_string(s);
   }
@@ -74,5 +76,10 @@ namespace vega {
     }
 
     return os;
+  }
+
+  std::istream& operator>>(std::istream& is, Time& time) {
+    // FIXME
+    return is;
   }
 }

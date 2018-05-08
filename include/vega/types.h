@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-#include <ostream>
+#include <iostream>
 
 namespace vega {
   union Byte {
@@ -14,6 +14,7 @@ namespace vega {
     bool operator!=(const Byte& other) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Byte& byte);
+    friend std::istream& operator>>(std::istream& in, Byte& byte);
   };
 
   union Word {
@@ -24,6 +25,7 @@ namespace vega {
     bool operator!=(const Word& other) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Word& word);
+    friend std::istream& operator>>(std::istream& in, Word& word);
   };
 
   union Long {
@@ -34,6 +36,7 @@ namespace vega {
     bool operator!=(const Long& other) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Long& l);
+    friend std::istream& operator>>(std::istream& is, Long& l);
   };
 
   class DecimalString {
@@ -55,5 +58,8 @@ namespace vega {
       bool operator !=(const DecimalString& ds) const;
 
       std::string str() const;
+
+      friend std::ostream& operator<<(std::ostream& os, const DecimalString& ds);
+      friend std::istream& operator>>(std::istream& is, DecimalString& ds);
   };
 }

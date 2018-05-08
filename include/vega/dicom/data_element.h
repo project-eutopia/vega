@@ -117,6 +117,8 @@ namespace vega {
          */
         DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent = nullptr);
 
+        static std::shared_ptr<DataElement> from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
+
         /// \return the dictionary::Page corresponding to this DataElement's Tag.
         const std::shared_ptr<const dictionary::Page>& page() const;
         /// Sets the dictionary::Page for blank \link DataElement DataElements\endlink.

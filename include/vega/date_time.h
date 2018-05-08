@@ -49,6 +49,7 @@ namespace vega {
       std::shared_ptr<const DateTime> m_upper;
 
     public:
+      DateTime();
       explicit DateTime(const std::string& s);
       DateTime(const std::shared_ptr<DateTime>& lower, const std::shared_ptr<DateTime>& upper);
 
@@ -61,6 +62,8 @@ namespace vega {
 
       std::string str() const;
       friend std::ostream& operator<<(std::ostream& os, const DateTime& date_time);
+      friend std::istream& operator>>(std::istream& is, DateTime& date_time);
+
       void set_string(const std::string& s);
   };
 }

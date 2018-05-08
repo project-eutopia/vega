@@ -33,6 +33,7 @@ namespace vega {
       std::shared_ptr<const Time> m_upper;
 
     public:
+      Time();
       explicit Time(const std::string& s);
       Time(const std::shared_ptr<Time>& lower, const std::shared_ptr<Time>& upper);
 
@@ -45,6 +46,8 @@ namespace vega {
 
       std::string str() const;
       friend std::ostream& operator<<(std::ostream& os, const Time& time);
+      friend std::istream& operator>>(std::istream& is, Time& time);
+
       void set_string(const std::string& s);
   };
 }

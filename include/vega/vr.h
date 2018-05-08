@@ -5,6 +5,7 @@
 #include <typeinfo>
 #include <stdint.h>
 #include <string>
+#include <iostream>
 
 namespace vega {
   /**
@@ -64,6 +65,7 @@ namespace vega {
       size_t block_size() const;
 
       friend std::ostream& operator<<(std::ostream& os, const VR& tag);
+      friend std::istream& operator>>(std::istream& is, VR& tag);
 
       template <typename T>
       void validate_value_manipulator() const;

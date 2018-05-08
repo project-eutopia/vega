@@ -28,6 +28,7 @@ namespace vega {
         }
 
         virtual void json(Formatter& formatter) const override;
+        virtual void from_json(std::stringstream& json_string) override;
 
       private:
         static UID uid_from_raw_value(const std::shared_ptr<dicom::RawValue>& raw_value);

@@ -80,6 +80,9 @@ namespace vega {
          */
         DataSet(std::shared_ptr<DataElement> parent = nullptr);
 
+        static std::shared_ptr<DataSet> from_json(const std::string& json_string);
+        static std::shared_ptr<DataSet> from_json(std::stringstream& json_string, std::shared_ptr<DataElement> parent = nullptr);
+
         const std::weak_ptr<DataElement>& parent() const;
         std::weak_ptr<DataElement>& parent();
 

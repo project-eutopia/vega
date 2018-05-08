@@ -1,5 +1,6 @@
 #include "vega/dicom/raw_reader.h"
 #include "vega/dicom/raw_writer.h"
+#include "vega/json.h"
 #include "vega/vega.h"
 
 #include <sstream>
@@ -86,21 +87,12 @@ namespace vega {
 
     template <typename T>
     void FixedSizeElementManipulator<T>::json(Formatter& formatter) const {
-      switch (this->size()) {
-        case 0:
-          formatter << "\"\"";
-          break;
-        case 1:
-          formatter << vega::to_json(this->at(0));
-          break;
-        default:
-          formatter << '[';
-          for (unsigned i = 0; i < this->size(); ++i) {
-            formatter << vega::to_json(this->at(i));
-            if (i < this->size()-1) formatter << ',';
-          }
-          formatter << ']';
-      }
+      Json::to_json(formatter, *this);
+    }
+
+    template <typename T>
+    void FixedSizeElementManipulator<T>::from_json(std::stringstream& json_string) {
+      Json::from_json<decltype(*this), T>(json_string, *this);
     }
   }
 }

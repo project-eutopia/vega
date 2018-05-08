@@ -73,7 +73,19 @@ namespace vega {
 
   template <typename IS, typename T>
   IS& to_json(IS& is, const T& t) {
-    is << t;
+    is << '"' << t << '"';
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const float& f) {
+    is << f;
+    return is;
+  }
+
+  template<typename IS>
+  IS& to_json(IS& is, const double& d) {
+    is << d;
     return is;
   }
 
@@ -151,7 +163,39 @@ namespace vega {
 
   template<typename IS>
   IS& to_json(IS& is, const std::string& s) {
-    is << '"' << s << '"';
+    is << '"';
+
+    char c;
+    for (size_t i = 0; i < s.size(); ++i) {
+      c = s[i];
+      switch(c) {
+        case '\b':
+          is << '\\' << 'b';
+          break;
+        case '\f':
+          is << '\\' << 'f';
+          break;
+        case '\n':
+          is << '\\' << 'n';
+          break;
+        case '\r':
+          is << '\\' << 'r';
+          break;
+        case '\t':
+          is << '\\' << 't';
+          break;
+        case '"':
+          is << '\\' << '"';
+          break;
+        case '\\':
+          is << '\\' << '\\';
+          break;
+        default:
+          is << c;
+      }
+    }
+
+    is << '"';
     return is;
   }
 

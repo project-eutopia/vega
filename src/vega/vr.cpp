@@ -262,4 +262,10 @@ namespace vega {
     os << ((std::isalnum(vr.data().characters[1])) ? vr.data().characters[1] : '_');
     return os;
   }
+
+  std::istream& operator>>(std::istream& is, VR& vr) {
+    is >> vr.data().characters[0];
+    is >> vr.data().characters[1];
+    return is;
+  }
 }

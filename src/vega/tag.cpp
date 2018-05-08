@@ -69,4 +69,17 @@ namespace vega {
     os.flags(f);
     return os;
   }
+
+  std::istream& operator>>(std::istream& is, Tag& tag) {
+    std::ios::fmtflags f( is.flags() );
+    char c;
+    is >> c; // '('
+    is >> std::hex >> std::uppercase;
+    is >> std::setfill('0') >> std::setw(4) >> tag.group();
+    is >> c; // ','
+    is >> std::setfill('0') >> std::setw(4) >> tag.element();
+    is >> c; // ')'
+    is.flags(f);
+    return is;
+  }
 }

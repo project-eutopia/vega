@@ -71,4 +71,9 @@ namespace vega {
     os << uid.str();
     return os;
   }
+
+  std::istream& operator>>(std::istream& is, UID& uid) {
+    is >> uid.m_uid;
+    return is;
+  }
 }

@@ -2,7 +2,7 @@
 
 #include <stdint.h>
 #include <string>
-#include <ostream>
+#include <iostream>
 
 namespace vega {
   class Age {
@@ -19,6 +19,7 @@ namespace vega {
       Unit m_unit;
 
     public:
+      Age();
       Age(uint16_t count, Unit unit);
       explicit Age(const std::string& s);
 
@@ -26,8 +27,12 @@ namespace vega {
       Unit unit() const;
       std::string str() const;
       friend std::ostream& operator<<(std::ostream& os, const Age& age);
+      friend std::istream& operator>>(std::istream& is, Age& age);
 
       bool operator==(const Age& other) const;
       bool operator!=(const Age& other) const;
+
+    private:
+      static Unit unit_from_char(char c);
   };
 }

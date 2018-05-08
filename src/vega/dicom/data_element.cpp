@@ -1,5 +1,6 @@
 #include "vega/dicom/data_element.h"
 #include "vega/dicom/data_set.h"
+#include "vega/manipulator.h"
 #include "vega/vega.h"
 
 namespace vega {
@@ -177,6 +178,32 @@ namespace vega {
       else {
         this->manipulator()->json(formatter);
       }
+    }
+
+    std::shared_ptr<DataElement> DataElement::from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent) {
+      auto data_element = std::make_shared<DataElement>(tag, parent);
+
+      if (data_element->is_sequence()) {
+        char c;
+        json_string >> c;
+        if (c != '[') throw vega::Exception("Reading JSON data element, did not find '['");
+
+        do {
+          auto data_set = DataSet::from_json(json_string, data_element);
+          data_element->data_sets().push_back(data_set);
+          json_string >> c;
+        }
+        while(c == ',');
+
+        if (c != ']') throw vega::Exception("Reading JSON data element, did not find ']'");
+      }
+      else {
+        auto manipulator = vega::manipulator_for(*data_element);
+        data_element->set_manipulator(manipulator);
+        manipulator->from_json(json_string);
+      }
+
+      return data_element;
     }
   }
 }
