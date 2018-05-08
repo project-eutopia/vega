@@ -53,11 +53,51 @@ TEST(TimeTest, to_string_test) {
 }
 
 TEST(TimeTest, manipulator_test) {
-  vega::manipulators::PaddedStringManipulator<Time> date_manipulator{};
-  date_manipulator.emplace_back(std::string("120000"));
-  date_manipulator.emplace_back(std::string("180059"));
+  vega::manipulators::PaddedStringManipulator<Time> time_manipulator{};
+  time_manipulator.emplace_back(std::string("120000"));
+  time_manipulator.emplace_back(std::string("180059"));
 
-  EXPECT_EQ(date_manipulator[0].str(), "120000");
-  EXPECT_EQ(date_manipulator[1].str(), "180059");
-  EXPECT_EQ(date_manipulator.str(), std::string("120000\\180059 "));
+  EXPECT_EQ(time_manipulator[0].str(), "120000");
+  EXPECT_EQ(time_manipulator[1].str(), "180059");
+  EXPECT_EQ(time_manipulator.str(), std::string("120000\\180059 "));
+}
+
+TEST(TimeTest, stream_test) {
+  std::vector<std::string> time_strings = {
+    "23",
+    "-1212",
+    "200011-",
+    "112233-223344.123456",
+    "000000.000000-235959.999999"
+  };
+
+  for (const auto& time_string : time_strings) {
+    Time time(time_string);
+    std::stringstream ss;
+
+    ss << time;
+    const std::string s = ss.str();
+    EXPECT_EQ(s, time_string);
+
+    ss = std::stringstream(s);
+    Time time2;
+    ss >> time2;
+
+    EXPECT_EQ(time, time2);
+  }
+
+  std::string comma_separated_times = "12:00:00-130000,235959.999999";
+  std::stringstream ss(comma_separated_times);
+
+  Time time;
+  ss >> time;
+
+  EXPECT_EQ(time.str(), "120000-130000");
+
+  char c;
+  ss >> c;
+  EXPECT_EQ(c, ',');
+
+  ss >> time;
+  EXPECT_EQ(time.str(), "235959.999999");
 }

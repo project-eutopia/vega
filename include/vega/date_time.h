@@ -1,5 +1,7 @@
 #pragma once
 
+#include "vega/range_type.h"
+
 #include <string>
 #include <memory>
 #include <regex>
@@ -39,11 +41,11 @@ namespace vega {
    26 bytes maximum (formatted string) */
   class DateTime {
     public:
-      static const std::shared_ptr<const std::regex> SINGLE_DATE_TIME_REGEX;
-      static const std::shared_ptr<const std::regex> DATE_TIME_RANGE_REGEX;
+      static const std::shared_ptr<const std::regex> SINGLE_REGEX;
+      static const std::shared_ptr<const std::regex> RANGE_REGEX;
 
       // Can either be single DateTime
-      std::shared_ptr<const RegexString> m_date_time;
+      std::shared_ptr<const RegexString> m_value;
       // Or a range of DateTimes
       std::shared_ptr<const DateTime> m_lower;
       std::shared_ptr<const DateTime> m_upper;
@@ -65,5 +67,10 @@ namespace vega {
       friend std::istream& operator>>(std::istream& is, DateTime& date_time);
 
       void set_string(const std::string& s);
+
+      template <typename T>
+      friend void range_read(std::istream& is, T& t);
+
+      static std::string read_single_string_from(std::istream& is);
   };
 }

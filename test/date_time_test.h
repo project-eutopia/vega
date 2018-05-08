@@ -64,3 +64,43 @@ TEST(DateTimeTest, manipulator_test) {
   EXPECT_EQ(manipulator[1].str(), "21000405123030");
   EXPECT_EQ(manipulator.str(), std::string("19001011\\21000405123030 "));
 }
+
+TEST(DateTimeTest, stream_test) {
+  std::vector<std::string> date_time_strings = {
+    "2000",
+    "-21000101001122",
+    "9000-9999",
+    "19991231235959.999999-",
+    "20000101000000.000000-20991231235959.999999"
+  };
+
+  for (const auto& date_time_string : date_time_strings) {
+    DateTime date_time(date_time_string);
+    std::stringstream ss;
+
+    ss << date_time;
+    const std::string s = ss.str();
+    EXPECT_EQ(s, date_time_string);
+
+    ss = std::stringstream(s);
+    DateTime date_time2;
+    ss >> date_time2;
+
+    EXPECT_EQ(date_time, date_time2);
+  }
+
+  std::string comma_separated_times = "19990415-20001225,2018-1400-2019+1400";
+  std::stringstream ss(comma_separated_times);
+
+  DateTime date_time;
+  ss >> date_time;
+
+  EXPECT_EQ(date_time.str(), "19990415-20001225");
+
+  char c;
+  ss >> c;
+  EXPECT_EQ(c, ',');
+
+  ss >> date_time;
+  EXPECT_EQ(date_time.str(), "2018-1400-2019+1400");
+}

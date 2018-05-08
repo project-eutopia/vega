@@ -1,5 +1,7 @@
 #pragma once
 
+#include "vega/range_type.h"
+
 #include <string>
 #include <memory>
 #include <regex>
@@ -23,11 +25,11 @@ namespace vega {
    */
   class Time {
     public:
-      static const std::shared_ptr<const std::regex> SINGLE_TIME_REGEX;
-      static const std::shared_ptr<const std::regex> TIME_RANGE_REGEX;
+      static const std::shared_ptr<const std::regex> SINGLE_REGEX;
+      static const std::shared_ptr<const std::regex> RANGE_REGEX;
 
       // Can either be single Time
-      std::shared_ptr<const RegexString> m_time;
+      std::shared_ptr<const RegexString> m_value;
       // Or a range of Times
       std::shared_ptr<const Time> m_lower;
       std::shared_ptr<const Time> m_upper;
@@ -49,5 +51,10 @@ namespace vega {
       friend std::istream& operator>>(std::istream& is, Time& time);
 
       void set_string(const std::string& s);
+
+      template <typename T>
+      friend void range_read(std::istream& is, T& t);
+
+      static std::string read_single_string_from(std::istream& is);
   };
 }
