@@ -38,7 +38,7 @@ namespace vega {
     DataElement::DataElement(const Tag& tag, std::shared_ptr<DataSet> parent)
       :
         m_header(),
-        m_page(vega::dictionary::Dictionary::instance().page_for(tag)),
+        m_page(parent ? parent->page_for(tag) : vega::dictionary::Dictionary::instance().page_for(tag)),
         m_parent(parent),
         m_data_sets(),
         m_manipulator()
