@@ -13,7 +13,7 @@
 using namespace vega;
 using namespace vega::manipulators;
 
-TEST(DecimalString, decimal_string_test) {
+TEST(DecimalStringTest, decimal_string_test) {
   std::default_random_engine generator;
   std::uniform_real_distribution<double> base_distribution(1.0, 10.0);
   std::uniform_real_distribution<double> exp_distribution(-307, 307);
@@ -43,6 +43,23 @@ TEST(DecimalString, decimal_string_test) {
       EXPECT_GT(double(ds2), value*1.00001);
     }
   }
+}
+
+TEST(DecimalStringTest, decimal_string_stream_test) {
+  DecimalString ds;
+
+  std::stringstream ss("9.9902680e-1");
+  ss >> ds;
+
+  EXPECT_EQ(double(ds), 0.9990268);
+
+  ss = std::stringstream();
+  ss << ds;
+
+  EXPECT_EQ(ss.str(), "9.990268e-1");
+
+  DecimalStringManipulator manipulator{};
+  manipulator.emplace_back(0.9990268);
 }
 
 TEST(DecimalStringManipulatorTest, constructor_test) {

@@ -4,6 +4,7 @@
 #include "vega/string.h"
 #include "vega/tag.h"
 #include "vega/json.h"
+#include "vega/dicom/file.h"
 #include "vega/dicom/data_set.h"
 #include "vega/dicom/element.h"
 
@@ -142,5 +143,22 @@ TEST(FromJsonTest, data_set_element_test) {
   {
     auto element = data_set->element<vega::dictionary::PatientComments>();
     EXPECT_EQ(element->manipulator()->value(), "Very healthy");
+  }
+}
+
+TEST(FullDicomJsonTest, test_equivalence) {
+  std::vector<std::string> file_names;
+
+  file_names.push_back(tests::path_to_file("data/pydicom/rtplan.dcm"));
+
+  for (const auto& file_name : file_names) {
+    dicom::File file(file_name);
+
+    std::stringstream ss;
+    Formatter formatter(ss);
+    file.data_set()->json(formatter);
+
+    auto data_set_copy = dicom::DataSet::from_json(ss);
+    EXPECT_TRUE(*file.data_set() == *data_set_copy);
   }
 }

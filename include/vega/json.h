@@ -40,7 +40,7 @@ namespace vega {
       static void to_json(Formatter& formatter, const T& manipulator) {
         switch (manipulator.size()) {
           case 0:
-            formatter << "nullptr";
+            formatter << "null";
             break;
           case 1:
             value_to_json(formatter, manipulator[0]);
@@ -63,7 +63,20 @@ namespace vega {
       template <typename T>
       static T value_from_json(std::stringstream& json_string) {
         T value;
-        json_string >> value;
+        // Surrounded in quotes
+        if (json_string.peek() == '"') {
+          char c;
+          json_string >> c;
+          assert(c == '"');
+          json_string >> value;
+          json_string >> c;
+          assert(c == '"');
+        }
+        // No quotes
+        else {
+          json_string >> value;
+        }
+
         return value;
       }
 
@@ -74,7 +87,10 @@ namespace vega {
         switch(c) {
           case 'n':
             // Should be nullptr, ending in r
-            while(c != 'r') json_string >> c;
+            json_string >> c;
+            json_string >> c;
+            json_string >> c;
+            json_string >> c;
             // Nothing to read into manipulator
             break;
 

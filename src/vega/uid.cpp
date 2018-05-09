@@ -73,7 +73,15 @@ namespace vega {
   }
 
   std::istream& operator>>(std::istream& is, UID& uid) {
-    is >> uid.m_uid;
+    std::stringstream ss;
+    char c;
+
+    while (!is.eof() && (std::isdigit(is.peek()) || is.peek() == '.')) {
+      is >> c;
+      ss << c;
+    }
+
+    uid.m_uid = ss.str();
     return is;
   }
 }

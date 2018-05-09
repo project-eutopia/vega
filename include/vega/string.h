@@ -157,7 +157,7 @@ namespace vega {
 
   template<typename IS>
   IS& to_json(IS& is, const DecimalString& ds) {
-    is << double(ds);
+    is << ds;
     return is;
   }
 

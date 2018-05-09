@@ -107,7 +107,12 @@ namespace vega {
     }
 
     void UniqueIdentifierManipulator::from_json(std::stringstream& json_string) {
+      char c;
+      json_string >> c;
+      assert(c == '"');
       json_string >> m_uid;
+      json_string >> c;
+      assert(c == '"');
     }
   }
 
