@@ -1,8 +1,11 @@
 #pragma once
 
+#include "vega/range_type.h"
+
 #include <string>
 #include <memory>
 #include <regex>
+#include <ostream>
 
 namespace vega {
   class RegexString;
@@ -38,16 +41,17 @@ namespace vega {
    26 bytes maximum (formatted string) */
   class DateTime {
     public:
-      static const std::shared_ptr<const std::regex> SINGLE_DATE_TIME_REGEX;
-      static const std::shared_ptr<const std::regex> DATE_TIME_RANGE_REGEX;
+      static const std::shared_ptr<const std::regex> SINGLE_REGEX;
+      static const std::shared_ptr<const std::regex> RANGE_REGEX;
 
       // Can either be single DateTime
-      std::shared_ptr<const RegexString> m_date_time;
+      std::shared_ptr<const RegexString> m_value;
       // Or a range of DateTimes
       std::shared_ptr<const DateTime> m_lower;
       std::shared_ptr<const DateTime> m_upper;
 
     public:
+      DateTime();
       explicit DateTime(const std::string& s);
       DateTime(const std::shared_ptr<DateTime>& lower, const std::shared_ptr<DateTime>& upper);
 
@@ -59,6 +63,14 @@ namespace vega {
       bool operator!=(const DateTime& other) const;
 
       std::string str() const;
+      friend std::ostream& operator<<(std::ostream& os, const DateTime& date_time);
+      friend std::istream& operator>>(std::istream& is, DateTime& date_time);
+
       void set_string(const std::string& s);
+
+      template <typename T>
+      friend void range_read(std::istream& is, T& t);
+
+      static std::string read_single_string_from(std::istream& is);
   };
 }

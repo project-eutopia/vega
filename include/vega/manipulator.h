@@ -13,6 +13,7 @@
 #include "vega/manipulators/date_time_manipulator.h"
 #include "vega/manipulators/floating_point_manipulator.h"
 #include "vega/manipulators/floating_point_double_manipulator.h"
+#include "vega/manipulators/general_integer_manipulator.h"
 #include "vega/manipulators/integer_string_manipulator.h"
 #include "vega/manipulators/long_string_manipulator.h"
 #include "vega/manipulators/long_text_manipulator.h"

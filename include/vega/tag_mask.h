@@ -78,6 +78,8 @@ namespace vega {
       const Tag& value_tag() const { return m_value_tag; }
       const Tag& mask_tag() const { return m_mask_tag; }
 
+      bool is_private() const { return ((m_value_tag.group() & 1) == 1) && ((m_mask_tag.group() & 1) == 1); }
+
       bool is_single() const { return m_mask_tag.tag() == 0xFFFFFFFF; }
       const Tag& singular_tag() const {
         if (!this->is_single()) throw vega::Exception("Cannot get singular tag from TagMask with value and mask of " + this->value_tag().str() + " and " + this->mask_tag().str());

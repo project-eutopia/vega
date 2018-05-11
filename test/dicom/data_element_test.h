@@ -18,7 +18,7 @@ TEST(DataElementTest, constructor_with_name_test) {
     dicom::DataElement element{"VariablePixelData"};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("Cannot initialize DataElement with dictionary page name that has ambiguous tag: VariablePixelData"));
+    EXPECT_EQ(std::string(ex.what()), std::string("DataElement(string), must pass VR for ambiguous VR when set to explicit, name = VariablePixelData"));
   }
 
   dicom::DataElement element{"PatientName"};
@@ -39,7 +39,18 @@ TEST(DataElementTest, constructor_test) {
     dicom::DataElement element{Tag{0x7fe0, 0x0010}};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("Must supply explicit VR to DataElement constructor for ambiguous VR tag (7FE0,0010)"));
+    EXPECT_EQ(std::string(ex.what()), std::string("DataElement(Tag), must pass VR for ambiguous VR when set to explicit, tag = (7FE0,0010)"));
+  }
+
+  EXPECT_EQ(dicom::DataElement(Tag{0x7fe0,0x0010}, nullptr, true).vr(), vr::OW);
+  EXPECT_EQ(dicom::DataElement(std::string("PixelData"), nullptr, true).vr(), vr::OW);
+  EXPECT_EQ(dicom::DataElement(Tag{0x5000,0x200c}, nullptr, true).vr(), vr::OX);
+  try {
+    // Pixel data has VR = OB/OW
+    dicom::DataElement element(std::string("AudioSampleData"), nullptr, true);
+    EXPECT_TRUE(false);
+  } catch(const vega::Exception& ex) {
+    EXPECT_EQ(std::string(ex.what()), std::string("Cannot initialize DataElement with dictionary page name that has ambiguous tag: AudioSampleData"));
   }
 
   {
@@ -67,7 +78,7 @@ TEST(DataElementTest, constructor_test) {
     dicom::DataElement element{Tag{0x0010, 0x0010}, vr::LO};
     EXPECT_TRUE(false);
   } catch(const vega::Exception& ex) {
-    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag, VR), invalid VR of LO for tag (0010,0010)"));
+    EXPECT_EQ(std::string(ex.what()), std::string("In DataElement(Tag, VR), invalid VR of LO for tag (0010,0010), PatientName"));
   }
 
   {

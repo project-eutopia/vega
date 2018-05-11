@@ -55,17 +55,16 @@ namespace vega {
       m_formatter.indent() << "read_data_element"; m_formatter.newline();
       m_formatter.increase_indent();
 
-      std::shared_ptr<DataElement> element = std::make_shared<DataElement>(parent);
+      Tag tag;
+      VR vr;
+      std::shared_ptr<DataElement> element;
 
-      if (!m_raw_reader.read_into(&element->tag())) throw ReadingError("Reader failed to read element tag");
-      auto page = parent->page_for(element->tag());
-      // Validate tag correctness
-      if (!page) throw ReadingError(std::string("Unknown tag: ") + element->tag().str());
-      element->set_page(page);
+      if (!m_raw_reader.read_into(&tag)) throw ReadingError("Reader failed to read element tag");
 
       if (m_raw_reader.vr_explicit()) {
         // Read explicit VR
-        if (!m_raw_reader.read_into(&element->vr())) throw ReadingError("Reader failed to read in explicit VR");
+        if (!m_raw_reader.read_into(&vr)) throw ReadingError("Reader failed to read in explicit VR");
+        element = std::make_shared<DataElement>(tag, vr, parent);
 
         // Here, we have a 2 byte buffer, and then 32 bit length field
         if (element->vr().needs_two_byte_padding()) {
@@ -81,7 +80,7 @@ namespace vega {
       }
       else {
         // Implicit VR, get VR from dictionary
-        element->vr() = element->page()->determine_implicit_vr();
+        element = std::make_shared<DataElement>(tag, parent, true);
 
         // and read 32 bit length field
         if (!m_raw_reader.read_into(&element->length())) throw ReadingError("Reader failed to read in implicit VR 4 byte length field");
@@ -89,8 +88,8 @@ namespace vega {
 
       if (!element->vr().valid()) throw ReadingError(std::string("Reader encountered invalid VR2: ") + element->vr().long_str() + ", tag: " + element->tag().str());
 
-      if (!page->allows_vr(element->vr()) && (!m_raw_reader.vr_explicit() || (m_raw_reader.vr_explicit() && !m_allow_any_explicit_vr))) {
-        throw ReadingError(std::string("Reader page does not allow VR: ") + element->vr().long_str() + ", tag: " + element->tag().str() + " for " + page->name());
+      if (!element->page()->allows_vr(element->vr()) && (!m_raw_reader.vr_explicit() || (m_raw_reader.vr_explicit() && !m_allow_any_explicit_vr))) {
+        throw ReadingError(std::string("Reader page does not allow VR: ") + element->vr().long_str() + ", tag: " + element->tag().str() + " for " + element->page()->name());
       }
 
       if (!element->is_undefined_length() && this->tell() + (std::streampos)element->length() > m_raw_reader.eof_pos()) {

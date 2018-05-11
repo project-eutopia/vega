@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 
 namespace vega {
   class UID {
@@ -21,6 +22,7 @@ namespace vega {
       bool operator<(const UID& other) const;
 
       friend std::ostream& operator<<(std::ostream& os, const UID& uid);
+      friend std::istream& operator>>(std::istream& is, UID& uid);
 
     private:
       static const UID BASE;

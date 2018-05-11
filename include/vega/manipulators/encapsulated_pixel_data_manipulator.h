@@ -29,6 +29,7 @@ namespace vega {
         }
 
         virtual void json(Formatter& formatter) const override;
+        virtual void from_json(std::stringstream& json_string) override;
     };
   }
 

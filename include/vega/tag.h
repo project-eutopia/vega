@@ -74,5 +74,6 @@ namespace vega {
       bool is_private_owner() const;
 
       friend std::ostream& operator<<(std::ostream& os, const Tag& tag);
+      friend std::istream& operator>>(std::istream& is, Tag& tag);
   };
 }

@@ -134,6 +134,10 @@ namespace vega {
       // FIXME
       formatter << "\"encapsulated pixel data\"";
     }
+
+    void EncapsulatedPixelDataManipulator::from_json(std::stringstream& json_string) {
+      // FIXME
+    }
   }
 
   namespace vr {

@@ -1,4 +1,5 @@
 #include "vega/manipulators/single_string_manipulator.h"
+#include "vega/json.h"
 
 #include "vega/dicom/raw_reader.h"
 #include "vega/dicom/raw_writer.h"
@@ -72,7 +73,11 @@ namespace vega {
     }
 
     void SingleStringManipulator::json(Formatter& formatter) const {
-      formatter << '"' << this->str() << '"';
+      Json::to_json(formatter, *this);
+    }
+
+    void SingleStringManipulator::from_json(std::stringstream& json_string) {
+      m_str = Json::value_from_json<std::string>(json_string);
     }
   }
 }

@@ -6,15 +6,17 @@
 #include "vega/regex_string.h"
 
 namespace vega {
-  const std::shared_ptr<const std::regex> DateTime::SINGLE_DATE_TIME_REGEX = std::make_shared<const std::regex>(
+  const std::shared_ptr<const std::regex> DateTime::SINGLE_REGEX = std::make_shared<const std::regex>(
     "\\d{4}((0[1-9]|1[0-2])((0[1-9]|[1-2]\\d|3[0-1])(([0-1]\\d|2[0-4])([0-5]\\d(([0-5]\\d|60)(\\.\\d{6})?)?)?)?)?)?([\\+\\-](0\\d|1[0-4])([0-5]\\d)?)?"
   );
   // TODO: separating colon '-' should not preceed a pair from 00 to 14
   // (so only years from 1500 are unambiguous).
   // So we should use negative look-ahead
-  const std::shared_ptr<const std::regex> DateTime::DATE_TIME_RANGE_REGEX = std::make_shared<const std::regex>(
+  const std::shared_ptr<const std::regex> DateTime::RANGE_REGEX = std::make_shared<const std::regex>(
     "\\s*([\\+\\-\\.\\d]*)\\s*-\\s*([\\+\\-\\.\\d]*)\\s*"
   );
+
+  DateTime::DateTime() {}
 
   DateTime::DateTime(const std::string& s) {
     this->set_string(s);
@@ -24,7 +26,7 @@ namespace vega {
     std::smatch match;
 
     // Is DateTime range
-    if (std::regex_search(s.begin(), s.end(), match, *DateTime::DATE_TIME_RANGE_REGEX)) {
+    if (std::regex_search(s.begin(), s.end(), match, *DateTime::RANGE_REGEX)) {
       std::string lower = match[1].str();
       if (lower.size() > 0) {
         m_lower = std::make_shared<const DateTime>(lower);
@@ -37,7 +39,7 @@ namespace vega {
     }
     // Is single DateTime
     else {
-      m_date_time = std::make_shared<const RegexString>(s, DateTime::SINGLE_DATE_TIME_REGEX);
+      m_value = std::make_shared<const RegexString>(s, DateTime::SINGLE_REGEX);
     }
   }
 
@@ -61,15 +63,93 @@ namespace vega {
   }
 
   std::string DateTime::str() const {
-    if (this->is_range()) {
-      std::stringstream ss;
-      if (m_lower) ss << m_lower->str();
-      ss << '-';
-      if (m_upper) ss << m_upper->str();
-      return ss.str();
+    std::stringstream ss;
+    ss << *this;
+    return ss.str();
+  }
+
+  std::ostream& operator<<(std::ostream& os, const DateTime& date_time) {
+    if (date_time.is_range()) {
+      if (date_time.m_lower) os << date_time.m_lower->str();
+      os << '-';
+      if (date_time.m_upper) os << date_time.m_upper->str();
     }
     else {
-      return m_date_time->str();
+      os << date_time.m_value->str();
     }
+
+    return os;
+  }
+
+  std::string DateTime::read_single_string_from(std::istream& is) {
+    std::stringstream ss;
+    char c;
+    bool found = false;
+
+    while (!is.eof()) {
+      c = is.peek();
+      if (std::isdigit(c) || c == '.' || c == '+') {
+        found = true;
+        is >> c;
+        ss << c;
+      }
+      else if (std::isspace(c)) {
+        is >> c;
+      }
+      // Might be end, might be timezone offset
+      else if (c == '-') {
+        auto pos = is.tellg();
+        is.seekg(0, is.end);
+        auto end = is.tellg();
+        is.seekg(pos, is.beg);
+
+        // Here we don't have enough to have a timezone
+        if (end - pos < 2) {
+          break;
+        }
+
+        is.seekg(1, is.cur);
+
+        c = is.peek();
+        // Maybe?  Check next
+        if (c == '0') {
+          is.seekg(1, is.cur);
+          c = is.peek();
+
+          if (!std::isdigit(c)) {
+            is.seekg(pos, is.beg);
+            break;
+          }
+        }
+        else if (c == '1') {
+          is.seekg(1, is.cur);
+          c = is.peek();
+
+          if (!std::isdigit(c) || c > '4') {
+            is.seekg(pos, is.beg);
+            break;
+          }
+        }
+        else {
+          is.seekg(pos, is.beg);
+          break;
+        }
+
+        is.seekg(pos, is.beg);
+        is >> c;
+        ss << c;
+      }
+      else {
+        break;
+      }
+    }
+
+    if (found) return ss.str();
+    else return std::string();
+  }
+
+  std::istream& operator>>(std::istream& is, DateTime& date_time) {
+    range_read(is, date_time);
+    return is;
   }
 }

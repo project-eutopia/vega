@@ -80,6 +80,9 @@ namespace vega {
          */
         DataSet(std::shared_ptr<DataElement> parent = nullptr);
 
+        static std::shared_ptr<DataSet> from_json(const std::string& json_string);
+        static std::shared_ptr<DataSet> from_json(std::stringstream& json_string, std::shared_ptr<DataElement> parent = nullptr);
+
         const std::weak_ptr<DataElement>& parent() const;
         std::weak_ptr<DataElement>& parent();
 
@@ -94,6 +97,10 @@ namespace vega {
          * in the DataSet.  Users will not need to use this method.
          */
         std::shared_ptr<const dictionary::Page> page_for(const Tag& tag) const;
+        /**
+         * Returns the dictionary::Page corresponding to the given name.
+         */
+        std::shared_ptr<const dictionary::Page> page_for(const std::string& name) const;
         /// \endcond
 
         /// Adds a new \link Element Element<T>\endlink to this DataSet.

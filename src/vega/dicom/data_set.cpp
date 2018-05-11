@@ -78,6 +78,10 @@ namespace vega {
       return vega::dictionary::Dictionary::instance().page_for(tag);
     }
 
+    std::shared_ptr<const dictionary::Page> DataSet::page_for(const std::string& name) const {
+      return vega::dictionary::Dictionary::instance().page_for(name);
+    }
+
     size_t DataSet::size() const { return m_elements.size(); }
 
     std::shared_ptr<DataElement> DataSet::data_element(const std::string& name) {
@@ -162,7 +166,7 @@ namespace vega {
         data_element->json(formatter);
 
         if (i < this->size()-1) {
-          std::cout << ',';
+          formatter << ',';
         }
 
         ++i;
@@ -186,6 +190,58 @@ namespace vega {
         data_element->tag().group(),
         data_element->tag().element()
       ));
+    }
+
+    std::shared_ptr<DataSet> DataSet::from_json(const std::string& json_string) {
+      std::stringstream ss;
+      ss.str(json_string);
+      return DataSet::from_json(ss);
+    }
+
+    std::shared_ptr<DataSet> DataSet::from_json(std::stringstream& json_string, std::shared_ptr<DataElement> parent) {
+      auto data_set = std::make_shared<DataSet>(parent);
+
+      char c;
+      json_string >> c;
+      if (c != '{') throw vega::Exception("Invalid JSON: Could not find starting curly brace '{'");
+
+      Tag tag;
+      bool needs_comma = false;
+
+      while (true) {
+        json_string >> c;
+
+        // Tag
+        switch (c) {
+          // End of data set
+          case '}':
+            return data_set;
+
+          // Data element delimiter
+          case ',':
+            if (!needs_comma) throw vega::Exception("Invalid JSON: Unexpected comma");
+            needs_comma = false;
+            continue;
+
+          // Start of tag
+          case '"':
+            json_string >> tag;
+            json_string >> c;
+            if (c != '"') throw vega::Exception("Invalid JSON data set tag");
+            json_string >> c;
+            if (c != ':') throw vega::Exception("Invalid JSON: No colon ':' after tag " + tag.str());
+
+            data_set->add_data_element(DataElement::from_json(json_string, tag, data_set));
+            needs_comma = true;
+
+            break;
+
+          default:
+            throw vega::Exception("Invalid JSON: Could not find tag string");
+        }
+      }
+
+      return data_set;
     }
   }
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <sstream>
 #include <vector>
 #include <memory>
 
@@ -44,6 +45,7 @@ namespace vega {
         virtual bool operator!=(const ValueManipulator& other) const;
 
         virtual void json(Formatter& formatter) const = 0;
+        virtual void from_json(std::stringstream& json_string) = 0;
     };
   }
 }

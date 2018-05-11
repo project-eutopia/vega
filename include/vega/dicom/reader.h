@@ -59,9 +59,6 @@ namespace vega {
         std::streampos tell();
         void seek_pos(std::streampos pos);
         void seek_delta(std::streampos delta);
-
-      private:
-        static std::shared_ptr<manipulators::ValueManipulator> manipulator_for(const DataElement& element);
     };
   }
 }
