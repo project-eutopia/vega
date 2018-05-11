@@ -193,7 +193,7 @@ namespace vega {
     }
 
     std::shared_ptr<DataElement> DataElement::from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent) {
-      auto data_element = std::make_shared<DataElement>(tag, parent);
+      auto data_element = std::make_shared<DataElement>(tag, parent, true);
 
       if (data_element->is_sequence()) {
         char c;
@@ -210,9 +210,19 @@ namespace vega {
         if (c != ']') throw vega::Exception("Reading JSON data element, did not find ']'");
       }
       else {
-        auto manipulator = vega::manipulator_for(*data_element);
+        std::shared_ptr<manipulators::ValueManipulator> manipulator;
+
+        if (data_element->vr().is_combined_vr()) {
+          auto general_manipulator = std::make_shared<manipulators::GeneralIntegerManipulator>();
+          general_manipulator->from_json(json_string);
+          manipulator = general_manipulator->to_specific_manipulator(data_element->vr());
+        }
+        else {
+          manipulator = vega::manipulator_for(*data_element);
+          manipulator->from_json(json_string);
+        }
+
         data_element->set_manipulator(manipulator);
-        manipulator->from_json(json_string);
       }
 
       return data_element;

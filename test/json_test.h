@@ -149,16 +149,22 @@ TEST(FromJsonTest, data_set_element_test) {
 TEST(FullDicomJsonTest, test_equivalence) {
   std::vector<std::string> file_names;
 
+  file_names.push_back(tests::path_to_file("data/pydicom/CT_small.dcm"));
   file_names.push_back(tests::path_to_file("data/pydicom/rtplan.dcm"));
 
   for (const auto& file_name : file_names) {
     dicom::File file(file_name);
 
-    std::stringstream ss;
-    Formatter formatter(ss);
+    std::stringstream original_json;
+    Formatter formatter(original_json);
     file.data_set()->json(formatter);
 
-    auto data_set_copy = dicom::DataSet::from_json(ss);
-    EXPECT_TRUE(*file.data_set() == *data_set_copy);
+    auto data_set_copy = dicom::DataSet::from_json(original_json);
+
+    std::stringstream copied_json;
+    Formatter formatter2(copied_json);
+    data_set_copy->json(formatter2);
+
+    EXPECT_EQ(original_json.str(), copied_json.str());
   }
 }
