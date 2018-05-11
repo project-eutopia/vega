@@ -38,9 +38,8 @@ namespace vega {
     const VM& Page::vm() const { return m_vm; }
 
     bool Page::allows_vr(const VR& vr) const {
-      // Always allow LO for private
-      if ((this->tag_mask().value_tag().group() & 1) == 1 && (this->tag_mask().mask_tag().group() & 1) == 1 && vr == vr::LO) return true;
-
+      // Always allow anything for private tags
+      if (this->tag_mask().is_private()) return true;
       return this->multi_vr().contains(vr);
     }
 
