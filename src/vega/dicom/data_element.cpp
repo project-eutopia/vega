@@ -14,28 +14,36 @@ namespace vega {
         m_manipulator()
     {}
 
-    DataElement::DataElement(const std::string& name, std::shared_ptr<DataSet> parent)
+    DataElement::DataElement(const std::string& name, std::shared_ptr<DataSet> parent, bool implicit_vr)
       :
         m_header(),
-        m_page(),
+        m_page(parent ? parent->page_for(name) : vega::dictionary::Dictionary::instance().page_for(name)),
         m_parent(parent),
         m_data_sets(),
         m_manipulator()
     {
-      auto page = vega::dictionary::Dictionary::instance().page_for(name);
-      if (!page) throw vega::Exception(std::string("Cannot find dictionary page with name ") + name);
+      if (!m_page) throw vega::Exception(std::string("Cannot find dictionary page with name ") + name);
 
-      if (!page->tag_mask().is_single()) throw vega::Exception(std::string("Cannot initialize DataElement with dictionary page name that has ambiguous tag: ") + name);
+      if (!implicit_vr && !m_page->multi_vr().single()) {
+        throw vega::Exception(std::string("DataElement(string), must pass VR for ambiguous VR when set to explicit, name = ") + name);
+      }
 
-      m_page = page;
+      if (!implicit_vr && !m_page->multi_vr().single()) {
+        throw vega::Exception(std::string("Must supply explicit VR to DataElement with name = ") + name);
+      }
+
+      if (!m_page->tag_mask().is_single()) {
+        throw vega::Exception(std::string("Cannot initialize DataElement with dictionary page name that has ambiguous tag: ") + name);
+      }
+
       m_header = DataElementHeader{
-        .tag = page->tag_mask().singular_tag(),
-        .vr = m_page->multi_vr().to_single_vr(),
+        .tag = m_page->tag_mask().singular_tag(),
+        .vr = (implicit_vr ? m_page->determine_implicit_vr() : m_page->multi_vr().to_single_vr()),
         .length = 0
       };
     }
 
-    DataElement::DataElement(const Tag& tag, std::shared_ptr<DataSet> parent)
+    DataElement::DataElement(const Tag& tag, std::shared_ptr<DataSet> parent, bool implicit_vr)
       :
         m_header(),
         m_page(parent ? parent->page_for(tag) : vega::dictionary::Dictionary::instance().page_for(tag)),
@@ -43,21 +51,25 @@ namespace vega {
         m_data_sets(),
         m_manipulator()
     {
-      m_header.tag = tag;
       if (!m_page) {
         throw vega::Exception(std::string("In DataElement(Tag), could not find dictionary page with tag = ") + tag.str());
       }
-      if (!m_page->multi_vr().single()) {
-        throw vega::Exception(std::string("Must supply explicit VR to DataElement constructor for ambiguous VR tag ") + this->tag().str());
+
+      if (!implicit_vr && !m_page->multi_vr().single()) {
+        throw vega::Exception(std::string("DataElement(Tag), must pass VR for ambiguous VR when set to explicit, tag = ") + tag.str());
       }
-      m_header.vr = m_page->multi_vr().to_single_vr();
-      m_header.length = 0;
+
+      m_header = DataElementHeader{
+        .tag = tag,
+        .vr = (implicit_vr ? m_page->determine_implicit_vr() : m_page->multi_vr().to_single_vr()),
+        .length = 0
+      };
     }
 
     DataElement::DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent)
       :
         m_header({.tag = tag, .vr = vr, .length = 0}),
-        m_page(vega::dictionary::Dictionary::instance().page_for(this->tag())),
+        m_page(parent ? parent->page_for(this->tag()) : vega::dictionary::Dictionary::instance().page_for(this->tag())),
         m_parent(parent),
         m_data_sets(),
         m_manipulator()
@@ -68,8 +80,8 @@ namespace vega {
       if (!m_page) {
         throw vega::Exception(std::string("In DataElement(Tag, VR), could not find dictionary page with tag = ") + tag.str());
       }
-      if (!m_page->multi_vr().contains(this->vr())) {
-        throw vega::Exception(std::string("In DataElement(Tag, VR), invalid VR of ") + vr.str() + std::string(" for tag ") + tag.str());
+      if (!m_page->allows_vr(this->vr())) {
+        throw vega::Exception(std::string("In DataElement(Tag, VR), invalid VR of ") + vr.str() + std::string(" for tag ") + tag.str() + std::string(", ") + m_page->name());
       }
     }
 

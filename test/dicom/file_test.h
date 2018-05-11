@@ -132,14 +132,14 @@ TEST(DicomFileTest, no_meta_test) {
 
   EXPECT_EQ(
     output,
-    "Warning, failure reading file meta so assuming blank: Reader encountered invalid VR2: __ (0x000a), tag: (0008,0005)\n"
-    "Warning, failure reading file meta so assuming blank: Reader encountered invalid VR2: __ (0x000a), tag: (0008,0005)\n"
-    "Warning, failure reading file meta so assuming blank: Unknown tag: (0800,0500)\n"
-    "Warning, trying to recover from error with transfer syntax Implicit VR Little Endian: Unknown tag: (0800,0500)\n"
-    "Warning, trying to recover from error with transfer syntax Explicit VR Little Endian: Unknown tag: (0800,0500)\n"
-    "Warning, failure reading file meta so assuming blank: Unknown tag: (0800,0500)\n"
-    "Warning, trying to recover from error with transfer syntax Implicit VR Little Endian: Unknown tag: (0800,0500)\n"
-    "Warning, trying to recover from error with transfer syntax Explicit VR Little Endian: Unknown tag: (0800,0500)\n"
+    "Warning, failure reading file meta so assuming blank: In DataElement(Tag, VR), invalid VR of __ for tag (0008,0005), SpecificCharacterSet\n"
+    "Warning, failure reading file meta so assuming blank: In DataElement(Tag, VR), invalid VR of __ for tag (0008,0005), SpecificCharacterSet\n"
+    "Warning, failure reading file meta so assuming blank: In DataElement(Tag, VR), could not find dictionary page with tag = (0800,0500)\n"
+    "Warning, trying to recover from error with transfer syntax Implicit VR Little Endian: In DataElement(Tag), could not find dictionary page with tag = (0800,0500)\n"
+    "Warning, trying to recover from error with transfer syntax Explicit VR Little Endian: In DataElement(Tag, VR), could not find dictionary page with tag = (0800,0500)\n"
+    "Warning, failure reading file meta so assuming blank: In DataElement(Tag, VR), could not find dictionary page with tag = (0800,0500)\n"
+    "Warning, trying to recover from error with transfer syntax Implicit VR Little Endian: In DataElement(Tag), could not find dictionary page with tag = (0800,0500)\n"
+    "Warning, trying to recover from error with transfer syntax Explicit VR Little Endian: In DataElement(Tag, VR), could not find dictionary page with tag = (0800,0500)\n"
     "Warning, failure reading file meta so assuming blank: Need TransferSyntaxUID element\n"
     "Warning, trying to recover from error with transfer syntax Implicit VR Little Endian: Reader encounted length too long to fit in file: tag=(0008,0005) length=676675 cur_pos=8 eof=434\n"
     "Warning, failure reading file meta so assuming blank: Need TransferSyntaxUID element\n"

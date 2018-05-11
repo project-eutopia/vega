@@ -92,7 +92,7 @@ namespace vega {
          * \param name is the name of a Dictionary entry to read VR and Tag data from (e.g. `"PatientName"`).
          * \param parent is the parent DataSet of the DataElement
          */
-        DataElement(const std::string& name, std::shared_ptr<DataSet> parent = nullptr);
+        DataElement(const std::string& name, std::shared_ptr<DataSet> parent = nullptr, bool implicit_vr = false);
         /**
          * Creates a blank DataElement with tag given by the \p tag.
          *
@@ -104,7 +104,7 @@ namespace vega {
          * \param tag is the Tag of this DataElement.
          * \param parent is the parent DataSet of the DataElement
          */
-        DataElement(const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
+        DataElement(const Tag& tag, std::shared_ptr<DataSet> parent = nullptr, bool implicit_vr = false);
         /**
          * Creates a blank DataElement with tag given by the \p tag and \p VR.
          *

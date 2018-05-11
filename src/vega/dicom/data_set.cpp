@@ -78,6 +78,10 @@ namespace vega {
       return vega::dictionary::Dictionary::instance().page_for(tag);
     }
 
+    std::shared_ptr<const dictionary::Page> DataSet::page_for(const std::string& name) const {
+      return vega::dictionary::Dictionary::instance().page_for(name);
+    }
+
     size_t DataSet::size() const { return m_elements.size(); }
 
     std::shared_ptr<DataElement> DataSet::data_element(const std::string& name) {

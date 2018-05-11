@@ -97,6 +97,10 @@ namespace vega {
          * in the DataSet.  Users will not need to use this method.
          */
         std::shared_ptr<const dictionary::Page> page_for(const Tag& tag) const;
+        /**
+         * Returns the dictionary::Page corresponding to the given name.
+         */
+        std::shared_ptr<const dictionary::Page> page_for(const std::string& name) const;
         /// \endcond
 
         /// Adds a new \link Element Element<T>\endlink to this DataSet.
