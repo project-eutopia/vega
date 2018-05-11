@@ -1,0 +1,13 @@
+language: cpp
+
+dist: trusty
+sudo: require
+
+services:
+- docker
+
+install:
+- docker build -t vega .
+
+script:
+- docker run -t -w="/opt/vega/build" vega ./tests
