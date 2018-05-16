@@ -116,53 +116,65 @@ namespace vega {
         element->vr() = vr::SQ;
 
         if (element->is_undefined_length()) {
-          m_formatter.indent() << "element is sequence with undefined length"; m_formatter.newline();
-          while (!this->eof()) {
-            // Check if reached end of sequence
-            Tag tag;
-            auto cur_pos = this->tell();
-
-            if (!m_raw_reader.read_into(&tag)) throw ReadingError("Reader failed to read sequence tag in undefined length element");
-
-            if (tag.is_sequence_delimitation_tag()) {
-              m_formatter.indent() << "--END-- of element (sequence delimit)"; m_formatter.newline();
-              DataElementHeader::length_type length;
-              if (!m_raw_reader.read_into(&length) || length != 0) throw ReadingError("Reader failed to read sequence length in undefined length element");
-              break;
-            }
-
-            // Not end yet, so jump back to non-end of sequence tag
-            this->seek_pos(cur_pos);
-            m_formatter.increase_indent();
-            auto data_set = this->read_data_set(element);
-            m_formatter.decrease_indent();
-            if (data_set) element->data_sets().push_back(data_set);
-          }
+          this->read_data_element_undefined_sequence(element);
         }
         else {
-          m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
-          auto end_of_element = this->tell() + (std::streampos)element->length();
-
-          while (this->tell() < end_of_element) {
-            m_formatter.increase_indent();
-            auto data_set = this->read_data_set(element);
-            m_formatter.decrease_indent();
-            if (data_set) element->data_sets().push_back(data_set);
-          }
+          this->read_data_element_finite_sequence(element);
         }
       }
       else {
-        m_formatter.indent() << "element is not sequence"; m_formatter.newline();
-        // Not sequence, read raw data in
-        auto manipulator = vega::manipulator_for(*element);
-        element->set_manipulator(manipulator);
-        if (!manipulator->read_from(&m_raw_reader, element->length())) throw ReadingError("Reader encountered error reading from manipulator: '" + element->tag().str() + " " + element->vr().str() + "' (" + vega::to_string(Word{.u = element->vr().data().value}) + ") length=" + vega::to_string(element->length()));
+        this->read_data_element_value_field(element);
       }
 
       m_formatter.indent() << "read_data_element, returning: " << element->tag() << " " << element->vr() << " " << element->length(); m_formatter.newline();
 
       m_formatter.decrease_indent();
       return element;
+    }
+
+    void Reader::read_data_element_finite_sequence(std::shared_ptr<DataElement> element) {
+      m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
+      auto end_of_element = this->tell() + (std::streampos)element->length();
+
+      while (this->tell() < end_of_element) {
+        m_formatter.increase_indent();
+        auto data_set = this->read_data_set(element);
+        m_formatter.decrease_indent();
+        if (data_set) element->data_sets().push_back(data_set);
+      }
+    }
+
+    void Reader::read_data_element_undefined_sequence(std::shared_ptr<DataElement> element) {
+      m_formatter.indent() << "element is sequence with undefined length"; m_formatter.newline();
+      while (!this->eof()) {
+        // Check if reached end of sequence
+        Tag tag;
+        auto cur_pos = this->tell();
+
+        if (!m_raw_reader.read_into(&tag)) throw ReadingError("Reader failed to read sequence tag in undefined length element");
+
+        if (tag.is_sequence_delimitation_tag()) {
+          m_formatter.indent() << "--END-- of element (sequence delimit)"; m_formatter.newline();
+          DataElementHeader::length_type length;
+          if (!m_raw_reader.read_into(&length) || length != 0) throw ReadingError("Reader failed to read sequence length in undefined length element");
+          break;
+        }
+
+        // Not end yet, so jump back to non-end of sequence tag
+        this->seek_pos(cur_pos);
+        m_formatter.increase_indent();
+        auto data_set = this->read_data_set(element);
+        m_formatter.decrease_indent();
+        if (data_set) element->data_sets().push_back(data_set);
+      }
+    }
+
+    void Reader::read_data_element_value_field(std::shared_ptr<DataElement> element) {
+      m_formatter.indent() << "element is not sequence"; m_formatter.newline();
+      // Not sequence, read raw data in
+      auto manipulator = vega::manipulator_for(*element);
+      element->set_manipulator(manipulator);
+      if (!manipulator->read_from(&m_raw_reader, element->length())) throw ReadingError("Reader encountered error reading from manipulator: '" + element->tag().str() + " " + element->vr().str() + "' (" + vega::to_string(Word{.u = element->vr().data().value}) + ") length=" + vega::to_string(element->length()));
     }
 
     std::shared_ptr<DataSet> Reader::read_data_set(std::shared_ptr<DataElement> parent) {
