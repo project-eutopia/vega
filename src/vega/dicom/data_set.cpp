@@ -11,6 +11,10 @@ namespace vega {
         m_private_owner_blocks(std::make_shared<dictionary::PrivateOwnerBlocks>())
     {}
 
+    std::shared_ptr<DataSet> DataSet::get_shared_ptr() {
+      return shared_from_this();
+    }
+
     const DataSet::length_type DataSet::UNDEFINED_LENGTH = 0xFFFFFFFF;
 
     DataSet::iterator::iterator(DataSet::iterator::iterator_type it)

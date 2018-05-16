@@ -15,6 +15,10 @@ namespace vega {
     {
     }
 
+    std::shared_ptr<Reader> Reader::get_shared_ptr() {
+      return shared_from_this();
+    }
+
     RawReader& Reader::raw_reader() {
       return m_raw_reader;
     }

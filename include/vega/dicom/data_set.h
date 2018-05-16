@@ -26,7 +26,7 @@ namespace vega {
      * Simply put a DataSet is a map from \link Tag Tags\endlink to \link DataElement DataElements\endlink,
      * and so there can be at most one DataElement per Tag.
      */
-    class DataSet {
+    class DataSet : public std::enable_shared_from_this<DataSet> {
       public:
         typedef uint32_t length_type;
 
@@ -79,6 +79,8 @@ namespace vega {
          * \param parent is the parent DataElement of this DataSet (`nullptr` when this DataSet is at the root of the DICOM file)
          */
         DataSet(std::shared_ptr<DataElement> parent = nullptr);
+
+        std::shared_ptr<DataSet> get_shared_ptr();
 
         static std::shared_ptr<DataSet> from_json(const std::string& json_string);
         static std::shared_ptr<DataSet> from_json(std::stringstream& json_string, std::shared_ptr<DataElement> parent = nullptr);

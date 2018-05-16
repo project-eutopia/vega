@@ -24,7 +24,7 @@ namespace vega {
   }
 
   namespace dicom {
-    class Reader {
+    class Reader : public std::enable_shared_from_this<Reader> {
       public:
         class FileDoesNotExistError : public vega::Exception { using vega::Exception::Exception; };
         class ReadingError : public vega::Exception { using vega::Exception::Exception; };
@@ -36,6 +36,8 @@ namespace vega {
 
       public:
         Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false);
+
+        std::shared_ptr<Reader> get_shared_ptr();
 
         RawReader& raw_reader();
 

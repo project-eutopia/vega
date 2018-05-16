@@ -85,6 +85,10 @@ namespace vega {
       }
     }
 
+    std::shared_ptr<DataElement> DataElement::get_shared_ptr() {
+      return shared_from_this();
+    }
+
     const std::shared_ptr<const dictionary::Page>& DataElement::page() const { return m_page; }
     void DataElement::set_page(std::shared_ptr<const dictionary::Page> page) { m_page = page; }
 

@@ -66,7 +66,7 @@ namespace vega {
      * Note that it is usually easier to use the wrapper class \link Element Element<T>\endlink
      * instead of DataElement when dealing with raw data.
      */
-    class DataElement {
+    class DataElement : public std::enable_shared_from_this<DataElement> {
       private:
         DataElementHeader m_header;
         std::shared_ptr<const dictionary::Page> m_page;
@@ -116,6 +116,8 @@ namespace vega {
          * \param parent is the parent DataSet of the DataElement (`nullptr` when at the root of the DICOM file)
          */
         DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent = nullptr);
+
+        std::shared_ptr<DataElement> get_shared_ptr();
 
         static std::shared_ptr<DataElement> from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
 
