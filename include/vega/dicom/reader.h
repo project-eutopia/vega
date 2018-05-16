@@ -57,6 +57,7 @@ namespace vega {
         bool eof();
         void rewind();
         std::streampos tell();
+        std::streampos eof_pos() const;
         void seek_pos(std::streampos pos);
         void seek_delta(std::streampos delta);
     };

@@ -31,6 +31,10 @@ namespace vega {
       return m_raw_reader.tell();
     }
 
+    std::streampos Reader::eof_pos() const {
+      return m_raw_reader.eof_pos();
+    }
+
     void Reader::seek_pos(std::streampos pos) {
       m_raw_reader.seek_pos(pos);
     }
@@ -40,7 +44,7 @@ namespace vega {
     }
 
     bool Reader::eof() {
-      return this->tell() < 0 || this->tell() >= m_raw_reader.eof_pos();
+      return this->tell() < 0 || this->tell() >= this->eof_pos();
     }
 
     void Reader::rewind() {
@@ -101,7 +105,7 @@ namespace vega {
           " cur_pos=" +
           std::to_string(this->tell()) +
           " eof=" +
-          std::to_string(m_raw_reader.eof_pos())
+          std::to_string(this->eof_pos())
         );
       }
 
