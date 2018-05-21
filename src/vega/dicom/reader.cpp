@@ -15,10 +15,6 @@ namespace vega {
     {
     }
 
-    std::shared_ptr<Reader> Reader::get_shared_ptr() {
-      return shared_from_this();
-    }
-
     RawReader& Reader::raw_reader() {
       return m_raw_reader;
     }
@@ -115,6 +111,8 @@ namespace vega {
 
       m_formatter.indent() << "read_data_element: " << element->tag() << " " << element->vr() << " " << element->length(); m_formatter.newline();
 
+      element->set_value_field(shared_from_this(), this->tell());
+
       if (element->is_sequence() || (element->tag().is_private() && element->is_undefined_length())) {
         // Ensure we have SQ VR
         element->vr() = vr::SQ;
@@ -123,10 +121,12 @@ namespace vega {
           this->read_data_element_undefined_sequence(element);
         }
         else {
+          /* this->seek_delta(element->length()); */
           this->read_data_element_finite_sequence(element);
         }
       }
       else {
+        /* this->seek_delta(element->length()); */
         this->read_data_element_value_field(element);
       }
 
@@ -134,18 +134,6 @@ namespace vega {
 
       m_formatter.decrease_indent();
       return element;
-    }
-
-    void Reader::read_data_element_finite_sequence(std::shared_ptr<DataElement> element) {
-      m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
-      auto end_of_element = this->tell() + (std::streampos)element->length();
-
-      while (this->tell() < end_of_element) {
-        m_formatter.increase_indent();
-        auto data_set = this->read_data_set(element);
-        m_formatter.decrease_indent();
-        if (data_set) element->data_sets().push_back(data_set);
-      }
     }
 
     void Reader::read_data_element_undefined_sequence(std::shared_ptr<DataElement> element) {
@@ -166,6 +154,18 @@ namespace vega {
 
         // Not end yet, so jump back to non-end of sequence tag
         this->seek_pos(cur_pos);
+        m_formatter.increase_indent();
+        auto data_set = this->read_data_set(element);
+        m_formatter.decrease_indent();
+        if (data_set) element->data_sets().push_back(data_set);
+      }
+    }
+
+    void Reader::read_data_element_finite_sequence(std::shared_ptr<DataElement> element) {
+      m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
+      auto end_of_element = this->tell() + (std::streampos)element->length();
+
+      while (this->tell() < end_of_element) {
         m_formatter.increase_indent();
         auto data_set = this->read_data_set(element);
         m_formatter.decrease_indent();

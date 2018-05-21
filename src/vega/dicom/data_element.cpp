@@ -1,5 +1,6 @@
 #include "vega/dicom/data_element.h"
 #include "vega/dicom/data_set.h"
+#include "vega/dicom/reader.h"
 #include "vega/manipulator.h"
 #include "vega/vega.h"
 
@@ -11,6 +12,8 @@ namespace vega {
         m_page(),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {}
 
@@ -20,6 +23,8 @@ namespace vega {
         m_page(parent ? parent->page_for(name) : vega::dictionary::Dictionary::instance().page_for(name)),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (!m_page) throw vega::Exception(std::string("Cannot find dictionary page with name ") + name);
@@ -49,6 +54,8 @@ namespace vega {
         m_page(parent ? parent->page_for(tag) : vega::dictionary::Dictionary::instance().page_for(tag)),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (!m_page) {
@@ -72,6 +79,8 @@ namespace vega {
         m_page(parent ? parent->page_for(this->tag()) : vega::dictionary::Dictionary::instance().page_for(this->tag())),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (this->vr().is_combined_vr()) {
@@ -85,8 +94,9 @@ namespace vega {
       }
     }
 
-    std::shared_ptr<DataElement> DataElement::get_shared_ptr() {
-      return shared_from_this();
+    void DataElement::set_value_field(std::shared_ptr<Reader> reader, std::streampos start) {
+      m_reader = reader;
+      m_start = start;
     }
 
     const std::shared_ptr<const dictionary::Page>& DataElement::page() const { return m_page; }
@@ -205,7 +215,7 @@ namespace vega {
         if (c != '[') throw vega::Exception("Reading JSON data element, did not find '['");
 
         do {
-          auto data_set = DataSet::from_json(json_string, data_element);
+          auto data_set = DataSet::from_json(json_string);
           data_element->data_sets().push_back(data_set);
           json_string >> c;
         }
@@ -230,6 +240,43 @@ namespace vega {
       }
 
       return data_element;
+    }
+
+    void DataElement::lazy_load() const {
+      if (!m_reader) return;
+
+      m_reader->seek_pos(m_start);
+
+      if (this->is_sequence()) {
+        if (this->is_undefined_length()) {
+          throw "FIXME ERROR";
+        }
+        else {
+          this->read_finite_sequence();
+        }
+      }
+      else {
+        this->read_value_field();
+      }
+
+      m_reader = nullptr;
+    }
+
+    void DataElement::read_finite_sequence() const {
+      auto end_of_element = m_reader->tell() + (std::streampos)this->length();
+
+      while (m_reader->tell() < end_of_element) {
+        auto data_set = m_reader->read_data_set(std::const_pointer_cast<DataElement>(shared_from_this()));
+        if (data_set) m_data_sets.push_back(data_set);
+      }
+    }
+
+    void DataElement::read_value_field() const {
+      // Not sequence, read raw data in
+      m_manipulator = vega::manipulator_for(*this);
+      this->validate_manipulator(*m_manipulator);
+
+      if (!m_manipulator->read_from(&m_reader->raw_reader(), this->length())) throw Reader::ReadingError("Reader encountered error reading from manipulator: '" + this->tag().str() + " " + this->vr().str() + "' (" + vega::to_string(Word{.u = this->vr().data().value}) + ") length=" + vega::to_string(this->length()));
     }
   }
 }

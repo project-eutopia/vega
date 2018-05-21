@@ -37,8 +37,6 @@ namespace vega {
       public:
         Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false);
 
-        std::shared_ptr<Reader> get_shared_ptr();
-
         RawReader& raw_reader();
 
         const Endian& dicom_endian() const;
@@ -64,8 +62,8 @@ namespace vega {
         void seek_delta(std::streampos delta);
 
       private:
-        void read_data_element_finite_sequence(std::shared_ptr<DataElement> element);
         void read_data_element_undefined_sequence(std::shared_ptr<DataElement> element);
+        void read_data_element_finite_sequence(std::shared_ptr<DataElement> element);
         void read_data_element_value_field(std::shared_ptr<DataElement> element);
     };
   }

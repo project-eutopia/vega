@@ -15,6 +15,7 @@
 namespace vega {
   namespace dicom {
     class DataSet;
+    class Reader;
 
     /**
      * \class DataElement
@@ -72,9 +73,13 @@ namespace vega {
         std::shared_ptr<const dictionary::Page> m_page;
 
         std::weak_ptr<DataSet> m_parent;
-        std::vector<std::shared_ptr<DataSet>> m_data_sets;
+        mutable std::vector<std::shared_ptr<DataSet>> m_data_sets;
 
-        std::shared_ptr<manipulators::ValueManipulator> m_manipulator;
+        // Points to reader if content not yet read, or nullptr if already read
+        mutable std::shared_ptr<Reader> m_reader;
+        std::streampos m_start;
+
+        mutable std::shared_ptr<manipulators::ValueManipulator> m_manipulator;
 
       public:
         /// Creates a blank DataElement with the given \p parent.
@@ -117,7 +122,7 @@ namespace vega {
          */
         DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent = nullptr);
 
-        std::shared_ptr<DataElement> get_shared_ptr();
+        void set_value_field(std::shared_ptr<Reader> reader, std::streampos start);
 
         static std::shared_ptr<DataElement> from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
 
@@ -160,9 +165,7 @@ namespace vega {
          */
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
-          if (!manipulator->is_valid_for(this->vr())) {
-            throw vega::Exception(std::string("DataElement::set_manipulator, received manipulator does not support VR ") + this->vr().str());
-          }
+          this->validate_manipulator(*manipulator);
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
 
@@ -227,6 +230,18 @@ namespace vega {
 
         void log(Formatter& formatter) const;
         void json(Formatter& formatter) const;
+
+      private:
+        template <typename T>
+        void validate_manipulator(const T& manipulator) const {
+          if (!manipulator.is_valid_for(this->vr())) {
+            throw vega::Exception(std::string("DataElement::set_manipulator, received manipulator does not support VR ") + this->vr().str());
+          }
+        }
+
+        void lazy_load() const;
+        void read_finite_sequence() const;
+        void read_value_field() const;
     };
   }
 }
