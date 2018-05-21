@@ -94,7 +94,7 @@ namespace vega {
       }
     }
 
-    void DataElement::set_value_field(std::shared_ptr<Reader> reader, std::streampos start) {
+    void DataElement::set_value_field(const std::shared_ptr<Reader>& reader, const std::streampos& start) {
       m_reader = reader;
       m_start = start;
     }
@@ -117,10 +117,11 @@ namespace vega {
     const std::weak_ptr<DataSet>& DataElement::parent() const { return m_parent; }
     std::weak_ptr<DataSet>& DataElement::parent() { return m_parent; }
 
-    const std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() const { return m_data_sets; }
-    std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() { return m_data_sets; }
+    const std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() const { lazy_load(); return m_data_sets; }
+    std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() { lazy_load(); return m_data_sets; }
 
     std::string DataElement::str() const {
+      lazy_load();
       return m_manipulator->str();
     }
 
@@ -245,6 +246,7 @@ namespace vega {
     void DataElement::lazy_load() const {
       if (!m_reader) return;
 
+      auto current = m_reader->tell();
       m_reader->seek_pos(m_start);
 
       if (this->is_sequence()) {
@@ -259,6 +261,7 @@ namespace vega {
         this->read_value_field();
       }
 
+      m_reader->seek_pos(current);
       m_reader = nullptr;
     }
 

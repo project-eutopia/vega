@@ -122,7 +122,7 @@ namespace vega {
          */
         DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent = nullptr);
 
-        void set_value_field(std::shared_ptr<Reader> reader, std::streampos start);
+        void set_value_field(const std::shared_ptr<Reader>& reader, const std::streampos& start);
 
         static std::shared_ptr<DataElement> from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
 
@@ -153,8 +153,9 @@ namespace vega {
         std::vector<std::shared_ptr<DataSet>>& data_sets();
 
         /// \cond INTERNAL
-        std::shared_ptr<manipulators::ValueManipulator> manipulator() { return m_manipulator; }
+        std::shared_ptr<manipulators::ValueManipulator> manipulator() { lazy_load(); return m_manipulator; }
         std::shared_ptr<const manipulators::ValueManipulator> manipulator() const {
+          lazy_load();
           return std::static_pointer_cast<const manipulators::ValueManipulator>(m_manipulator);
         }
         /// \endcond
@@ -166,6 +167,7 @@ namespace vega {
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
           this->validate_manipulator(*manipulator);
+          lazy_load();
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
 
@@ -186,6 +188,7 @@ namespace vega {
         template <typename T>
         std::shared_ptr<T> get_manipulator() {
           this->vr().validate_value_manipulator<T>();
+          lazy_load();
 
           // Brand new
           if (!m_manipulator) {
@@ -212,16 +215,20 @@ namespace vega {
         /// \endcond
 
         std::vector<std::shared_ptr<DataSet>>::iterator begin() {
+          lazy_load();
           return m_data_sets.begin();
         }
         std::vector<std::shared_ptr<DataSet>>::const_iterator begin() const {
+          lazy_load();
           return m_data_sets.begin();
         }
 
         std::vector<std::shared_ptr<DataSet>>::iterator end() {
+          lazy_load();
           return m_data_sets.end();
         }
         std::vector<std::shared_ptr<DataSet>>::const_iterator end() const {
+          lazy_load();
           return m_data_sets.end();
         }
 
