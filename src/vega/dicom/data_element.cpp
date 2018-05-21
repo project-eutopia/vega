@@ -166,7 +166,7 @@ namespace vega {
         formatter << " \"" << this->page()->name() << "\" VM=" << this->page()->vm();
       }
       formatter << " (len=" << this->length() << "): ";
-      if (this->data_sets().empty()) {
+      if (!this->is_sequence()) {
         if (this->tag() == Tag::PIXEL_DATA) {
           formatter << "Pixel Data (size " << this->length() << ")";
         }
@@ -245,41 +245,48 @@ namespace vega {
 
     void DataElement::lazy_load() const {
       if (!m_reader) return;
+      auto reader = m_reader;
+      m_reader = nullptr;
 
-      auto current = m_reader->tell();
-      m_reader->seek_pos(m_start);
+      auto current = reader->tell();
+      reader->seek_pos(m_start);
 
       if (this->is_sequence()) {
         if (this->is_undefined_length()) {
-          throw "FIXME ERROR";
+          throw vega::Exception("Internal error: lazy_load encountered undefined length");
         }
         else {
-          this->read_finite_sequence();
+          this->read_finite_sequence(reader);
         }
       }
       else {
-        this->read_value_field();
+        if (this->is_undefined_length()) {
+          throw vega::Exception("Internal error: lazy_load encountered undefined length");
+        }
+        else {
+          this->read_value_field(reader);
+        }
       }
 
-      m_reader->seek_pos(current);
-      m_reader = nullptr;
+      reader->seek_pos(current);
+      reader = nullptr;
     }
 
-    void DataElement::read_finite_sequence() const {
-      auto end_of_element = m_reader->tell() + (std::streampos)this->length();
+    void DataElement::read_finite_sequence(const std::shared_ptr<Reader>& reader) const {
+      auto end_of_element = reader->tell() + (std::streampos)this->length();
 
-      while (m_reader->tell() < end_of_element) {
-        auto data_set = m_reader->read_data_set(std::const_pointer_cast<DataElement>(shared_from_this()));
+      while (reader->tell() < end_of_element) {
+        auto data_set = reader->read_data_set(std::const_pointer_cast<DataElement>(shared_from_this()));
         if (data_set) m_data_sets.push_back(data_set);
       }
     }
 
-    void DataElement::read_value_field() const {
+    void DataElement::read_value_field(const std::shared_ptr<Reader>& reader) const {
       // Not sequence, read raw data in
       m_manipulator = vega::manipulator_for(*this);
       this->validate_manipulator(*m_manipulator);
 
-      if (!m_manipulator->read_from(&m_reader->raw_reader(), this->length())) throw Reader::ReadingError("Reader encountered error reading from manipulator: '" + this->tag().str() + " " + this->vr().str() + "' (" + vega::to_string(Word{.u = this->vr().data().value}) + ") length=" + vega::to_string(this->length()));
+      if (!m_manipulator->read_from(&reader->raw_reader(), this->length())) throw Reader::ReadingError("Reader encountered error reading from manipulator: '" + this->tag().str() + " " + this->vr().str() + "' (" + vega::to_string(Word{.u = this->vr().data().value}) + ") length=" + vega::to_string(this->length()));
     }
   }
 }

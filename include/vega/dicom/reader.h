@@ -63,6 +63,7 @@ namespace vega {
 
       private:
         void read_data_element_undefined_sequence(std::shared_ptr<DataElement> element);
+        void read_data_element_value_field(std::shared_ptr<DataElement> element);
     };
   }
 }

@@ -166,8 +166,8 @@ namespace vega {
          */
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
-          this->validate_manipulator(*manipulator);
           lazy_load();
+          this->validate_manipulator(*manipulator);
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
 
@@ -247,8 +247,8 @@ namespace vega {
         }
 
         void lazy_load() const;
-        void read_finite_sequence() const;
-        void read_value_field() const;
+        void read_finite_sequence(const std::shared_ptr<Reader>& reader) const;
+        void read_value_field(const std::shared_ptr<Reader>& reader) const;
     };
   }
 }
