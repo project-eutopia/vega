@@ -36,7 +36,7 @@ namespace vega {
         bool m_lazy_load;
 
       public:
-        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false, bool lazy_load = false);
+        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false, bool lazy_load = true);
 
         RawReader& raw_reader();
 
