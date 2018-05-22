@@ -244,6 +244,11 @@ namespace vega {
     }
 
     void DataElement::lazy_load() const {
+      // Can definitely skip lazy loading if no reader
+      if (!m_reader) return;
+      std::lock_guard<std::mutex> lock(m_mutex);
+
+      // Second return check because reader might have been set to nullptr before the mutex was locked
       if (!m_reader) return;
       auto reader = m_reader;
       m_reader = nullptr;

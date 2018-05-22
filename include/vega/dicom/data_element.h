@@ -4,6 +4,7 @@
 #include <memory>
 #include <vector>
 #include <string>
+#include <mutex>
 
 #include "vega/vega.h"
 #include "vega/dicom/data_element_header.h"
@@ -80,6 +81,9 @@ namespace vega {
         std::streampos m_start;
 
         mutable std::shared_ptr<manipulators::ValueManipulator> m_manipulator;
+
+        // For making lazy loading thread-safe
+        mutable std::mutex m_mutex;
 
       public:
         /// Creates a blank DataElement with the given \p parent.
