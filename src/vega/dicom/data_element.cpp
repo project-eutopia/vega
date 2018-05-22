@@ -1,5 +1,6 @@
 #include "vega/dicom/data_element.h"
 #include "vega/dicom/data_set.h"
+#include "vega/dicom/reader.h"
 #include "vega/manipulator.h"
 #include "vega/vega.h"
 
@@ -11,6 +12,8 @@ namespace vega {
         m_page(),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {}
 
@@ -20,6 +23,8 @@ namespace vega {
         m_page(parent ? parent->page_for(name) : vega::dictionary::Dictionary::instance().page_for(name)),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (!m_page) throw vega::Exception(std::string("Cannot find dictionary page with name ") + name);
@@ -49,6 +54,8 @@ namespace vega {
         m_page(parent ? parent->page_for(tag) : vega::dictionary::Dictionary::instance().page_for(tag)),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (!m_page) {
@@ -72,6 +79,8 @@ namespace vega {
         m_page(parent ? parent->page_for(this->tag()) : vega::dictionary::Dictionary::instance().page_for(this->tag())),
         m_parent(parent),
         m_data_sets(),
+        m_reader(),
+        m_start(),
         m_manipulator()
     {
       if (this->vr().is_combined_vr()) {
@@ -83,6 +92,11 @@ namespace vega {
       if (!m_page->allows_vr(this->vr())) {
         throw vega::Exception(std::string("In DataElement(Tag, VR), invalid VR of ") + vr.str() + std::string(" for tag ") + tag.str() + std::string(", ") + m_page->name());
       }
+    }
+
+    void DataElement::set_value_field(const std::shared_ptr<Reader>& reader, const std::streampos& start) {
+      m_reader = reader;
+      m_start = start;
     }
 
     const std::shared_ptr<const dictionary::Page>& DataElement::page() const { return m_page; }
@@ -103,10 +117,11 @@ namespace vega {
     const std::weak_ptr<DataSet>& DataElement::parent() const { return m_parent; }
     std::weak_ptr<DataSet>& DataElement::parent() { return m_parent; }
 
-    const std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() const { return m_data_sets; }
-    std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() { return m_data_sets; }
+    const std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() const { lazy_load(); return m_data_sets; }
+    std::vector<std::shared_ptr<DataSet>>& DataElement::data_sets() { lazy_load(); return m_data_sets; }
 
     std::string DataElement::str() const {
+      lazy_load();
       return m_manipulator->str();
     }
 
@@ -151,7 +166,7 @@ namespace vega {
         formatter << " \"" << this->page()->name() << "\" VM=" << this->page()->vm();
       }
       formatter << " (len=" << this->length() << "): ";
-      if (this->data_sets().empty()) {
+      if (!this->is_sequence()) {
         if (this->tag() == Tag::PIXEL_DATA) {
           formatter << "Pixel Data (size " << this->length() << ")";
         }
@@ -201,7 +216,7 @@ namespace vega {
         if (c != '[') throw vega::Exception("Reading JSON data element, did not find '['");
 
         do {
-          auto data_set = DataSet::from_json(json_string, data_element);
+          auto data_set = DataSet::from_json(json_string);
           data_element->data_sets().push_back(data_set);
           json_string >> c;
         }
@@ -226,6 +241,57 @@ namespace vega {
       }
 
       return data_element;
+    }
+
+    void DataElement::lazy_load() const {
+      // Can definitely skip lazy loading if no reader
+      if (!m_reader) return;
+      std::lock_guard<std::mutex> lock(m_mutex);
+
+      // Second return check because reader might have been set to nullptr before the mutex was locked
+      if (!m_reader) return;
+      auto reader = m_reader;
+      m_reader = nullptr;
+
+      auto current = reader->tell();
+      reader->seek_pos(m_start);
+
+      if (this->is_sequence()) {
+        if (this->is_undefined_length()) {
+          throw vega::Exception("Internal error: lazy_load encountered undefined length");
+        }
+        else {
+          this->read_finite_sequence(reader);
+        }
+      }
+      else {
+        if (this->is_undefined_length()) {
+          throw vega::Exception("Internal error: lazy_load encountered undefined length");
+        }
+        else {
+          this->read_value_field(reader);
+        }
+      }
+
+      reader->seek_pos(current);
+      reader = nullptr;
+    }
+
+    void DataElement::read_finite_sequence(const std::shared_ptr<Reader>& reader) const {
+      auto end_of_element = reader->tell() + (std::streampos)this->length();
+
+      while (reader->tell() < end_of_element) {
+        auto data_set = reader->read_data_set(std::const_pointer_cast<DataElement>(shared_from_this()));
+        if (data_set) m_data_sets.push_back(data_set);
+      }
+    }
+
+    void DataElement::read_value_field(const std::shared_ptr<Reader>& reader) const {
+      // Not sequence, read raw data in
+      m_manipulator = vega::manipulator_for(*this);
+      this->validate_manipulator(*m_manipulator);
+
+      if (!m_manipulator->read_from(&reader->raw_reader(), this->length())) throw Reader::ReadingError("Reader encountered error reading from manipulator: '" + this->tag().str() + " " + this->vr().str() + "' (" + vega::to_string(Word{.u = this->vr().data().value}) + ") length=" + vega::to_string(this->length()));
     }
   }
 }

@@ -24,7 +24,7 @@ namespace vega {
   }
 
   namespace dicom {
-    class Reader {
+    class Reader : public std::enable_shared_from_this<Reader> {
       public:
         class FileDoesNotExistError : public vega::Exception { using vega::Exception::Exception; };
         class ReadingError : public vega::Exception { using vega::Exception::Exception; };
@@ -33,9 +33,10 @@ namespace vega {
         Formatter m_formatter;
         RawReader m_raw_reader;
         bool m_allow_any_explicit_vr;
+        bool m_lazy_load;
 
       public:
-        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false);
+        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false, bool lazy_load = true);
 
         RawReader& raw_reader();
 
@@ -57,8 +58,14 @@ namespace vega {
         bool eof();
         void rewind();
         std::streampos tell();
+        std::streampos eof_pos() const;
         void seek_pos(std::streampos pos);
         void seek_delta(std::streampos delta);
+
+      private:
+        void read_data_element_undefined_sequence(std::shared_ptr<DataElement> element);
+        void read_data_element_finite_sequence(std::shared_ptr<DataElement> element);
+        void read_data_element_value_field(std::shared_ptr<DataElement> element);
     };
   }
 }

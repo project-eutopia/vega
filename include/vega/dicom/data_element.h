@@ -4,6 +4,7 @@
 #include <memory>
 #include <vector>
 #include <string>
+#include <mutex>
 
 #include "vega/vega.h"
 #include "vega/dicom/data_element_header.h"
@@ -15,6 +16,7 @@
 namespace vega {
   namespace dicom {
     class DataSet;
+    class Reader;
 
     /**
      * \class DataElement
@@ -66,15 +68,22 @@ namespace vega {
      * Note that it is usually easier to use the wrapper class \link Element Element<T>\endlink
      * instead of DataElement when dealing with raw data.
      */
-    class DataElement {
+    class DataElement : public std::enable_shared_from_this<DataElement> {
       private:
         DataElementHeader m_header;
         std::shared_ptr<const dictionary::Page> m_page;
 
         std::weak_ptr<DataSet> m_parent;
-        std::vector<std::shared_ptr<DataSet>> m_data_sets;
+        mutable std::vector<std::shared_ptr<DataSet>> m_data_sets;
 
-        std::shared_ptr<manipulators::ValueManipulator> m_manipulator;
+        // Points to reader if content not yet read, or nullptr if already read
+        mutable std::shared_ptr<Reader> m_reader;
+        std::streampos m_start;
+
+        mutable std::shared_ptr<manipulators::ValueManipulator> m_manipulator;
+
+        // For making lazy loading thread-safe
+        mutable std::mutex m_mutex;
 
       public:
         /// Creates a blank DataElement with the given \p parent.
@@ -117,6 +126,8 @@ namespace vega {
          */
         DataElement(const Tag& tag, const VR& vr, std::shared_ptr<DataSet> parent = nullptr);
 
+        void set_value_field(const std::shared_ptr<Reader>& reader, const std::streampos& start);
+
         static std::shared_ptr<DataElement> from_json(std::stringstream& json_string, const Tag& tag, std::shared_ptr<DataSet> parent = nullptr);
 
         /// \return the dictionary::Page corresponding to this DataElement's Tag.
@@ -146,8 +157,9 @@ namespace vega {
         std::vector<std::shared_ptr<DataSet>>& data_sets();
 
         /// \cond INTERNAL
-        std::shared_ptr<manipulators::ValueManipulator> manipulator() { return m_manipulator; }
+        std::shared_ptr<manipulators::ValueManipulator> manipulator() { lazy_load(); return m_manipulator; }
         std::shared_ptr<const manipulators::ValueManipulator> manipulator() const {
+          lazy_load();
           return std::static_pointer_cast<const manipulators::ValueManipulator>(m_manipulator);
         }
         /// \endcond
@@ -158,9 +170,8 @@ namespace vega {
          */
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
-          if (!manipulator->is_valid_for(this->vr())) {
-            throw vega::Exception(std::string("DataElement::set_manipulator, received manipulator does not support VR ") + this->vr().str());
-          }
+          lazy_load();
+          this->validate_manipulator(*manipulator);
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
 
@@ -181,6 +192,7 @@ namespace vega {
         template <typename T>
         std::shared_ptr<T> get_manipulator() {
           this->vr().validate_value_manipulator<T>();
+          lazy_load();
 
           // Brand new
           if (!m_manipulator) {
@@ -207,16 +219,20 @@ namespace vega {
         /// \endcond
 
         std::vector<std::shared_ptr<DataSet>>::iterator begin() {
+          lazy_load();
           return m_data_sets.begin();
         }
         std::vector<std::shared_ptr<DataSet>>::const_iterator begin() const {
+          lazy_load();
           return m_data_sets.begin();
         }
 
         std::vector<std::shared_ptr<DataSet>>::iterator end() {
+          lazy_load();
           return m_data_sets.end();
         }
         std::vector<std::shared_ptr<DataSet>>::const_iterator end() const {
+          lazy_load();
           return m_data_sets.end();
         }
 
@@ -225,6 +241,18 @@ namespace vega {
 
         void log(Formatter& formatter) const;
         void json(Formatter& formatter) const;
+
+      private:
+        template <typename T>
+        void validate_manipulator(const T& manipulator) const {
+          if (!manipulator.is_valid_for(this->vr())) {
+            throw vega::Exception(std::string("DataElement::set_manipulator, received manipulator does not support VR ") + this->vr().str());
+          }
+        }
+
+        void lazy_load() const;
+        void read_finite_sequence(const std::shared_ptr<Reader>& reader) const;
+        void read_value_field(const std::shared_ptr<Reader>& reader) const;
     };
   }
 }

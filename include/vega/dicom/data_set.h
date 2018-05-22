@@ -26,7 +26,7 @@ namespace vega {
      * Simply put a DataSet is a map from \link Tag Tags\endlink to \link DataElement DataElements\endlink,
      * and so there can be at most one DataElement per Tag.
      */
-    class DataSet {
+    class DataSet : public std::enable_shared_from_this<DataSet> {
       public:
         typedef uint32_t length_type;
 
