@@ -36,7 +36,7 @@ namespace vega {
          * \param allow_any_explicit_vr will skip checking the dictionary to see if any element's
          *        VR is valid if the DICOM file has explicit VR.
          */
-        File(const std::string& file_name, bool allow_any_explicit_vr = false);
+        File(const std::string& file_name, bool allow_any_explicit_vr = false, bool lazy_load = false);
 
         /**
          * \brief Reads in existing file from a user supplied input stream \p input.
@@ -46,7 +46,7 @@ namespace vega {
          * \param allow_any_explicit_vr will skip checking the dictionary to see if any element's
          *        VR is valid if the DICOM file has explicit VR.
          */
-        File(std::shared_ptr<std::istream> input, bool allow_any_explicit_vr = false);
+        File(std::shared_ptr<std::istream> input, bool allow_any_explicit_vr = false, bool lazy_load = false);
 
         /**
          * \brief Builds a blank DICOM file.

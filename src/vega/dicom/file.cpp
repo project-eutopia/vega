@@ -19,19 +19,19 @@ namespace vega {
       return v;
     }
 
-    File::File(const std::string& file_name, bool allow_any_explicit_vr)
+    File::File(const std::string& file_name, bool allow_any_explicit_vr, bool lazy_load)
       :
-        File(std::make_shared<std::ifstream>(file_name, std::ifstream::binary), allow_any_explicit_vr)
+        File(std::make_shared<std::ifstream>(file_name, std::ifstream::binary), allow_any_explicit_vr, lazy_load)
     {}
 
-    File::File(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr)
+    File::File(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr, bool lazy_load)
       :
         m_data_set(std::make_shared<DataSet>())
     {
       if (!is || !*is) {
         throw vega::Exception("Invalid input stream");
       }
-      auto reader = std::make_shared<Reader>(is, allow_any_explicit_vr);
+      auto reader = std::make_shared<Reader>(is, allow_any_explicit_vr, lazy_load);
 
       m_preamble = std::make_shared<Preamble>(*reader);
 

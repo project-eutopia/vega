@@ -7,11 +7,12 @@
 
 namespace vega {
   namespace dicom {
-    Reader::Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr)
+    Reader::Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr, bool lazy_load)
       :
         m_formatter(std::cout, false),
         m_raw_reader(is),
-        m_allow_any_explicit_vr(allow_any_explicit_vr)
+        m_allow_any_explicit_vr(allow_any_explicit_vr),
+        m_lazy_load(lazy_load)
     {
     }
 
@@ -119,8 +120,13 @@ namespace vega {
           this->read_data_element_undefined_sequence(element);
         }
         else {
-          element->set_value_field(shared_from_this(), this->tell());
-          this->seek_delta(element->length());
+          if (m_lazy_load) {
+            element->set_value_field(shared_from_this(), this->tell());
+            this->seek_delta(element->length());
+          }
+          else {
+            this->read_data_element_finite_sequence(element);
+          }
         }
       }
       else {
@@ -128,8 +134,13 @@ namespace vega {
           this->read_data_element_value_field(element);
         }
         else {
-          element->set_value_field(shared_from_this(), this->tell());
-          this->seek_delta(element->length());
+          if (m_lazy_load) {
+            element->set_value_field(shared_from_this(), this->tell());
+            this->seek_delta(element->length());
+          }
+          else {
+            this->read_data_element_value_field(element);
+          }
         }
       }
 
@@ -157,6 +168,18 @@ namespace vega {
 
         // Not end yet, so jump back to non-end of sequence tag
         this->seek_pos(cur_pos);
+        m_formatter.increase_indent();
+        auto data_set = this->read_data_set(element);
+        m_formatter.decrease_indent();
+        if (data_set) element->data_sets().push_back(data_set);
+      }
+    }
+
+    void Reader::read_data_element_finite_sequence(std::shared_ptr<DataElement> element) {
+      m_formatter.indent() << "element is sequence has regular length"; m_formatter.newline();
+      auto end_of_element = this->tell() + (std::streampos)element->length();
+
+      while (this->tell() < end_of_element) {
         m_formatter.increase_indent();
         auto data_set = this->read_data_set(element);
         m_formatter.decrease_indent();

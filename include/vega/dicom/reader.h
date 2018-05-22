@@ -33,9 +33,10 @@ namespace vega {
         Formatter m_formatter;
         RawReader m_raw_reader;
         bool m_allow_any_explicit_vr;
+        bool m_lazy_load;
 
       public:
-        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false);
+        Reader(std::shared_ptr<std::istream> is, bool allow_any_explicit_vr = false, bool lazy_load = false);
 
         RawReader& raw_reader();
 
@@ -63,6 +64,7 @@ namespace vega {
 
       private:
         void read_data_element_undefined_sequence(std::shared_ptr<DataElement> element);
+        void read_data_element_finite_sequence(std::shared_ptr<DataElement> element);
         void read_data_element_value_field(std::shared_ptr<DataElement> element);
     };
   }
