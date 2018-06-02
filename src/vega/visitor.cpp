@@ -5,52 +5,57 @@
 #include "vega/dicom/file.h"
 
 namespace vega {
-  Visitor::Visitor(Visitor::data_element_visitor_type de, Visitor::data_set_visitor_type ds)
-    : m_de(de), m_ds(ds)
+  Visitor::Visitor(Visitor::visitor_function_type f)
+    : m_f(f)
   {}
 
-  void Visitor::visit(dicom::DataElement& data_element) const {
+  bool Visitor::visit(dicom::DataElement& data_element) const {
+    if (m_f(data_element)) return true;
+
     if (data_element.is_sequence()) {
       for (auto& data_set : data_element) {
         visit(*data_set);
       }
     }
 
-    m_de(data_element);
+    return false;
   }
 
   void Visitor::visit(dicom::DataSet& data_set) const {
-    for (auto& data_element : data_set) {
-      visit(*data_element);
-    }
+    auto it = data_set.begin();
 
-    m_ds(data_set);
+    while (it != data_set.end()) {
+      if (visit(**it)) {
+        it = data_set.erase(it);
+      }
+      else {
+        ++it;
+      }
+    }
   }
 
   void Visitor::visit(dicom::File& file) const {
     visit(*file.data_set());
   }
 
-  CVisitor::CVisitor(CVisitor::data_element_visitor_type de, CVisitor::data_set_visitor_type ds)
-    : m_de(de), m_ds(ds)
+  CVisitor::CVisitor(CVisitor::visitor_function_type f)
+    : m_f(f)
   {}
 
   void CVisitor::visit(const dicom::DataElement& data_element) const {
+    m_f(data_element);
+
     if (data_element.is_sequence()) {
       for (const auto& data_set : data_element) {
         visit(*data_set);
       }
     }
-
-    m_de(data_element);
   }
 
   void CVisitor::visit(const dicom::DataSet& data_set) const {
     for (const auto& data_element : data_set) {
       visit(*data_element);
     }
-
-    m_ds(data_set);
   }
 
   void CVisitor::visit(const dicom::File& file) const {

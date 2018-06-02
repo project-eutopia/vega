@@ -34,29 +34,28 @@ TEST(VisitorTest, test_visiting) {
     std::vector<Tag> tags;
 
     CVisitor v{
-      [&tags](const dicom::DataElement& de) { tags.push_back(de.tag()); },
-      [&tags](const dicom::DataSet& ds) {}
+      [&tags](const dicom::DataElement& de) { tags.push_back(de.tag()); }
     };
 
     v.visit(data_set);
 
     EXPECT_EQ(tags.size(), 4);
     EXPECT_EQ(tags[0], dictionary::DataSetType::tag);
-    EXPECT_EQ(tags[1], dictionary::RecordInUseFlag::tag);
-    EXPECT_EQ(tags[2], dictionary::CodingSchemeResourcesSequence::tag);
+    EXPECT_EQ(tags[1], dictionary::CodingSchemeResourcesSequence::tag);
+    EXPECT_EQ(tags[2], dictionary::RecordInUseFlag::tag);
     EXPECT_EQ(tags[3], dictionary::RadiationChargeState::tag);
   }
 
   {
     Visitor v{
-      [](dicom::DataElement& de) {
+      [](dicom::DataElement& de) -> bool {
         if (de.vr() == vr::US) {
           for (auto& val : *de.get_manipulator<US_Manipulator>()) {
             val *= 7;
           }
         }
-      },
-      [](dicom::DataSet& ds) {}
+        return false;
+      }
     };
 
     v.visit(data_set);
@@ -67,5 +66,21 @@ TEST(VisitorTest, test_visiting) {
     auto record_in_use_flag = data_set.element<dictionary::CodingSchemeResourcesSequence>()->data_sets().back()->element<dictionary::RecordInUseFlag>();
     // Has changed from 3 -> 21
     EXPECT_EQ(record_in_use_flag->manipulator()->at(0), 21);
+  }
+
+  {
+    // Remove CodingSchemeResourcesSequence
+    Visitor v{
+      [](dicom::DataElement& de) -> bool {
+        return de.tag() == dictionary::CodingSchemeResourcesSequence::tag;
+      }
+    };
+
+    v.visit(data_set);
+
+    EXPECT_EQ(data_set.size(), 2);
+    EXPECT_NE(data_set.element<dictionary::DataSetType>(), nullptr);
+    EXPECT_EQ(data_set.element<dictionary::CodingSchemeResourcesSequence>(), nullptr);
+    EXPECT_NE(data_set.element<dictionary::RadiationChargeState>(), nullptr);
   }
 }

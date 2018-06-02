@@ -11,35 +11,36 @@ namespace vega {
 
   class Visitor {
     public:
-      using data_element_visitor_type = std::function<void(dicom::DataElement&)>;
-      using data_set_visitor_type = std::function<void(dicom::DataSet&)>;
+      using visitor_function_type = std::function<bool(dicom::DataElement&)>;
 
     private:
-      const data_element_visitor_type m_de;
-      const data_set_visitor_type m_ds;
+      const visitor_function_type m_f;
 
     public:
-      Visitor(data_element_visitor_type de, data_set_visitor_type ds);
+      // Function returns true if data element to be removed
+      Visitor(visitor_function_type f);
 
-      void visit(dicom::DataElement& data_element) const;
       void visit(dicom::DataSet& data_set) const;
       void visit(dicom::File& file) const;
+
+    private:
+      bool visit(dicom::DataElement& data_element) const;
   };
 
   class CVisitor {
     public:
-      using data_element_visitor_type = std::function<void(const dicom::DataElement&)>;
-      using data_set_visitor_type = std::function<void(const dicom::DataSet&)>;
+      using visitor_function_type = std::function<void(const dicom::DataElement&)>;
 
     private:
-      const data_element_visitor_type m_de;
-      const data_set_visitor_type m_ds;
+      const visitor_function_type m_f;
 
     public:
-      CVisitor(data_element_visitor_type de, data_set_visitor_type ds);
+      CVisitor(visitor_function_type f);
 
-      void visit(const dicom::DataElement& data_element) const;
       void visit(const dicom::DataSet& data_set) const;
       void visit(const dicom::File& file) const;
+
+    private:
+      void visit(const dicom::DataElement& data_element) const;
   };
 }
