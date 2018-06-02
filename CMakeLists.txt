@@ -35,8 +35,13 @@ install (DIRECTORY include/${PROJECT_NAME} DESTINATION include)
 # sudo cp *.a /usr/lib
 find_package(GTest REQUIRED)
 
-add_executable(main "src/main.cpp")
-target_link_libraries(main ${PROJECT_NAME}_dev z)
+add_executable(vega_dev-bin "src/main.cpp")
+target_link_libraries(vega_dev-bin ${PROJECT_NAME}_dev z)
+
+add_executable(vega-bin "src/main.cpp")
+SET_TARGET_PROPERTIES(vega-bin PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
+target_link_libraries(vega-bin ${PROJECT_NAME} z)
+install(TARGETS vega-bin RUNTIME DESTINATION bin)
 
 # Test command
 if (GTest_FOUND)
