@@ -43,6 +43,8 @@ SET_TARGET_PROPERTIES(vega-bin PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
 target_link_libraries(vega-bin ${PROJECT_NAME} z)
 install(TARGETS vega-bin RUNTIME DESTINATION bin)
 
+install(FILES "test/dictionary.txt" DESTINATION share/vega)
+
 # Test command
 if (GTest_FOUND)
   include_directories(${GTest_INCLUDE_DIRS})
