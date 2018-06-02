@@ -124,6 +124,32 @@ namespace vega {
       return nullptr;
     }
 
+    void DataSet::erase(const Tag& tag) {
+      m_elements.erase(tag);
+    }
+
+    void DataSet::erase(const TagMask& tag_mask) {
+      if (tag_mask.is_single()) {
+        erase(tag_mask.singular_tag());
+      }
+      else {
+        auto it = m_elements.begin();
+
+        while (it != m_elements.end()) {
+          if (tag_mask.contains(it->first)) {
+            it = m_elements.erase(it);
+          }
+          else {
+            ++it;
+          }
+        }
+      }
+    }
+
+    void DataSet::erase(const std::shared_ptr<DataElement>& data_element) {
+      erase(data_element->tag());
+    }
+
     std::shared_ptr<const DataElement> DataSet::data_element(const Tag& tag) const {
       auto it = m_elements.find(tag);
       if (it == m_elements.end()) return nullptr;

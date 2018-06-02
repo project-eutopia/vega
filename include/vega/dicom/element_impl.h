@@ -1,5 +1,3 @@
-#include "vega/dictionary_data.h"
-
 namespace vega {
   namespace dicom {
     template <typename T>
@@ -30,11 +28,6 @@ namespace vega {
     template <typename T>
     std::shared_ptr<DataElement> Element<T>::underlying_data_element() const {
       return m_data_element;
-    }
-
-    template <typename T>
-    std::shared_ptr<typename T::manipulator_type> Element<T>::manipulator() {
-      return m_data_element->get_manipulator<typename T::manipulator_type>();
     }
 
     template <typename T>

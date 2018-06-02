@@ -126,7 +126,7 @@ namespace vega {
     }
 
     bool DataElement::is_sequence() const {
-      return (this->tag().is_private() && this->is_undefined_length()) || this->vr().is_sequence();
+      return this->vr().is_sequence() || (this->tag().is_private() && this->is_undefined_length());
     }
     bool DataElement::is_undefined_length() const { return m_header.is_undefined_length(); }
 

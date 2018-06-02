@@ -1,7 +1,9 @@
 #pragma once
 
 #include <memory>
+#include <type_traits>
 #include "vega/dicom/data_element.h"
+#include "vega/dictionary_data.h"
 
 namespace vega {
   namespace dicom {
@@ -43,10 +45,34 @@ namespace vega {
         /**
          * \return a pointer to the manipulator for this Element.
          */
-        std::shared_ptr<typename T::manipulator_type> manipulator();
+        template <typename U = T>
+        typename std::enable_if<!std::is_same<typename U::manipulator_type, void>::value, std::shared_ptr<typename U::manipulator_type>>::type manipulator() {
+          return m_data_element->get_manipulator<typename U::manipulator_type>();
+        }
+
+        /**
+         * \return generate a new, blank manipulator for this Element.  This effectively clears the content of the Element.
+         */
+        /* std::shared_ptr<typename T::manipulator_type> new_manipulator(); */
+        template <typename U = T>
+        typename std::enable_if<!std::is_same<typename U::manipulator_type, void>::value, std::shared_ptr<typename U::manipulator_type>>::type new_manipulator() {
+          auto manipulator = std::make_shared<typename U::manipulator_type>();
+          m_data_element->set_manipulator<typename U::manipulator_type>(manipulator);
+          return manipulator;
+        }
         /// \cond INTERNAL
         std::shared_ptr<DataElement> underlying_data_element() const;
         /// \endcond
+
+        template <typename U = T>
+        typename std::enable_if<std::is_same<typename U::manipulator_type, void>::value, std::vector<std::shared_ptr<DataSet>>&>::type data_sets() {
+          return m_data_element->data_sets();
+        }
+
+        template <typename U = T>
+        typename std::enable_if<std::is_same<typename U::manipulator_type, void>::value, const std::vector<std::shared_ptr<DataSet>>&>::type data_sets() const {
+          return m_data_element->data_sets();
+        }
 
         const Tag& tag() const;
         Tag& tag();
