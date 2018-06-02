@@ -30,9 +30,9 @@ namespace vega {
     std::shared_ptr<dicom::File> file;
 
     if (input_file_.empty()) {
-      if (isatty(fileno(stdin))) {
-        throw std::runtime_error("Cannot run on user input, please specify input file or pipe in DICOM file");
-      }
+      // Skip if no piped data
+      if (isatty(fileno(stdin))) return;
+
       // Read DICOM file from STDIN (piped input)
       auto ss = std::make_shared<std::stringstream>();
       *ss << std::cin.rdbuf();
