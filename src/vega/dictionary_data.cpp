@@ -1,4 +1,4 @@
-// Generated with bin/dictionary_build at 2017-12-06 17:39:34 +0900
+// Generated with bin/dictionary_build at 2018-06-01 14:14:43 -0700
 
 #include "vega/dictionary_data.h"
 
@@ -1150,6 +1150,12 @@ namespace vega {
     constexpr const TagMask ReferencedSOPInstanceUID::tag_mask;
     constexpr const VR ReferencedSOPInstanceUID::vr;
     constexpr const VM ReferencedSOPInstanceUID::vm;
+
+    constexpr const char DefinitionSourceSequence::name[];
+    constexpr const Tag DefinitionSourceSequence::tag;
+    constexpr const TagMask DefinitionSourceSequence::tag_mask;
+    constexpr const VR DefinitionSourceSequence::vr;
+    constexpr const VM DefinitionSourceSequence::vm;
 
     constexpr const char SOPClassesSupported::name[];
     constexpr const Tag SOPClassesSupported::tag;
@@ -13249,6 +13255,12 @@ namespace vega {
     constexpr const VR SlideIdentifier::vr;
     constexpr const VM SlideIdentifier::vm;
 
+    constexpr const char WholeSlideMicroscopyImageFrameTypeSequence::name[];
+    constexpr const Tag WholeSlideMicroscopyImageFrameTypeSequence::tag;
+    constexpr const TagMask WholeSlideMicroscopyImageFrameTypeSequence::tag_mask;
+    constexpr const VR WholeSlideMicroscopyImageFrameTypeSequence::vr;
+    constexpr const VM WholeSlideMicroscopyImageFrameTypeSequence::vm;
+
     constexpr const char ImageCenterPointCoordinatesSequence::name[];
     constexpr const Tag ImageCenterPointCoordinatesSequence::tag;
     constexpr const TagMask ImageCenterPointCoordinatesSequence::tag_mask;
@@ -13530,6 +13542,12 @@ namespace vega {
     constexpr const TagMask PerformedProcessingApplicationsCodeSequence::tag_mask;
     constexpr const VR PerformedProcessingApplicationsCodeSequence::vr;
     constexpr const VM PerformedProcessingApplicationsCodeSequence::vm;
+
+    constexpr const char ScheduledProcedureStepExpirationDateTime::name[];
+    constexpr const Tag ScheduledProcedureStepExpirationDateTime::tag;
+    constexpr const TagMask ScheduledProcedureStepExpirationDateTime::tag_mask;
+    constexpr const VR ScheduledProcedureStepExpirationDateTime::vr;
+    constexpr const VM ScheduledProcedureStepExpirationDateTime::vm;
 
     constexpr const char HumanPerformerCodeSequence::name[];
     constexpr const Tag HumanPerformerCodeSequence::tag;
@@ -15457,6 +15475,18 @@ namespace vega {
     constexpr const VR PixelOriginInterpretation::vr;
     constexpr const VM PixelOriginInterpretation::vm;
 
+    constexpr const char NumberOfOpticalPaths::name[];
+    constexpr const Tag NumberOfOpticalPaths::tag;
+    constexpr const TagMask NumberOfOpticalPaths::tag_mask;
+    constexpr const VR NumberOfOpticalPaths::vr;
+    constexpr const VM NumberOfOpticalPaths::vm;
+
+    constexpr const char TotalPixelMatrixFocalPlanes::name[];
+    constexpr const Tag TotalPixelMatrixFocalPlanes::tag;
+    constexpr const TagMask TotalPixelMatrixFocalPlanes::tag_mask;
+    constexpr const VR TotalPixelMatrixFocalPlanes::vr;
+    constexpr const VM TotalPixelMatrixFocalPlanes::vm;
+
     constexpr const char CalibrationImage::name[];
     constexpr const Tag CalibrationImage::tag;
     constexpr const TagMask CalibrationImage::tag_mask;
@@ -17239,6 +17269,24 @@ namespace vega {
     constexpr const VR ThreeDPlaneNormal::vr;
     constexpr const VM ThreeDPlaneNormal::vm;
 
+    constexpr const char ModelModification::name[];
+    constexpr const Tag ModelModification::tag;
+    constexpr const TagMask ModelModification::tag_mask;
+    constexpr const VR ModelModification::vr;
+    constexpr const VM ModelModification::vm;
+
+    constexpr const char ModelMirroring::name[];
+    constexpr const Tag ModelMirroring::tag;
+    constexpr const TagMask ModelMirroring::tag_mask;
+    constexpr const VR ModelMirroring::vr;
+    constexpr const VM ModelMirroring::vm;
+
+    constexpr const char ModelUsageCodeSequence::name[];
+    constexpr const Tag ModelUsageCodeSequence::tag;
+    constexpr const TagMask ModelUsageCodeSequence::tag_mask;
+    constexpr const VR ModelUsageCodeSequence::vr;
+    constexpr const VM ModelUsageCodeSequence::vm;
+
     constexpr const char GraphicAnnotationSequence::name[];
     constexpr const Tag GraphicAnnotationSequence::tag;
     constexpr const TagMask GraphicAnnotationSequence::tag_mask;
@@ -17838,6 +17886,12 @@ namespace vega {
     constexpr const TagMask FiducialUID::tag_mask;
     constexpr const VR FiducialUID::vr;
     constexpr const VM FiducialUID::vm;
+
+    constexpr const char ReferencedFiducialUID::name[];
+    constexpr const Tag ReferencedFiducialUID::tag;
+    constexpr const TagMask ReferencedFiducialUID::tag_mask;
+    constexpr const VR ReferencedFiducialUID::vr;
+    constexpr const VM ReferencedFiducialUID::vm;
 
     constexpr const char FiducialSetSequence::name[];
     constexpr const Tag FiducialSetSequence::tag;

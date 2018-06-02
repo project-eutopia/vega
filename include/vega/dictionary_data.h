@@ -1,4 +1,4 @@
-// Generated with bin/dictionary_build at 2017-12-06 17:39:34 +0900
+// Generated with bin/dictionary_build at 2018-06-01 14:14:42 -0700
 
 #pragma once
 
@@ -404,6 +404,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0004, 0xFFFF, 0x1220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OffsetOfTheNextDirectoryRecord {
@@ -538,6 +539,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0006, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageType {
@@ -789,6 +791,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0051, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct QueryRetrieveLevel {
@@ -878,6 +881,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0063, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConversionType {
@@ -931,6 +935,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0082, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferringPhysicianName {
@@ -966,6 +971,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0096, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConsultingPhysicianName {
@@ -983,6 +989,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x009D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CodeValue {
@@ -1072,6 +1079,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0109, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CodingSchemeURLType {
@@ -1134,6 +1142,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CodingSchemeRegistry {
@@ -1214,6 +1223,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0121, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MappingResourceName {
@@ -1231,6 +1241,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0123, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MappingResourceIdentificationSequence {
@@ -1239,6 +1250,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0124, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TimezoneOffsetFromUTC {
@@ -1256,6 +1268,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EquipmentModality {
@@ -1282,6 +1295,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrivateGroupReference {
@@ -1335,6 +1349,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0305, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DeidentificationAction {
@@ -1424,6 +1439,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x0310, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NetworkID {
@@ -1459,6 +1475,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1032, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SeriesDescription {
@@ -1476,6 +1493,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x103F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InstitutionalDepartmentName {
@@ -1502,6 +1520,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1049, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformingPhysicianName {
@@ -1519,6 +1538,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1052, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NameOfPhysiciansReadingStudy {
@@ -1536,6 +1556,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1062, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OperatorsName {
@@ -1553,6 +1574,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1072, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AdmittingDiagnosesDescription {
@@ -1570,6 +1592,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1084, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ManufacturerModelName {
@@ -1587,6 +1610,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStudySequence {
@@ -1595,6 +1619,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPerformedProcedureStepSequence {
@@ -1603,6 +1628,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSeriesSequence {
@@ -1611,6 +1637,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1115, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPatientSequence {
@@ -1619,6 +1646,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1120, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedVisitSequence {
@@ -1627,6 +1655,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1125, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedOverlaySequence {
@@ -1635,6 +1664,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1130, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStereometricInstanceSequence {
@@ -1643,6 +1673,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1134, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedWaveformSequence {
@@ -1651,6 +1682,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x113A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImageSequence {
@@ -1659,6 +1691,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1140, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedCurveSequence {
@@ -1667,6 +1700,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1145, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedInstanceSequence {
@@ -1675,6 +1709,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x114A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedRealWorldValueMappingInstanceSequence {
@@ -1683,6 +1718,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x114B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSOPClassUID {
@@ -1701,6 +1737,15 @@ namespace vega {
       static constexpr const VR vr {'U', 'I'};
       static constexpr const VM vm {1, 1, false};
       typedef UI_Manipulator manipulator_type;
+    };
+
+    struct DefinitionSourceSequence {
+      static constexpr const char name[] = "DefinitionSourceSequence";
+      static constexpr const Tag tag {0x0008, 0x1156};
+      static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1156, 0xFFFF};
+      static constexpr const VR vr {'S', 'Q'};
+      static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SOPClassesSupported {
@@ -1754,6 +1799,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1164, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MultiFrameSourceSOPInstanceUID {
@@ -1807,6 +1853,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1198, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSOPSequence {
@@ -1815,6 +1862,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1199, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OtherFailuresSequence {
@@ -1823,6 +1871,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x119A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StudiesContainingOtherReferencedInstancesSequence {
@@ -1831,6 +1880,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1200, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelatedSeriesSequence {
@@ -1839,6 +1889,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x1250, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LossyImageCompressionRetired {
@@ -1865,6 +1916,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2112, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StageName {
@@ -1954,6 +2006,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2133, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EventTimeOffset {
@@ -1971,6 +2024,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2135, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StartTrim {
@@ -2033,6 +2087,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2218, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicRegionModifierSequence {
@@ -2041,6 +2096,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrimaryAnatomicStructureSequence {
@@ -2049,6 +2105,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2228, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicStructureSpaceOrRegionSequence {
@@ -2057,6 +2114,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2229, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrimaryAnatomicStructureModifierSequence {
@@ -2065,6 +2123,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerPositionSequence {
@@ -2073,6 +2132,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2240, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerPositionModifierSequence {
@@ -2081,6 +2141,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2242, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerOrientationSequence {
@@ -2089,6 +2150,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2244, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerOrientationModifierSequence {
@@ -2097,6 +2159,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2246, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicStructureSpaceOrRegionCodeSequenceTrial {
@@ -2105,6 +2168,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2251, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicPortalOfEntranceCodeSequenceTrial {
@@ -2113,6 +2177,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2253, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicApproachDirectionCodeSequenceTrial {
@@ -2121,6 +2186,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2255, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicPerspectiveDescriptionTrial {
@@ -2138,6 +2204,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2257, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicLocationOfExaminingInstrumentDescriptionTrial {
@@ -2155,6 +2222,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x2259, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnatomicStructureSpaceOrRegionModifierCodeSequenceTrial {
@@ -2163,6 +2231,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x225A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OnAxisBackgroundAnatomicStructureCodeSequenceTrial {
@@ -2171,6 +2240,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x225C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlternateRepresentationSequence {
@@ -2179,6 +2249,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x3001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IrradiationEventUID {
@@ -2196,6 +2267,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x3011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RadiopharmaceuticalAdministrationEventUID {
@@ -2231,6 +2303,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9092, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedRawDataSequence {
@@ -2239,6 +2312,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9121, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CreatorVersionUID {
@@ -2256,6 +2330,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9124, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceImageEvidenceSequence {
@@ -2264,6 +2339,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9154, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelPresentation {
@@ -2317,6 +2393,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9215, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPresentationStateSequence {
@@ -2325,6 +2402,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9237, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedOtherPlaneSequence {
@@ -2333,6 +2411,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9410, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameDisplaySequence {
@@ -2341,6 +2420,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0008, 0xFFFF, 0x9458, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecommendedDisplayFrameRateInFloat {
@@ -2403,6 +2483,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0024, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourcePatientGroupIdentificationSequence {
@@ -2411,6 +2492,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GroupOfPatientsIdentificationSequence {
@@ -2419,6 +2501,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SubjectRelativePositionInImage {
@@ -2490,6 +2573,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientPrimaryLanguageCodeSequence {
@@ -2498,6 +2582,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientPrimaryLanguageModifierCodeSequence {
@@ -2506,6 +2591,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0102, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct QualityControlSubject {
@@ -2523,6 +2609,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0201, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StrainDescription {
@@ -2558,6 +2645,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0215, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StrainStockSequence {
@@ -2566,6 +2654,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0216, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StrainSource {
@@ -2592,6 +2681,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0219, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GeneticModificationsSequence {
@@ -2600,6 +2690,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0221, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GeneticModificationsDescription {
@@ -2626,6 +2717,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x0229, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OtherPatientIDs {
@@ -2652,6 +2744,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x1002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientBirthName {
@@ -2687,6 +2780,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x1021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientBodyMassIndex {
@@ -2785,6 +2879,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x1100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MedicalAlerts {
@@ -2919,6 +3014,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x2202, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientSexNeutered {
@@ -2954,6 +3050,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x2293, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BreedRegistrationSequence {
@@ -2962,6 +3059,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x2294, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BreedRegistrationNumber {
@@ -2979,6 +3077,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0010, 0xFFFF, 0x2296, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ResponsiblePerson {
@@ -3158,6 +3257,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0012, 0xFFFF, 0x0064, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ClinicalTrialSeriesID {
@@ -3202,6 +3302,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0012, 0xFFFF, 0x0083, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DistributionType {
@@ -3435,6 +3536,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x0106, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OtherApprovalStatus {
@@ -3488,6 +3590,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x2002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EvaluatorNumber {
@@ -3523,6 +3626,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x2012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IndicationNumber {
@@ -3576,6 +3680,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x201E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IndicationPhysicalPropertySequence {
@@ -3584,6 +3689,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x2030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PropertyLabel {
@@ -3610,6 +3716,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x2204, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CoordinateSystemAxisDescription {
@@ -3672,6 +3779,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x2220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransformDescription {
@@ -3752,6 +3860,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x3020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SensorName {
@@ -3796,6 +3905,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x3040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DarkCurrentCounts_OB {
@@ -3822,6 +3932,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x3060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AirCounts_OB {
@@ -3929,6 +4040,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PulserType {
@@ -3955,6 +4067,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AmplifierType {
@@ -3981,6 +4094,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x400E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PreAmplifierNotes {
@@ -3998,6 +4112,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReceiveTransducerSequence {
@@ -4006,6 +4121,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfElements {
@@ -4122,6 +4238,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PulseWidth {
@@ -4166,6 +4283,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquiredSoundpathLength {
@@ -4210,6 +4328,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4035, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DACType {
@@ -4254,6 +4373,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransmitTransducerSettingsSequence {
@@ -4262,6 +4382,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReceiveTransducerSettingsSequence {
@@ -4270,6 +4391,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4051, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IncidentAngle {
@@ -4350,6 +4472,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GateThreshold {
@@ -4376,6 +4499,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CalibrationProcedure {
@@ -4447,6 +4571,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DriveType {
@@ -4473,6 +4598,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4083, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProbeInductance {
@@ -4499,6 +4625,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4086, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProbeDriveSettingsSequence {
@@ -4507,6 +4634,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4087, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BridgeResistors {
@@ -4569,6 +4697,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x4091, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelThreshold {
@@ -4586,6 +4715,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0014, 0xFFFF, 0x409A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScanProcedure {
@@ -4972,6 +5102,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContrastBolusT1Relaxivity {
@@ -4989,6 +5120,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x0014, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BodyPartExamined {
@@ -5060,6 +5192,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x0026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InterventionDrugStopTime {
@@ -5086,6 +5219,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x0029, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AdditionalDrugSequence {
@@ -5094,6 +5228,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x002A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct Radionuclide {
@@ -5156,6 +5291,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x0036, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TherapyType {
@@ -5506,6 +5642,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x100A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SecondaryCaptureDeviceID {
@@ -6603,6 +6740,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x1272, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScanVelocity {
@@ -7205,6 +7343,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x2041, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TargetUID {
@@ -7465,6 +7604,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x5104, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageTransformationMatrix {
@@ -7500,6 +7640,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x6011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RegionSpatialFormat {
@@ -8336,6 +8477,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9006, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EchoPulseSequence {
@@ -8596,6 +8738,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9042, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReceiveCoilType {
@@ -8622,6 +8765,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9045, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MultiCoilConfiguration {
@@ -8657,6 +8801,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9049, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransmitCoilManufacturerName {
@@ -8845,6 +8990,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9076, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParallelAcquisition {
@@ -8907,6 +9053,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9083, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChemicalShiftSequence {
@@ -8915,6 +9062,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9084, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CardiacSignalSource {
@@ -8968,6 +9116,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9092, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfKSpaceTrajectories {
@@ -9039,6 +9188,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9103, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SlabThickness {
@@ -9074,6 +9224,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9107, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRTimingAndRelatedParametersSequence {
@@ -9082,6 +9233,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9112, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MREchoSequence {
@@ -9090,6 +9242,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9114, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRModifierSequence {
@@ -9098,6 +9251,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9115, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRDiffusionSequence {
@@ -9106,6 +9260,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9117, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CardiacSynchronizationSequence {
@@ -9114,6 +9269,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9118, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRAveragesSequence {
@@ -9122,6 +9278,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9119, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRFOVGeometrySequence {
@@ -9130,6 +9287,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9125, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VolumeLocalizationSequence {
@@ -9138,6 +9296,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9126, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpectroscopyAcquisitionDataColumns {
@@ -9173,6 +9332,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9152, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParallelReductionFactorOutOfPlane {
@@ -9280,6 +9440,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9176, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OperatingModeType {
@@ -9396,6 +9557,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9197, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FirstOrderPhaseCorrection {
@@ -9476,6 +9638,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9226, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRSpectroscopyFrameTypeSequence {
@@ -9484,6 +9647,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9227, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MRAcquisitionPhaseEncodingStepsInPlane {
@@ -9528,6 +9692,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9239, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RFEchoTrainLength {
@@ -9563,6 +9728,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9251, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ASLTechniqueDescription {
@@ -9670,6 +9836,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x925D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ASLBolusCutoffTechnique {
@@ -9696,6 +9863,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9260, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChemicalShiftMinimumIntegrationLimitInppm {
@@ -9740,6 +9908,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9301, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquisitionType {
@@ -9766,6 +9935,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9304, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RevolutionTime {
@@ -9801,6 +9971,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9308, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TableSpeed {
@@ -9836,6 +10007,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9312, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataCollectionCenterPatient {
@@ -9853,6 +10025,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9314, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionAlgorithm {
@@ -9915,6 +10088,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9321, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionPixelSpacing {
@@ -9950,6 +10124,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9325, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CTPositionSequence {
@@ -9958,6 +10133,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9326, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TablePosition {
@@ -9984,6 +10160,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9329, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRayTubeCurrentInmA {
@@ -10046,6 +10223,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9338, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContrastAdministrationProfileSequence {
@@ -10054,6 +10232,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9340, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContrastBolusUsageSequence {
@@ -10062,6 +10241,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9341, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContrastBolusAgentAdministered {
@@ -10106,6 +10286,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9346, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CalciumScoringMassFactorPatient {
@@ -10141,6 +10322,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9360, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProjectionPixelCalibrationSequence {
@@ -10149,6 +10331,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9401, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DistanceSourceToIsocenter {
@@ -10184,6 +10367,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9405, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TablePositionSequence {
@@ -10192,6 +10376,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9406, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CollimatorShapeSequence {
@@ -10200,6 +10385,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9407, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanesInAcquisition {
@@ -10217,6 +10403,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9412, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameAcquisitionSequence {
@@ -10225,6 +10412,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9417, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRayReceptorType {
@@ -10314,6 +10502,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9432, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FieldOfViewDescription {
@@ -10331,6 +10520,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9434, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ExposureControlSensingRegionShape {
@@ -10429,6 +10619,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9451, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CalculatedAnatomyThickness {
@@ -10446,6 +10637,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9455, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObjectThicknessSequence {
@@ -10454,6 +10646,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9456, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlaneIdentification {
@@ -10480,6 +10673,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9462, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PositionerIsocenterPrimaryAngle {
@@ -10569,6 +10763,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9472, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquiredImageAreaDoseProduct {
@@ -10595,6 +10790,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9476, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IrradiationEventIdentificationSequence {
@@ -10603,6 +10799,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9477, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRay3DFrameTypeSequence {
@@ -10611,6 +10808,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9504, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContributingSourcesSequence {
@@ -10619,6 +10817,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9506, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRay3DAcquisitionSequence {
@@ -10627,6 +10826,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9507, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrimaryPositionerScanArc {
@@ -10770,6 +10970,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9530, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionDescription {
@@ -10787,6 +10988,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9538, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DetectorPositionSequence {
@@ -10795,6 +10997,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9541, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRayAcquisitionDoseSequence {
@@ -10803,6 +11006,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9542, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRaySourceIsocenterPrimaryAngle {
@@ -10919,6 +11123,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9555, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XRayFilterSequence {
@@ -10927,6 +11132,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9556, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DetectorActiveAreaTLHCPosition {
@@ -10962,6 +11168,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9601, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DiffusionBValueXX {
@@ -11024,6 +11231,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9621, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FunctionalSettlingPhaseFramesPresent {
@@ -11194,6 +11402,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9732, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PETDetectorMotionDetailsSequence {
@@ -11202,6 +11411,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9733, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PETTableDynamicsSequence {
@@ -11210,6 +11420,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9734, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PETPositionSequence {
@@ -11218,6 +11429,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9735, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PETFrameCorrectionFactorsSequence {
@@ -11226,6 +11438,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9736, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RadiopharmaceuticalUsageSequence {
@@ -11234,6 +11447,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9737, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AttenuationCorrectionSource {
@@ -11269,6 +11483,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9749, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PETFrameTypeSequence {
@@ -11277,6 +11492,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9751, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TimeOfFlightInformationUsed {
@@ -11420,6 +11636,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9771, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientPhysiologicalStateCodeSequence {
@@ -11428,6 +11645,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9772, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DepthsOfFocus {
@@ -11445,6 +11663,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9803, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ExclusionStartDateTime {
@@ -11471,6 +11690,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9806, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageDataTypeSequence {
@@ -11479,6 +11699,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9807, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataType {
@@ -11496,6 +11717,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9809, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AliasedDataType {
@@ -11522,6 +11744,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x980D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerBeamSteeringCodeSequence {
@@ -11530,6 +11753,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x980E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransducerApplicationCodeSequence {
@@ -11538,6 +11762,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x980F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ZeroVelocityPixelValue_US {
@@ -11582,6 +11807,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9902, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferenceGeometryCodeSequence {
@@ -11590,6 +11816,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9903, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OffsetDistance {
@@ -11616,6 +11843,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9906, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PotentialRequestedProcedureCodeSequence {
@@ -11624,6 +11852,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9907, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PotentialReasonsForProcedure {
@@ -11641,6 +11870,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9909, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PotentialDiagnosticTasks {
@@ -11658,6 +11888,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x990B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedDefinedProtocolSequence {
@@ -11666,6 +11897,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x990C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPerformedProtocolSequence {
@@ -11674,6 +11906,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x990D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PredecessorProtocolSequence {
@@ -11682,6 +11915,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x990E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProtocolPlanningInformation {
@@ -11708,6 +11942,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9911, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ModelSpecificationSequence {
@@ -11716,6 +11951,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9912, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParametersSpecificationSequence {
@@ -11724,6 +11960,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9913, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InstructionSequence {
@@ -11732,6 +11969,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9914, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InstructionIndex {
@@ -11794,6 +12032,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x991B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PositioningMethodCodeSequence {
@@ -11802,6 +12041,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x991C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PositioningLandmarkSequence {
@@ -11810,6 +12050,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x991D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TargetFrameOfReferenceUID {
@@ -11827,6 +12068,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x991F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquisitionProtocolElementSequence {
@@ -11835,6 +12077,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9920, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProtocolElementNumber {
@@ -11888,6 +12131,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9931, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquisitionEndLocationSequence {
@@ -11896,6 +12140,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9932, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionProtocolElementSpecificationSequence {
@@ -11904,6 +12149,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9933, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionProtocolElementSequence {
@@ -11912,6 +12158,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9934, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StorageProtocolElementSpecificationSequence {
@@ -11920,6 +12167,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9935, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StorageProtocolElementSequence {
@@ -11928,6 +12176,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x9936, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestedSeriesDescription {
@@ -11972,6 +12221,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x993B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionEndLocationSequence {
@@ -11980,6 +12230,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x993C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionAlgorithmSequence {
@@ -11988,6 +12239,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x993D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionTargetCenterLocationSequence {
@@ -11996,6 +12248,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0x993E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageFilterDescription {
@@ -12067,6 +12320,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0018, 0xFFFF, 0xA001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContributionDateTime {
@@ -12641,6 +12895,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9071, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameLaterality {
@@ -12658,6 +12913,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanePositionSequence {
@@ -12666,6 +12922,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9113, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlaneOrientationSequence {
@@ -12674,6 +12931,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9116, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TemporalPositionIndex {
@@ -12799,6 +13057,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9170, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UnassignedPerFrameConvertedAttributesSequence {
@@ -12807,6 +13066,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9171, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConversionSourceAttributesSequence {
@@ -12815,6 +13075,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9172, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DimensionIndexPrivateCreator {
@@ -12832,6 +13093,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9221, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DimensionIndexSequence {
@@ -12840,6 +13102,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9222, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConcatenationFrameOffsetNumber {
@@ -12947,6 +13210,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9253, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RespiratoryIntervalTime {
@@ -13072,6 +13336,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x930E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlaneOrientationVolumeSequence {
@@ -13080,6 +13345,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x930F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TemporalPositionSequence {
@@ -13088,6 +13354,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9310, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DimensionOrganizationType {
@@ -13132,6 +13399,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9450, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameLabel {
@@ -13158,6 +13426,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0020, 0xFFFF, 0x9529, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReconstructionIndex {
@@ -13220,6 +13489,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0006, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SphericalLensPower {
@@ -13345,6 +13615,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0015, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IlluminationTypeCodeSequence {
@@ -13353,6 +13624,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LightPathFilterTypeStackCodeSequence {
@@ -13361,6 +13633,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0017, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImagePathFilterTypeStackCodeSequence {
@@ -13369,6 +13642,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0018, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LensesCodeSequence {
@@ -13377,6 +13651,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0019, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelDescriptionCodeSequence {
@@ -13385,6 +13660,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x001A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RefractiveStateSequence {
@@ -13393,6 +13669,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x001B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MydriaticAgentCodeSequence {
@@ -13401,6 +13678,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x001C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelativeImagePositionCodeSequence {
@@ -13409,6 +13687,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x001D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CameraAngleOfView {
@@ -13426,6 +13705,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LeftImageSequence {
@@ -13434,6 +13714,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RightImageSequence {
@@ -13442,6 +13723,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StereoPairsPresent {
@@ -13468,6 +13750,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0031, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferenceCoordinates {
@@ -13539,6 +13822,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0042, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcrossScanSpatialResolution {
@@ -13601,6 +13885,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x0058, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialMeasurementsRightEyeSequence {
@@ -13609,6 +13894,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialMeasurementsLeftEyeSequence {
@@ -13617,6 +13903,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialMeasurementsDeviceType {
@@ -13643,6 +13930,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLength {
@@ -13660,6 +13948,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1024, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VitreousStatusCodeSequence {
@@ -13668,6 +13957,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1025, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IOLFormulaCodeSequence {
@@ -13676,6 +13966,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IOLFormulaDetail {
@@ -13702,6 +13993,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1035, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TargetRefraction {
@@ -13728,6 +14020,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicUltrasoundMethodCodeSequence {
@@ -13736,6 +14029,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1044, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMeasurementsSequence {
@@ -13744,6 +14038,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IOLPower {
@@ -13797,6 +14092,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1090, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LensConstantSequence {
@@ -13805,6 +14101,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1092, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IOLManufacturer {
@@ -13840,6 +14137,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1096, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantPartNumber {
@@ -13857,6 +14155,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMeasurementsSegmentNameCodeSequence {
@@ -13865,6 +14164,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RefractiveErrorBeforeRefractiveSurgeryCodeSequence {
@@ -13873,6 +14173,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1103, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IOLPowerForExactEmmetropia {
@@ -13899,6 +14200,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1125, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LensThicknessSequence {
@@ -13907,6 +14209,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1127, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnteriorChamberDepthSequence {
@@ -13915,6 +14218,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1128, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LensThickness {
@@ -13941,6 +14245,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1132, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceOfAnteriorChamberDepthDataCodeSequence {
@@ -13949,6 +14254,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1133, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceOfRefractiveMeasurementsSequence {
@@ -13957,6 +14263,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1134, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceOfRefractiveMeasurementsCodeSequence {
@@ -13965,6 +14272,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1135, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMeasurementModified {
@@ -13982,6 +14290,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1150, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthAcquisitionMethodCodeSequence {
@@ -13990,6 +14299,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1153, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SignalToNoiseRatio {
@@ -14016,6 +14326,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1210, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMeasurementsSegmentalLengthSequence {
@@ -14024,6 +14335,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1211, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMeasurementsLengthSummationSequence {
@@ -14032,6 +14344,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1212, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UltrasoundOphthalmicAxialLengthMeasurementsSequence {
@@ -14040,6 +14353,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OpticalOphthalmicAxialLengthMeasurementsSequence {
@@ -14048,6 +14362,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1225, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UltrasoundSelectedOphthalmicAxialLengthSequence {
@@ -14056,6 +14371,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthSelectionMethodCodeSequence {
@@ -14064,6 +14380,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1250, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OpticalSelectedOphthalmicAxialLengthSequence {
@@ -14072,6 +14389,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1255, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SelectedSegmentalOphthalmicAxialLengthSequence {
@@ -14080,6 +14398,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1257, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SelectedTotalOphthalmicAxialLengthSequence {
@@ -14088,6 +14407,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1260, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthQualityMetricSequence {
@@ -14096,6 +14416,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1262, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthQualityMetricTypeCodeSequence {
@@ -14104,6 +14425,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1265, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthQualityMetricTypeDescription {
@@ -14121,6 +14443,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IntraocularLensCalculationsLeftEyeSequence {
@@ -14129,6 +14452,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1310, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedOphthalmicAxialLengthMeasurementQCImageSequence {
@@ -14137,6 +14461,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1330, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicMappingDeviceType {
@@ -14154,6 +14479,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1420, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquisitionMethodAlgorithmSequence {
@@ -14162,6 +14488,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1423, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicThicknessMapTypeCodeSequence {
@@ -14170,6 +14497,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1436, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicThicknessMappingNormalsSequence {
@@ -14178,6 +14506,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1443, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RetinalThicknessDefinitionCodeSequence {
@@ -14186,6 +14515,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1445, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelValueMappingToCodedConceptSequence {
@@ -14194,6 +14524,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1450, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MappedPixelValue_US {
@@ -14229,6 +14560,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1458, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicThicknessMapThresholdQualityRating {
@@ -14255,6 +14587,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1465, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RegisteredLocalizerUnits {
@@ -14290,6 +14623,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1470, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelevantOPTAttributesSequence {
@@ -14298,6 +14632,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1472, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransformationMethodCodeSequence {
@@ -14306,6 +14641,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1512, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransformationAlgorithmSequence {
@@ -14314,6 +14650,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1513, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicAxialLengthMethod {
@@ -14340,6 +14677,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1518, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WideFieldOphthalmicPhotographyQualityRatingSequence {
@@ -14348,6 +14686,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1525, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WideFieldOphthalmicPhotographyQualityThresholdSequence {
@@ -14356,6 +14695,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1526, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WideFieldOphthalmicPhotographyThresholdQualityRating {
@@ -14409,6 +14749,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1612, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicImageTypeCodeSequence {
@@ -14417,6 +14758,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1615, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicImageTypeDescription {
@@ -14434,6 +14776,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1618, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSurfaceMeshIdentificationSequence {
@@ -14442,6 +14785,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1620, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicVolumetricPropertiesFlag {
@@ -14477,6 +14821,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1628, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct QualityThreshold {
@@ -14494,6 +14839,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0022, 0xFFFF, 0x1640, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberofBscansPerFrame {
@@ -14601,6 +14947,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MaximumStimulusLuminance {
@@ -14627,6 +14974,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BackgroundIlluminationColorCodeSequence {
@@ -14635,6 +14983,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0024, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StimulusArea {
@@ -14661,6 +15010,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0032, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FixationMonitoringCodeSequence {
@@ -14669,6 +15019,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0033, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualFieldCatchTrialSequence {
@@ -14677,6 +15028,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FixationCheckedQuantity {
@@ -14856,6 +15208,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0058, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GlobalDeviationProbabilityNormalsFlag {
@@ -14909,6 +15262,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0064, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AgeCorrectedSensitivityDeviationAlgorithmSequence {
@@ -14917,6 +15271,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0065, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GlobalDeviationFromNormal {
@@ -14934,6 +15289,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0067, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LocalizedDeviationFromNormal {
@@ -15068,6 +15424,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0083, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LocalizedDeviationProbabilitySequence {
@@ -15076,6 +15433,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0085, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FovealSensitivityMeasured {
@@ -15111,6 +15469,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0089, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualFieldTestPointXCoordinate {
@@ -15182,6 +15541,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0097, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct QuantifiedDefect {
@@ -15271,6 +15631,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RefractiveParametersUsedOnPatientSequence {
@@ -15279,6 +15640,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0112, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementLaterality {
@@ -15296,6 +15658,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0114, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OphthalmicPatientClinicalInformationRightEyeSequence {
@@ -15304,6 +15667,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0115, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FovealPointNormativeDataFlag {
@@ -15339,6 +15703,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0122, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScreeningBaselineType {
@@ -15410,6 +15775,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0317, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualFieldGlobalResultsIndexSequence {
@@ -15418,6 +15784,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0320, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataObservationSequence {
@@ -15426,6 +15793,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0325, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IndexNormalsFlag {
@@ -15452,6 +15820,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0024, 0xFFFF, 0x0344, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SamplesPerPixel {
@@ -16711,6 +17080,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x1230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MinimumStoredValueMapped {
@@ -16764,6 +17134,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x1352, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpatialLocationsPreserved {
@@ -16781,6 +17152,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x1401, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataPathAssignment {
@@ -16807,6 +17179,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x1404, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingLUT1TransferFunction {
@@ -16851,6 +17224,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x140B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingLUT2Sequence {
@@ -16859,6 +17233,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x140C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingLUT2TransferFunction {
@@ -16948,6 +17323,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x3000, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LUTDescriptor_US {
@@ -17010,6 +17386,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x3010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SoftcopyVOILUTSequence {
@@ -17018,6 +17395,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x3110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImagePresentationComments {
@@ -17035,6 +17413,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x5000, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RepresentativeFrameNumber {
@@ -17097,6 +17476,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x6100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MaskOperation {
@@ -17168,6 +17548,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7000, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfDisplaySubsystems {
@@ -17239,6 +17620,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LuminanceCharacteristicsID {
@@ -17256,6 +17638,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x700A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConfigurationID {
@@ -17300,6 +17683,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x700F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DisplaySubsystemQAResultsSequence {
@@ -17308,6 +17692,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConfigurationQAResultsSequence {
@@ -17316,6 +17701,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementEquipmentSequence {
@@ -17324,6 +17710,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementFunctions {
@@ -17350,6 +17737,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7015, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DisplayCalibrationResultSequence {
@@ -17358,6 +17746,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DDLValue {
@@ -17411,6 +17800,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x701C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TargetMinimumLuminance {
@@ -17464,6 +17854,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DisplaySubsystemSequence {
@@ -17472,6 +17863,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7023, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LuminanceResultSequence {
@@ -17480,6 +17872,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7024, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AmbientLightValueSource {
@@ -17506,6 +17899,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualEvaluationTestSequence {
@@ -17514,6 +17908,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x7028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TestResult {
@@ -17549,6 +17944,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x702C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementPatternCodeSequence {
@@ -17557,6 +17953,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x702D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualEvaluationMethodCodeSequence {
@@ -17565,6 +17962,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x702E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelDataProviderURL {
@@ -17627,6 +18025,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameVOILUTSequence {
@@ -17635,6 +18034,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9132, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelValueTransformationSequence {
@@ -17643,6 +18043,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9145, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SignalDomainRows {
@@ -17669,6 +18070,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9415, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SubtractionItemID {
@@ -17686,6 +18088,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9422, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FramePixelDataPropertiesSequence {
@@ -17694,6 +18097,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9443, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GeometricalProperties {
@@ -17756,6 +18160,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9501, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RegionPixelShiftSequence {
@@ -17764,6 +18169,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9502, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerticesOfTheRegion {
@@ -17781,6 +18187,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0028, 0xFFFF, 0x9505, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelShiftFrameRange {
@@ -17951,6 +18358,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0032, 0xFFFF, 0x1031, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestingPhysician {
@@ -17977,6 +18385,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0032, 0xFFFF, 0x1034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StudyArrivalDate {
@@ -18039,6 +18448,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0032, 0xFFFF, 0x1064, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestedContrastAgent {
@@ -18065,6 +18475,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0004, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisitStatusID {
@@ -18100,6 +18511,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0014, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RouteOfAdmissions {
@@ -18207,6 +18619,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0044, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecialNeeds {
@@ -18251,6 +18664,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0064, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PertinentDocumentsSequence {
@@ -18259,6 +18673,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PertinentResourcesSequence {
@@ -18267,6 +18682,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ResourceDescription {
@@ -18311,6 +18727,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0038, 0xFFFF, 0x0502, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisitComments {
@@ -18373,6 +18790,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0200, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WaveformChannelNumber {
@@ -18408,6 +18826,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0208, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelSourceModifiersSequence {
@@ -18416,6 +18835,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0209, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceWaveformSequence {
@@ -18424,6 +18844,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x020A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelDerivationDescription {
@@ -18450,6 +18871,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0211, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelSensitivityCorrectionFactor {
@@ -18566,6 +18988,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0240, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationGroupNumber {
@@ -18583,6 +19006,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0242, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelRecommendedDisplayCIELabValue {
@@ -18636,6 +19060,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x003A, 0xFFFF, 0x0300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelIdentificationCode {
@@ -18725,6 +19150,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledProcedureStepID {
@@ -18742,6 +19168,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x000A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledPerformingPhysicianIdentificationSequence {
@@ -18750,6 +19177,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x000B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledStationName {
@@ -18794,6 +19222,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OrderFillerIdentifierSequence {
@@ -18802,6 +19231,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LocalNamespaceEntityID {
@@ -18846,6 +19276,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0036, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssigningJurisdictionCodeSequence {
@@ -18854,6 +19285,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0039, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssigningAgencyOrDepartmentCodeSequence {
@@ -18862,6 +19294,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x003A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledProcedureStepSequence {
@@ -18870,6 +19303,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedNonImageCompositeSOPInstanceSequence {
@@ -18878,6 +19312,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedStationAETitle {
@@ -18985,6 +19420,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0260, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedProtocolType {
@@ -19002,6 +19438,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0270, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestAttributesSequence {
@@ -19010,6 +19447,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0275, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CommentsOnThePerformedProcedureStep {
@@ -19027,6 +19465,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0281, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct QuantitySequence {
@@ -19035,6 +19474,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0293, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct Quantity {
@@ -19052,6 +19492,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0295, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BillingItemSequence {
@@ -19060,6 +19501,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0296, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TotalTimeOfFluoroscopy {
@@ -19122,6 +19564,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x030E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CommentsOnRadiationDose {
@@ -19175,6 +19618,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0320, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FilmConsumptionSequence {
@@ -19183,6 +19627,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0321, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BillingSuppliesAndDevicesSequence {
@@ -19191,6 +19636,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0324, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedProcedureStepSequence {
@@ -19199,6 +19645,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0330, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedSeriesSequence {
@@ -19207,6 +19654,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0340, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CommentsOnTheScheduledProcedureStep {
@@ -19224,6 +19672,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0440, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContentItemModifierSequence {
@@ -19232,6 +19681,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0441, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledSpecimenSequence {
@@ -19240,6 +19690,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenAccessionNumber {
@@ -19266,6 +19717,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0513, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlternateContainerIdentifierSequence {
@@ -19274,6 +19726,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0515, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContainerTypeCodeSequence {
@@ -19282,6 +19735,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0518, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContainerDescription {
@@ -19299,6 +19753,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0520, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenSequence {
@@ -19307,6 +19762,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0550, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenIdentifier {
@@ -19324,6 +19780,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0552, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenDescriptionTrial {
@@ -19350,6 +19807,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0555, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AcquisitionContextDescription {
@@ -19367,6 +19825,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x059A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenDescriptionSequence {
@@ -19375,6 +19834,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0560, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IssuerOfTheSpecimenIdentifierSequence {
@@ -19383,6 +19843,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0562, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenShortDescription {
@@ -19409,6 +19870,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0610, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenPreparationStepContentItemSequence {
@@ -19417,6 +19879,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0612, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenLocalizationContentItemSequence {
@@ -19425,6 +19888,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0620, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SlideIdentifier {
@@ -19436,12 +19900,22 @@ namespace vega {
       typedef LO_Manipulator manipulator_type;
     };
 
+    struct WholeSlideMicroscopyImageFrameTypeSequence {
+      static constexpr const char name[] = "WholeSlideMicroscopyImageFrameTypeSequence";
+      static constexpr const Tag tag {0x0040, 0x0710};
+      static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x0710, 0xFFFF};
+      static constexpr const VR vr {'S', 'Q'};
+      static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
+    };
+
     struct ImageCenterPointCoordinatesSequence {
       static constexpr const char name[] = "ImageCenterPointCoordinatesSequence";
       static constexpr const Tag tag {0x0040, 0x071A};
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x071A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XOffsetInSlideCoordinateSystem {
@@ -19477,6 +19951,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x08D8, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CoordinateSystemAxisCodeSequence {
@@ -19485,6 +19960,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x08DA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementUnitsCodeSequence {
@@ -19493,6 +19969,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x08EA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VitalStainCodeSequenceTrial {
@@ -19501,6 +19978,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x09F8, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestedProcedureID {
@@ -19590,6 +20068,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x100A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NamesOfIntendedRecipientsOfResults {
@@ -19607,6 +20086,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x1011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReasonForPerformedProcedureCodeSequence {
@@ -19615,6 +20095,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x1012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestedProcedureDescriptionTrial {
@@ -19632,6 +20113,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x1101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PersonAddress {
@@ -19820,6 +20302,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4004, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledProcedureStepStartDateTime {
@@ -19846,6 +20329,16 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
+    };
+
+    struct ScheduledProcedureStepExpirationDateTime {
+      static constexpr const char name[] = "ScheduledProcedureStepExpirationDateTime";
+      static constexpr const Tag tag {0x0040, 0x4008};
+      static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4008, 0xFFFF};
+      static constexpr const VR vr {'D', 'T'};
+      static constexpr const VM vm {1, 1, false};
+      typedef DT_Manipulator manipulator_type;
     };
 
     struct HumanPerformerCodeSequence {
@@ -19854,6 +20347,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4009, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledProcedureStepModificationDateTime {
@@ -19880,6 +20374,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4015, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedGeneralPurposeScheduledProcedureStepSequence {
@@ -19888,6 +20383,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledWorkitemCodeSequence {
@@ -19896,6 +20392,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4018, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedWorkitemCodeSequence {
@@ -19904,6 +20401,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4019, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InputAvailabilityFlag {
@@ -19921,6 +20419,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelevantInformationSequence {
@@ -19929,6 +20428,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedGeneralPurposeScheduledProcedureStepTransactionUID {
@@ -19946,6 +20446,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4025, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledStationClassCodeSequence {
@@ -19954,6 +20455,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledStationGeographicLocationCodeSequence {
@@ -19962,6 +20464,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedStationNameCodeSequence {
@@ -19970,6 +20473,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedStationClassCodeSequence {
@@ -19978,6 +20482,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4029, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedStationGeographicLocationCodeSequence {
@@ -19986,6 +20491,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RequestedSubsequentWorkitemCodeSequence {
@@ -19994,6 +20500,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4031, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NonDICOMOutputCodeSequence {
@@ -20002,6 +20509,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4032, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OutputInformationSequence {
@@ -20010,6 +20518,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4033, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScheduledHumanPerformersSequence {
@@ -20018,6 +20527,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ActualHumanPerformersSequence {
@@ -20026,6 +20536,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4035, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HumanPerformerOrganization {
@@ -20097,6 +20608,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DICOMStorageSequence {
@@ -20105,6 +20617,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4071, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct STOWRSStorageSequence {
@@ -20113,6 +20626,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4072, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StorageURL {
@@ -20130,6 +20644,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x4074, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EntranceDoseInmGy {
@@ -20156,6 +20671,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x9092, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImageRealWorldValueMappingSequence {
@@ -20164,6 +20680,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x9094, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RealWorldValueMappingSequence {
@@ -20172,6 +20689,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x9096, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PixelValueMappingCodeSequence {
@@ -20180,6 +20698,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x9098, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LUTLabel {
@@ -20260,6 +20779,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0x9220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RealWorldValueIntercept {
@@ -20304,6 +20824,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FindingsGroupUIDTrial {
@@ -20348,6 +20869,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerifyingOrganization {
@@ -20365,6 +20887,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerificationDateTime {
@@ -20400,6 +20923,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA043, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementPrecisionDescriptionTrial {
@@ -20444,6 +20968,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA066, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DocumentAuthorTrial {
@@ -20461,6 +20986,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA068, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IdentifierCodeSequenceTrial {
@@ -20469,6 +20995,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerifyingObserverSequence {
@@ -20477,6 +21004,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA073, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObjectBinaryIdentifierTrial {
@@ -20503,6 +21031,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA076, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AuthorObserverSequence {
@@ -20511,6 +21040,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA078, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParticipantSequence {
@@ -20519,6 +21049,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA07A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CustodialOrganizationSequence {
@@ -20527,6 +21058,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA07C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParticipationType {
@@ -20562,6 +21094,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA085, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerifyingObserverIdentificationCodeSequence {
@@ -20570,6 +21103,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA088, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObjectDirectoryBinaryIdentifierTrial {
@@ -20587,6 +21121,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA090, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedWaveformChannels {
@@ -20757,6 +21292,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA167, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConceptCodeSequence {
@@ -20765,6 +21301,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA168, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BibliographicCitationTrial {
@@ -20782,6 +21319,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA170, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationUID {
@@ -20862,6 +21400,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA195, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IdentificationDescriptionTrial {
@@ -20888,6 +21427,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA296, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlgorithmDescriptionTrial {
@@ -20914,6 +21454,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumericValueQualifierCodeSequence {
@@ -20922,6 +21463,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA301, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurrentObserverTrial {
@@ -20948,6 +21490,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA313, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReportStatusCommentTrial {
@@ -20965,6 +21508,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA340, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerbalSourceTrial {
@@ -21000,6 +21544,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA358, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PredecessorDocumentsSequence {
@@ -21008,6 +21553,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA360, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedRequestSequence {
@@ -21016,6 +21562,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA370, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedProcedureCodeSequence {
@@ -21024,6 +21571,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA372, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurrentRequestedProcedureEvidenceSequence {
@@ -21032,6 +21580,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA375, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReportDetailSequenceTrial {
@@ -21040,6 +21589,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA380, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PertinentOtherEvidenceSequence {
@@ -21048,6 +21598,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA385, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HL7StructuredDocumentReferenceSequence {
@@ -21056,6 +21607,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA390, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationSubjectUIDTrial {
@@ -21082,6 +21634,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA404, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CompletionFlag {
@@ -21135,6 +21688,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA504, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IdenticalDocumentsSequence {
@@ -21143,6 +21697,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA525, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationSubjectContextFlagTrial {
@@ -21178,6 +21733,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA730, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelationshipSequenceTrial {
@@ -21186,6 +21742,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA731, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelationshipTypeCodeSequenceTrial {
@@ -21194,6 +21751,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA732, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LanguageCodeSequenceTrial {
@@ -21202,6 +21760,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xA744, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UniformResourceLocatorTrial {
@@ -21219,6 +21778,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xB020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TemplateIdentifier {
@@ -21308,6 +21868,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE006, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DocumentClassCodeSequence {
@@ -21316,6 +21877,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RetrieveURI {
@@ -21351,6 +21913,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DICOMMediaRetrievalSequence {
@@ -21359,6 +21922,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WADORetrievalSequence {
@@ -21367,6 +21931,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE023, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct XDSRetrievalSequence {
@@ -21375,6 +21940,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE024, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WADORSRetrievalSequence {
@@ -21383,6 +21949,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0040, 0xFFFF, 0xE025, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RepositoryUniqueID {
@@ -21436,6 +22003,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0042, 0xFFFF, 0x0013, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ListOfMIMETypes {
@@ -21489,6 +22057,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProductName {
@@ -21560,6 +22129,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0013, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SubstanceAdministrationParameterSequence {
@@ -21568,6 +22138,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0019, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ApprovalSequence {
@@ -21576,6 +22147,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssertionCodeSequence {
@@ -21584,6 +22156,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssertionUID {
@@ -21601,6 +22174,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0103, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssertionDateTime {
@@ -21636,6 +22210,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0107, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedAssertionUID {
@@ -21653,6 +22228,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x0109, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OrganizationalRoleCodeSequence {
@@ -21661,6 +22237,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0044, 0xFFFF, 0x010A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LensDescription {
@@ -21678,6 +22255,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0014, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LeftLensSequence {
@@ -21686,6 +22264,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0015, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UnspecifiedLateralityLensSequence {
@@ -21694,6 +22273,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CylinderSequence {
@@ -21702,6 +22282,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0018, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrismSequence {
@@ -21710,6 +22291,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HorizontalPrismPower {
@@ -21799,6 +22381,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AutorefractionLeftEyeSequence {
@@ -21807,6 +22390,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0052, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DistancePupillaryDistance {
@@ -21851,6 +22435,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct KeratometryLeftEyeSequence {
@@ -21859,6 +22444,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0071, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SteepKeratometricAxisSequence {
@@ -21867,6 +22453,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0074, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RadiusOfCurvature {
@@ -21902,6 +22489,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BackgroundColor {
@@ -21937,6 +22525,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0097, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SubjectiveRefractionLeftEyeSequence {
@@ -21945,6 +22534,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0098, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AddNearSequence {
@@ -21953,6 +22543,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AddIntermediateSequence {
@@ -21961,6 +22552,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AddOtherSequence {
@@ -21969,6 +22561,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0102, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AddPower {
@@ -21995,6 +22588,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0121, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualAcuityRightEyeSequence {
@@ -22003,6 +22597,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0122, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualAcuityLeftEyeSequence {
@@ -22011,6 +22606,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0123, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VisualAcuityBothEyesOpenSequence {
@@ -22019,6 +22615,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0124, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ViewingDistanceType {
@@ -22063,6 +22660,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0145, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpherePower {
@@ -22134,6 +22732,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0207, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerticesOfTheOutlineOfPupil {
@@ -22151,6 +22750,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0210, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MaximumCornealCurvatureSequence {
@@ -22159,6 +22759,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0211, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MaximumCornealCurvature {
@@ -22185,6 +22786,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0215, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SimulatedKeratometricCylinderSequence {
@@ -22193,6 +22795,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0218, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AverageCornealPower {
@@ -22282,6 +22885,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0046, 0xFFFF, 0x0244, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CornealPointLocation {
@@ -22398,6 +23002,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenLabelInImage {
@@ -22460,6 +23065,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageOrientationSlide {
@@ -22477,6 +23083,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0105, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OpticalPathIdentifier {
@@ -22503,6 +23110,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0108, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecimenReferenceSequence {
@@ -22511,6 +23119,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CondenserLensPower {
@@ -22546,6 +23155,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0120, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImageNavigationSequence {
@@ -22554,6 +23164,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0200, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TopLeftHandCornerOfLocalizerArea {
@@ -22580,6 +23191,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0207, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanePositionSlideSequence {
@@ -22588,6 +23200,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x021A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ColumnPositionInTotalImagePixelMatrix {
@@ -22617,6 +23230,24 @@ namespace vega {
       typedef CS_Manipulator manipulator_type;
     };
 
+    struct NumberOfOpticalPaths {
+      static constexpr const char name[] = "NumberOfOpticalPaths";
+      static constexpr const Tag tag {0x0048, 0x0302};
+      static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0302, 0xFFFF};
+      static constexpr const VR vr {'U', 'L'};
+      static constexpr const VM vm {1, 1, false};
+      typedef UL_Manipulator manipulator_type;
+    };
+
+    struct TotalPixelMatrixFocalPlanes {
+      static constexpr const char name[] = "TotalPixelMatrixFocalPlanes";
+      static constexpr const Tag tag {0x0048, 0x0303};
+      static constexpr const TagMask tag_mask {0x0048, 0xFFFF, 0x0303, 0xFFFF};
+      static constexpr const VR vr {'U', 'L'};
+      static constexpr const VM vm {1, 1, false};
+      typedef UL_Manipulator manipulator_type;
+    };
+
     struct CalibrationImage {
       static constexpr const char name[] = "CalibrationImage";
       static constexpr const Tag tag {0x0050, 0x0004};
@@ -22632,6 +23263,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0050, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContainerComponentTypeCodeSequence {
@@ -22640,6 +23272,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0050, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContainerComponentThickness {
@@ -22873,6 +23506,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0052, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IntravascularOCTFrameTypeSequence {
@@ -22881,6 +23515,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0052, 0xFFFF, 0x0025, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OCTZOffsetApplied {
@@ -22898,6 +23533,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0052, 0xFFFF, 0x0027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IntravascularLongitudinalDistance {
@@ -22915,6 +23551,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0052, 0xFFFF, 0x0029, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OCTZOffsetCorrection {
@@ -23013,6 +23650,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EnergyWindowRangeSequence {
@@ -23021,6 +23659,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0013, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EnergyWindowLowerLimit {
@@ -23047,6 +23686,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ResidualSyringeCounts {
@@ -23091,6 +23731,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PhaseVector {
@@ -23117,6 +23758,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0032, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfFramesInPhase {
@@ -23179,6 +23821,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0052, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfFramesInRotation {
@@ -23214,6 +23857,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0062, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataInformationSequence {
@@ -23222,6 +23866,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0063, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TimeSlotVector {
@@ -23248,6 +23893,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0072, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TimeSlotTime {
@@ -23346,6 +23992,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ViewModifierCodeSequence {
@@ -23354,6 +24001,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0222, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RadionuclideCodeSequence {
@@ -23362,6 +24010,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AdministrationRouteCodeSequence {
@@ -23370,6 +24019,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0302, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RadiopharmaceuticalCodeSequence {
@@ -23378,6 +24028,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0304, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CalibrationDataSequence {
@@ -23386,6 +24037,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0306, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EnergyWindowNumber {
@@ -23412,6 +24064,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0410, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientOrientationModifierCodeSequence {
@@ -23420,6 +24073,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0412, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientGantryRelationshipCodeSequence {
@@ -23428,6 +24082,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0054, 0xFFFF, 0x0414, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SliceProgressionDirection {
@@ -23706,6 +24361,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0060, 0xFFFF, 0x3000, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HistogramNumberOfBins {
@@ -23795,6 +24451,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x0002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SegmentedPropertyCategoryCodeSequence {
@@ -23803,6 +24460,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x0003, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SegmentNumber {
@@ -23838,6 +24496,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x0007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SegmentAlgorithmType {
@@ -23864,6 +24523,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x000A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSegmentNumber {
@@ -23908,6 +24568,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x000F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SegmentationFractionalType {
@@ -23925,6 +24586,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x0011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UsedSegmentsSequence {
@@ -23933,6 +24595,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0062, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TrackingID {
@@ -23959,6 +24622,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0064, 0xFFFF, 0x0002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceFrameOfReferenceUID {
@@ -23976,6 +24640,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0064, 0xFFFF, 0x0005, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GridDimensions {
@@ -24011,6 +24676,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0064, 0xFFFF, 0x000F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PostDeformationMatrixRegistrationSequence {
@@ -24019,6 +24685,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0064, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfSurfaces {
@@ -24036,6 +24703,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfaceNumber {
@@ -24125,6 +24793,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfacePointsNormalsSequence {
@@ -24133,6 +24802,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfaceMeshPrimitivesSequence {
@@ -24141,6 +24811,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0013, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfSurfacePoints {
@@ -24284,6 +24955,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TriangleFanSequence {
@@ -24292,6 +24964,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0027, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LineSequence {
@@ -24300,6 +24973,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrimitivePointIndexList {
@@ -24326,6 +25000,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x002B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSurfaceNumber {
@@ -24343,6 +25018,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x002D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SegmentSurfaceSourceInstanceSequence {
@@ -24351,6 +25027,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x002E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlgorithmFamilyCodeSequence {
@@ -24359,6 +25036,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x002F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlgorithmNameCodeSequence {
@@ -24367,6 +25045,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlgorithmVersion {
@@ -24393,6 +25072,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfaceProcessingAlgorithmIdentificationSequence {
@@ -24401,6 +25081,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0035, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlgorithmName {
@@ -24472,6 +25153,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0101, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TrackSequence {
@@ -24480,6 +25162,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0102, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecommendedDisplayCIELabValueList {
@@ -24497,6 +25180,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0104, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TrackSetNumber {
@@ -24532,6 +25216,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0108, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementsSequence {
@@ -24540,6 +25225,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0121, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TrackSetStatisticsSequence {
@@ -24548,6 +25234,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0124, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FloatingPointValues {
@@ -24574,6 +25261,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0130, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasurementValuesSequence {
@@ -24582,6 +25270,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0132, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DiffusionAcquisitionCodeSequence {
@@ -24590,6 +25279,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0133, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DiffusionModelCodeSequence {
@@ -24598,6 +25288,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0066, 0xFFFF, 0x0134, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantSize {
@@ -24624,6 +25315,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6222, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantType {
@@ -24641,6 +25333,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6224, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OriginalImplantTemplateSequence {
@@ -24649,6 +25342,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6225, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EffectiveDateTime {
@@ -24666,6 +25360,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InformationFromManufacturerSequence {
@@ -24674,6 +25369,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6260, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NotificationFromManufacturerSequence {
@@ -24682,6 +25378,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6265, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InformationIssueDateTime {
@@ -24708,6 +25405,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x62A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OverallTemplateSpatialTolerance {
@@ -24725,6 +25423,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x62C0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HPGLDocumentID {
@@ -24751,6 +25450,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x62E0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ViewOrientationModifierCodeSequence {
@@ -24759,6 +25459,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x62F0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HPGLDocumentScaling {
@@ -24794,6 +25495,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6320, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HPGLPenNumber {
@@ -24856,6 +25558,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6360, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfaceModelLabel {
@@ -24882,6 +25585,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CoatingMaterialsCodeSequence {
@@ -24890,6 +25594,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63A4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantTypeCodeSequence {
@@ -24898,6 +25603,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63A8, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FixationMethodCodeSequence {
@@ -24906,6 +25612,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63AC, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MatingFeatureSetsSequence {
@@ -24914,6 +25621,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MatingFeatureSetID {
@@ -24940,6 +25648,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x63E0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MatingFeatureID {
@@ -24957,6 +25666,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6400, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DegreeOfFreedomID {
@@ -24983,6 +25693,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6430, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedHPGLDocumentID {
@@ -25018,6 +25729,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6470, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThreeDDegreeOfFreedomAxis {
@@ -25071,6 +25783,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanningLandmarkLineSequence {
@@ -25079,6 +25792,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6510, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanningLandmarkPlaneSequence {
@@ -25087,6 +25801,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6520, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PlanningLandmarkID {
@@ -25113,6 +25828,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6545, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TwoDPointCoordinatesSequence {
@@ -25121,6 +25837,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x6550, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TwoDPointCoordinates {
@@ -25147,6 +25864,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x65A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TwoDLineCoordinates {
@@ -25173,6 +25891,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x65E0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TwoDPlaneIntersection {
@@ -25202,12 +25921,40 @@ namespace vega {
       typedef FD_Manipulator manipulator_type;
     };
 
+    struct ModelModification {
+      static constexpr const char name[] = "ModelModification";
+      static constexpr const Tag tag {0x0068, 0x7001};
+      static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x7001, 0xFFFF};
+      static constexpr const VR vr {'C', 'S'};
+      static constexpr const VM vm {1, 1, false};
+      typedef CS_Manipulator manipulator_type;
+    };
+
+    struct ModelMirroring {
+      static constexpr const char name[] = "ModelMirroring";
+      static constexpr const Tag tag {0x0068, 0x7002};
+      static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x7002, 0xFFFF};
+      static constexpr const VR vr {'C', 'S'};
+      static constexpr const VM vm {1, 1, false};
+      typedef CS_Manipulator manipulator_type;
+    };
+
+    struct ModelUsageCodeSequence {
+      static constexpr const char name[] = "ModelUsageCodeSequence";
+      static constexpr const Tag tag {0x0068, 0x7003};
+      static constexpr const TagMask tag_mask {0x0068, 0xFFFF, 0x7003, 0xFFFF};
+      static constexpr const VR vr {'S', 'Q'};
+      static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
+    };
+
     struct GraphicAnnotationSequence {
       static constexpr const char name[] = "GraphicAnnotationSequence";
       static constexpr const Tag tag {0x0070, 0x0001};
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicLayer {
@@ -25261,6 +26008,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicObjectSequence {
@@ -25269,6 +26017,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0009, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BoundingBoxTopLeftHandCorner {
@@ -25430,6 +26179,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x005A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicLayerSequence {
@@ -25438,6 +26188,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicLayerOrder {
@@ -25527,6 +26278,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0086, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AlternateContentDescriptionSequence {
@@ -25535,6 +26287,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0087, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationSizeMode {
@@ -25597,6 +26350,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0209, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CompoundGraphicInstanceID {
@@ -25650,6 +26404,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0231, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LineStyleSequence {
@@ -25658,6 +26413,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0232, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FillStyleSequence {
@@ -25666,6 +26422,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0233, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicGroupSequence {
@@ -25674,6 +26431,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0234, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TextColorCIELabValue {
@@ -25925,6 +26683,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0287, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TickPosition {
@@ -25978,6 +26737,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0308, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MatrixRegistrationSequence {
@@ -25986,6 +26746,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0309, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MatrixSequence {
@@ -25994,6 +26755,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x030A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameOfReferenceToDisplayedCoordinateSystemTransformationMatrix {
@@ -26020,6 +26782,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x030D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FiducialDescription {
@@ -26046,6 +26809,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0311, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContourUncertaintyRadius {
@@ -26063,6 +26827,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0314, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicCoordinatesDataSequence {
@@ -26071,6 +26836,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0318, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FiducialUID {
@@ -26082,12 +26848,22 @@ namespace vega {
       typedef UI_Manipulator manipulator_type;
     };
 
+    struct ReferencedFiducialUID {
+      static constexpr const char name[] = "ReferencedFiducialUID";
+      static constexpr const Tag tag {0x0070, 0x031B};
+      static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x031B, 0xFFFF};
+      static constexpr const VR vr {'U', 'I'};
+      static constexpr const VM vm {1, 1, false};
+      typedef UI_Manipulator manipulator_type;
+    };
+
     struct FiducialSetSequence {
       static constexpr const char name[] = "FiducialSetSequence";
       static constexpr const Tag tag {0x0070, 0x031C};
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x031C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FiducialSequence {
@@ -26096,6 +26872,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x031E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FiducialsPropertyCategoryCodeSequence {
@@ -26104,6 +26881,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x031F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GraphicLayerRecommendedDisplayCIELabValue {
@@ -26121,6 +26899,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0402, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelativeOpacity {
@@ -26138,6 +26917,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x0404, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingPosition {
@@ -26182,6 +26962,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1104, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VolumetricPresentationStateInputSequence {
@@ -26190,6 +26971,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1201, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationInputType {
@@ -26270,6 +27052,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x120A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GlobalCrop {
@@ -26305,6 +27088,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1301, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VolumeCroppingMethod {
@@ -26331,6 +27115,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1304, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct Plane {
@@ -26564,6 +27349,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1801, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ComponentType {
@@ -26581,6 +27367,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1803, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VolumetricPresentationInputIndex {
@@ -26598,6 +27385,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1805, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WeightingTransferFunctionSequence {
@@ -26606,6 +27394,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1806, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WeightingLookupTableDescriptor {
@@ -26632,6 +27421,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1901, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStructuredContextSequence {
@@ -26640,6 +27430,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1903, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedContentItem {
@@ -26657,6 +27448,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1905, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnnotationClipping {
@@ -26692,6 +27484,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1A04, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnimationStepSize {
@@ -26727,6 +27520,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1A08, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RGBATransferFunctionDescription {
@@ -26744,6 +27538,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1B01, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingInputNumber {
@@ -26761,6 +27556,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1B03, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingDisplaySequence {
@@ -26769,6 +27565,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1B04, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlendingMode {
@@ -26804,6 +27601,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1B11, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThresholdValueSequence {
@@ -26812,6 +27610,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0070, 0xFFFF, 0x1B12, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThresholdType {
@@ -26883,6 +27682,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x000C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HangingProtocolUserIdentificationCodeSequence {
@@ -26891,6 +27691,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x000E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct HangingProtocolUserGroupName {
@@ -26908,6 +27709,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfPriorsReferenced {
@@ -26925,6 +27727,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageSetSelectorSequence {
@@ -26933,6 +27736,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageSetSelectorUsageFlag {
@@ -26968,6 +27772,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageSetNumber {
@@ -27021,6 +27826,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x003E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageSetLabel {
@@ -27344,6 +28150,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfScreens {
@@ -27361,6 +28168,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0102, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfVerticalPixels {
@@ -27423,6 +28231,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0200, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DisplaySetNumber {
@@ -27476,6 +28285,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0210, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DisplaySetScrollingGroup {
@@ -27493,6 +28303,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0214, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NavigationDisplaySet {
@@ -27519,6 +28330,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0300, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageBoxNumber {
@@ -27626,6 +28438,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0400, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FilterByCategory {
@@ -27679,6 +28492,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0422, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StructuredDisplayTextBoxSequence {
@@ -27687,6 +28501,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0424, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedFirstFrameSequence {
@@ -27695,6 +28510,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0427, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageBoxSynchronizationSequence {
@@ -27703,6 +28519,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0430, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SynchronizedImageBoxList {
@@ -27783,6 +28600,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0600, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SortByCategory {
@@ -27836,6 +28654,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0072, 0xFFFF, 0x0705, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ShowGrayscaleInverted {
@@ -27934,6 +28753,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProcedureStepProgress {
@@ -27960,6 +28780,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProcedureStepCommunicationsURISequence {
@@ -27968,6 +28789,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContactURI {
@@ -27994,6 +28816,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x100E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BeamTaskSequence {
@@ -28002,6 +28825,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BeamTaskType {
@@ -28100,6 +28924,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct VerificationImageTiming {
@@ -28153,6 +28978,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GeneralMachineVerificationSequence {
@@ -28161,6 +28987,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1042, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConventionalMachineVerificationSequence {
@@ -28169,6 +28996,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1044, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonMachineVerificationSequence {
@@ -28177,6 +29005,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1046, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FailedAttributesSequence {
@@ -28185,6 +29014,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1048, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OverriddenAttributesSequence {
@@ -28193,6 +29023,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x104A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConventionalControlPointVerificationSequence {
@@ -28201,6 +29032,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x104C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonControlPointVerificationSequence {
@@ -28209,6 +29041,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x104E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AttributeOccurrenceSequence {
@@ -28217,6 +29050,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AttributeOccurrencePointer {
@@ -28288,6 +29122,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1210, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerformedProcessingParametersSequence {
@@ -28296,6 +29131,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1212, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct UnifiedProcedureStepPerformedProcedureSequence {
@@ -28304,6 +29140,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1216, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelatedProcedureStepSequence {
@@ -28312,6 +29149,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProcedureStepRelationshipType {
@@ -28329,6 +29167,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1224, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DeletionLock {
@@ -28427,6 +29266,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1401, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContinuationStartTotalReferenceAirKerma {
@@ -28462,6 +29302,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1405, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedChannelNumber {
@@ -28497,6 +29338,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x1409, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReasonForChannelOmission {
@@ -28532,6 +29374,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x140D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OmittedApplicationSetupSequence {
@@ -28540,6 +29383,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0074, 0xFFFF, 0x140E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantAssemblyTemplateName {
@@ -28575,6 +29419,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantAssemblyTemplateType {
@@ -28592,6 +29437,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x000C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DerivationImplantAssemblyTemplateSequence {
@@ -28600,6 +29446,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x000E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantAssemblyTemplateTargetAnatomySequence {
@@ -28608,6 +29455,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProcedureTypeCodeSequence {
@@ -28616,6 +29464,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurgicalTechnique {
@@ -28633,6 +29482,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0032, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ComponentTypeCodeSequence {
@@ -28641,6 +29491,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ExclusiveComponentType {
@@ -28667,6 +29518,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ComponentID {
@@ -28684,6 +29536,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0076, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct Component1ReferencedID {
@@ -28782,6 +29635,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x0026, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantTemplateGroupTargetAnatomySequence {
@@ -28790,6 +29644,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x0028, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantTemplateGroupMembersSequence {
@@ -28798,6 +29653,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x002A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantTemplateGroupMemberID {
@@ -28833,6 +29689,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x0070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TwoDImplantTemplateGroupMemberMatchingPoint {
@@ -28859,6 +29716,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x00B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImplantTemplateGroupVariationDimensionName {
@@ -28876,6 +29734,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0078, 0xFFFF, 0x00B4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImplantTemplateGroupMemberID {
@@ -28902,6 +29761,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SurfaceScanModeCodeSequence {
@@ -28910,6 +29770,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RegistrationMethodCodeSequence {
@@ -28918,6 +29779,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0003, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ShotDurationTime {
@@ -28962,6 +29824,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0008, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TextureLabel {
@@ -28978,7 +29841,7 @@ namespace vega {
       static constexpr const Tag tag {0x0080, 0x0010};
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'O', 'F'};
-      static constexpr const VM vm {1, 1, true};
+      static constexpr const VM vm {1, 1, false};
       typedef OF_Manipulator manipulator_type;
     };
 
@@ -28987,7 +29850,7 @@ namespace vega {
       static constexpr const Tag tag {0x0080, 0x0011};
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0011, 0xFFFF};
       static constexpr const VR vr {'O', 'F'};
-      static constexpr const VM vm {1, 1, true};
+      static constexpr const VM vm {1, 1, false};
       typedef OF_Manipulator manipulator_type;
     };
 
@@ -28997,6 +29860,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSurfaceDataSequence {
@@ -29005,6 +29869,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0080, 0xFFFF, 0x0013, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssessmentSummary {
@@ -29031,6 +29896,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0004, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedComparisonSOPInstanceSequence {
@@ -29039,6 +29905,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0005, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct NumberOfAssessmentObservations {
@@ -29056,6 +29923,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0007, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationSignificance {
@@ -29082,6 +29950,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x000C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssessedAttributeValueSequence {
@@ -29090,6 +29959,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssessmentSetID {
@@ -29107,6 +29977,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0017, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SelectorAttributeName {
@@ -29133,6 +30004,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationBasisCodeSequence {
@@ -29141,6 +30013,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0022, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AssessmentLabel {
@@ -29176,6 +30049,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0034, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecommendedDefaultValueSequence {
@@ -29184,6 +30058,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0082, 0xFFFF, 0x0035, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ConstraintViolationSignificance {
@@ -29237,6 +30112,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0088, 0xFFFF, 0x0200, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TopicTitle {
@@ -29416,6 +30292,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0401, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedDigitalSignatureSequence {
@@ -29424,6 +30301,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0402, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSOPInstanceMACSequence {
@@ -29432,6 +30310,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0403, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MAC {
@@ -29449,6 +30328,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct EncryptedContentTransferSyntaxUID {
@@ -29475,6 +30355,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0550, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OriginalAttributesSequence {
@@ -29483,6 +30364,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x0400, 0xFFFF, 0x0561, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AttributeModificationDateTime {
@@ -29592,6 +30474,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x001E, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrintPriority {
@@ -29726,6 +30609,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x00A2, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OtherMediaAvailableSequence {
@@ -29734,6 +30618,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x00A4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SupportedImageDisplayFormatsSequence {
@@ -29742,6 +30627,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x00A8, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedFilmBoxSequence {
@@ -29750,6 +30636,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStoredPrintSequence {
@@ -29758,6 +30645,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2000, 0xFFFF, 0x0510, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageDisplayFormat {
@@ -29973,6 +30861,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2010, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImageBoxSequence {
@@ -29981,6 +30870,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2010, 0xFFFF, 0x0510, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedBasicAnnotationBoxSequence {
@@ -29989,6 +30879,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2010, 0xFFFF, 0x0520, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageBoxPosition {
@@ -30060,6 +30951,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2020, 0xFFFF, 0x0110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BasicColorImageSequence {
@@ -30068,6 +30960,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2020, 0xFFFF, 0x0111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedImageOverlayBoxSequence {
@@ -30076,6 +30969,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2020, 0xFFFF, 0x0130, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedVOILUTBoxSequence {
@@ -30084,6 +30978,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2020, 0xFFFF, 0x0140, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnnotationPosition {
@@ -30110,6 +31005,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2040, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedOverlayPlaneGroups {
@@ -30127,6 +31023,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2040, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OverlayMagnificationType {
@@ -30207,6 +31104,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2040, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationLUTSequence {
@@ -30215,6 +31113,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2050, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationLUTShape {
@@ -30232,6 +31131,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2050, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrintJobID {
@@ -30321,6 +31221,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2100, 0xFFFF, 0x0500, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrinterStatus {
@@ -30374,6 +31275,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2120, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPrintJobSequence {
@@ -30382,6 +31284,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2120, 0xFFFF, 0x0070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrintManagementCapabilitiesSequence {
@@ -30390,6 +31293,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PrinterCharacteristicsSequence {
@@ -30398,6 +31302,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0015, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FilmBoxContentSequence {
@@ -30406,6 +31311,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageBoxContentSequence {
@@ -30414,6 +31320,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnnotationContentSequence {
@@ -30422,6 +31329,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImageOverlayBoxContentSequence {
@@ -30430,6 +31338,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PresentationLUTContentSequence {
@@ -30438,6 +31347,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ProposedStudySequence {
@@ -30446,6 +31356,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x00A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct OriginalImageSequence {
@@ -30454,6 +31365,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2130, 0xFFFF, 0x00C0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LabelUsingInformationExtractedFromInstances {
@@ -30570,6 +31482,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x2200, 0xFFFF, 0x000D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FailureAttributes {
@@ -30749,6 +31662,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3002, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MetersetExposure {
@@ -30775,6 +31689,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3002, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FluenceDataSource {
@@ -30801,6 +31716,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3002, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FluenceMode {
@@ -30908,6 +31824,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3004, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DoseValue {
@@ -30952,6 +31869,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3004, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DVHDoseScaling {
@@ -30996,6 +31914,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3004, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DVHROIContributionType {
@@ -31085,6 +32004,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RTReferencedStudySequence {
@@ -31093,6 +32013,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0012, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RTReferencedSeriesSequence {
@@ -31101,6 +32022,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0014, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContourImageSequence {
@@ -31109,6 +32031,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0016, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PredecessorStructureSetSequence {
@@ -31117,6 +32040,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0018, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct StructureSetROISequence {
@@ -31125,6 +32049,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ROINumber {
@@ -31187,6 +32112,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RTROIRelationship {
@@ -31222,6 +32148,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0039, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContourSequence {
@@ -31230,6 +32157,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ContourGeometricType {
@@ -31301,6 +32229,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ObservationNumber {
@@ -31336,6 +32265,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x0086, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ROIObservationDescription {
@@ -31353,6 +32283,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x00A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RTROIInterpretedType {
@@ -31379,6 +32310,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x00B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ROIPhysicalProperty {
@@ -31405,6 +32337,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x00B6, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ROIElementalCompositionAtomicNumber {
@@ -31431,6 +32364,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x00B9, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FrameOfReferenceRelationshipSequence {
@@ -31439,6 +32373,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3006, 0xFFFF, 0x00C0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RelatedFrameOfReferenceUID {
@@ -31483,6 +32418,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct MeasuredDoseDescription {
@@ -31518,6 +32454,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TreatmentSessionIonBeamSequence {
@@ -31526,6 +32463,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0021, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurrentFractionNumber {
@@ -31588,6 +32526,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0030, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecifiedPrimaryMeterset {
@@ -31650,6 +32589,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonControlPointDeliverySequence {
@@ -31658,6 +32598,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0041, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecifiedMeterset {
@@ -31720,6 +32661,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CumulativeDoseToDoseReference {
@@ -31764,6 +32706,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ParameterSequencePointer {
@@ -31835,6 +32778,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0068, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CorrectionValue {
@@ -31852,6 +32796,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CalculatedDoseReferenceNumber {
@@ -31905,6 +32850,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedMeasuredDoseReferenceNumber {
@@ -31922,6 +32868,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0090, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedCalculatedDoseReferenceNumber {
@@ -31939,6 +32886,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedWedgeSequence {
@@ -31947,6 +32895,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedCompensatorSequence {
@@ -31955,6 +32904,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00C0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedBlockSequence {
@@ -31963,6 +32913,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00D0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TreatmentSummaryMeasuredDoseReferenceSequence {
@@ -31971,6 +32922,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00E0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedSnoutSequence {
@@ -31979,6 +32931,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00F0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedRangeShifterSequence {
@@ -31987,6 +32940,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00F2, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedLateralSpreadingDeviceSequence {
@@ -31995,6 +32949,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00F4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedRangeModulatorSequence {
@@ -32003,6 +32958,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x00F6, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RecordedSourceSequence {
@@ -32011,6 +32967,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceSerialNumber {
@@ -32028,6 +32985,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0110, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ApplicationSetupCheck {
@@ -32045,6 +33003,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0120, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedBrachyAccessoryDeviceNumber {
@@ -32062,6 +33021,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0130, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SpecifiedChannelTotalTime {
@@ -32124,6 +33084,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0140, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSourceApplicatorNumber {
@@ -32141,6 +33102,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0150, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedChannelShieldNumber {
@@ -32158,6 +33120,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0160, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SafePositionExitDate {
@@ -32202,6 +33165,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0171, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PulseNumber {
@@ -32219,6 +33183,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0173, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurrentTreatmentStatus {
@@ -32245,6 +33210,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0220, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedFractionNumber {
@@ -32280,6 +33246,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x3008, 0xFFFF, 0x0240, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TreatmentDate {
@@ -32396,6 +33363,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0010, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DoseReferenceNumber {
@@ -32575,6 +33543,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ToleranceTableNumber {
@@ -32619,6 +33588,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0048, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BeamLimitingDevicePositionTolerance {
@@ -32717,6 +33687,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0070, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FractionGroupNumber {
@@ -32860,6 +33831,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x008C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AverageBeamDosePointDepth {
@@ -32958,6 +33930,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TreatmentMachineName {
@@ -32993,6 +33966,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00B6, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RTBeamLimitingDeviceType {
@@ -33118,6 +34092,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00CA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ImagingDeviceSpecificAcquisitionParameters {
@@ -33153,6 +34128,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00D1, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WedgeNumber {
@@ -33305,6 +34281,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00E3, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CompensatorNumber {
@@ -33448,6 +34425,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x00F4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlockTrayID {
@@ -33573,6 +34551,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0107, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ApplicatorID {
@@ -33635,6 +34614,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ControlPointIndex {
@@ -33670,6 +34650,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0116, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WedgePosition {
@@ -33687,6 +34668,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x011A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LeafJawPositions {
@@ -34001,6 +34983,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0180, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PatientSetupNumber {
@@ -34036,6 +35019,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0190, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct FixationDeviceType {
@@ -34098,6 +35082,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x01A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ShieldingDeviceType {
@@ -34160,6 +35145,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x01B4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SetupDeviceType {
@@ -34258,6 +35244,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0206, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceSequence {
@@ -34266,6 +35253,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0210, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SourceNumber {
@@ -34418,6 +35406,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ApplicationSetupType {
@@ -34498,6 +35487,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0260, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BrachyAccessoryDeviceNumber {
@@ -34596,6 +35586,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0280, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelNumber {
@@ -34757,6 +35748,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x02B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelShieldNumber {
@@ -34819,6 +35811,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x02D0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ControlPointRelativePosition {
@@ -34935,6 +35928,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x02EA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CompensatorDescription {
@@ -35006,6 +36000,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x030C, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SnoutPosition {
@@ -35041,6 +36036,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0314, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RangeShifterNumber {
@@ -35094,6 +36090,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0332, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LateralSpreadingDeviceNumber {
@@ -35156,6 +36153,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0342, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RangeModulatorNumber {
@@ -35272,6 +36270,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0360, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RangeShifterSetting {
@@ -35307,6 +36306,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0370, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct LateralSpreadingDeviceSetting {
@@ -35333,6 +36333,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0380, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct RangeModulatorGatingStartValue {
@@ -35476,6 +36477,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03A0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonBeamSequence {
@@ -35484,6 +36486,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03A2, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonBeamLimitingDeviceSequence {
@@ -35492,6 +36495,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03A4, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonBlockSequence {
@@ -35500,6 +36504,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03A6, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonControlPointSequence {
@@ -35508,6 +36513,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03A8, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonWedgeSequence {
@@ -35516,6 +36522,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03AA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct IonWedgePositionSequence {
@@ -35524,6 +36531,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x03AC, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedSetupImageSequence {
@@ -35532,6 +36540,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0401, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SetupImageComment {
@@ -35549,6 +36558,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0410, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ControlPointOrientation {
@@ -35566,6 +36576,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0420, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct GeneralAccessoryID {
@@ -35619,6 +36630,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0431, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ApplicatorApertureShape {
@@ -35681,6 +36693,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0441, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct BlockSlabThickness {
@@ -35707,6 +36720,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0450, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DeviceMotionExecutionMode {
@@ -35733,6 +36747,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0453, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DistalDepthFraction {
@@ -35777,6 +36792,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0505, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DeliveredDepthDoseParametersSequence {
@@ -35785,6 +36801,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300A, 0xFFFF, 0x0506, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DeliveredDistalDepthFraction {
@@ -35847,6 +36864,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0002, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedBeamSequence {
@@ -35855,6 +36873,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0004, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedBeamNumber {
@@ -35899,6 +36918,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x000A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedBrachyApplicationSetupNumber {
@@ -35925,6 +36945,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0020, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedFractionGroupNumber {
@@ -35942,6 +36963,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0040, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedReferenceImageSequence {
@@ -35950,6 +36972,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0042, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedDoseReferenceSequence {
@@ -35958,6 +36981,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedDoseReferenceNumber {
@@ -35975,6 +36999,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0055, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStructureSetSequence {
@@ -35983,6 +37008,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0060, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedPatientSetupNumber {
@@ -36000,6 +37026,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0080, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedToleranceTableNumber {
@@ -36017,6 +37044,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x00B0, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedWedgeNumber {
@@ -36061,6 +37089,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x00F2, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedStartControlPointIndex {
@@ -36114,6 +37143,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x300C, 0xFFFF, 0x0111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReasonForOmission {
@@ -36212,6 +37242,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4008, 0xFFFF, 0x0050, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReportProductionStatusTrial {
@@ -36310,6 +37341,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4008, 0xFFFF, 0x0111, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InterpretationApprovalDate {
@@ -36354,6 +37386,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4008, 0xFFFF, 0x0117, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ResultsDistributionListSequence {
@@ -36362,6 +37395,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4008, 0xFFFF, 0x0118, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DistributionName {
@@ -36460,6 +37494,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x0004, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThreatROIVoxelSequence {
@@ -36468,6 +37503,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThreatROIBase {
@@ -36530,6 +37566,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x100A, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PotentialThreatObjectID {
@@ -36547,6 +37584,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1011, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ThreatCategory {
@@ -36807,6 +37845,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1037, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ATDAssessmentSequence {
@@ -36815,6 +37854,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1038, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TIPType {
@@ -36877,6 +37917,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1045, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PhantomType {
@@ -36894,6 +37935,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1047, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ScanType {
@@ -37010,6 +38052,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1064, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TransportClassification {
@@ -37072,6 +38115,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x106F, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AITDeviceType {
@@ -37089,6 +38133,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1071, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct TargetMaterialSequence {
@@ -37097,6 +38142,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1072, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct SNRThreshold {
@@ -37123,6 +38169,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1076, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ReferencedTDRInstanceSequence {
@@ -37131,6 +38178,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1077, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PTOLocationDescription {
@@ -37148,6 +38196,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x1079, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct AnomalyLocatorIndicator {
@@ -37165,6 +38214,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x107B, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct InspectionSelectionCriteria {
@@ -37182,6 +38232,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4010, 0xFFFF, 0x107D, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PRCSToRCSOrientation {
@@ -37199,6 +38250,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x4FFE, 0xFFFF, 0x0001, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurveDimensions {
@@ -37398,6 +38450,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x5000, 0xFF00, 0x2600, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct CurveReferencedOverlayGroup {
@@ -37430,6 +38483,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x5200, 0xFFFF, 0x9229, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct PerFrameFunctionalGroupsSequence {
@@ -37438,6 +38492,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x5200, 0xFFFF, 0x9230, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct WaveformSequence {
@@ -37446,6 +38501,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0x5400, 0xFFFF, 0x0100, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct ChannelMinimumValue_OB {
@@ -38001,6 +39057,7 @@ namespace vega {
       static constexpr const TagMask tag_mask {0xFFFA, 0xFFFF, 0xFFFA, 0xFFFF};
       static constexpr const VR vr {'S', 'Q'};
       static constexpr const VM vm {1, 1, false};
+      typedef void manipulator_type;
     };
 
     struct DataSetTrailingPadding {

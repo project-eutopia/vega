@@ -204,7 +204,7 @@ File.open(File.expand_path("../../include/vega/dictionary_data.h", __FILE__), "w
       f.puts "      static constexpr const VR vr {'#{vr[0]}', '#{vr[1]}'};"
       f.puts "      static constexpr const VM vm {#{line[:vm_args].map(&:to_s).join(', ')}};"
       # No manipulator exists yet for sequences
-      f.puts "      typedef #{vr}_Manipulator manipulator_type;" unless vr == "SQ"
+      f.puts "      typedef #{vr == "SQ" ? "void" : "#{vr}_Manipulator"} manipulator_type;"
       f.puts "    };"
       f.puts ""
     end
