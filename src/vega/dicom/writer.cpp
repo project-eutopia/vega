@@ -45,17 +45,17 @@ namespace vega {
           uint16_t zero = 0;
           /* std::cout << "Writer::write_element, 2 byte buffer" << std::endl; */
           prefix_bytes += m_raw_writer.write_from(zero);
-          length_pos = this->tell();
           length_bytes = sizeof(element->length());
           /* std::cout << "Writer::write_element, 4 byte length temp value " << element->length() << std::endl; */
+          length_pos = this->tell();
           prefix_bytes += m_raw_writer.write_from(element->length());
         }
         // Here we have 16 bit length field
         else {
           uint16_t length = element->length();
-          length_pos = this->tell();
           length_bytes = sizeof(length);
           /* std::cout << "Writer::write_element, 2 byte length temp value " << length << std::endl; */
+          length_pos = this->tell();
           prefix_bytes += m_raw_writer.write_from(length);
         }
       }
@@ -90,12 +90,15 @@ namespace vega {
         // Here we go back an retroactively record how many bytes we wrote
         std::streampos end_of_element = this->tell();
         this->seek_pos(length_pos);
-        if (length_bytes == 4) {
+        if (length_bytes == sizeof(value_length)) {
           /* std::cout << "Writer::write_element, writing correct 4 byte length " << value_length << std::endl; */
           m_raw_writer.write_from(value_length);
         }
         else {
           uint16_t l = value_length;
+          if (l < value_length) {
+            throw std::runtime_error("Error: encountered overflow when trying to write 2 byte length");
+          }
           /* std::cout << "Writer::write_element, writing correct 2 byte length " << l << std::endl; */
           m_raw_writer.write_from(l);
         }
