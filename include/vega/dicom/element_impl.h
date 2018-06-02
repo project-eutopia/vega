@@ -34,11 +34,12 @@ namespace vega {
     const Tag& Element<T>::tag() const { return m_data_element->tag(); }
 
     template <typename T>
-    Tag& Element<T>::tag() { return m_data_element->tag(); }
+    const VR& Element<T>::vr() const { return m_data_element->vr(); }
 
     template <typename T>
-    const VR& Element<T>::vr() const { return m_data_element->vr(); }
+    const DataElementHeader::length_type& Element<T>::length() const { return m_data_element->length(); }
+
     template <typename T>
-    VR& Element<T>::vr() { return m_data_element->vr(); }
+    DataElementHeader::length_type& Element<T>::length() { return m_data_element->length(); }
   }
 }

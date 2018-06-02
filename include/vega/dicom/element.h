@@ -75,10 +75,10 @@ namespace vega {
         }
 
         const Tag& tag() const;
-        Tag& tag();
-
         const VR& vr() const;
-        VR& vr();
+
+        DataElementHeader::length_type& length();
+        const DataElementHeader::length_type& length() const;
     };
   }
 }
