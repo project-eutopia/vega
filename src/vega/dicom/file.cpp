@@ -123,6 +123,12 @@ namespace vega {
       return m_data_set;
     }
 
+    void File::write() const {
+      auto ss = std::make_shared<std::stringstream>();
+      write(ss);
+      std::cout << ss->str();
+    }
+
     void File::write(const std::string& filename) const {
       std::shared_ptr<std::ofstream> ofs(std::make_shared<std::ofstream>(filename, std::ofstream::binary));
       if (!ofs || !*ofs) {
@@ -160,6 +166,12 @@ namespace vega {
           writer->write_element(element);
         }
       }
+    }
+
+    void File::write_json() const {
+      auto ss = std::make_shared<std::stringstream>();
+      write_json(ss);
+      std::cout << ss->str();
     }
 
     void File::write_json(const std::string& filename) const {

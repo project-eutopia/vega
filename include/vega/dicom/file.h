@@ -73,6 +73,10 @@ namespace vega {
         const std::shared_ptr<DataSet>& data_set() const;
 
         /**
+         * Writes this DICOM file to STDOUT
+         */
+        void write() const;
+        /**
          * Writes this DICOM file to the given \p filename.
          */
         void write(const std::string& filename) const;
@@ -84,6 +88,10 @@ namespace vega {
          */
         void write(std::shared_ptr<std::ostream> os) const;
 
+        /**
+         * Writes this DICOM file in JSON format to STDOUT
+         */
+        void write_json() const;
         /**
          * Writes this DICOM file in JSON format to the given \p filename.
          */
