@@ -42,6 +42,8 @@
 #include "manipulators/person_name_manipulator_test.h"
 #include "manipulators/short_string_manipulator_test.h"
 #include "manipulators/short_text_manipulator_test.h"
+#include "manipulators/signed_long_manipulator_test.h"
+#include "manipulators/signed_short_manipulator_test.h"
 #include "manipulators/time_manipulator_test.h"
 #include "manipulators/unique_identifier_manipulator_test.h"
 #include "manipulators/unknown_manipulator_test.h"
