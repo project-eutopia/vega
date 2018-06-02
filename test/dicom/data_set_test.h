@@ -54,3 +54,38 @@ TEST(DataSetTest, data_set_element_test) {
   EXPECT_EQ(data_set->element<vega::dictionary::PatientName>()->manipulator()->front(), std::string("Smith^Alice"));
   EXPECT_EQ(data_set->element<vega::dictionary::TimeRange>()->manipulator()->back(), -3.14);
 }
+
+TEST(DataSetTest, data_set_remove_test) {
+  auto data_set = std::make_shared<dicom::DataSet>();
+  data_set->new_element<vega::dictionary::PatientName>();
+  data_set->new_element<vega::dictionary::Rows>();
+  data_set->new_element<vega::dictionary::Columns>();
+  auto planes = data_set->new_element<vega::dictionary::Planes>();
+
+  EXPECT_NE(data_set->element<vega::dictionary::PatientName>(), nullptr);
+  data_set->erase(data_set->data_element(Tag{0x0010,0x0010}));
+  EXPECT_EQ(data_set->element<vega::dictionary::PatientName>(), nullptr);
+
+  EXPECT_NE(data_set->data_element(vega::dictionary::Rows::tag), nullptr);
+  data_set->erase(vega::dictionary::Rows::tag);
+  EXPECT_EQ(data_set->data_element(vega::dictionary::Rows::tag), nullptr);
+
+  EXPECT_NE(data_set->data_element(vega::dictionary::Columns::tag), nullptr);
+  data_set->erase(vega::dictionary::Columns::tag_mask);
+  EXPECT_EQ(data_set->data_element(vega::dictionary::Columns::tag), nullptr);
+
+  EXPECT_NE(data_set->data_element(vega::dictionary::Planes::tag), nullptr);
+  data_set->erase(planes);
+  EXPECT_EQ(data_set->data_element(vega::dictionary::Planes::tag), nullptr);
+
+  data_set->new_element<vega::dictionary::InspectionSelectionCriteria>();
+  data_set->new_element<vega::dictionary::CurveDimensions>(Tag{0x5012,0x0005});
+
+  EXPECT_NE(data_set->element<vega::dictionary::InspectionSelectionCriteria>(), nullptr);
+  data_set->erase<vega::dictionary::InspectionSelectionCriteria>();
+  EXPECT_EQ(data_set->element<vega::dictionary::InspectionSelectionCriteria>(), nullptr);
+
+  EXPECT_NE(data_set->element<vega::dictionary::CurveDimensions>(), nullptr);
+  data_set->erase<vega::dictionary::CurveDimensions>();
+  EXPECT_EQ(data_set->element<vega::dictionary::CurveDimensions>(), nullptr);
+}

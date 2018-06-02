@@ -48,6 +48,7 @@ namespace vega {
 
             iterator(iterator_type it);
 
+            operator iterator_type() { return m_it; }
             self_type& operator++();
             std::shared_ptr<DataElement>& operator*();
             bool operator==(const self_type& rhs) const;
@@ -65,6 +66,7 @@ namespace vega {
 
             const_iterator(iterator_type it);
 
+            operator iterator_type() { return m_it; }
             self_type& operator++();
             std::shared_ptr<const DataElement> operator*();
             bool operator==(const self_type& rhs) const;
@@ -162,6 +164,20 @@ namespace vega {
             return nullptr;
           }
         }
+
+        iterator erase(iterator it) {
+          return iterator(m_elements.erase(iterator::iterator_type(it)));
+        }
+
+        void erase(const Tag& tag);
+        void erase(const TagMask& tag_mask);
+        void erase(const std::shared_ptr<DataElement>& data_element);
+
+        template <typename T>
+        void erase(const std::shared_ptr<Element<T>>& element) { erase(element->tag()); }
+
+        template <typename T>
+        void erase() { erase(T::tag_mask); }
 
         bool operator==(const DataSet& other) const;
         bool operator!=(const DataSet& other) const;
