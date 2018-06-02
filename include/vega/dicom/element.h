@@ -74,9 +74,6 @@ namespace vega {
           return m_data_element->data_sets();
         }
 
-        /* template <std::enable_if<no manipulator>> */
-        /* const std::vector<std::shared_ptr<DataSet>>& data_sets() const; */
-
         const Tag& tag() const;
         Tag& tag();
 

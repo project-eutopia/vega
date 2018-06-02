@@ -11,22 +11,20 @@ using namespace vega;
 TEST(VisitorTest, test_visiting) {
   dicom::DataSet data_set{};
 
-  /* static constexpr const Tag tag {0x0008, 0x0040}; */
-  // US
+  // VR: US, Tag: 0008,0040
   auto data_set_type = data_set.new_element<dictionary::DataSetType>();
 
-  /* static constexpr const Tag tag {0x0008, 0x0109}; */
+  // VR: SQ, Tag: 0008,0109
   auto coding_schemes = data_set.new_element<dictionary::CodingSchemeResourcesSequence>();
   {
     coding_schemes->data_sets().push_back(std::make_shared<dicom::DataSet>());
 
-    // US
+    // VR: US, Tag: 0004,1410
     auto e = coding_schemes->data_sets().back()->new_element<dictionary::RecordInUseFlag>();
     e->manipulator()->push_back(3);
   }
 
-  /* static constexpr const Tag tag {0x300A, 0x0306}; */
-  // SS
+  // VR: SS, Tag: 300A,0306
   auto radiation_charge_state = data_set.new_element<dictionary::RadiationChargeState>();
   radiation_charge_state->manipulator()->push_back(5);
 
