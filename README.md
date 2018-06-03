@@ -27,6 +27,26 @@ To compile code that uses this library, you should link the library, the zlib li
 clang++ --std=c++11 -lvega -lz my_code.cpp -o my_code
 ```
 
+## Installing `vega` binary
+
+This library comes packaged with a runtime executable `vega` that can is installed by `make install` to `/usr/local/bin/vega`.
+It reads from the dictionary file installed to `/usr/local/share/vega/dictionary.txt`, and can be used to process DICOM files in the terminal.
+A DICOM file can either be piped in as STDIN from a DICOM file,
+```
+cat my_dicom_file.dcm | vega
+```
+or it can be specified in an input flag
+```
+vega --input=my_dicom_file.dcm
+```
+For output, `vega` supports 3 file formats: `".dcm"` for DICOM format, `".json"` for JSON file format, and `".txt"` for human-readable plain text files.
+If `--output` is just equal to the extension (e.g. `--output=json`), then the DICOM file will be printed to STDOUT in that format.
+If `--output` is a full filename with the relevant extension, then it will be wrote to that file.
+
+The `vega` binary also supports options to modify the DICOM file before outputting.
+Currently the only implemented option is `--remove_undefined_lengths` which forces the output file to have no data elements with undefined lengths.
+Eventually this binary will also support DICOM file anonymization.
+
 ## Reading/writing files
 
 Here is a simple example of using the library to read a file in and print a string representation of the content to standard out.

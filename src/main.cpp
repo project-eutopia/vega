@@ -2,9 +2,10 @@
 #include <memory>
 
 #include "vega/dictionary/dictionary.h"
-#include "vega/dicom/file.h"
+#include "vega/controller.h"
 
-int main() {
-  vega::dictionary::Dictionary::set_dictionary("/home/chris/cpp/vega/test/dictionary.txt");
-  // FIXME: do something
+int main(int argc, char* argv[]) {
+  vega::dictionary::Dictionary::set_dictionary("/usr/local/share/vega/dictionary.txt");
+  vega::Controller controller(argc, argv);
+  controller.run();
 }

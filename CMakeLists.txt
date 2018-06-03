@@ -38,6 +38,15 @@ find_package(GTest REQUIRED)
 add_executable(main "src/main.cpp")
 target_link_libraries(main ${PROJECT_NAME}_dev z)
 
+# Installing `vega` binary to `/usr/local/bin/vega`
+add_executable(vega-bin "src/main.cpp")
+SET_TARGET_PROPERTIES(vega-bin PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
+target_link_libraries(vega-bin ${PROJECT_NAME} z)
+install(TARGETS vega-bin RUNTIME DESTINATION bin)
+
+# Installing vega dictionary file to `/usr/local/share/vega/dictionary.txt`
+install(FILES "test/dictionary.txt" DESTINATION share/vega)
+
 # Test command
 if (GTest_FOUND)
   include_directories(${GTest_INCLUDE_DIRS})
