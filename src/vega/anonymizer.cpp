@@ -38,6 +38,20 @@ namespace vega {
     };
 
     v.visit(data_set);
+
+    auto removed = data_set.element<dictionary::PatientIdentityRemoved>();
+    if (removed) {
+      removed->manipulator()->at(0) = "YES";
+    }
+    else {
+      removed = data_set.new_element<dictionary::PatientIdentityRemoved>();
+      removed->manipulator()->push_back("YES");
+    }
+
+    auto anon_method = data_set.element<dictionary::DeidentificationMethod>();
+    if (!anon_method) anon_method = data_set.new_element<dictionary::DeidentificationMethod>();
+    anon_method->manipulator()->push_back("vega C++ Library Anonymizer class");
+    if (custom_anonymizer_) anon_method->manipulator()->push_back("vega C++ Library custom anonymization function");
   }
 
   bool Anonymizer::anonymize(dicom::DataElement& data_element) const {
