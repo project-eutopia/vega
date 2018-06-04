@@ -1,10 +1,12 @@
 #include "vega/controller.h"
 
 #include "vega/dicom/file.h"
+#include "vega/anonymizer.h"
 #include "vega/undefined_length_remover.h"
 
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include <algorithm>
 #include <string>
 #include <unistd.h>
@@ -24,11 +26,12 @@ namespace vega {
     if (parser_["remove_undefined_lengths"]) {
       operations_.push_back(Operation::REMOVE_UNDEFINED_LENGTHS);
     }
+    if ((parser_({"--anonymize"}) >> patient_id_) || parser_["anonymize"]) {
+      operations_.push_back(Operation::ANONYMIZE);
+    }
   }
 
   void Controller::run() const {
-    std::shared_ptr<dicom::File> file;
-
     if (input_file_.empty()) {
       // Skip if no piped data
       if (isatty(fileno(stdin))) return;
@@ -36,19 +39,40 @@ namespace vega {
       // Read DICOM file from STDIN (piped input)
       auto ss = std::make_shared<std::stringstream>();
       *ss << std::cin.rdbuf();
-      file = std::make_shared<dicom::File>(ss);
+      dicom::File file{ss};
+      run(file, output_file_);
     }
     else {
-      // Read from filename
-      file = std::make_shared<dicom::File>(input_file_);
-    }
+      // Read from filename(s)
+      std::istringstream input_ss(input_file_);
+      std::istringstream output_ss(output_file_);
+      std::string input_file;
+      std::string output_file;
 
+      // Split by commas, and run on each such file
+      while(std::getline(input_ss, input_file, ',')) {
+        std::getline(output_ss, output_file, ',');
+
+        dicom::File file{input_file};
+        run(file, output_file);
+      }
+    }
+  }
+
+  void Controller::run(dicom::File& input_file, const std::string& output_file) const {
     for (const auto& operation : operations_) {
       switch (operation) {
         case Operation::REMOVE_UNDEFINED_LENGTHS:
           {
             UndefinedLengthRemover remover{};
-            remover.remove_undefined_lengths(*file->data_set());
+            remover.remove_undefined_lengths(input_file);
+          }
+          break;
+
+        case Operation::ANONYMIZE:
+          {
+            Anonymizer anonymizer{patient_id_};
+            anonymizer.anonymize(input_file);
           }
           break;
       }
@@ -56,27 +80,27 @@ namespace vega {
 
     std::shared_ptr<std::ostream> output;
 
-    if (output_file_.empty()) {
+    if (output_file.empty()) {
       // Write file to STDOUT (assume in DICOM format)
-      file->write();
+      input_file.write();
     }
     else {
       // Write to file
       // Determine which format (DICOM, JSON, TXT)
 
       std::string lowercase_output;
-      std::transform(output_file_.begin(), output_file_.end(), lowercase_output.begin(), ::tolower);
+      std::transform(output_file.begin(), output_file.end(), lowercase_output.begin(), ::tolower);
 
       // DICOM format to STDOUT
-      if (output_file_ == "dcm" || output_file_ == "dicom") {
-        file->write();
+      if (output_file == "dcm" || output_file == "dicom") {
+        input_file.write();
       }
-      else if (output_file_ == "json") {
-        file->write_json();
+      else if (output_file == "json") {
+        input_file.write_json();
       }
-      else if (output_file_ == "txt" || output_file_ == "text") {
+      else if (output_file == "txt" || output_file == "text") {
         Formatter f(std::cout);
-        file->data_set()->log(f);
+        input_file.data_set()->log(f);
       }
       else {
         // Check output file format
@@ -84,16 +108,16 @@ namespace vega {
         std::string json_ending(".json");
         std::string txt_ending(".txt");
 
-        if (std::equal(dcm_ending.rbegin(), dcm_ending.rend(), output_file_.rbegin())) {
-          file->write(output_file_);
+        if (std::equal(dcm_ending.rbegin(), dcm_ending.rend(), output_file.rbegin())) {
+          input_file.write(output_file);
         }
-        else if (std::equal(json_ending.rbegin(), json_ending.rend(), output_file_.rbegin())) {
-          file->write_json(output_file_);
+        else if (std::equal(json_ending.rbegin(), json_ending.rend(), output_file.rbegin())) {
+          input_file.write_json(output_file);
         }
-        else if (std::equal(txt_ending.rbegin(), txt_ending.rend(), output_file_.rbegin())) {
-          std::ofstream ofs(output_file_);
+        else if (std::equal(txt_ending.rbegin(), txt_ending.rend(), output_file.rbegin())) {
+          std::ofstream ofs(output_file);
           Formatter f(ofs);
-          file->data_set()->log(f);
+          input_file.data_set()->log(f);
         }
         else {
           throw std::runtime_error("Unknown output file format");
