@@ -39,8 +39,34 @@ namespace vega {
       // Read DICOM file from STDIN (piped input)
       auto ss = std::make_shared<std::stringstream>();
       *ss << std::cin.rdbuf();
-      dicom::File file{ss};
-      run(file, output_file_);
+
+      // Here we have a valid DICOM file input
+      try {
+        dicom::File file{ss};
+        run(file, output_file_);
+      }
+      catch (vega::Exception& ex) {
+        // Here we are piping in a list of files, so expect the "suffix" command for output
+        std::string input_file;
+        std::string output_file;
+        std::string suffix;
+        const std::string dcm_ending(".dcm");
+
+        if (!(parser_({"--suffix"}) >> suffix)) {
+          suffix = "vega";
+        }
+
+        std::stringstream ss2(ss->str());
+
+        while (ss2 >> input_file) {
+          if (std::equal(dcm_ending.rbegin(), dcm_ending.rend(), input_file.rbegin())) {
+            output_file = input_file.substr(0, input_file.size()-3) + suffix + dcm_ending;
+
+            dicom::File file{input_file};
+            run(file, output_file);
+          }
+        }
+      }
     }
     else {
       // Read from filename(s)
