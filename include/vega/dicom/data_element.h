@@ -170,7 +170,6 @@ namespace vega {
          */
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
-          lazy_load();
           this->validate_manipulator(*manipulator);
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
