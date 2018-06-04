@@ -11,11 +11,6 @@ namespace vega {
 
   class Randomizer;
 
-  // Recursively anonymizes the content of a DICOM file/data set.
-  // The algorithm applied here is to as follows:
-  //
-  // NOTE: anonymization of a DICOM file is complicated to accomplish completely in general,
-  // so use discretion when using this feature to anonymize sensitive patient information.
   /**
    * \class Anonymizer
    * \brief This class is used anonymize information contained in DICOM files.
