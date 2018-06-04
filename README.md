@@ -39,13 +39,19 @@ or it can be specified in an input flag
 ```
 vega --input=my_dicom_file.dcm
 ```
+The input can also be a comma separated list of filenames, with the condition that there must be and equal number of filenames separated by commas in the `output` field,
+```
+vega --input=file1.dcm,file2.dcm --output=file1b.dcm,file2b.dcm
+```
+
 For output, `vega` supports 3 file formats: `".dcm"` for DICOM format, `".json"` for JSON file format, and `".txt"` for human-readable plain text files.
 If `--output` is just equal to the extension (e.g. `--output=json`), then the DICOM file will be printed to STDOUT in that format.
 If `--output` is a full filename with the relevant extension, then it will be wrote to that file.
 
 The `vega` binary also supports options to modify the DICOM file before outputting.
-Currently the only implemented option is `--remove_undefined_lengths` which forces the output file to have no data elements with undefined lengths.
-Eventually this binary will also support DICOM file anonymization.
+The supported file options are:
+- `--remove_undefined_lengths`: forces the output file(s) to have no data elements with udnefined lengths
+- `--anonymize` or `--anonymize=my_new_patient_id`: anonymizes the input file(s)
 
 ## Reading/writing files
 
