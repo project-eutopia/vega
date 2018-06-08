@@ -49,6 +49,7 @@ namespace vega {
     private:
       bool anonymize(dicom::DataElement& data_element) const;
       void blank_data_element(dicom::DataElement& data_element) const;
+      void set_deidentification_elements(dicom::DataSet& data_set) const;
       bool should_remove(const dicom::DataElement& data_element) const;
 
       Anonymizer(const Anonymizer&);

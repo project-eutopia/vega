@@ -8,7 +8,9 @@ using namespace vega;
 
 TEST(AnonymizerTest, test_anonymizer) {
   Anonymizer a{"test_id7531", [](dicom::DataElement& e) -> bool {
+    // Remove Rows
     if (e.tag() == dictionary::Rows::tag) return true;
+    // Change Columns to 777
     if (e.tag() == dictionary::Columns::tag) {
       e.get_manipulator<typename dictionary::Columns::manipulator_type>()->at(0) = 777;
     }
@@ -47,6 +49,10 @@ TEST(AnonymizerTest, test_anonymizer) {
   EXPECT_EQ(
     "test_id7531",
     file.data_set()->element<dictionary::PatientID>()->manipulator()->at(0)
+  );
+  EXPECT_EQ(
+    "test_id7531",
+    file.data_set()->element<dictionary::PatientName>()->manipulator()->at(0)
   );
 
   EXPECT_EQ(file.data_set()->element<dictionary::PatientBirthDate>()->manipulator()->size(), 0);

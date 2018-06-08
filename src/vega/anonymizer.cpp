@@ -39,6 +39,10 @@ namespace vega {
 
     v.visit(data_set);
 
+    set_deidentification_elements(data_set);
+  }
+
+  void Anonymizer::set_deidentification_elements(dicom::DataSet& data_set) const {
     auto removed = data_set.element<dictionary::PatientIdentityRemoved>();
     if (removed) {
       removed->manipulator()->at(0) = "YES";
@@ -64,10 +68,15 @@ namespace vega {
 
     // These are patient specific data elements (group of 0x0010),
     // for example OtherPatientIDs and PatientBirthDate are members
-    else if (data_element.tag().group() == dictionary::PatientName::tag.group()) {
+    if (data_element.tag().group() == dictionary::PatientName::tag.group()) {
       // Patient ID is handled separately
       if (data_element.tag() == dictionary::PatientID::tag) {
         auto manipulator = data_element.get_manipulator<LO_Manipulator>();
+        manipulator->at(0) = patient_id_.empty() ? randomizer_->generate<std::string>() : patient_id_;
+      }
+      // Set patient name to same anonymous patient ID
+      else if (data_element.tag() == dictionary::PatientName::tag) {
+        auto manipulator = data_element.get_manipulator<PN_Manipulator>();
         manipulator->at(0) = patient_id_.empty() ? randomizer_->generate<std::string>() : patient_id_;
       }
       else {
