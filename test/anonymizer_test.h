@@ -67,3 +67,17 @@ TEST(AnonymizerTest, test_anonymizer) {
 
   EXPECT_FALSE(file.data_set()->data_element(Tag{0x0009,0x0044}));
 }
+
+TEST(AnonymizerTest, test_anonymizer_patient_id_same_across_multiple_calls) {
+  Anonymizer a;
+
+  std::string filename = tests::path_to_file("data/undefined_SQ_rtdose.dcm");
+  dicom::File file(filename);
+  a.anonymize(file);
+
+  auto patient_id = file.data_set()->element<dictionary::PatientID>()->manipulator()->at(0);
+
+  a.anonymize(file);
+  EXPECT_EQ(patient_id, file.data_set()->element<dictionary::PatientName>()->manipulator()->at(0));
+  EXPECT_EQ(patient_id, file.data_set()->element<dictionary::PatientID>()->manipulator()->at(0));
+}

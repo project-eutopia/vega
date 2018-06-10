@@ -27,8 +27,8 @@ namespace vega {
   class Anonymizer {
     private:
       std::shared_ptr<Randomizer> randomizer_;
-      const std::string patient_id_;
-      const std::function<bool(dicom::DataElement&)> custom_anonymizer_;
+      std::function<bool(dicom::DataElement&)> custom_anonymizer_;
+      std::string patient_id_;
 
     public:
       /**
@@ -37,6 +37,8 @@ namespace vega {
        * will return true if the data element is to be removed, and false otherwise.
        */
       explicit Anonymizer(const std::string& patient_id = "", std::function<bool(dicom::DataElement&)> custom_anonymizer = nullptr);
+
+      void set_patient_id(const std::string& patient_id);
 
       void anonymize(dicom::File& file) const;
       void anonymize(dicom::DataSet& data_set) const;

@@ -12,9 +12,13 @@ namespace vega {
   Anonymizer::Anonymizer(const std::string& patient_id, std::function<bool(dicom::DataElement&)> custom_anonymizer)
     :
       randomizer_(std::make_shared<Randomizer>()),
-      patient_id_(patient_id),
       custom_anonymizer_(custom_anonymizer)
   {
+    set_patient_id(patient_id);
+  }
+
+  void Anonymizer::set_patient_id(const std::string& patient_id) {
+    patient_id_ = patient_id.empty() ? randomizer_->generate<std::string>() : patient_id;
   }
 
   void Anonymizer::anonymize(dicom::File& file) const {
