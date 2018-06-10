@@ -26,8 +26,10 @@ namespace vega {
     if (parser_["remove_undefined_lengths"]) {
       operations_.push_back(Operation::REMOVE_UNDEFINED_LENGTHS);
     }
+
     if ((parser_({"--anonymize"}) >> patient_id_) || parser_["anonymize"]) {
       operations_.push_back(Operation::ANONYMIZE);
+      anonymizer_.set_patient_id(patient_id_);
     }
 
     if (!(parser_({"--suffix"}) >> suffix_)) {
@@ -105,8 +107,7 @@ namespace vega {
 
         case Operation::ANONYMIZE:
           {
-            Anonymizer anonymizer{patient_id_};
-            anonymizer.anonymize(input_file);
+            anonymizer_.anonymize(input_file);
           }
           break;
       }

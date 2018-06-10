@@ -2,6 +2,7 @@
 
 #include <vector>
 #include "vega/pathname.h"
+#include "vega/anonymizer.h"
 #include "argh/argh.h"
 
 namespace vega {
@@ -18,6 +19,7 @@ namespace vega {
       std::string patient_id_;
       std::string suffix_;
       Pathname folder_;
+      Anonymizer anonymizer_;
 
       enum class Operation {
         REMOVE_UNDEFINED_LENGTHS,
