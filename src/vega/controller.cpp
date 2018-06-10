@@ -55,13 +55,13 @@ namespace vega {
       }
       catch (vega::Exception& ex) {
         // Here we are piping in a list of files, so expect the "suffix" command for output
-        Pathname input_file;
-        Pathname output_file;
+        std::string input_file;
+        std::string output_file;
 
         std::stringstream ss2(ss->str());
 
-        while (ss2 >> input_file) {
-          if (input_file.extension() == "dcm") {
+        while(std::getline(ss2, input_file, '\n')) {
+          if (Pathname(input_file).extension() == "dcm") {
             output_file = output_file_name_for(input_file);
 
             dicom::File file{input_file};
