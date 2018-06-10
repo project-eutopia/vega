@@ -18,6 +18,7 @@
 #include "json_test.h"
 #include "visitor_test.h"
 #include "anonymizer_test.h"
+#include "pathname_test.h"
 #include "undefined_length_remover_test.h"
 #include "dicom/data_element_test.h"
 #include "dicom/data_set_test.h"
