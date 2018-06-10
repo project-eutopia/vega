@@ -170,6 +170,12 @@ namespace vega {
          */
         template <typename T>
         void set_manipulator(std::shared_ptr<T> manipulator) {
+          // Nothing to lazy load if setting manipulator directly
+          if (m_reader) {
+            std::lock_guard<std::mutex> lock(m_mutex);
+            m_reader = nullptr;
+          }
+
           this->validate_manipulator(*manipulator);
           m_manipulator = std::dynamic_pointer_cast<manipulators::ValueManipulator>(manipulator);
         }
