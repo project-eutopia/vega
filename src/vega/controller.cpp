@@ -29,6 +29,14 @@ namespace vega {
     if ((parser_({"--anonymize"}) >> patient_id_) || parser_["anonymize"]) {
       operations_.push_back(Operation::ANONYMIZE);
     }
+
+    if (!(parser_({"--suffix"}) >> suffix_)) {
+      suffix_ = "vega";
+    }
+
+    if (!(parser_({"--folder"}) >> folder_)) {
+      folder_ = "./";
+    }
   }
 
   void Controller::run() const {
@@ -47,20 +55,14 @@ namespace vega {
       }
       catch (vega::Exception& ex) {
         // Here we are piping in a list of files, so expect the "suffix" command for output
-        std::string input_file;
-        std::string output_file;
-        std::string suffix;
-        const std::string dcm_ending(".dcm");
-
-        if (!(parser_({"--suffix"}) >> suffix)) {
-          suffix = "vega";
-        }
+        Pathname input_file;
+        Pathname output_file;
 
         std::stringstream ss2(ss->str());
 
         while (ss2 >> input_file) {
-          if (std::equal(dcm_ending.rbegin(), dcm_ending.rend(), input_file.rbegin())) {
-            output_file = input_file.substr(0, input_file.size()-3) + suffix + dcm_ending;
+          if (input_file.extension() == "dcm") {
+            output_file = output_file_name_for(input_file);
 
             dicom::File file{input_file};
             run(file, output_file);
@@ -77,7 +79,13 @@ namespace vega {
 
       // Split by commas, and run on each such file
       while(std::getline(input_ss, input_file, ',')) {
-        std::getline(output_ss, output_file, ',');
+        // No suffix, so expect comma list of output files
+        if (suffix_.empty()) {
+          std::getline(output_ss, output_file, ',');
+        }
+        else {
+          output_file = output_file_name_for(input_file);
+        }
 
         dicom::File file{input_file};
         run(file, output_file);
@@ -150,5 +158,9 @@ namespace vega {
         }
       }
     }
+  }
+
+  Pathname Controller::output_file_name_for(const Pathname& input_file) const {
+    return folder_ + input_file.base_name() + "." + suffix_ + "." + input_file.extension();
   }
 }

@@ -43,6 +43,17 @@ The input can also be a comma separated list of filenames, with the condition th
 ```
 vega --input=file1.dcm,file2.dcm --output=file1b.dcm,file2b.dcm
 ```
+If the `suffix` option is passed in, then instead that will be appended to the filename for each output file.
+For instance, the following will anonymize each input file, and write them to `file1.anon.dcm` and `file2.anon.dcm`,
+```
+vega --input=file1.dcm,file2.dcm --suffix=anon --anonymize
+```
+Lastly, input files can be piped in to the executable as follows:
+```
+ls *.dcm | vega --anonymize --suffix=anon --folder=/my/data/directory
+```
+Here the `--folder` option is being used to specify the output directory to write the files to.
+
 
 For output, `vega` supports 3 file formats: `".dcm"` for DICOM format, `".json"` for JSON file format, and `".txt"` for human-readable plain text files.
 If `--output` is just equal to the extension (e.g. `--output=json`), then the DICOM file will be printed to STDOUT in that format.
