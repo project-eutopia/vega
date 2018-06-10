@@ -42,9 +42,9 @@ namespace vega {
     // Base
     ss << UID::BASE.str() << '.';
     // Random part (first digit must be non-zero
-    ss << (char)('1' + (char)(rand() % 9));
+    ss << (char)('1' + (char)(std::rand() % 9));
     for (size_t i = 1; i < length_of_random; ++i) {
-      ss << (char)('0' + (char)(rand() % 10));
+      ss << (char)('0' + (char)(std::rand() % 10));
     }
     // User input number
     if (num > 0) {
