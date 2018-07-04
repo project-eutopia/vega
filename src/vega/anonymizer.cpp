@@ -3,7 +3,6 @@
 #include "vega/dicom/file.h"
 #include "vega/dicom/data_set.h"
 #include "vega/dicom/data_element.h"
-#include "vega/randomizer.h"
 #include "vega/visitor.h"
 
 #include <cstdlib>
@@ -11,21 +10,21 @@
 namespace vega {
   Anonymizer::Anonymizer(const std::string& patient_id, std::function<bool(dicom::DataElement&)> custom_anonymizer)
     :
-      randomizer_(std::make_shared<Randomizer>()),
+      randomizer_(),
       custom_anonymizer_(custom_anonymizer)
   {
     set_patient_id(patient_id);
   }
 
   void Anonymizer::set_patient_id(const std::string& patient_id) {
-    patient_id_ = patient_id.empty() ? randomizer_->generate<std::string>() : patient_id;
+    patient_id_ = patient_id.empty() ? randomizer_.generate<std::string>() : patient_id;
   }
 
-  void Anonymizer::anonymize(dicom::File& file) const {
+  void Anonymizer::anonymize(dicom::File& file) {
     anonymize(*file.data_set());
   }
 
-  void Anonymizer::anonymize(dicom::DataSet& data_set) const {
+  void Anonymizer::anonymize(dicom::DataSet& data_set) {
     Visitor v {
       [this](dicom::DataElement& data_element) -> bool {
         // Remove certain elements (e.g. private elements)
@@ -62,11 +61,11 @@ namespace vega {
     if (custom_anonymizer_) anon_method->manipulator()->push_back("vega C++ Library custom anonymization function");
   }
 
-  bool Anonymizer::anonymize(dicom::DataElement& data_element) const {
+  bool Anonymizer::anonymize(dicom::DataElement& data_element) {
     if (data_element.vr() == vr::PN) {
       auto manipulator = data_element.get_manipulator<PN_Manipulator>();
       for (auto& name : *manipulator) {
-        name = randomizer_->generate<PN_Manipulator::value_type>();
+        name = randomizer_.generate<PN_Manipulator::value_type>();
       }
     }
 
@@ -76,12 +75,12 @@ namespace vega {
       // Patient ID is handled separately
       if (data_element.tag() == dictionary::PatientID::tag) {
         auto manipulator = data_element.get_manipulator<LO_Manipulator>();
-        manipulator->at(0) = patient_id_.empty() ? randomizer_->generate<std::string>() : patient_id_;
+        manipulator->at(0) = patient_id_.empty() ? randomizer_.generate<std::string>() : patient_id_;
       }
       // Set patient name to same anonymous patient ID
       else if (data_element.tag() == dictionary::PatientName::tag) {
         auto manipulator = data_element.get_manipulator<PN_Manipulator>();
-        manipulator->at(0) = patient_id_.empty() ? randomizer_->generate<std::string>() : patient_id_;
+        manipulator->at(0) = patient_id_.empty() ? randomizer_.generate<std::string>() : patient_id_;
       }
       else {
         // Remove if sequence
