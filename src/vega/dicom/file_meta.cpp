@@ -83,7 +83,7 @@ namespace vega {
           length_of_file_meta_length_element += writer->write_element(data_element);
           assert(data_element->tag() == Tag(0x00020000));
           file_meta_length_pos = writer->tell() - std::streampos(sizeof(file_meta_bytes));
-          assert(data_element->manipulator().raw_value().size() == sizeof(file_meta_bytes));
+          assert(data_element->manipulator()->raw_value()->size() == sizeof(file_meta_bytes));
         }
         else {
           file_meta_bytes += writer->write_element(data_element);
