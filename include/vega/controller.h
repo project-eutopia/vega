@@ -19,7 +19,6 @@ namespace vega {
       std::string patient_id_;
       std::string suffix_;
       Pathname folder_;
-      Anonymizer anonymizer_;
 
       enum class Operation {
         REMOVE_UNDEFINED_LENGTHS,

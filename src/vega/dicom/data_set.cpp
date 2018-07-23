@@ -69,8 +69,8 @@ namespace vega {
       if (tag.is_private()) {
         auto block = m_private_owner_blocks->find_block(tag);
         if (block) {
-          auto private_owner = block->private_owner();
-          auto page = private_owner->find_page(tag);
+          const auto& private_owner = block->private_owner();
+          auto page = private_owner.find_page(tag);
           if (page) return page;
         }
       }

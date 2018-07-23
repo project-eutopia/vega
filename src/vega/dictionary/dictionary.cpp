@@ -11,23 +11,39 @@
 
 namespace vega {
   namespace dictionary {
+    const std::string& Dictionary::default_dictionary_file_name() {
+      static const std::string filename = "/usr/local/share/vega/dictionary.txt";
+      return filename;
+    }
+
     void set_dictionary(const std::string& file_name) {
       Dictionary::set_dictionary(file_name);
     }
 
-    const Dictionary& instance() {
-      return Dictionary::instance();
+    const Dictionary& instance(bool allow_default) {
+      return Dictionary::instance(allow_default);
     }
 
-    std::shared_ptr<Dictionary> Dictionary::singleton = nullptr;
+    std::unique_ptr<Dictionary> Dictionary::singleton_ = nullptr;
 
     void Dictionary::set_dictionary(const std::string& file_name) {
-      Dictionary::singleton = std::shared_ptr<Dictionary>(new Dictionary(file_name));
+      Dictionary::singleton_ = std::unique_ptr<Dictionary>(new Dictionary(file_name));
     }
 
-    const Dictionary& Dictionary::instance() {
-      if (!Dictionary::singleton) throw vega::Exception("Dictionary not yet initialized with call to set_dictionary()");
-      return *Dictionary::singleton;
+    const Dictionary& Dictionary::instance(bool allow_default) {
+      if (!Dictionary::singleton_) {
+        // If allowing default dictionary, then can initialize it now
+        if (allow_default) {
+          set_dictionary(default_dictionary_file_name());
+        }
+
+        // If still no dictionary found, then raise error
+        if (!Dictionary::singleton_) {
+          throw vega::Exception("Dictionary not yet initialized with call to set_dictionary()");
+        }
+      }
+
+      return *Dictionary::singleton_;
     }
 
     Dictionary::Dictionary(const std::string& file_name) {

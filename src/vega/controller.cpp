@@ -29,7 +29,6 @@ namespace vega {
 
     if ((parser_({"--anonymize"}) >> patient_id_) || parser_["anonymize"]) {
       operations_.push_back(Operation::ANONYMIZE);
-      anonymizer_.set_patient_id(patient_id_);
     }
 
     if (!(parser_({"--suffix"}) >> suffix_)) {
@@ -107,7 +106,9 @@ namespace vega {
 
         case Operation::ANONYMIZE:
           {
-            anonymizer_.anonymize(input_file);
+            Anonymizer anonymizer;
+            anonymizer.set_patient_id(patient_id_);
+            anonymizer.anonymize(input_file);
           }
           break;
       }
@@ -162,6 +163,6 @@ namespace vega {
   }
 
   Pathname Controller::output_file_name_for(const Pathname& input_file) const {
-    return folder_ + input_file.base_name() + "." + suffix_ + "." + input_file.extension();
+    return folder_ + "/" + input_file.base_name() + "." + suffix_ + "." + input_file.extension();
   }
 }

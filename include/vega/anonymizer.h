@@ -1,6 +1,9 @@
 #pragma once
 
-#include <memory>
+#include "vega/randomizer.h"
+
+#include <string>
+#include <functional>
 
 namespace vega {
   namespace dicom {
@@ -8,8 +11,6 @@ namespace vega {
     class DataSet;
     class DataElement;
   }
-
-  class Randomizer;
 
   /**
    * \class Anonymizer
@@ -26,7 +27,7 @@ namespace vega {
    */
   class Anonymizer {
     private:
-      std::shared_ptr<Randomizer> randomizer_;
+      Randomizer randomizer_;
       std::function<bool(dicom::DataElement&)> custom_anonymizer_;
       std::string patient_id_;
 
@@ -40,11 +41,11 @@ namespace vega {
 
       void set_patient_id(const std::string& patient_id);
 
-      void anonymize(dicom::File& file) const;
-      void anonymize(dicom::DataSet& data_set) const;
+      void anonymize(dicom::File& file);
+      void anonymize(dicom::DataSet& data_set);
 
     private:
-      bool anonymize(dicom::DataElement& data_element) const;
+      bool anonymize(dicom::DataElement& data_element);
       void blank_data_element(dicom::DataElement& data_element) const;
       void set_deidentification_elements(dicom::DataSet& data_set) const;
       bool should_remove(const dicom::DataElement& data_element) const;
