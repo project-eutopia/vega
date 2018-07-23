@@ -26,6 +26,6 @@ RUN git clean -fd
 RUN mkdir -p build && \
     cd build && \
     rm -rf ./* && \
-    cmake .. && \
+    cmake -DCMAKE_BUILD_TYPE=DEBUG .. && \
     make -j8 main tests && \
     cd ..
