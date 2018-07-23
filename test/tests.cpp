@@ -17,6 +17,7 @@
 #include "date_time_test.h"
 #include "json_test.h"
 #include "visitor_test.h"
+#include "randomizer_test.h"
 #include "anonymizer_test.h"
 #include "pathname_test.h"
 #include "undefined_length_remover_test.h"
