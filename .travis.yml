@@ -10,4 +10,5 @@ install:
 - docker build -t vega .
 
 script:
-- docker run -t -w="/opt/vega/build" vega ./tests
+- docker run -t -w="/opt/vega/build_gcc" vega ./tests
+- docker run -t -w="/opt/vega/build_clang" vega ./tests
