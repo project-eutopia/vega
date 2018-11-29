@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/project-eutopia/vega.svg?branch=master)](https://travis-ci.org/project-eutopia/vega)
+
 # vega
 
 C++ library for reading/writing/editing DICOM files.
