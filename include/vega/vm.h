@@ -20,11 +20,11 @@ namespace vega {
       const bool m_multiple;
 
     public:
-      constexpr VM() : m_limits(std::make_pair(1,1)), m_multiple(false) {}
-      explicit constexpr VM(limit_type n) : m_limits(std::make_pair(n,n)), m_multiple(false) {}
+      constexpr VM() : m_limits(1, 1), m_multiple(false) {}
+      explicit constexpr VM(limit_type n) : m_limits(n, n), m_multiple(false) {}
       explicit VM(const std::string& vm);
       constexpr VM(limit_type min, limit_type max, bool multiple = false)
-        : m_limits(std::make_pair(min, max)),
+        : m_limits(min, max),
           m_multiple(multiple)
       {}
 
