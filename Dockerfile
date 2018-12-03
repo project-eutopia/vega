@@ -5,6 +5,7 @@ RUN apk update && apk upgrade && \
     apk add --no-cache git \
                        make \
                        cmake \
+                       clang \
                        g++ \
                        zlib-dev \
                        gtest \
@@ -22,9 +23,21 @@ ADD . $VEGA_DIR
 RUN git reset --hard HEAD
 RUN git clean -fd
 
-# Build the main exectable and tests
-RUN mkdir -p build && \
-    cd build && \
+ENV CC "/usr/bin/gcc"
+ENV CXX "/usr/bin/g++"
+
+RUN mkdir -p build_gcc && \
+    cd build_gcc && \
+    rm -rf ./* && \
+    cmake -DCMAKE_BUILD_TYPE=DEBUG .. && \
+    make -j8 main tests && \
+    cd ..
+
+ENV CC "/usr/bin/clang"
+ENV CXX "/usr/bin/clang++"
+
+RUN mkdir -p build_clang && \
+    cd build_clang && \
     rm -rf ./* && \
     cmake -DCMAKE_BUILD_TYPE=DEBUG .. && \
     make -j8 main tests && \

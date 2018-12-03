@@ -11,27 +11,25 @@
 namespace vega {
   class Json {
     private:
-      template < class T >
+      template <typename T>
       class HasMemberSize {
         private:
-          using Yes = char[2];
-          using  No = char[1];
-
           struct Fallback { int size; };
           struct Derived : T, Fallback { };
 
-          template < class U >
-          static No& test ( decltype(U::size)* );
-          template < typename U >
-          static Yes& test ( U* );
+          template <typename U>
+          static std::false_type test(decltype(U::size)*);
+          template <typename U>
+          static std::true_type test(...);
 
         public:
-          static constexpr bool RESULT = sizeof(test<Derived>(nullptr)) == sizeof(Yes);
+          using type = decltype(test<Derived>(nullptr));
+          static constexpr bool value = type::value;
       };
 
-      template <class T>
+      template <typename T>
       struct has_member_size
-        : public std::integral_constant<bool, HasMemberSize<T>::RESULT>
+        : public std::integral_constant<bool, HasMemberSize<T>::value>
       {
       };
 
