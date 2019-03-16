@@ -15,12 +15,12 @@ TEST(DateTimeTest, constructor_test) {
 
 TEST(DateTimeTest, range_test) {
   {
-    DateTime dt(" - 22221111000000.012345 ");
+    DateTime dt(" - 22221111000000.1 ");
     EXPECT_TRUE(dt.is_range());
     EXPECT_FALSE(dt.lower());
     EXPECT_TRUE(dt.upper());
 
-    EXPECT_EQ(dt.str(), "-22221111000000.012345");
+    EXPECT_EQ(dt.str(), "-22221111000000.1");
   }
 
   {
