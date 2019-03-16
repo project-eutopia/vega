@@ -7,7 +7,7 @@
 
 namespace vega {
   const std::shared_ptr<const std::regex> DateTime::SINGLE_REGEX = std::make_shared<const std::regex>(
-    "\\d{4}((0[1-9]|1[0-2])((0[1-9]|[1-2]\\d|3[0-1])(([0-1]\\d|2[0-4])([0-5]\\d(([0-5]\\d|60)(\\.\\d{6})?)?)?)?)?)?([\\+\\-](0\\d|1[0-4])([0-5]\\d)?)?"
+    "\\d{4}((0[1-9]|1[0-2])((0[1-9]|[1-2]\\d|3[0-1])(([0-1]\\d|2[0-4])([0-5]\\d(([0-5]\\d|60)(\\.\\d{1,6})?)?)?)?)?)?([\\+\\-](0\\d|1[0-4])([0-5]\\d)?)?"
   );
   // TODO: separating colon '-' should not preceed a pair from 00 to 14
   // (so only years from 1500 are unambiguous).

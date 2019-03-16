@@ -7,7 +7,7 @@
 
 namespace vega {
   const std::shared_ptr<const std::regex> Time::SINGLE_REGEX = std::make_shared<const std::regex>(
-    "([0-1]\\d|2[0-3])(\\:?[0-5]\\d(\\:?[0-5]\\d(\\.\\d{6})?)?)?"
+    "([0-1]\\d|2[0-3])(\\:?[0-5]\\d(\\:?[0-5]\\d(\\.\\d{1,6})?)?)?"
   );
   const std::shared_ptr<const std::regex> Time::RANGE_REGEX = std::make_shared<const std::regex>(
     "\\s*([\\.\\d]*)\\s*-\\s*([\\.\\d]*)\\s*"
