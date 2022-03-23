@@ -253,7 +253,7 @@ namespace vega {
   namespace vr {
     VR parse_vr_string(std::string s) {
       assert(s.length() == 2);
-      return VR{ {.characters = {s[0], s[1]}} };
+      return VR{ VR::Data{.characters = {s[0], s[1]}} };
     }
   }
 
