@@ -66,6 +66,10 @@ The supported file options are:
 - `--remove_undefined_lengths`: forces the output file(s) to have no data elements with udnefined lengths
 - `--anonymize` or `--anonymize=my_new_patient_id`: anonymizes the input file(s)
 
+## Documentation
+
+Please visit [github pages](https://project-eutopia.github.io/vega/).
+
 ## Reading/writing files
 
 Here is a simple example of using the library to read a file in and print a string representation of the content to standard out.
